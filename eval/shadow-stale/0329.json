@@ -1,0 +1,46 @@
+{
+ "repo": "pytest-dev/pluggy",
+ "number": 804,
+ "status": "ran",
+ "head": "9d13dec588cf7d947fb02a7f44c1d8dc846a193d",
+ "base": "0224f79fc75efadaafe24dbab9deee2ff616ecd7",
+ "diff_bytes": 3873,
+ "map_base": "6162b33645831a568b7c381dd1dc5def181c186c",
+ "map_age_commits": 43,
+ "n_tests": 226,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "changelog/804.bugfix.rst",
+  "src/pluggy/_manager.py",
+  "testing/test_pluginmanager.py"
+ ],
+ "n_changed": 3,
+ "selected": 226,
+ "file_selected": 226,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 79,
+ "dyn_uncovered": [
+  "src/pluggy/_manager.py"
+ ],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0.01,
+ "out_of_scope": [],
+ "inert": [
+  "changelog/804.bugfix.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.03,
+ "seconds_selected": 0.03,
+ "wall_seconds": 19.5,
+ "project": "pluggy",
+ "image_code_sha": "d9e3c20"
+}

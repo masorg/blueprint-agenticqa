@@ -1,0 +1,13 @@
+{
+ "repo": "tartley/colorama",
+ "number": 401,
+ "status": "error",
+ "head": "27eac48a395e9d2b93c6f0dab33a48f7d2c9772b",
+ "base": "136808718af8b9583cb2eed1756ed6972eda4975",
+ "diff_bytes": 8816,
+ "coverage_seconds": 2.1,
+ "coverage_files": 13,
+ "detail": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-now91hzd/colorama/tests/ansi_test.py'. | E   ImportError: cannot import name 'GetConsoleCP' from 'colorama.win32' (/tmp/agenticqa-workspaces/ws-now91hzd/colorama/win32.py) | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-now91hzd/colorama/tes",
+ "project": "colorama",
+ "image_code_sha": "a116495"
+}

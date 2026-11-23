@@ -1,0 +1,15 @@
+{
+ "order": 40,
+ "pr_id": 3317961577,
+ "agent": "Google_Jules",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "florestefano1975/comfyui-portrait-master",
+ "number": 53,
+ "status": "no_tests",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "wall_seconds": 1.9,
+ "head": "decf5f849d2b7667158685277e4ae5268472c925"
+}

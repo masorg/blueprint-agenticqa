@@ -1,0 +1,226 @@
+{
+ "catch_matrix": [
+  [
+   "Inventory service (plain)",
+   "eval/reports/eval-stub+oracle-routing-2026-10-14T18-49-57.199136+00-00.json"
+  ],
+  [
+   "Support assistant (agentic)",
+   "eval/reports/eval-stub+oracle-routing-2026-10-14T18-50-13.532495+00-00.json"
+  ]
+ ],
+ "adversary_before": "eval/reports/adversary-PRE-FIX-quick-2026-10-14T18-52-47.json",
+ "adversary_after": "eval/reports/adversary-2026-10-13T23-54-07.423316+00-00.json",
+ "mutation": "eval/reports/mutation-2026-10-14T18-48-36.324504+00-00.json",
+ "routing": [
+  "eval/reports/routing-stub-2026-10-14T20-02-24.031502+00-00.json",
+  "eval/reports/routing-manifest-2026-10-14T21-35-01.498452+00-00.json",
+  "eval/reports/routing-openai-gpt-4o-mini-2026-10-14T20-10-53.618549+00-00.json",
+  "eval/reports/routing-openai-gpt-4o-mini-masked-2026-10-14T20-12-20.697210+00-00.json",
+  "eval/reports/routing-openai-gpt-4o-2026-10-14T20-13-39.382296+00-00.json",
+  "eval/reports/routing-openai-gpt-4o-masked-2026-10-14T20-14-56.548283+00-00.json",
+  "eval/reports/routing-mistral-mistral-large-latest-2026-10-14T20-52-25.318080+00-00.json",
+  "eval/reports/routing-mistral-mistral-large-latest-masked-2026-10-14T21-02-03.073832+00-00.json",
+  "eval/reports/routing-mistral-mistral-small-latest-2026-10-14T20-06-55.773268+00-00.json",
+  "eval/reports/routing-mistral-mistral-small-latest-masked-2026-10-14T20-38-35.283193+00-00.json"
+ ],
+ "injection": {
+  "gpt-4o-mini": "eval/reports/eval-openai-gpt-4o-mini-2026-10-14T22-27-34.130145+00-00.json",
+  "gpt-4o": "eval/reports/eval-openai-gpt-4o-2026-10-14T22-48-06.166352+00-00.json",
+  "mistral-small": "eval/reports/eval-mistral-mistral-small-latest-2026-10-14T23-05-21.470718+00-00.json",
+  "mistral-large": "eval/reports/eval-mistral-mistral-large-latest-2026-10-14T23-39-10.559434+00-00.json"
+ },
+ "adversary_real": {
+  "click": {
+   "after": "eval/reports/adversary-2026-10-14T21-43-58.840005+00-00.json",
+   "before": "eval/reports/adversary-PRE-FIX-real-click-quick-2026-10-14T22-01-29.json"
+  },
+  "attrs": {
+   "after": "eval/reports/adversary-2026-10-14T21-54-04.587021+00-00.json"
+  }
+ },
+ "agentic_heuristic": "eval/reports/eval-stub-2026-10-15T17-56-54.621086+00-00.json",
+ "real_suites": [
+  {
+   "name": "click",
+   "report": "eval/reports/adversary-2026-10-14T21-43-58.840005+00-00.json"
+  },
+  {
+   "name": "attrs",
+   "report": "eval/reports/adversary-2026-10-14T21-54-04.587021+00-00.json"
+  },
+  {
+   "name": "itsdangerous",
+   "report": "eval/reports/adversary-2026-10-15T19-09-35.079516+00-00.json"
+  },
+  {
+   "name": "markupsafe",
+   "report": "eval/reports/adversary-2026-10-15T19-10-46.538286+00-00.json"
+  },
+  {
+   "name": "jinja",
+   "report": "eval/reports/adversary-2026-10-15T19-12-43.717372+00-00.json"
+  },
+  {
+   "name": "pluggy",
+   "report": "eval/reports/adversary-2026-10-15T19-14-18.740605+00-00.json"
+  },
+  {
+   "name": "packaging",
+   "report": "eval/reports/adversary-2026-10-15T19-58-13.145480+00-00.json",
+   "earlier_failure_report": "eval/reports/adversary-COULD-NOT-RUN-real-packaging-2026-10-15T19-14-36.225740+00-00.json"
+  },
+  {
+   "name": "more-itertools",
+   "report": "eval/reports/adversary-2026-10-15T19-17-53.301320+00-00.json"
+  },
+  {
+   "name": "sqlparse",
+   "report": "eval/reports/adversary-2026-10-15T19-20-32.545576+00-00.json"
+  },
+  {
+   "name": "toolz",
+   "report": "eval/reports/adversary-2026-10-15T19-21-57.800521+00-00.json"
+  },
+  {
+   "name": "boltons",
+   "report": "eval/reports/adversary-2026-10-15T19-24-06.016919+00-00.json"
+  },
+  {
+   "name": "idna",
+   "report": "eval/reports/adversary-2026-10-15T19-27-32.262822+00-00.json"
+  }
+ ],
+ "aidev_claims": "eval/reports/aidev-claims-2026-10-15T19-15-11.077300+00-00.json",
+ "route_noise": [
+  "eval/reports/route-noise-openai-gpt-4o-mini-2026-10-15T19-20-27.711025+00-00.json",
+  "eval/reports/route-noise-openai-gpt-4o-2026-10-15T19-24-55.824952+00-00.json",
+  "eval/reports/route-noise-mistral-mistral-small-latest-2026-10-15T19-32-22.771386+00-00.json",
+  "eval/reports/route-noise-mistral-mistral-large-latest-2026-10-15T20-02-32.667839+00-00.json"
+ ],
+ "field_study": "eval/reports/field-study-2026-10-15T22-17-07.459713+00-00.json",
+ "field_layouts": "eval/reports/field-layouts-2026-10-15T22-21-23.965805+00-00.json",
+ "no_model_baseline": "eval/reports/eval-stub-2026-10-16T03-11-04.866086+00-00.json",
+ "selection": {
+  "mutants": [
+   "eval/reports/selection-replay-attrs-2026-10-24T23-01-33.082586+00-00.json",
+   "eval/reports/selection-replay-boltons-2026-10-24T23-00-15.416653+00-00.json",
+   "eval/reports/selection-replay-click-2026-10-24T23-01-19.983365+00-00.json",
+   "eval/reports/selection-replay-idna-2026-10-24T22-59-45.327325+00-00.json",
+   "eval/reports/selection-replay-itsdangerous-2026-10-24T23-02-14.525823+00-00.json",
+   "eval/reports/selection-replay-jinja-2026-10-24T23-01-50.626037+00-00.json",
+   "eval/reports/selection-replay-markupsafe-2026-10-24T23-02-26.888923+00-00.json",
+   "eval/reports/selection-replay-more-itertools-2026-10-24T22-59-57.131556+00-00.json",
+   "eval/reports/selection-replay-pluggy-2026-10-24T23-02-04.133653+00-00.json",
+   "eval/reports/selection-replay-sqlparse-2026-10-24T23-01-58.248202+00-00.json",
+   "eval/reports/selection-replay-toolz-2026-10-24T23-02-22.899462+00-00.json"
+  ],
+  "mutants_run": [
+   "eval/reports/selection-mutants-attrs-2026-10-23T18-56-20.130487+00-00.json",
+   "eval/reports/selection-mutants-boltons-2026-10-23T18-34-47.498161+00-00.json",
+   "eval/reports/selection-mutants-click-2026-10-23T18-56-19.050673+00-00.json",
+   "eval/reports/selection-mutants-idna-2026-10-24T22-45-08.160250+00-00.json",
+   "eval/reports/selection-mutants-itsdangerous-2026-10-23T19-08-13.946926+00-00.json",
+   "eval/reports/selection-mutants-jinja-2026-10-23T19-11-45.927572+00-00.json",
+   "eval/reports/selection-mutants-markupsafe-2026-10-23T19-09-35.977574+00-00.json",
+   "eval/reports/selection-mutants-more-itertools-2026-10-24T22-24-17.755644+00-00.json",
+   "eval/reports/selection-mutants-pluggy-2026-10-23T19-03-27.621797+00-00.json",
+   "eval/reports/selection-mutants-sqlparse-2026-10-23T19-04-59.514951+00-00.json",
+   "eval/reports/selection-mutants-toolz-2026-10-23T19-08-20.860611+00-00.json"
+  ],
+  "field": "eval/reports/selection-field-2026-10-26T02-01-31.453420+00-00.json",
+  "aidev": "eval/reports/selection-aidev-2026-10-23T16-39-33.870646+00-00.json",
+  "demo": "eval/reports/selection-demo-2026-10-24T14-11-54.930246+00-00.json",
+  "attack": [
+   "eval/reports/selection-attack-boltons-2026-10-24T20-20-25.641754+00-00.json",
+   "eval/reports/selection-attack-idna-2026-10-25T00-21-28.941961+00-00.json",
+   "eval/reports/selection-attack-more-itertools-2026-10-24T20-25-25.663435+00-00.json",
+   "eval/reports/selection-attack-pluggy-2026-10-24T20-17-29.704909+00-00.json"
+  ],
+  "advice": [
+   "eval/reports/selection-advice-boltons-2026-10-24T21-33-22.569128+00-00.json",
+   "eval/reports/selection-advice-idna-2026-10-24T21-32-55.368322+00-00.json",
+   "eval/reports/selection-advice-more-itertools-2026-10-24T21-33-32.272886+00-00.json",
+   "eval/reports/selection-advice-pluggy-2026-10-24T21-33-51.585989+00-00.json"
+  ],
+  "holdout": [
+   "eval/reports/selection-mutants-tabulate-2026-10-24T12-40-34.475134+00-00.json",
+   "eval/reports/selection-replay-cachetools-2026-10-24T23-02-47.330419+00-00.json",
+   "eval/reports/selection-mutants-humanize-2026-10-24T12-40-35.597689+00-00.json",
+   "eval/reports/selection-mutants-sortedcontainers-2026-10-24T12-40-48.228844+00-00.json",
+   "eval/reports/selection-replay-pyparsing-2026-10-24T23-07-55.546173+00-00.json",
+   "eval/reports/selection-mutants-marshmallow-2026-10-24T12-40-38.810763+00-00.json",
+   "eval/reports/selection-mutants-werkzeug-2026-10-24T12-45-41.432845+00-00.json",
+   "eval/reports/selection-mutants-jsonschema-2026-10-24T12-40-43.520733+00-00.json",
+   "eval/reports/selection-mutants-lark-2026-10-24T12-40-44.181635+00-00.json",
+   "eval/reports/selection-replay-colorama-2026-10-24T23-02-55.398541+00-00.json",
+   "eval/reports/selection-replay-validators-2026-10-24T23-03-15.474449+00-00.json",
+   "eval/reports/selection-replay-glom-2026-10-24T23-03-30.767766+00-00.json",
+   "eval/reports/selection-replay-tomli-2026-10-24T23-03-45.473196+00-00.json",
+   "eval/reports/selection-mutants-tinydb-2026-10-24T12-40-47.273359+00-00.json",
+   "eval/reports/selection-replay-transitions-2026-10-24T23-05-22.267489+00-00.json",
+   "eval/reports/selection-replay-furl-2026-10-24T23-05-58.741830+00-00.json",
+   "eval/reports/selection-mutants-zipp-2026-10-24T03-44-12.163099+00-00.json",
+   "eval/reports/selection-replay-slugify-2026-10-24T23-06-22.250130+00-00.json",
+   "eval/reports/selection-replay-w3lib-2026-10-24T23-08-03.282144+00-00.json",
+   "eval/reports/selection-mutants-markdown-2026-10-24T04-07-55.415282+00-00.json",
+   "eval/reports/selection-replay-blinker-2026-10-24T23-08-03.539749+00-00.json",
+   "eval/reports/selection-mutants-tomlkit-2026-10-24T04-10-29.792050+00-00.json"
+  ],
+  "holdout_batch3": [
+   "eval/reports/selection-mutants-zipp-2026-10-24T03-44-12.163099+00-00.json",
+   "eval/reports/selection-replay-slugify-2026-10-24T23-06-22.250130+00-00.json",
+   "eval/reports/selection-replay-w3lib-2026-10-24T23-08-03.282144+00-00.json",
+   "eval/reports/selection-mutants-markdown-2026-10-24T04-07-55.415282+00-00.json",
+   "eval/reports/selection-replay-blinker-2026-10-24T23-08-03.539749+00-00.json",
+   "eval/reports/selection-mutants-tomlkit-2026-10-24T04-10-29.792050+00-00.json"
+  ],
+  "swebench": [
+   "eval/reports/selection-swebench-astropy__astropy-2026-10-26T00-07-24.437173+00-00.json",
+   "eval/reports/selection-swebench-django__django-2026-10-26T00-40-15.125692+00-00.json",
+   "eval/reports/selection-swebench-matplotlib__matplotlib-2026-10-25T23-48-54.292490+00-00.json",
+   "eval/reports/selection-swebench-mwaskom__seaborn-2026-10-25T23-25-07.918974+00-00.json",
+   "eval/reports/selection-swebench-pallets__flask-2026-10-25T23-24-27.755090+00-00.json",
+   "eval/reports/selection-swebench-psf__requests-2026-10-25T23-25-20.729595+00-00.json",
+   "eval/reports/selection-swebench-pydata__xarray-2026-10-25T23-36-13.337507+00-00.json",
+   "eval/reports/selection-swebench-pylint-dev__pylint-2026-10-25T23-28-51.171367+00-00.json",
+   "eval/reports/selection-swebench-pytest-dev__pytest-2026-10-25T23-29-46.521128+00-00.json",
+   "eval/reports/selection-swebench-scikit-learn__scikit-learn-2026-10-25T23-48-33.931866+00-00.json",
+   "eval/reports/selection-swebench-sphinx-doc__sphinx-2026-10-25T23-36-35.227323+00-00.json",
+   "eval/reports/selection-swebench-sympy__sympy-2026-10-26T01-09-19.629378+00-00.json"
+  ],
+  "testmon": [
+   "eval/reports/selection-testmon-attrs-2026-10-24T14-07-53.964897+00-00.json",
+   "eval/reports/selection-testmon-boltons-2026-10-24T14-05-44.016732+00-00.json",
+   "eval/reports/selection-testmon-click-2026-10-24T14-06-21.010316+00-00.json",
+   "eval/reports/selection-testmon-idna-2026-10-24T22-53-55.675930+00-00.json",
+   "eval/reports/selection-testmon-itsdangerous-2026-10-24T14-10-19.950392+00-00.json",
+   "eval/reports/selection-testmon-jinja-2026-10-24T14-08-58.332426+00-00.json",
+   "eval/reports/selection-testmon-markupsafe-2026-10-24T14-10-16.414841+00-00.json",
+   "eval/reports/selection-testmon-more-itertools-2026-10-24T23-08-52.432869+00-00.json",
+   "eval/reports/selection-testmon-pluggy-2026-10-24T14-09-24.376783+00-00.json",
+   "eval/reports/selection-testmon-sqlparse-2026-10-24T14-09-27.608042+00-00.json",
+   "eval/reports/selection-testmon-toolz-2026-10-24T14-09-52.032831+00-00.json",
+   "eval/reports/selection-testmon-cachetools-2026-10-24T14-11-07.152584+00-00.json",
+   "eval/reports/selection-testmon-pyparsing-2026-10-24T14-17-34.020578+00-00.json",
+   "eval/reports/selection-testmon-colorama-2026-10-24T14-11-27.995155+00-00.json",
+   "eval/reports/selection-testmon-validators-2026-10-24T14-11-59.639152+00-00.json",
+   "eval/reports/selection-testmon-glom-2026-10-24T14-12-37.746776+00-00.json",
+   "eval/reports/selection-testmon-tomli-2026-10-24T14-13-28.304918+00-00.json",
+   "eval/reports/selection-testmon-transitions-2026-10-24T14-14-40.401248+00-00.json",
+   "eval/reports/selection-testmon-furl-2026-10-24T14-16-29.871738+00-00.json",
+   "eval/reports/selection-testmon-slugify-2026-10-24T14-15-35.390434+00-00.json",
+   "eval/reports/selection-testmon-w3lib-2026-10-24T22-53-32.702281+00-00.json",
+   "eval/reports/selection-testmon-blinker-2026-10-24T14-16-40.890995+00-00.json"
+  ],
+  "shadow_dir": "eval/shadow-v2",
+  "shadow_stale_dir": "eval/shadow-stale",
+  "shadow_maps_dir": "eval/shadow-maps",
+  "agentic_scan": "eval/reports/agentic-test-scan-2026-10-25T05-49-52.484871+00-00.json",
+  "weakened": "eval/reports/weakened-study-2026-10-26T03-01-57.026284+00-00.json",
+  "ablation": "eval/reports/ablation-rules-2026-10-26T03-29-46.060776+00-00.json",
+  "holdout_first_run": [
+   "eval/reports/holdout-first-run/selection-mutants-validators-2026-10-24T12-39-30.439425+00-00.json"
+  ]
+ }
+}

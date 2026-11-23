@@ -1,0 +1,497 @@
+{
+  "generated_at": "2026-10-14T17:27:23.538251+00:00",
+  "provider": "openai-gpt-4o",
+  "provenance": {
+    "started_at": "2026-10-14T17:27:23.537799+00:00",
+    "git_sha": "3d412e74d30bc5a05b830dbefb608c00d1835392",
+    "code_dirty": true,
+    "code_diff_sha256": "5d98a6f06e92fde0",
+    "corpus": "full",
+    "corpus_fingerprint": "9764ba572d0b0e96",
+    "n_scenarios": 6,
+    "provider": "openai-gpt-4o",
+    "configured_model": "gpt-4o",
+    "response_models": [
+      "gpt-4o-2024-08-06"
+    ],
+    "python": "3.14.7",
+    "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+    "argv": [
+      "eval-run",
+      "--provider",
+      "openai",
+      "--model",
+      "gpt-4o",
+      "--corpus",
+      "full"
+    ]
+  },
+  "n_scenarios": 6,
+  "verdict_confusion": {
+    "true_positive_needs_review": 4,
+    "true_negative_auto_approve": 2,
+    "false_positive_needs_review": 0,
+    "false_negative_auto_approve": 0,
+    "accuracy": 1.0
+  },
+  "routing_agreement_rate": 1.0,
+  "repo_kind_accuracy": 1.0,
+  "classification_agreement_rate_mean": 0.9537037037037037,
+  "classification_verified_rate_mean": 0.9537037037037037,
+  "total_wall_seconds": 85.31,
+  "total_llm_tokens": 22624,
+  "total_llm_calls": 18,
+  "total_llm_errors": 0,
+  "total_demoted_to_fallback_layer": 5,
+  "total_guardrail_overrides": 0,
+  "coverage_failures": [],
+  "all_discovered_tests_ran": true,
+  "scenarios": [
+    {
+      "scenario": "clean-baseline",
+      "expected_verdict": "auto_approve",
+      "actual_verdict": "auto_approve",
+      "verdict_correct": true,
+      "layers": {
+        "states": {
+          "unit": "passed",
+          "property": "passed",
+          "trajectory": "pending",
+          "llm_judge": "pending",
+          "adversarial": "passed"
+        },
+        "expected_failing": [],
+        "actual_failing": [],
+        "correctly_caught": [],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "expected_repo_kind": "plain_service",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true,
+        "summary": "The repository name 'clean-baseline' suggests a plain service, so it is treated as such."
+      },
+      "triage_report": "Summary of Test Run for /clean-baseline\n\n- **Unit Layer**: \n  - All tests passed (7/7).\n  \n- **Property-based Layer**: \n  - All tests passed (4/4).\n  \n- **Trajectory Layer**: \n  - Not applicable (dark).\n  \n- **LLM-as-judge Layer**: \n  - Not applicable (dark).\n  \n- **Adversarial / Safety Layer**: \n  - All tests passed (7/7).\n\nOverall, 18 tests were executed across applicable layers with no failures or skips.",
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 0.9444444444444444,
+        "verified_rate": 0.9444444444444444,
+        "disagreements": [
+          {
+            "node_id": "tests/test_orders.py::test_add_item_then_get_item",
+            "llm_layer": "trajectory",
+            "heuristic_layer": "unit"
+          }
+        ],
+        "demoted_to_fallback_layer": [
+          "tests/test_orders.py::test_add_item_then_get_item"
+        ]
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 13.54,
+      "llm_usage": {
+        "calls": 3,
+        "errors": 0,
+        "prompt_tokens": 2017,
+        "completion_tokens": 1018,
+        "total_tokens": 3035
+      },
+      "totals": {
+        "passed": 18,
+        "failed": 0,
+        "skipped": 0,
+        "total": 18
+      },
+      "n_discovered": 18,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "stock-check-off-by-one",
+      "expected_verdict": "needs_human_review",
+      "actual_verdict": "needs_human_review",
+      "verdict_correct": true,
+      "layers": {
+        "states": {
+          "unit": "failed",
+          "property": "failed",
+          "trajectory": "pending",
+          "llm_judge": "pending",
+          "adversarial": "passed"
+        },
+        "expected_failing": [
+          "property",
+          "unit"
+        ],
+        "actual_failing": [
+          "property",
+          "unit"
+        ],
+        "correctly_caught": [
+          "property",
+          "unit"
+        ],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "expected_repo_kind": "plain_service",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true,
+        "summary": "The change fixes an off-by-one error in stock checking logic, which is typical for a plain service handling inventory management."
+      },
+      "triage_report": "**Summary of Test Run:**\n\n- **Unit Tests:**\n  - Passed: 6\n  - Failed: 1\n    - `tests/test_orders.py::test_order_exact_remaining_stock_succeeds`: Failed with `ValueError: insufficient stock`. This suggests the fix may not correctly handle edge cases where the order quantity matches the remaining stock exactly.\n\n- **Property-based Tests:**\n  - Passed: 3\n  - Failed: 1\n    - `tests/test_properties.py::test_property_any_valid_order_must_succeed`: Indicates a potential issue in the logic that should allow any valid order to succeed, possibly related to the off-by-one error fix.\n\n- **Trajectory Tests:** Not applicable (dark).\n\n- **LLM-as-judge Tests:** Not applicable (dark).\n\n- **Adversarial / Safety Tests:**\n  - Passed: 7\n\n**Overall Results:**\n- Total Passed: 16\n- Total Failed: 2\n\nThe failures suggest potential issues with handling edge cases in stock checking logic.",
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 0.9444444444444444,
+        "verified_rate": 0.9444444444444444,
+        "disagreements": [
+          {
+            "node_id": "tests/test_orders.py::test_add_item_then_get_item",
+            "llm_layer": "trajectory",
+            "heuristic_layer": "unit"
+          }
+        ],
+        "demoted_to_fallback_layer": [
+          "tests/test_orders.py::test_add_item_then_get_item"
+        ]
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 12.78,
+      "llm_usage": {
+        "calls": 3,
+        "errors": 0,
+        "prompt_tokens": 2196,
+        "completion_tokens": 1137,
+        "total_tokens": 3333
+      },
+      "totals": {
+        "passed": 16,
+        "failed": 2,
+        "skipped": 0,
+        "total": 18
+      },
+      "n_discovered": 18,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "stale-stock-bound-property-only",
+      "expected_verdict": "needs_human_review",
+      "actual_verdict": "needs_human_review",
+      "verdict_correct": true,
+      "layers": {
+        "states": {
+          "unit": "passed",
+          "property": "failed",
+          "trajectory": "pending",
+          "llm_judge": "pending",
+          "adversarial": "passed"
+        },
+        "expected_failing": [
+          "property"
+        ],
+        "actual_failing": [
+          "property"
+        ],
+        "correctly_caught": [
+          "property"
+        ],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "expected_repo_kind": "plain_service",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true,
+        "summary": "The change involves adding a new field to track original stock in an inventory management system, which is a plain service."
+      },
+      "triage_report": "**Summary of Test Run**\n\n- **Unit Layer**\n  - All tests passed: 7/7\n\n- **Property-based Layer**\n  - Passed: 3/4\n  - Failed: \n    - `tests/test_properties.py::test_property_stock_never_negative`: This failure suggests that there might be a scenario where the stock can become negative, which violates the expected property of stock management.\n\n- **Trajectory Layer**\n  - Not applicable (dark)\n\n- **LLM-as-judge Layer**\n  - Not applicable (dark)\n\n- **Adversarial / Safety Layer**\n  - All tests passed: 7/7\n\n**Overall Results**\n- Total: 17 passed, 1 failed, 0 skipped\n\nThe failure in the property-based layer indicates a potential issue with stock management logic, specifically ensuring stock levels do not drop below zero. Further investigation is needed to address this issue.",
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 0.9444444444444444,
+        "verified_rate": 0.9444444444444444,
+        "disagreements": [
+          {
+            "node_id": "tests/test_orders.py::test_add_item_then_get_item",
+            "llm_layer": "trajectory",
+            "heuristic_layer": "unit"
+          }
+        ],
+        "demoted_to_fallback_layer": [
+          "tests/test_orders.py::test_add_item_then_get_item"
+        ]
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 13.03,
+      "llm_usage": {
+        "calls": 3,
+        "errors": 0,
+        "prompt_tokens": 2178,
+        "completion_tokens": 1107,
+        "total_tokens": 3285
+      },
+      "totals": {
+        "passed": 17,
+        "failed": 1,
+        "skipped": 0,
+        "total": 18
+      },
+      "n_discovered": 18,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "name-length-bound-removed-adversarial-only",
+      "expected_verdict": "needs_human_review",
+      "actual_verdict": "needs_human_review",
+      "verdict_correct": true,
+      "layers": {
+        "states": {
+          "unit": "passed",
+          "property": "passed",
+          "trajectory": "pending",
+          "llm_judge": "pending",
+          "adversarial": "failed"
+        },
+        "expected_failing": [
+          "adversarial"
+        ],
+        "actual_failing": [
+          "adversarial"
+        ],
+        "correctly_caught": [
+          "adversarial"
+        ],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "expected_repo_kind": "plain_service",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true,
+        "summary": "The change modifies a field constraint in a data model, which is typical for a plain service."
+      },
+      "triage_report": "**Summary of Test Run Results**\n\n- **Unit Tests**: \n  - All tests passed (7/7).\n\n- **Property-based Tests**: \n  - All tests passed (4/4).\n\n- **Trajectory Tests**: \n  - Not applicable (dark).\n\n- **LLM-as-judge Tests**: \n  - Not applicable (dark).\n\n- **Adversarial / Safety Tests**: \n  - 6 tests passed, 1 test failed.\n  - **Failing Test**: `tests/test_adversarial.py::test_oversized_name_rejected`\n    - Issue: The test expected a rejection status code, but received a `201 Created` response instead.\n\n**Summary**: A total of 17 tests passed, 1 test failed, and no tests were skipped across applicable layers. The failure in the adversarial layer suggests that the oversized name constraint may not be enforced as expected.",
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 0.9444444444444444,
+        "verified_rate": 0.9444444444444444,
+        "disagreements": [
+          {
+            "node_id": "tests/test_orders.py::test_add_item_then_get_item",
+            "llm_layer": "trajectory",
+            "heuristic_layer": "unit"
+          }
+        ],
+        "demoted_to_fallback_layer": [
+          "tests/test_orders.py::test_add_item_then_get_item"
+        ]
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 11.39,
+      "llm_usage": {
+        "calls": 3,
+        "errors": 0,
+        "prompt_tokens": 2140,
+        "completion_tokens": 1110,
+        "total_tokens": 3250
+      },
+      "totals": {
+        "passed": 17,
+        "failed": 1,
+        "skipped": 0,
+        "total": 18
+      },
+      "n_discovered": 18,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "agenticproduct-pr1-regression",
+      "expected_verdict": "needs_human_review",
+      "actual_verdict": "needs_human_review",
+      "verdict_correct": true,
+      "layers": {
+        "states": {
+          "unit": "failed",
+          "property": "failed",
+          "trajectory": "pending",
+          "llm_judge": "pending",
+          "adversarial": "passed"
+        },
+        "expected_failing": [
+          "property",
+          "unit"
+        ],
+        "actual_failing": [
+          "property",
+          "unit"
+        ],
+        "correctly_caught": [
+          "property",
+          "unit"
+        ],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "expected_repo_kind": "plain_service",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true,
+        "summary": "The change involves a stock check logic adjustment in an order creation function, indicating a plain service without agentic behavior."
+      },
+      "triage_report": "**Summary of Test Run:**\n\n- **Unit Layer:**\n  - 6 tests passed, 1 test failed.\n  - **Failing Test:** `tests/test_orders.py::test_order_exact_remaining_stock_succeeds`\n    - **Error:** `ValueError: insufficient stock`\n    - **Indication:** The logic for handling exact stock levels may be incorrect, potentially causing order failures when stock is exactly matched.\n\n- **Property-based Layer:**\n  - 3 tests passed, 1 test failed.\n  - **Failing Test:** `tests/test_properties.py::test_property_any_valid_order_must_succeed`\n    - **Location:** `/private/var/folders/30/34gt5kz10l3d6g62w45ygl6r0000gn/T/agenticqa-workspaces/ws-4s2vc2s5/app.py:64`\n    - **Indication:** The property that any valid order should succeed is violated, suggesting potential issues with order validation or stock handling logic.\n\n- **Trajectory Layer:** Not applicable (dark).\n\n- **LLM-as-judge Layer:** Not applicable (dark).\n\n- **Adversarial / Safety Layer:**\n  - All 7 tests passed.\n\n**Overall Results:** 16 tests passed, 2 tests failed, 0 tests skipped.",
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 0.9444444444444444,
+        "verified_rate": 0.9444444444444444,
+        "disagreements": [
+          {
+            "node_id": "tests/test_orders.py::test_add_item_then_get_item",
+            "llm_layer": "trajectory",
+            "heuristic_layer": "unit"
+          }
+        ],
+        "demoted_to_fallback_layer": [
+          "tests/test_orders.py::test_add_item_then_get_item"
+        ]
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 14.74,
+      "llm_usage": {
+        "calls": 3,
+        "errors": 0,
+        "prompt_tokens": 2243,
+        "completion_tokens": 1201,
+        "total_tokens": 3444
+      },
+      "totals": {
+        "passed": 16,
+        "failed": 2,
+        "skipped": 0,
+        "total": 18
+      },
+      "n_discovered": 18,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "agenticproduct-pr5-restock-agent",
+      "expected_verdict": "auto_approve",
+      "actual_verdict": "auto_approve",
+      "verdict_correct": true,
+      "layers": {
+        "states": {
+          "unit": "passed",
+          "property": "passed",
+          "trajectory": "passed",
+          "llm_judge": "passed",
+          "adversarial": "passed"
+        },
+        "expected_failing": [],
+        "actual_failing": [],
+        "correctly_caught": [],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "agentic",
+        "expected_repo_kind": "agentic",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "llm_judge",
+          "property",
+          "trajectory",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "llm_judge",
+          "property",
+          "trajectory",
+          "unit"
+        ],
+        "agrees_with_heuristic": true,
+        "summary": "The change introduces a Restock Assistant agent, which is an agentic feature involving tool-calling and trajectory management, thus requiring all five pyramid layers including the agentic-only ones."
+      },
+      "triage_report": "**Summary of Test Run for Restock Assistant Agent**\n\n- **Unit Layer**\n  - Tests Run: 10\n  - Passed: 10\n  - Failed: 0\n\n- **Property-based Layer**\n  - Tests Run: 5\n  - Passed: 5\n  - Failed: 0\n\n- **Trajectory Layer**\n  - Tests Run: 5\n  - Passed: 5\n  - Failed: 0\n\n- **LLM-as-judge Layer**\n  - Tests Run: 4\n  - Passed: 4\n  - Failed: 0\n\n- **Adversarial / Safety Layer**\n  - Tests Run: 9\n  - Passed: 9\n  - Failed: 0\n\n**Overall Results**\n- Total Tests Run: 33\n- Total Passed: 33\n- Total Failed: 0\n- Total Skipped: 0\n\nAll layers executed successfully with no test failures, indicating that the Restock Assistant agent's functionality and safety measures are performing as expected.",
+      "classification": {
+        "n_tests": 33,
+        "agreement_rate": 1.0,
+        "verified_rate": 1.0,
+        "disagreements": [],
+        "demoted_to_fallback_layer": []
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 19.83,
+      "llm_usage": {
+        "calls": 3,
+        "errors": 0,
+        "prompt_tokens": 4455,
+        "completion_tokens": 1822,
+        "total_tokens": 6277
+      },
+      "totals": {
+        "passed": 33,
+        "failed": 0,
+        "skipped": 0,
+        "total": 33
+      },
+      "n_discovered": 33,
+      "coverage_ok": true
+    }
+  ]
+}

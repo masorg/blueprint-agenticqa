@@ -1,0 +1,38 @@
+{
+ "repo": "tkem/cachetools",
+ "number": 442,
+ "status": "ran",
+ "head": "e61d9f18584dd572ebc10c95c88a2e4026c56a5f",
+ "base": "be68aedd0e5ae7f803d541d189636cdfbc532d95",
+ "diff_bytes": 81975,
+ "n_tests": 338,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "docs/diagrams/condition-coordination.png",
+  "docs/diagrams/condition-coordination.svg",
+  "docs/index.rst"
+ ],
+ "n_changed": 3,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "docs/diagrams/condition-coordination.png",
+  "docs/diagrams/condition-coordination.svg",
+  "docs/index.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 4.23,
+ "seconds_selected": 0,
+ "wall_seconds": 24.1,
+ "project": "cachetools",
+ "image_code_sha": "efa91d9"
+}

@@ -1,0 +1,31 @@
+{
+ "order": 64,
+ "pr_id": 3277187585,
+ "agent": "Google_Jules",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 3,
+ "repo": "googleads/google-ads-python",
+ "number": 1017,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "e3d47bd2494feacc13d8b0ca0ab66c9521019dfc",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-kl5wbro4/tests/client_test.py'. | E   ModuleNotFoundError: No module named 'pyfakefs' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-kl5wbro4/tests/config_test.py'. | E   ModuleNotFoundError: No module named 'pyfakefs' | ImportError while i",
+  "layer_states": {},
+  "seconds": 6.5
+ },
+ "wall_seconds": 9.1,
+ "head_sha": "e3d47bd2494feacc13d8b0ca0ab66c9521019dfc"
+}

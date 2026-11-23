@@ -1,0 +1,31 @@
+{
+ "order": 32,
+ "pr_id": 3172177351,
+ "agent": "Cursor",
+ "merged": false,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "getsentry/sentry",
+ "number": 94178,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "d8434dce3c55ae96e1a55a492b5bd1b208f4548f",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 4): ImportError while loading conftest '/tmp/agenticqa-workspaces/ws-km3abh4q/tests/conftest.py'. | E   ModuleNotFoundError: No module named 'psutil'",
+  "layer_states": {},
+  "seconds": 5.1
+ },
+ "wall_seconds": 16.7,
+ "head_sha": "d8434dce3c55ae96e1a55a492b5bd1b208f4548f"
+}

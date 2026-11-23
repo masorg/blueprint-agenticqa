@@ -1,0 +1,42 @@
+{
+ "repo": "mahmoud/boltons",
+ "number": 555,
+ "status": "ran",
+ "head": "663303c972687a9aaf84e8785d599d5490364a19",
+ "base": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+ "diff_bytes": 2949,
+ "coverage_seconds": 8.0,
+ "coverage_files": 57,
+ "n_tests": 525,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "docs/ioutils.rst"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  "docs/ioutils.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 1.98,
+ "seconds_selected": 0,
+ "wall_seconds": 32.3,
+ "project": "boltons",
+ "image_code_sha": "a116495"
+}

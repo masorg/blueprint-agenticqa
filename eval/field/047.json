@@ -1,0 +1,31 @@
+{
+ "order": 47,
+ "pr_id": 3070783861,
+ "agent": "OpenAI_Codex",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+ "number": 46,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "4d9de1851f38cd3966360f1718d4a37af037a3d0",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "RuntimeError: No framework runner matched the target repository.",
+  "layer_states": {},
+  "seconds": 3.1
+ },
+ "wall_seconds": 4.9,
+ "head_sha": "4d9de1851f38cd3966360f1718d4a37af037a3d0"
+}

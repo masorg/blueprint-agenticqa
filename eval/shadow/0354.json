@@ -1,0 +1,36 @@
+{
+ "repo": "pyparsing/pyparsing",
+ "number": 699,
+ "status": "ran",
+ "head": "bffbfc051e23598a89be3d5d123e2f77f5f5c3e8",
+ "base": "f803ae834288032a700331977639fc49c62fcd7f",
+ "diff_bytes": 10009,
+ "n_tests": 2190,
+ "base_failing": 3,
+ "head_failing": 3,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "CHANGES",
+  "pyparsing/helpers.py",
+  "tests/test_unit.py"
+ ],
+ "n_changed": 3,
+ "selected": 2163,
+ "file_selected": 2163,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "CHANGES"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 44.29,
+ "seconds_selected": 44.29,
+ "wall_seconds": 115.6,
+ "project": "pyparsing",
+ "image_code_sha": "a874558"
+}

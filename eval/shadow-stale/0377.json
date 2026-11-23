@@ -1,0 +1,40 @@
+{
+ "repo": "un33k/python-slugify",
+ "number": 210,
+ "status": "ran",
+ "head": "16482c080fea6b0526c8518ca518c188fbd46f69",
+ "base": "f0010f94c853053daa5a5591cc67228b811c0e34",
+ "diff_bytes": 876,
+ "n_tests": 133,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "README.md"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": false,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  "README.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.26,
+ "seconds_selected": 0,
+ "wall_seconds": 21.6,
+ "project": "slugify",
+ "image_code_sha": "d9e3c20"
+}

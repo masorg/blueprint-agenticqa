@@ -1,0 +1,370 @@
+{
+ "generated_at": "2026-10-24T14:17:34.020578+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T14:17:34.203487+00:00",
+  "git_sha": "00ec4a783095e173853b5798aa640d836d1e4742",
+  "code_dirty": true,
+  "code_diff_sha256": "bcf368538bda6cf7",
+  "corpus": "selection-testmon:pyparsing",
+  "corpus_fingerprint": "738f02837387fffb",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-testmon",
+   "--project",
+   "pyparsing",
+   "--report",
+   "eval/reports/selection-mutants-pyparsing-2026-10-24T04-28-08.636267+00-00.json"
+  ]
+ },
+ "summary": {
+  "projects": [
+   "pyparsing"
+  ],
+  "mutants": 24,
+  "killed": 8,
+  "testmon_missed": {
+   "k": 0,
+   "n": 8,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.324
+   ]
+  },
+  "gate_missed": {
+   "k": 0,
+   "n": 8,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.324
+   ]
+  },
+  "testmon_tests_share_mean": 0.1281,
+  "gate_tests_share_mean": 0.8515,
+  "testmon_missed_ids": [],
+  "baseline_seconds": {
+   "pyparsing": 70.6
+  },
+  "per_project": {
+   "pyparsing": {
+    "mutants": 24,
+    "killed": 8,
+    "testmon_missed": 0,
+    "gate_missed": 0,
+    "testmon_share": 0.128,
+    "gate_share": 0.852
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "pyparsing",
+   "seed": 20261023,
+   "status": "ran",
+   "rows": [
+    {
+     "id": "pyparsing-000",
+     "total": 2185,
+     "killed_full": true,
+     "testmon_run": 5,
+     "testmon_failed": 5,
+     "testmon_seconds": 1.88,
+     "timed_out": false,
+     "gate_selected": 1958,
+     "gate_caught": true,
+     "seconds_full": 83.85
+    },
+    {
+     "id": "pyparsing-002",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 16,
+     "testmon_failed": 3,
+     "testmon_seconds": 3.11,
+     "timed_out": false,
+     "gate_selected": 2016,
+     "gate_caught": false,
+     "seconds_full": 91.26
+    },
+    {
+     "id": "pyparsing-003",
+     "total": 2185,
+     "killed_full": true,
+     "testmon_run": 372,
+     "testmon_failed": 27,
+     "testmon_seconds": 11.99,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": true,
+     "seconds_full": 96.51
+    },
+    {
+     "id": "pyparsing-004",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 122,
+     "testmon_failed": 3,
+     "testmon_seconds": 10.88,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": false,
+     "seconds_full": 84.54
+    },
+    {
+     "id": "pyparsing-005",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 1665,
+     "testmon_failed": 3,
+     "testmon_seconds": 68.41,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": false,
+     "seconds_full": 89.62
+    },
+    {
+     "id": "pyparsing-006",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 3,
+     "testmon_failed": 3,
+     "testmon_seconds": 1.35,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 84.54
+    },
+    {
+     "id": "pyparsing-008",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 21,
+     "testmon_failed": 9,
+     "testmon_seconds": 3.15,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": false,
+     "seconds_full": 86.31
+    },
+    {
+     "id": "pyparsing-009",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 9,
+     "testmon_failed": 3,
+     "testmon_seconds": 1.73,
+     "timed_out": false,
+     "gate_selected": 1955,
+     "gate_caught": false,
+     "seconds_full": 82.28
+    },
+    {
+     "id": "pyparsing-010",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 45,
+     "testmon_failed": 3,
+     "testmon_seconds": 9.78,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": false,
+     "seconds_full": 82.1
+    },
+    {
+     "id": "pyparsing-011",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 3,
+     "testmon_failed": 3,
+     "testmon_seconds": 1.3,
+     "timed_out": false,
+     "gate_selected": 19,
+     "gate_caught": false,
+     "seconds_full": 83.3
+    },
+    {
+     "id": "pyparsing-012",
+     "total": 2185,
+     "killed_full": true,
+     "testmon_run": 11,
+     "testmon_failed": 11,
+     "testmon_seconds": 4.92,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": true,
+     "seconds_full": 95.58
+    },
+    {
+     "id": "pyparsing-014",
+     "total": 2185,
+     "killed_full": true,
+     "testmon_run": 1193,
+     "testmon_failed": 33,
+     "testmon_seconds": 56.12,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": true,
+     "seconds_full": 81.82
+    },
+    {
+     "id": "pyparsing-015",
+     "total": 2185,
+     "killed_full": true,
+     "testmon_run": 31,
+     "testmon_failed": 11,
+     "testmon_seconds": 3.95,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": true,
+     "seconds_full": 71.47
+    },
+    {
+     "id": "pyparsing-016",
+     "total": 2185,
+     "killed_full": true,
+     "testmon_run": 110,
+     "testmon_failed": 15,
+     "testmon_seconds": 11.36,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": true,
+     "seconds_full": 74.59
+    },
+    {
+     "id": "pyparsing-018",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 1419,
+     "testmon_failed": 3,
+     "testmon_seconds": 63.19,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": false,
+     "seconds_full": 69.37
+    },
+    {
+     "id": "pyparsing-019",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 1154,
+     "testmon_failed": 3,
+     "testmon_seconds": 48.95,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": false,
+     "seconds_full": 87.68
+    },
+    {
+     "id": "pyparsing-020",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 286,
+     "testmon_failed": 3,
+     "testmon_seconds": 14.46,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": false,
+     "seconds_full": 65.42
+    },
+    {
+     "id": "pyparsing-021",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 57,
+     "testmon_failed": 3,
+     "testmon_seconds": 2.76,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": false,
+     "seconds_full": 76.25
+    },
+    {
+     "id": "pyparsing-022",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 45,
+     "testmon_failed": 3,
+     "testmon_seconds": 9.39,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": false,
+     "seconds_full": 78.68
+    },
+    {
+     "id": "pyparsing-023",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 3,
+     "testmon_failed": 3,
+     "testmon_seconds": 1.25,
+     "timed_out": false,
+     "gate_selected": 19,
+     "gate_caught": false,
+     "seconds_full": 73.87
+    },
+    {
+     "id": "pyparsing-024",
+     "total": 2185,
+     "killed_full": true,
+     "testmon_run": 9,
+     "testmon_failed": 9,
+     "testmon_seconds": 3.22,
+     "timed_out": false,
+     "gate_selected": 2000,
+     "gate_caught": true,
+     "seconds_full": 72.81
+    },
+    {
+     "id": "pyparsing-025",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 6,
+     "testmon_failed": 3,
+     "testmon_seconds": 1.67,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": false,
+     "seconds_full": 61.51
+    },
+    {
+     "id": "pyparsing-027",
+     "total": 2185,
+     "killed_full": false,
+     "testmon_run": 25,
+     "testmon_failed": 3,
+     "testmon_seconds": 3.04,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": false,
+     "seconds_full": 60.51
+    },
+    {
+     "id": "pyparsing-028",
+     "total": 2185,
+     "killed_full": true,
+     "testmon_run": 110,
+     "testmon_failed": 9,
+     "testmon_seconds": 7.61,
+     "timed_out": false,
+     "gate_selected": 2158,
+     "gate_caught": true,
+     "seconds_full": 57.0
+    }
+   ],
+   "baseline_seconds": 70.6,
+   "baseline_counts": {
+    "passed": 2155,
+    "failed": 3,
+    "error": 0,
+    "skipped": 27,
+    "deselected": 0
+   }
+  }
+ ]
+}

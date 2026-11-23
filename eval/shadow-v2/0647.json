@@ -1,0 +1,11 @@
+{
+ "repo": "tkem/cachetools",
+ "number": 382,
+ "status": "error",
+ "head": "6078d15a46377a9192a8132fd73234ced201f268",
+ "base": "211a498069d676b5aa12f83868590d73e16e4726",
+ "diff_bytes": 224712,
+ "detail": "CollectionError: tests could not be collected (pytest exited 2): E   AttributeError: module 'collections' has no attribute 'MutableMapping' | E   AttributeError: module 'collections' has no attribute 'MutableMapping' | E   AttributeError: module 'collections' has no attribute 'MutableMapping' | E   AttributeError: module 'collections' has no attribute 'MutableMapping' | E   AttributeError: module ",
+ "project": "cachetools",
+ "image_code_sha": "a116495"
+}

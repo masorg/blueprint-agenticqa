@@ -1,0 +1,36 @@
+{
+ "repo": "andialbrecht/sqlparse",
+ "number": 921,
+ "status": "ran",
+ "head": "b0d6870cdbfa46a3ecc228f7c61c14f4a80dc93d",
+ "base": "60cdc649726bf1bc4f1b336050560b336da715ec",
+ "diff_bytes": 3272,
+ "n_tests": 521,
+ "base_failing": 2,
+ "head_failing": 2,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "CHANGELOG",
+  "sqlparse/filters/reindent.py",
+  "tests/test_dcl_reindent.py"
+ ],
+ "n_changed": 3,
+ "selected": 521,
+ "file_selected": 521,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "CHANGELOG"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 1.48,
+ "seconds_selected": 1.48,
+ "wall_seconds": 46.7,
+ "project": "sqlparse",
+ "image_code_sha": "a874558"
+}

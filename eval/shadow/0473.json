@@ -1,0 +1,32 @@
+{
+ "repo": "pytoolz/toolz",
+ "number": 631,
+ "status": "ran",
+ "head": "cf0d4b1b9fa3b0d146e52b1c140afe5fcab978df",
+ "base": "568c2b8393973cd172a466546c9d95779c452438",
+ "diff_bytes": 1951,
+ "n_tests": 190,
+ "base_failing": 1,
+ "head_failing": 1,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "toolz/tests/test_dicttoolz.py"
+ ],
+ "n_changed": 1,
+ "selected": 51,
+ "file_selected": 51,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 0.32,
+ "seconds_selected": 0.01,
+ "wall_seconds": 20.8,
+ "project": "toolz",
+ "image_code_sha": "a874558"
+}

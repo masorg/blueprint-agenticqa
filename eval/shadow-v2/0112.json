@@ -1,0 +1,46 @@
+{
+ "repo": "pallets/click",
+ "number": 3867,
+ "status": "ran",
+ "head": "e87809d434994ca574bf10a08fb202bac2d0f6e2",
+ "base": "6aabf099bfdd4c1e75fe8d0e0d4241372b988ab1",
+ "diff_bytes": 1239,
+ "coverage_seconds": 58.7,
+ "coverage_files": 63,
+ "n_tests": 2086,
+ "base_failing": 25,
+ "head_failing": 26,
+ "introduced": [
+  "tests/test_choice_normalization_cases.py::test_choice_case_insensitive_lookup"
+ ],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "tests/test_choice_normalization_cases.py"
+ ],
+ "n_changed": 1,
+ "selected": 2,
+ "file_selected": 2,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 2,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [
+  "tests/test_choice_normalization_cases.py::test_choice_case_insensitive_lookup"
+ ],
+ "seconds_dyn": 0.0,
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [
+  "tests/test_choice_normalization_cases.py::test_choice_case_insensitive_lookup"
+ ],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 3.16,
+ "seconds_selected": 0.0,
+ "wall_seconds": 230.5,
+ "project": "click",
+ "image_code_sha": "a116495"
+}

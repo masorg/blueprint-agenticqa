@@ -1,0 +1,31 @@
+{
+ "order": 22,
+ "pr_id": 3307718349,
+ "agent": "Google_Jules",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "sunriseapps/imagesorcery-mcp",
+ "number": 5,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "bb2fdff58e72e71e6f830c5616b8c7e13eb87c03",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "RuntimeError: command timed out after 420.0s: /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/3013d4ce8edf6adb/.venv/bin/python pytest pytest-reportlog Pillow build easyocr fastmcp>=2.10.0 huggingface_hub imutils>=0.5.4 opencv-python>=4.5.0 pydantic>=2.0.0 pytest pytest-asyncio requests ruff toml tqdm twine ultralytics",
+  "layer_states": {},
+  "seconds": 420.1
+ },
+ "wall_seconds": 423.4,
+ "head_sha": "bb2fdff58e72e71e6f830c5616b8c7e13eb87c03"
+}

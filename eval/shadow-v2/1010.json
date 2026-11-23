@@ -1,0 +1,42 @@
+{
+ "repo": "pytoolz/toolz",
+ "number": 616,
+ "status": "ran",
+ "head": "214ea6d2b4d3949abc6ec18f2c25c98c8f9ee27e",
+ "base": "568c2b8393973cd172a466546c9d95779c452438",
+ "diff_bytes": 817,
+ "coverage_seconds": 4.6,
+ "coverage_files": 33,
+ "n_tests": 186,
+ "base_failing": 1,
+ "head_failing": 1,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/publish_pypi.yml"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  ".github/workflows/publish_pypi.yml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 0.14,
+ "seconds_selected": 0,
+ "wall_seconds": 23.2,
+ "project": "toolz",
+ "image_code_sha": "a116495"
+}

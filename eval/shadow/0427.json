@@ -1,0 +1,34 @@
+{
+ "repo": "hukkin/tomli",
+ "number": 323,
+ "status": "ran",
+ "head": "a471451eb6ee533c68ea0f5e1e7f4e7d6dceb22a",
+ "base": "eacf46ff608ed29868f5d0ad278d315d1e99869d",
+ "diff_bytes": 771,
+ "n_tests": 18,
+ "base_failing": 1,
+ "head_failing": 1,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "CHANGELOG.md"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "CHANGELOG.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 0.27,
+ "seconds_selected": 0,
+ "wall_seconds": 12.5,
+ "project": "tomli",
+ "image_code_sha": "a874558"
+}

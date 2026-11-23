@@ -1,0 +1,53 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 668,
+ "status": "ran",
+ "head": "04e6d3338131b7445f256753814edeb5e3428918",
+ "base": "2381ad0af1407344be21b06fdba668ada1da5dba",
+ "diff_bytes": 2696545,
+ "coverage_seconds": 40.7,
+ "coverage_files": 32,
+ "n_tests": 2565,
+ "base_failing": 6,
+ "head_failing": 6,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "Changelog.md",
+  "examples/Frequently asked questions.ipynb",
+  "examples/Graph MIxin Demo Nested.ipynb",
+  "examples/Graph MIxin Demo.ipynb",
+  "examples/Playground.ipynb",
+  "transitions/extensions/diagrams_graphviz.py",
+  "transitions/extensions/diagrams_pygraphviz.py"
+ ],
+ "n_changed": 7,
+ "selected": 2493,
+ "file_selected": 2493,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 3,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 1.07,
+ "out_of_scope": [
+  "examples/Frequently asked questions.ipynb",
+  "examples/Graph MIxin Demo Nested.ipynb",
+  "examples/Graph MIxin Demo.ipynb",
+  "examples/Playground.ipynb"
+ ],
+ "inert": [
+  "Changelog.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 23.34,
+ "seconds_selected": 23.18,
+ "wall_seconds": 116.9,
+ "project": "transitions",
+ "image_code_sha": "a116495"
+}

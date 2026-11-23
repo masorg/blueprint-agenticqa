@@ -1,0 +1,32 @@
+{
+ "repo": "pallets/itsdangerous",
+ "number": 441,
+ "status": "ran",
+ "head": "b6e142f2c477d6f9f292272567ea204bc07c5679",
+ "base": "672971d66a2ef9f85151e53283113f33d642dabd",
+ "diff_bytes": 541,
+ "n_tests": 297,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "full",
+ "reason": "a build or test configuration file changed: pyproject.toml",
+ "changed": [
+  "pyproject.toml"
+ ],
+ "n_changed": 1,
+ "selected": 297,
+ "file_selected": 297,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 55.1,
+ "seconds_selected": 55.1,
+ "wall_seconds": 66.0,
+ "project": "itsdangerous",
+ "image_code_sha": "a874558"
+}

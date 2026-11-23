@@ -1,0 +1,36 @@
+{
+ "repo": "un33k/python-slugify",
+ "number": 202,
+ "status": "ran",
+ "head": "bc502ec905c729cf1ed5fb2537b49e68ce6b11a5",
+ "base": "18a28dae8afbc3bd870fdcf45b0a2eafff787c92",
+ "diff_bytes": 2496,
+ "n_tests": 126,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".gitignore",
+  "AGENTS.md"
+ ],
+ "n_changed": 2,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  ".gitignore",
+  "AGENTS.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.83,
+ "seconds_selected": 0,
+ "wall_seconds": 17.0,
+ "project": "slugify",
+ "image_code_sha": "a874558"
+}

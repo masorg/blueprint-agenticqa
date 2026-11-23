@@ -1,0 +1,32 @@
+{
+ "repo": "python-attrs/attrs",
+ "number": 1633,
+ "status": "ran",
+ "head": "398ab46733cf7e89b4e4f11a86c29c355307d560",
+ "base": "b0c79abeae3f3af1f6de5e900e36d6367bc944e2",
+ "diff_bytes": 82987,
+ "n_tests": 1412,
+ "base_failing": 5,
+ "head_failing": 5,
+ "introduced": [],
+ "flaky": [],
+ "mode": "full",
+ "reason": "a build or test configuration file changed: uv.lock",
+ "changed": [
+  "uv.lock"
+ ],
+ "n_changed": 1,
+ "selected": 1412,
+ "file_selected": 1412,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 24.23,
+ "seconds_selected": 24.23,
+ "wall_seconds": 224.9,
+ "project": "attrs",
+ "image_code_sha": "efa91d9"
+}

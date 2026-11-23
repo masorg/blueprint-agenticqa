@@ -1,0 +1,430 @@
+{
+ "generated_at": "2026-10-24T14:11:07.152584+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T14:11:07.339150+00:00",
+  "git_sha": "50fbf59b28502473383bc103654a4e01a24b092b",
+  "code_dirty": true,
+  "code_diff_sha256": "1170fe19b521e300",
+  "corpus": "selection-testmon:cachetools",
+  "corpus_fingerprint": "d158b2fe64d1d1bb",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-testmon",
+   "--project",
+   "cachetools",
+   "--report",
+   "eval/reports/selection-mutants-cachetools-2026-10-24T03-34-50.452659+00-00.json"
+  ]
+ },
+ "summary": {
+  "projects": [
+   "cachetools"
+  ],
+  "mutants": 29,
+  "killed": 26,
+  "testmon_missed": {
+   "k": 0,
+   "n": 26,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.129
+   ]
+  },
+  "gate_missed": {
+   "k": 0,
+   "n": 26,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.129
+   ]
+  },
+  "testmon_tests_share_mean": 0.1167,
+  "gate_tests_share_mean": 0.4325,
+  "testmon_missed_ids": [],
+  "baseline_seconds": {
+   "cachetools": 5.1
+  },
+  "per_project": {
+   "cachetools": {
+    "mutants": 29,
+    "killed": 26,
+    "testmon_missed": 0,
+    "gate_missed": 0,
+    "testmon_share": 0.117,
+    "gate_share": 0.432
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "cachetools",
+   "seed": 20261023,
+   "status": "ran",
+   "rows": [
+    {
+     "id": "cachetools-000",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 14,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.61,
+     "timed_out": false,
+     "gate_selected": 135,
+     "gate_caught": true,
+     "seconds_full": 8.81
+    },
+    {
+     "id": "cachetools-001",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 14,
+     "testmon_failed": 14,
+     "testmon_seconds": 0.87,
+     "timed_out": false,
+     "gate_selected": 332,
+     "gate_caught": true,
+     "seconds_full": 8.84
+    },
+    {
+     "id": "cachetools-003",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.54,
+     "timed_out": false,
+     "gate_selected": 133,
+     "gate_caught": true,
+     "seconds_full": 7.59
+    },
+    {
+     "id": "cachetools-004",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 6,
+     "testmon_seconds": 0.52,
+     "timed_out": false,
+     "gate_selected": 36,
+     "gate_caught": true,
+     "seconds_full": 7.89
+    },
+    {
+     "id": "cachetools-005",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 112,
+     "testmon_failed": 2,
+     "testmon_seconds": 4.73,
+     "timed_out": false,
+     "gate_selected": 137,
+     "gate_caught": true,
+     "seconds_full": 8.17
+    },
+    {
+     "id": "cachetools-006",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 71,
+     "testmon_failed": 71,
+     "testmon_seconds": 2.58,
+     "timed_out": false,
+     "gate_selected": 332,
+     "gate_caught": true,
+     "seconds_full": 12.13
+    },
+    {
+     "id": "cachetools-007",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 5,
+     "testmon_seconds": 1.62,
+     "timed_out": false,
+     "gate_selected": 133,
+     "gate_caught": true,
+     "seconds_full": 8.19
+    },
+    {
+     "id": "cachetools-008",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.48,
+     "timed_out": false,
+     "gate_selected": 133,
+     "gate_caught": true,
+     "seconds_full": 8.23
+    },
+    {
+     "id": "cachetools-009",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 8,
+     "testmon_failed": 7,
+     "testmon_seconds": 0.54,
+     "timed_out": false,
+     "gate_selected": 36,
+     "gate_caught": true,
+     "seconds_full": 7.51
+    },
+    {
+     "id": "cachetools-010",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 112,
+     "testmon_failed": 3,
+     "testmon_seconds": 4.75,
+     "timed_out": false,
+     "gate_selected": 137,
+     "gate_caught": true,
+     "seconds_full": 7.37
+    },
+    {
+     "id": "cachetools-011",
+     "total": 338,
+     "killed_full": false,
+     "testmon_run": 24,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.58,
+     "timed_out": false,
+     "gate_selected": 148,
+     "gate_caught": false,
+     "seconds_full": 7.21
+    },
+    {
+     "id": "cachetools-012",
+     "total": 338,
+     "killed_full": false,
+     "testmon_run": 46,
+     "testmon_failed": 0,
+     "testmon_seconds": 2.66,
+     "timed_out": false,
+     "gate_selected": 133,
+     "gate_caught": false,
+     "seconds_full": 7.54
+    },
+    {
+     "id": "cachetools-013",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 77,
+     "testmon_failed": 5,
+     "testmon_seconds": 0.71,
+     "timed_out": false,
+     "gate_selected": 133,
+     "gate_caught": true,
+     "seconds_full": 8.7
+    },
+    {
+     "id": "cachetools-014",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.56,
+     "timed_out": false,
+     "gate_selected": 36,
+     "gate_caught": true,
+     "seconds_full": 7.7
+    },
+    {
+     "id": "cachetools-015",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 14,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.63,
+     "timed_out": false,
+     "gate_selected": 135,
+     "gate_caught": true,
+     "seconds_full": 8.75
+    },
+    {
+     "id": "cachetools-016",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 38,
+     "testmon_failed": 28,
+     "testmon_seconds": 0.79,
+     "timed_out": false,
+     "gate_selected": 332,
+     "gate_caught": true,
+     "seconds_full": 8.38
+    },
+    {
+     "id": "cachetools-017",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 46,
+     "testmon_failed": 2,
+     "testmon_seconds": 2.72,
+     "timed_out": false,
+     "gate_selected": 133,
+     "gate_caught": true,
+     "seconds_full": 7.67
+    },
+    {
+     "id": "cachetools-018",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 40,
+     "testmon_failed": 24,
+     "testmon_seconds": 1.72,
+     "timed_out": false,
+     "gate_selected": 133,
+     "gate_caught": true,
+     "seconds_full": 8.56
+    },
+    {
+     "id": "cachetools-019",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 6,
+     "testmon_seconds": 0.62,
+     "timed_out": false,
+     "gate_selected": 36,
+     "gate_caught": true,
+     "seconds_full": 8.3
+    },
+    {
+     "id": "cachetools-020",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 112,
+     "testmon_failed": 3,
+     "testmon_seconds": 4.78,
+     "timed_out": false,
+     "gate_selected": 137,
+     "gate_caught": true,
+     "seconds_full": 8.08
+    },
+    {
+     "id": "cachetools-021",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 14,
+     "testmon_failed": 3,
+     "testmon_seconds": 0.66,
+     "timed_out": false,
+     "gate_selected": 65,
+     "gate_caught": true,
+     "seconds_full": 9.03
+    },
+    {
+     "id": "cachetools-022",
+     "total": 338,
+     "killed_full": false,
+     "testmon_run": 7,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.54,
+     "timed_out": false,
+     "gate_selected": 133,
+     "gate_caught": false,
+     "seconds_full": 7.65
+    },
+    {
+     "id": "cachetools-023",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 77,
+     "testmon_failed": 44,
+     "testmon_seconds": 0.9,
+     "timed_out": false,
+     "gate_selected": 133,
+     "gate_caught": true,
+     "seconds_full": 6.5
+    },
+    {
+     "id": "cachetools-024",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.52,
+     "timed_out": false,
+     "gate_selected": 36,
+     "gate_caught": true,
+     "seconds_full": 7.94
+    },
+    {
+     "id": "cachetools-025",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 121,
+     "testmon_failed": 121,
+     "testmon_seconds": 3.19,
+     "timed_out": false,
+     "gate_selected": 338,
+     "gate_caught": true,
+     "seconds_full": 8.83
+    },
+    {
+     "id": "cachetools-026",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 71,
+     "testmon_failed": 71,
+     "testmon_seconds": 2.73,
+     "timed_out": false,
+     "gate_selected": 332,
+     "gate_caught": true,
+     "seconds_full": 11.12
+    },
+    {
+     "id": "cachetools-027",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 4,
+     "testmon_failed": 4,
+     "testmon_seconds": 0.58,
+     "timed_out": false,
+     "gate_selected": 133,
+     "gate_caught": true,
+     "seconds_full": 7.95
+    },
+    {
+     "id": "cachetools-028",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 77,
+     "testmon_failed": 34,
+     "testmon_seconds": 0.77,
+     "timed_out": false,
+     "gate_selected": 133,
+     "gate_caught": true,
+     "seconds_full": 8.81
+    },
+    {
+     "id": "cachetools-029",
+     "total": 338,
+     "killed_full": true,
+     "testmon_run": 8,
+     "testmon_failed": 7,
+     "testmon_seconds": 0.61,
+     "timed_out": false,
+     "gate_selected": 36,
+     "gate_caught": true,
+     "seconds_full": 7.52
+    }
+   ],
+   "baseline_seconds": 5.1,
+   "baseline_counts": {
+    "passed": 338,
+    "failed": 0,
+    "error": 0,
+    "skipped": 0,
+    "deselected": 0
+   }
+  }
+ ]
+}

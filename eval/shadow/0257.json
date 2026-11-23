@@ -1,0 +1,36 @@
+{
+ "repo": "pallets/jinja",
+ "number": 2268,
+ "status": "ran",
+ "head": "701c0fbc42923549d81eda9d4883329685cb7106",
+ "base": "5ef70112a1ff19c05324ff889dd30405b1002044",
+ "diff_bytes": 2804,
+ "n_tests": 912,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "CHANGES.rst",
+  "src/jinja2/filters.py",
+  "tests/test_filters.py"
+ ],
+ "n_changed": 3,
+ "selected": 912,
+ "file_selected": 912,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "CHANGES.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 1.67,
+ "seconds_selected": 1.67,
+ "wall_seconds": 77.3,
+ "project": "jinja",
+ "image_code_sha": "a874558"
+}

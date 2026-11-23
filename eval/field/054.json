@@ -1,0 +1,31 @@
+{
+ "order": 54,
+ "pr_id": 3342964412,
+ "agent": "Claude_Code",
+ "merged": true,
+ "says_tests_pass": true,
+ "n_commits": 3,
+ "repo": "BeehiveInnovations/zen-mcp-server",
+ "number": 247,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "09d6ba4eac61b1df4fff833098f604512f9558b0",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): E   AttributeError: 'Server' object has no attribute 'list_tools' | E   AttributeError: 'Server' object has no attribute 'list_tools' | E   AttributeError: 'Server' object has no attribute 'list_tools' | E   AttributeError: 'Server' object has no attribute 'list_tools' | E   AttributeError: 'Server' object has no attribute 'list_tool",
+  "layer_states": {},
+  "seconds": 18.9
+ },
+ "wall_seconds": 21.2,
+ "head_sha": "09d6ba4eac61b1df4fff833098f604512f9558b0"
+}

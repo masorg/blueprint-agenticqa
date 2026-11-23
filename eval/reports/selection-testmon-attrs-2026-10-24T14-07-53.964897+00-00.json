@@ -1,0 +1,370 @@
+{
+ "generated_at": "2026-10-24T14:07:53.964897+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T14:07:54.141941+00:00",
+  "git_sha": "50fbf59b28502473383bc103654a4e01a24b092b",
+  "code_dirty": true,
+  "code_diff_sha256": "9913368fbf59cca4",
+  "corpus": "selection-testmon:attrs",
+  "corpus_fingerprint": "26a7a744c89b9d5c",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-testmon",
+   "--project",
+   "attrs",
+   "--report",
+   "eval/reports/selection-replay-attrs-2026-10-24T03-29-11.670024+00-00.json"
+  ]
+ },
+ "summary": {
+  "projects": [
+   "attrs"
+  ],
+  "mutants": 24,
+  "killed": 21,
+  "testmon_missed": {
+   "k": 0,
+   "n": 21,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.155
+   ]
+  },
+  "gate_missed": {
+   "k": 0,
+   "n": 21,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.155
+   ]
+  },
+  "testmon_tests_share_mean": 0.1013,
+  "gate_tests_share_mean": 0.784,
+  "testmon_missed_ids": [],
+  "baseline_seconds": {
+   "attrs": 13.5
+  },
+  "per_project": {
+   "attrs": {
+    "mutants": 24,
+    "killed": 21,
+    "testmon_missed": 0,
+    "gate_missed": 0,
+    "testmon_share": 0.101,
+    "gate_share": 0.784
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "attrs",
+   "seed": 20261023,
+   "status": "ran",
+   "rows": [
+    {
+     "id": "attrs-000",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 5,
+     "testmon_seconds": 1.19,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-001",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 9,
+     "testmon_failed": 7,
+     "testmon_seconds": 1.42,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-002",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 29,
+     "testmon_failed": 5,
+     "testmon_seconds": 1.32,
+     "timed_out": false,
+     "gate_selected": 1387,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-003",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 28,
+     "testmon_failed": 28,
+     "testmon_seconds": 2.22,
+     "timed_out": false,
+     "gate_selected": 11,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-004",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 5,
+     "testmon_seconds": 1.46,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-005",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 1027,
+     "testmon_failed": 48,
+     "testmon_seconds": 11.64,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-006",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 38,
+     "testmon_failed": 37,
+     "testmon_seconds": 3.37,
+     "timed_out": false,
+     "gate_selected": 37,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-007",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 827,
+     "testmon_failed": 4,
+     "testmon_seconds": 10.35,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-008",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 6,
+     "testmon_seconds": 1.33,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-009",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 20,
+     "testmon_failed": 6,
+     "testmon_seconds": 1.37,
+     "timed_out": false,
+     "gate_selected": 1028,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-011",
+     "total": 1413,
+     "killed_full": false,
+     "testmon_run": 6,
+     "testmon_failed": 4,
+     "testmon_seconds": 1.24,
+     "timed_out": false,
+     "gate_selected": 81,
+     "gate_caught": false,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-012",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 9,
+     "testmon_failed": 5,
+     "testmon_seconds": 1.21,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-013",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 12,
+     "testmon_failed": 12,
+     "testmon_seconds": 1.46,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-014",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 29,
+     "testmon_failed": 13,
+     "testmon_seconds": 1.29,
+     "timed_out": false,
+     "gate_selected": 1387,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-015",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 28,
+     "testmon_failed": 6,
+     "testmon_seconds": 1.58,
+     "timed_out": false,
+     "gate_selected": 11,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-016",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 68,
+     "testmon_failed": 16,
+     "testmon_seconds": 2.87,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-017",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 265,
+     "testmon_failed": 224,
+     "testmon_seconds": 30.5,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-018",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 21,
+     "testmon_failed": 6,
+     "testmon_seconds": 2.19,
+     "timed_out": false,
+     "gate_selected": 37,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-019",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 834,
+     "testmon_failed": 103,
+     "testmon_seconds": 12.96,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-020",
+     "total": 1413,
+     "killed_full": false,
+     "testmon_run": 7,
+     "testmon_failed": 4,
+     "testmon_seconds": 1.34,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": false,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-021",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 86,
+     "testmon_failed": 72,
+     "testmon_seconds": 3.45,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-022",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 56,
+     "testmon_failed": 51,
+     "testmon_seconds": 1.72,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-023",
+     "total": 1413,
+     "killed_full": false,
+     "testmon_run": 9,
+     "testmon_failed": 4,
+     "testmon_seconds": 1.22,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": false,
+     "seconds_full": 16.376
+    },
+    {
+     "id": "attrs-024",
+     "total": 1413,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 7,
+     "testmon_seconds": 1.31,
+     "timed_out": false,
+     "gate_selected": 1413,
+     "gate_caught": true,
+     "seconds_full": 16.376
+    }
+   ],
+   "baseline_seconds": 13.5,
+   "baseline_counts": {
+    "passed": 1405,
+    "failed": 4,
+    "error": 0,
+    "skipped": 4,
+    "deselected": 0
+   }
+  }
+ ]
+}

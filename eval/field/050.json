@@ -1,0 +1,31 @@
+{
+ "order": 50,
+ "pr_id": 3158599292,
+ "agent": "Cursor",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 7,
+ "repo": "WorkflowAI/WorkflowAI",
+ "number": 509,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "bae3926c0a4a9c6c43fa550506c2e5a65adc7688",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 4): ImportError while loading conftest '/tmp/agenticqa-workspaces/ws-eorfjpav/api/conftest.py'. | E   ModuleNotFoundError: No module named 'pytest_asyncio'",
+  "layer_states": {},
+  "seconds": 3.0
+ },
+ "wall_seconds": 20.1,
+ "head_sha": "bae3926c0a4a9c6c43fa550506c2e5a65adc7688"
+}

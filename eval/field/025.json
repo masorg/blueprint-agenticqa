@@ -1,0 +1,31 @@
+{
+ "order": 25,
+ "pr_id": 3541610915,
+ "agent": "Copilot",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 3,
+ "repo": "SkBlaz/py3plex",
+ "number": 192,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "f77c310e20525e187ca0721dca63a688a48b3355",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-1ih_d3l_/tests/test_multiplex_properties.py'. | E   ModuleNotFoundError: No module named 'hypothesis' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-1ih_d3l_/tests/test_properties.py'. | E   ModuleNotFoundError: No module named 'hypothesis'",
+  "layer_states": {},
+  "seconds": 189.7
+ },
+ "wall_seconds": 202.3,
+ "head_sha": "f77c310e20525e187ca0721dca63a688a48b3355"
+}

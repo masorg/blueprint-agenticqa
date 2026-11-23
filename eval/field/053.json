@@ -1,0 +1,54 @@
+{
+ "order": 53,
+ "pr_id": 3070837303,
+ "agent": "OpenAI_Codex",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "jrkropp/open-webui-developer-toolkit",
+ "number": 37,
+ "status": "ran",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "086ccaa199cb4dae81756f5c4148f5b2ec7bd19b",
+  "state": "done",
+  "verdict": "auto_approve",
+  "completed": true,
+  "totals": {
+   "passed": 9,
+   "failed": 0,
+   "skipped": 0,
+   "total": 9
+  },
+  "failing": [],
+  "error": "",
+  "layer_states": {
+   "unit": "passed",
+   "property": "skipped",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 9.2
+ },
+ "base": {
+  "sha": "eeeca94504a5284b48babc07c8c8645986caa1ff",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-6nl8o4nb/tests/test_pipeline.py'. | E   ModuleNotFoundError: No module named 'fastapi' | ERROR tests/test_pipeline.py",
+  "layer_states": {},
+  "seconds": 1.4
+ },
+ "wall_seconds": 11.8,
+ "head_sha": "086ccaa199cb4dae81756f5c4148f5b2ec7bd19b",
+ "base_sha": "eeeca94504a5284b48babc07c8c8645986caa1ff"
+}

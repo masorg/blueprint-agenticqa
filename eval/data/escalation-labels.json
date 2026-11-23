@@ -1,0 +1,597 @@
+{
+ "rubric": {
+  "real_weakening": "the change removes, skips, or weakens tests (fewer assertions, skip/xfail) for behaviour that still exists, without equivalent replacement in the same diff.",
+  "moved_or_refactored": "the tests (or assertions) are moved, renamed, parametrised, or rewritten so that equivalent checks remain elsewhere in the same diff.",
+  "legit_removal": "tests are removed together with the feature/code they test, or a skip is a justified platform/version condition (e.g. skip on Windows, on a missing optional dependency) that does not hide a behaviour that the change touches.",
+  "detector_false_positive": "the detector's reason is wrong (e.g. nothing was actually removed).",
+  "real_gap": "a changed file that ships or affects behaviour (source code, C extension, package data, runtime config) is reached by no test, so the escalation is warranted.",
+  "non_shipping_noise": "the unreached files do not ship and cannot affect users (stray scripts, benchmarks, lint config like .flake8, media, task/assignment files, agent tooling like .claude/), so a narrower scope policy would avoid the escalation.",
+  "new_untested_test_like_file": "a new file that looks like a test but is outside the discovered suite (e.g., a test_*.py at the repo root not collected)."
+ },
+ "labelled_by": "assistant, from the diffs, 2026-10-26",
+ "W": [
+  {
+   "set": "shadow",
+   "repo": "tkem/cachetools",
+   "number": 447,
+   "detector": [
+    "tests/test_cachedmethod.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (new test_class_call_deferred_annotations, skipUnless Python >= 3.14)."
+  },
+  {
+   "set": "shadow",
+   "repo": "tkem/cachetools",
+   "number": 424,
+   "detector": [
+    "tests/test_cached.py: test test_decorator_attributes removed",
+    "tests/test_cached.py: test test_decorator_clear removed",
+    "tests/test_cached.py: 4 assertion(s) fewer",
+    "tests/test_cachedmethod.py: test test_autospec_no_warnings removed",
+    "tests/test_cachedmethod.py: skip or xfail added",
+    "tests/test_classmethod.py: test file deleted"
+   ],
+   "label": "legit_removal",
+   "note": "v8.0.0 branch drops @cached(cache=None) and deprecated @cachedmethod features, so NoneWrapperTest (test_decorator_attributes/clear) goes with them; test_classmethod.py moves into ClassMethodTest in test_cachedmethod.py (with a 3.13 skip it already had) and test_autospec_no_warnings is renamed test_autospec; mixed removal+move, labelled by the dominant removal."
+  },
+  {
+   "set": "shadow",
+   "repo": "pallets/click",
+   "number": 3880,
+   "detector": [
+    "tests/test_termui.py: test test_pager_shlex_split removed",
+    "tests/test_termui.py: skip or xfail added"
+   ],
+   "label": "moved_or_refactored",
+   "note": "test_pager_shlex_split is renamed test_pager_command_line_split (now calls _split_command_line), and the POSIX-rule tables get skipif(WIN) because a new Windows splitter is added with a matching Windows-only table test_pager_command_line_split_windows."
+  },
+  {
+   "set": "shadow",
+   "repo": "pallets/click",
+   "number": 3868,
+   "detector": [
+    "tests/test_termui.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (two new Windows-only editor tests with skipif(not WIN))."
+  },
+  {
+   "set": "shadow",
+   "repo": "pallets/click",
+   "number": 3857,
+   "detector": [
+    "tests/test_termui.py: skip or xfail added"
+   ],
+   "label": "legit_removal",
+   "note": "Existing POSIX-splitting tests (test_editor_path_normalization, test_editor_unclosed_quote) get skipif(WIN) because the change stops POSIX-splitting EDITOR on Windows, and the Windows table is rewritten for the new verbatim behaviour; a justified platform condition, though it touches the changed code path (could also be read as moved_or_refactored)."
+  },
+  {
+   "set": "shadow",
+   "repo": "pallets/itsdangerous",
+   "number": 436,
+   "detector": [
+    "tests/test_itsdangerous/test_url_safe.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (new test_max_age_is_rejected skips for timed serializers, which legitimately accept max_age)."
+  },
+  {
+   "set": "shadow",
+   "repo": "pallets/itsdangerous",
+   "number": 430,
+   "detector": [
+    "tests/test_itsdangerous/test_serializer.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (new test_loads_rejects_unexpected_kwargs skips for timed serializers)."
+  },
+  {
+   "set": "shadow",
+   "repo": "pallets/markupsafe",
+   "number": 512,
+   "detector": [
+    "tests/test_markupsafe.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (new t-string Template test, skipif Template is None, i.e. Python < 3.14)."
+  },
+  {
+   "set": "shadow",
+   "repo": "pyparsing/pyparsing",
+   "number": 694,
+   "detector": [
+    "tests/test_unit.py: test testInfixNotationWithNonOperators removed"
+   ],
+   "label": "moved_or_refactored",
+   "note": "testInfixNotationWithNonOperators is renamed testInfixNotationWithNoneOperators with the same body (typo fix)."
+  },
+  {
+   "set": "shadow",
+   "repo": "pyparsing/pyparsing",
+   "number": 677,
+   "detector": [
+    "tests/test_unit.py: test testInfixNotationWithNonOperators removed"
+   ],
+   "label": "moved_or_refactored",
+   "note": "testInfixNotationWithNonOperators is renamed testInfixNotationWithNoneOperators with the same body (typo fix)."
+  },
+  {
+   "set": "shadow",
+   "repo": "un33k/python-slugify",
+   "number": 198,
+   "detector": [
+    "tests/test_legacy.py: test test_max_length_rejects_bool removed",
+    "tests/test_legacy.py: 1 assertion(s) fewer",
+    "tox.ini: option that deselects or ignores tests added"
+   ],
+   "label": "legit_removal",
+   "note": "test_max_length_rejects_bool is dropped because the release moves up-front type validation to the modern path only (legacy default again accepts max_length=True), so the test's default-path behaviour is removed; note the modern-path TypeError has no new test in this diff, so this is the less gate-favourable choice over real_weakening. The tox.ini flag is a false hit: only lint --ignore codes and the pytest path moved to tests/."
+  },
+  {
+   "set": "shadow",
+   "repo": "un33k/python-slugify",
+   "number": 197,
+   "detector": [
+    "tests/test_legacy.py: test test_max_length_rejects_bool removed",
+    "tests/test_legacy.py: 1 assertion(s) fewer",
+    "tox.ini: option that deselects or ignores tests added"
+   ],
+   "label": "legit_removal",
+   "note": "Same content as #198: test_max_length_rejects_bool is dropped with the move of type validation to the modern path only (legacy default behaviour changed), and no modern-path replacement test is added; the tox.ini flag only matches flake8/pycodestyle --ignore codes."
+  },
+  {
+   "set": "shadow",
+   "repo": "un33k/python-slugify",
+   "number": 191,
+   "detector": [
+    "tox.ini: option that deselects or ignores tests added"
+   ],
+   "label": "detector_false_positive",
+   "note": "The only flagged change is tox.ini, where --ignore matches flake8/pycodestyle error-code options (lint), not pytest; the pytest command adds test_release.py rather than deselecting anything."
+  },
+  {
+   "set": "shadow",
+   "repo": "hukkin/tomli",
+   "number": 322,
+   "detector": [
+    "tests/test_misc.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (new test_lazy_import, skipUnless pure-Python 3.15+)."
+  },
+  {
+   "set": "shadow",
+   "repo": "hukkin/tomli",
+   "number": 295,
+   "detector": [
+    "tests/test_misc.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (new test_lazy_import, skipUnless Python 3.15+)."
+  },
+  {
+   "set": "shadow",
+   "repo": "pytoolz/toolz",
+   "number": 653,
+   "detector": [
+    "toolz/tests/test_functoolz.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (new functools.Placeholder tests, skipif Python < 3.14)."
+  },
+  {
+   "set": "shadow",
+   "repo": "pytoolz/toolz",
+   "number": 634,
+   "detector": [
+    "toolz/tests/test_functoolz.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (new test_compose_annotations_formats, skipif Python < 3.14 since annotationlib is 3.14+)."
+  },
+  {
+   "set": "shadow",
+   "repo": "python-attrs/attrs",
+   "number": 1619,
+   "detector": [
+    "tests/test_annotations.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (new test_forward_reference_in_generated_init, skipif Python < 3.14)."
+  },
+  {
+   "set": "shadow",
+   "repo": "python-attrs/attrs",
+   "number": 1603,
+   "detector": [
+    "tests/test_make.py: test test_match_args_pre_310 removed",
+    "tests/test_make.py: 1 assertion(s) fewer"
+   ],
+   "label": "legit_removal",
+   "note": "The PR drops Python 3.9 (changelog: 'Removed support for Python 3.9'), so the pre-3.10-only test_match_args_pre_310 is removed with the supported version."
+  },
+  {
+   "set": "shadow",
+   "repo": "python-attrs/attrs",
+   "number": 1598,
+   "detector": [
+    "tests/test_annotations.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (new test_init_forward_ref_with_future_annotations, skipif Python < 3.13)."
+  },
+  {
+   "set": "shadow",
+   "repo": "pallets-eco/blinker",
+   "number": 143,
+   "detector": [
+    "tests/test_saferef.py: test file deleted"
+   ],
+   "label": "legit_removal",
+   "note": "src/blinker/_saferef.py is deleted (replaced by the stdlib WeakMethod) and its tests/test_saferef.py is deleted with it."
+  },
+  {
+   "set": "shadow",
+   "repo": "pallets/click",
+   "number": 3827,
+   "detector": [
+    "tests/test_arguments.py: test test_option_explicit_name_keeps_its_case removed",
+    "tests/test_arguments.py: test test_parameter_name_is_an_identifier_or_deprecated removed",
+    "tests/test_arguments.py: test test_parameter_name_not_an_identifier_is_deprecated removed",
+    "tests/test_arguments.py: test test_parameter_name_transform removed",
+    "tests/test_arguments.py: 1 assertion(s) fewer",
+    "tests/test_deprecations.py: test test_normalized_explicit_name_not_deprecated removed",
+    "tests/test_deprecations.py: test test_unnormalized_explicit_name_deprecated removed",
+    "tests/test_deprecations.py: test test_unnormalized_name_on_a_refused_option_is_silent removed",
+    "tests/test_deprecations.py: test test_unusable_name_deprecated removed",
+    "tests/test_deprecations.py: test test_unusable_name_names_the_release_that_refuses_it removed",
+    "tests/test_deprecations.py: test test_usable_name_not_deprecated removed",
+    "tests/test_deprecations.py: 5 assertion(s) fewer",
+    "tests/test_options.py: test test_option_name_may_be_a_python_keyword removed",
+    "tests/test_options.py: test test_option_prompt_still_guards_against_a_nameless_option removed"
+   ],
+   "label": "legit_removal",
+   "note": "Click 9.0 turns the 8.6 deprecation of non-identifier/keyword parameter names into TypeError, so the deprecation-warning tests are removed with the deprecation and rewritten as TypeError tests (e.g. test_parameter_name_must_be_an_identifier, test_parameter_name_may_not_be_a_python_keyword); mixed removal+rewrite."
+  },
+  {
+   "set": "shadow",
+   "repo": "pallets/click",
+   "number": 3825,
+   "detector": [
+    "tests/test_utils/test_open_file.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (two new fchmod/fd tests with skipif WIN or no os.fchmod)."
+  },
+  {
+   "set": "shadow",
+   "repo": "tartley/colorama",
+   "number": 379,
+   "detector": [
+    "tox.ini: option that deselects or ignores tests added"
+   ],
+   "label": "detector_false_positive",
+   "note": "The flagged tox.ini line is a new mypy env running 'mypy.stubtest --ignore-missing-stub', which matches the --ignore pattern but deselects no tests."
+  },
+  {
+   "set": "shadow",
+   "repo": "gruns/furl",
+   "number": 165,
+   "detector": [
+    "tests/test_furl.py: 2 assertion(s) fewer"
+   ],
+   "label": "real_weakening",
+   "note": "Besides the intended change (invalid IPv6 now raises), the '# No side effects' assertions that host/port are unchanged after failed netloc assignments are deleted rather than updated to the new host value, and that behaviour still exists."
+  },
+  {
+   "set": "shadow",
+   "repo": "pallets/jinja",
+   "number": 2240,
+   "detector": [
+    "tests/test_compile.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (new test skips at runtime when the interpreter never trips compile(), an interpreter-dependent condition)."
+  },
+  {
+   "set": "shadow",
+   "repo": "more-itertools/more-itertools",
+   "number": 1265,
+   "detector": [
+    "tests/test_recipes.py: test test_deque_version removed"
+   ],
+   "label": "moved_or_refactored",
+   "note": "test_deque_version is renamed test_long_window_version with the same body, following the rename of _sliding_window_deque to _sliding_window_list."
+  },
+  {
+   "set": "shadow",
+   "repo": "hukkin/tomli",
+   "number": 292,
+   "detector": [
+    "tests/test_misc.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (new test_lazy_import, skipUnless Python 3.15+)."
+  },
+  {
+   "set": "shadow",
+   "repo": "pytoolz/toolz",
+   "number": 620,
+   "detector": [
+    "toolz/tests/test_compatibility.py: test file deleted"
+   ],
+   "label": "legit_removal",
+   "note": "toolz/compatibility.py (deprecated Python 2 shim) is deleted together with toolz/tests/test_compatibility.py."
+  },
+  {
+   "set": "shadow",
+   "repo": "pytransitions/transitions",
+   "number": 677,
+   "detector": [
+    "tests/test_core.py: test test_may_transition_with_auto_transitions removed",
+    "tests/test_experimental.py: test test_override_decorator removed",
+    "tests/test_graphviz.py: 1 assertion(s) fewer"
+   ],
+   "label": "legit_removal",
+   "note": "test_override_decorator goes with the removed expect_override feature ('remove expect override'), the graphviz 'digraph' assertion goes as graph engines are generalised (mermaid added), and test_may_transition_with_auto_transitions (may_to_X on a separate model) is removed while the adjacent machine-level may_to_X test remains; mixed, chosen over real_weakening as the less gate-favourable reading."
+  },
+  {
+   "set": "shadow",
+   "repo": "pytransitions/transitions",
+   "number": 671,
+   "detector": [
+    "tests/test_reuse.py: test test_reuse_prepare removed"
+   ],
+   "label": "real_weakening",
+   "note": "test_reuse_prepare (prepare callbacks on a reused nested machine) is deleted with no replacement while the PR rewrites how nested-machine events are copied in _add_machine_states, and prepare support still exists."
+  },
+  {
+   "set": "agent",
+   "repo": "robusta-dev/holmesgpt",
+   "number": 695,
+   "detector": [
+    "tests/core/test_todo_manager.py: test file deleted"
+   ],
+   "label": "legit_removal",
+   "note": "holmes/core/todo_manager.py (TodoListManager) is deleted and tests/core/test_todo_manager.py goes with it; note its formatting logic moves to the new todo_tasks_formatter.format_tasks with no test added for it in the diff."
+  },
+  {
+   "set": "agent",
+   "repo": "explodinggradients/ragas",
+   "number": 2344,
+   "detector": [
+    "tests/e2e/metrics_migration/test_answer_relevancy_migration.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "The skips are in a newly added e2e test file and fire only when the LLM factory or API key is missing (optional dependency); no existing test was skipped. In CI without keys these new tests never run."
+  },
+  {
+   "set": "agent",
+   "repo": "WorkflowAI/WorkflowAI",
+   "number": 509,
+   "detector": [
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_last_active_first_basic removed",
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_last_active_first_multiple_schemas removed",
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_last_active_first_stable_ordering removed",
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_last_active_first_with_none_values removed",
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_most_costly_first removed",
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_most_costly_first_all_zero removed",
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_most_runs_first removed",
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_most_runs_first_all_zero removed",
+    "api/api/routers/mcp/_utils/model_sorting_test.py: test test_sort_by_cheapest_first removed",
+    "api/api/routers/mcp/_utils/model_sorting_test.py: test test_sort_by_cheapest_first_same_cost removed",
+    "api/api/routers/mcp/_utils/model_sorting_test.py: test test_sort_by_latest_released_first removed",
+    "api/api/routers/mcp/_utils/model_sorting_test.py: test test_sort_by_latest_released_first_same_date removed",
+    "api/api/routers/mcp/_utils/model_sorting_test.py: test test_sort_by_smartest_first removed",
+    "api/api/routers/mcp/_utils/model_sorting_test.py: test test_sort_by_smartest_first_same_quality removed"
+   ],
+   "label": "moved_or_refactored",
+   "note": "Every removed sort test is renamed for the new field+order API (e.g. test_sort_by_most_costly_first -> test_sort_by_total_cost_usd_desc) and asc variants are added."
+  },
+  {
+   "set": "agent",
+   "repo": "graphistry/pygraphistry",
+   "number": 713,
+   "detector": [
+    "graphistry/tests/compute/test_call_operations_gpu.py: test test_chain_dag_with_gpu_calls removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_empty removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_multi_node_works removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_output_not_found removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_output_selection removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_remote_not_implemented removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_single_node_works removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_validates removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_via_gfql removed",
+    "graphistry/tests/compute/test_chain_let_gpu.py: test test_chain_dag_auto_detects_gpu removed",
+    "graphistry/tests/compute/test_chain_let_gpu.py: test test_chain_dag_engine_cudf removed",
+    "graphistry/tests/compute/test_chain_let_gpu.py: test test_chain_dag_with_cudf_edges removed"
+   ],
+   "label": "moved_or_refactored",
+   "note": "chain_dag is renamed chain_let and each test_chain_dag_* is renamed test_chain_let_* with the same checks."
+  },
+  {
+   "set": "agent",
+   "repo": "espnet/espnet",
+   "number": 6243,
+   "detector": [
+    "test/espnet2/bin/test_macos_mps_model.py: skip or xfail added"
+   ],
+   "label": "detector_false_positive",
+   "note": "skip/xfail condition is on a newly added test; no existing test was skipped or weakened (new test_macos_mps_model, skipif MPS is not available)."
+  }
+ ],
+ "U": [
+  {
+   "repo": "tkem/cachetools",
+   "number": 449,
+   "uncovered": [
+    "assignment_docs/setup_video.mp4",
+    "assignment_docs/test_cases_mian.xlsx"
+   ],
+   "label": "non_shipping_noise",
+   "note": "Only a video and an xlsx under assignment_docs/ are unreached; they are task files, not part of the package."
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 524,
+   "uncovered": [
+    "bench.py"
+   ],
+   "label": "non_shipping_noise",
+   "note": "bench.py is a benchmark script at the repo root and does not ship."
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 519,
+   "uncovered": [
+    "src/markupsafe/_speedups.c"
+   ],
+   "label": "real_gap",
+   "note": "The C speedups extension src/markupsafe/_speedups.c is rewritten (new escape lookup tables) and ships; Python coverage cannot see C so no test is mapped to it (the suite may run it, but the gate cannot show that)."
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 207,
+   "uncovered": [
+    ".claude/hooks/block_protected_edits.py",
+    ".claude/hooks/block_tests.py",
+    "check_task.py",
+    "results/baseline_1.diff",
+    "results/baseline_1.err",
+    "results/harness_1.diff",
+    "results/harness_1.err",
+    "run.sh",
+    "summarize.py"
+   ],
+   "label": "non_shipping_noise",
+   "note": "The unreached files are agent tooling (.claude/hooks), experiment scripts (check_task.py, run.sh, summarize.py) and results/ logs; none ship."
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 206,
+   "uncovered": [
+    "slugify/__version__.py"
+   ],
+   "label": "real_gap",
+   "note": "slugify/__version__.py ships and changes (9.1.2 -> 9.1.3); it is a version-string bump only, so a policy that treats version constants as inert would avoid this escalation."
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 194,
+   "uncovered": [
+    "test_add_uppercase_error.py"
+   ],
+   "label": "new_untested_test_like_file",
+   "note": "test_add_uppercase_error.py is a new test file at the repo root that the discovered suite does not collect; the source change in slugify/special.py is reached."
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 155,
+   "uncovered": [
+    "slugify/slugify.py"
+   ],
+   "label": "real_gap",
+   "note": "Core source slugify/slugify.py is refactored, and the gate collected 0 tests ('no tests ran'): this old revision keeps its suite in a root test.py that pytest does not discover, so nothing the gate ran reaches the changed code (CI ran test.py and passed)."
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 149,
+   "uncovered": [
+    "slugify/__version__.py",
+    "slugify/special.py",
+    "test.py"
+   ],
+   "label": "real_gap",
+   "note": "slugify/special.py (add_uppercase_char) and __version__.py ship and change, and the gate collected 0 tests because the suite is the root test.py that pytest does not discover; test.py is modified, not new."
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 148,
+   "uncovered": [
+    "slugify/special.py",
+    "test.py"
+   ],
+   "label": "real_gap",
+   "note": "slugify/special.py changes (early return removed from add_uppercase_char) and the gate collected 0 tests because the suite is the root test.py that pytest does not discover; test.py is modified, not new."
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 275,
+   "uncovered": [
+    ".flake8"
+   ],
+   "label": "non_shipping_noise",
+   "note": "Only .flake8 (lint config) is unreached."
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 274,
+   "uncovered": [
+    ".flake8"
+   ],
+   "label": "non_shipping_noise",
+   "note": "Only .flake8 (lint config) is unreached."
+  }
+ ],
+ "W_shadow_with_ci_not_failure": {
+  "note": "W-flagged shadow PRs whose CI passed; these are the W part of set U. In eval/shadow-v2 they carry gate_verdict auto_approve (the weakened-test check is not in those rows).",
+  "rows": [
+   {
+    "repo": "pallets/markupsafe",
+    "number": 512,
+    "ci_verdict": "success",
+    "shadow_v2_gate_verdict": "auto_approve"
+   },
+   {
+    "repo": "pyparsing/pyparsing",
+    "number": 694,
+    "ci_verdict": "success",
+    "shadow_v2_gate_verdict": "auto_approve"
+   },
+   {
+    "repo": "pyparsing/pyparsing",
+    "number": 677,
+    "ci_verdict": "success",
+    "shadow_v2_gate_verdict": "auto_approve"
+   },
+   {
+    "repo": "un33k/python-slugify",
+    "number": 198,
+    "ci_verdict": "success",
+    "shadow_v2_gate_verdict": "auto_approve"
+   },
+   {
+    "repo": "un33k/python-slugify",
+    "number": 197,
+    "ci_verdict": "success",
+    "shadow_v2_gate_verdict": "auto_approve"
+   },
+   {
+    "repo": "un33k/python-slugify",
+    "number": 191,
+    "ci_verdict": "success",
+    "shadow_v2_gate_verdict": "auto_approve"
+   },
+   {
+    "repo": "pallets-eco/blinker",
+    "number": 143,
+    "ci_verdict": "success",
+    "shadow_v2_gate_verdict": "auto_approve"
+   },
+   {
+    "repo": "pallets/jinja",
+    "number": 2240,
+    "ci_verdict": "success",
+    "shadow_v2_gate_verdict": "auto_approve"
+   },
+   {
+    "repo": "more-itertools/more-itertools",
+    "number": 1265,
+    "ci_verdict": "success",
+    "shadow_v2_gate_verdict": "auto_approve"
+   }
+  ]
+ },
+ "unfetchable": []
+}

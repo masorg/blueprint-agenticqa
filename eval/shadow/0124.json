@@ -1,0 +1,11 @@
+{
+ "repo": "pallets/click",
+ "number": 3854,
+ "status": "error",
+ "head": "21c454e55a66865487b993a68a0f377feb62a7dc",
+ "base": "6aabf099bfdd4c1e75fe8d0e0d4241372b988ab1",
+ "diff_bytes": 10372,
+ "detail": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-65sen6n3/tests/test_deprecations.py'. | E   StopIteration | E   importlib.metadata.PackageNotFoundError: No package metadata was found for click | ERROR tests/test_deprecations.py",
+ "project": "click",
+ "image_code_sha": "efa91d9"
+}

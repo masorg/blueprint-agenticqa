@@ -1,0 +1,13 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 729,
+ "status": "error",
+ "head": "00e8cb49d900f2c3353ab3faa8ce5d8dce4c8b0a",
+ "base": "af00abab233f98cfaf71c5497308ae56f6bd4c5b",
+ "diff_bytes": 33648,
+ "coverage_seconds": 7.0,
+ "coverage_error": "exit 1: ncel running transitions...\n=========================== short test summary info ============================\nFAILED tests/test_async.py::TestAsync::test_async_timeout - AssertionError: F...\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 83 passed in 4.93s\n",
+ "detail": "CollectionError: tests could not be collected (pytest exited 1): ",
+ "project": "transitions",
+ "image_code_sha": "a116495"
+}

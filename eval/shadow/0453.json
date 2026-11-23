@@ -1,0 +1,33 @@
+{
+ "repo": "pytoolz/toolz",
+ "number": 651,
+ "status": "ran",
+ "head": "525533c241fd49ce53ef15a067c550c2fff35ba6",
+ "base": "451af60dec590a6010e2babdbf391ea8f815122f",
+ "diff_bytes": 1901,
+ "n_tests": 195,
+ "base_failing": 1,
+ "head_failing": 1,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "toolz/functoolz.py",
+  "toolz/tests/test_functoolz.py"
+ ],
+ "n_changed": 2,
+ "selected": 195,
+ "file_selected": 195,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.35,
+ "seconds_selected": 0.35,
+ "wall_seconds": 25.0,
+ "project": "toolz",
+ "image_code_sha": "a874558"
+}

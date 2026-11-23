@@ -1,0 +1,1849 @@
+{
+ "generated_at": "2026-10-14T20:52:25.318080+00:00",
+ "router": "mistral-mistral-large-latest",
+ "masked_repo_name": false,
+ "provenance": {
+  "started_at": "2026-10-14T20:52:25.429371+00:00",
+  "git_sha": "382768e9526d968260cff82ecd71cc496df2a89f",
+  "code_dirty": false,
+  "code_diff_sha256": null,
+  "corpus": "routing-set:routing-set.json",
+  "corpus_fingerprint": "147615a9f26dab0c",
+  "n_scenarios": 1,
+  "provider": "mistral-mistral-large-latest",
+  "configured_model": null,
+  "response_models": [
+   "mistral-large-latest"
+  ],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "route-eval",
+   "--concurrency",
+   "1",
+   "--provider",
+   "mistral",
+   "--model",
+   "mistral-large-latest"
+  ],
+  "llm_calls": {
+   "calls": 144,
+   "errors": 0,
+   "prompt_tokens": 216548,
+   "completion_tokens": 34736,
+   "total_tokens": 251284
+  }
+ },
+ "summary": {
+  "n": 144,
+  "accuracy": 0.9027777777777778,
+  "agentic_recall": 0.8055555555555556,
+  "plain_recall": 1.0,
+  "overall": {
+   "k": 130,
+   "n": 144,
+   "rate": 0.9027777777777778,
+   "ci95": [
+    0.843,
+    0.941
+   ]
+  },
+  "clear_repos_only": {
+   "k": 116,
+   "n": 120,
+   "rate": 0.9666666666666667,
+   "ci95": [
+    0.917,
+    0.987
+   ]
+  },
+  "agentic_clear": {
+   "k": 44,
+   "n": 48,
+   "rate": 0.9166666666666666,
+   "ci95": [
+    0.804,
+    0.967
+   ]
+  },
+  "touches_source": {
+   "k": 75,
+   "n": 83,
+   "rate": 0.9036144578313253,
+   "ci95": [
+    0.821,
+    0.95
+   ]
+  },
+  "no_source_change": {
+   "k": 55,
+   "n": 61,
+   "rate": 0.9016393442622951,
+   "ci95": [
+    0.802,
+    0.954
+   ]
+  },
+  "agentic_touches_source": {
+   "k": 33,
+   "n": 41,
+   "rate": 0.8048780487804879,
+   "ci95": [
+    0.66,
+    0.898
+   ]
+  },
+  "by_repo": {
+   "Significant-Gravitas/AutoGPT": {
+    "k": 7,
+    "n": 8,
+    "rate": 0.875,
+    "ci95": [
+     0.529,
+     0.978
+    ]
+   },
+   "celery/celery": {
+    "k": 8,
+    "n": 8,
+    "rate": 1.0,
+    "ci95": [
+     0.676,
+     1.0
+    ]
+   },
+   "crewAIInc/crewAI": {
+    "k": 8,
+    "n": 8,
+    "rate": 1.0,
+    "ci95": [
+     0.676,
+     1.0
+    ]
+   },
+   "deepset-ai/haystack": {
+    "k": 3,
+    "n": 8,
+    "rate": 0.375,
+    "ci95": [
+     0.137,
+     0.694
+    ]
+   },
+   "huggingface/smolagents": {
+    "k": 6,
+    "n": 8,
+    "rate": 0.75,
+    "ci95": [
+     0.409,
+     0.929
+    ]
+   },
+   "langchain-ai/langchain": {
+    "k": 6,
+    "n": 8,
+    "rate": 0.75,
+    "ci95": [
+     0.409,
+     0.929
+    ]
+   },
+   "langchain-ai/langgraph": {
+    "k": 8,
+    "n": 8,
+    "rate": 1.0,
+    "ci95": [
+     0.676,
+     1.0
+    ]
+   },
+   "openai/openai-agents-python": {
+    "k": 8,
+    "n": 8,
+    "rate": 1.0,
+    "ci95": [
+     0.676,
+     1.0
+    ]
+   },
+   "pallets/click": {
+    "k": 8,
+    "n": 8,
+    "rate": 1.0,
+    "ci95": [
+     0.676,
+     1.0
+    ]
+   },
+   "pallets/flask": {
+    "k": 8,
+    "n": 8,
+    "rate": 1.0,
+    "ci95": [
+     0.676,
+     1.0
+    ]
+   },
+   "psf/requests": {
+    "k": 8,
+    "n": 8,
+    "rate": 1.0,
+    "ci95": [
+     0.676,
+     1.0
+    ]
+   },
+   "pydantic/pydantic-ai": {
+    "k": 7,
+    "n": 8,
+    "rate": 0.875,
+    "ci95": [
+     0.529,
+     0.978
+    ]
+   },
+   "pytest-dev/pytest": {
+    "k": 8,
+    "n": 8,
+    "rate": 1.0,
+    "ci95": [
+     0.676,
+     1.0
+    ]
+   },
+   "python-attrs/attrs": {
+    "k": 8,
+    "n": 8,
+    "rate": 1.0,
+    "ci95": [
+     0.676,
+     1.0
+    ]
+   },
+   "run-llama/llama_index": {
+    "k": 5,
+    "n": 8,
+    "rate": 0.625,
+    "ci95": [
+     0.306,
+     0.863
+    ]
+   },
+   "sqlalchemy/sqlalchemy": {
+    "k": 8,
+    "n": 8,
+    "rate": 1.0,
+    "ci95": [
+     0.676,
+     1.0
+    ]
+   },
+   "tiangolo/fastapi": {
+    "k": 8,
+    "n": 8,
+    "rate": 1.0,
+    "ci95": [
+     0.676,
+     1.0
+    ]
+   },
+   "urllib3/urllib3": {
+    "k": 8,
+    "n": 8,
+    "rate": 1.0,
+    "ci95": [
+     0.676,
+     1.0
+    ]
+   }
+  }
+ },
+ "samples": [
+  {
+   "repo": "langchain-ai/langgraph",
+   "sha": "36a505ac65e956da09e93cc753609635a511047e",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 8,
+   "diff_chars": 11997
+  },
+  {
+   "repo": "langchain-ai/langgraph",
+   "sha": "3b969324dbf1e52db4c1797850cb7c83e137ff69",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 1536
+  },
+  {
+   "repo": "langchain-ai/langgraph",
+   "sha": "a4157ef280b236aecc331a7a17d7695d9e0e95e9",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 1498
+  },
+  {
+   "repo": "langchain-ai/langgraph",
+   "sha": "b42e83780f9e2ea5f8679ed33055c7840744e0c4",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 1473
+  },
+  {
+   "repo": "langchain-ai/langgraph",
+   "sha": "bdb323efbbecdf9e417f8928471db4d9877bf332",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 22082
+  },
+  {
+   "repo": "langchain-ai/langgraph",
+   "sha": "ce6c8b2410f9921d379c8fe8ea8087d1934c07a9",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 4,
+   "diff_chars": 1429
+  },
+  {
+   "repo": "langchain-ai/langgraph",
+   "sha": "eb6acf9c8be9bde289a8030db1d448fc11766ae9",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 1512
+  },
+  {
+   "repo": "langchain-ai/langgraph",
+   "sha": "f75add0ee964eae212ad4bbee8214fd910944681",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 1480
+  },
+  {
+   "repo": "huggingface/smolagents",
+   "sha": "227ef5e49ddd82339295939072f0223249aa8d38",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 626
+  },
+  {
+   "repo": "huggingface/smolagents",
+   "sha": "418ba00927ed59916bb500705b27f5c0f55b15d4",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 6,
+   "diff_chars": 3592
+  },
+  {
+   "repo": "huggingface/smolagents",
+   "sha": "526069c1ead958b36d9fd09a6b1ef37f68ed6ade",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 2,
+   "diff_chars": 2402
+  },
+  {
+   "repo": "huggingface/smolagents",
+   "sha": "6cfdf12ee5e77443049177b274b13cf935b0367e",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 3,
+   "diff_chars": 1863
+  },
+  {
+   "repo": "huggingface/smolagents",
+   "sha": "c30b115286e000e98711fae5e85993547b73d826",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 469
+  },
+  {
+   "repo": "huggingface/smolagents",
+   "sha": "e3a5b8994b301983b91c0325546e9dc82eab8cf0",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 8344
+  },
+  {
+   "repo": "huggingface/smolagents",
+   "sha": "e8b988d0a33ae2f0ca6e53a111fd21bc1aed42f3",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 381
+  },
+  {
+   "repo": "huggingface/smolagents",
+   "sha": "fcc81e9999dbfadfab04e00e2d9201c4bb7eefc8",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 6,
+   "diff_chars": 3964
+  },
+  {
+   "repo": "openai/openai-agents-python",
+   "sha": "0ffa36840cb812488738f6fc5be3d3a1f51397b7",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 2,
+   "diff_chars": 2759
+  },
+  {
+   "repo": "openai/openai-agents-python",
+   "sha": "465860be911733ca58443bb1cc8e7d67ee6c0044",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 23,
+   "diff_chars": 112074
+  },
+  {
+   "repo": "openai/openai-agents-python",
+   "sha": "4fde807f1fa6a79b6bc9332f10947bbced117349",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 2,
+   "diff_chars": 4173
+  },
+  {
+   "repo": "openai/openai-agents-python",
+   "sha": "59d860ffc54b018f5fc145b5ca48d4f93aa6f175",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 346
+  },
+  {
+   "repo": "openai/openai-agents-python",
+   "sha": "80e1baaefdfff291b3d7e55987219107c9736d80",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 14,
+   "diff_chars": 47910
+  },
+  {
+   "repo": "openai/openai-agents-python",
+   "sha": "81fe6ab348d30d051e2c36d65882e57ec4d21e3c",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 28360
+  },
+  {
+   "repo": "openai/openai-agents-python",
+   "sha": "848ba479a3d125ca748b08d14302671419ee9c85",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 17828
+  },
+  {
+   "repo": "openai/openai-agents-python",
+   "sha": "fc2be56cb0876588a1ed279642c85397dfa6ec30",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 4,
+   "diff_chars": 7743
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "sha": "5d4851eac797cafc45b726f65747fe2c9520fc42",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 10,
+   "diff_chars": 16980
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "sha": "7d2437cf85af0321d1c2511e891d51be66a785e5",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 9,
+   "diff_chars": 3577
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "sha": "906cd9769d7e2125485bbc09e8d8ef5cb1c29805",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 12,
+   "diff_chars": 20808
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "sha": "b5e23a87f24798c1d60e14c78ea5ce95e9fbdd7e",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 4,
+   "diff_chars": 24811
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "sha": "bfe8df44710db6b2325bad2e4a90d606bad117bf",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 9,
+   "diff_chars": 3555
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "sha": "c06043f7e8a9c130117beb2a21a306c02af293da",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 5,
+   "diff_chars": 9468
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "sha": "da4daadba0e5049abc00fee8bc31b8b8019c60dd",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 7465
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "sha": "ee4f8532705a0cddba502ebb7ad071dabc2a65b2",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 64,
+   "diff_chars": 200000
+  },
+  {
+   "repo": "pydantic/pydantic-ai",
+   "sha": "58988b4799e98a87e63c2e9c139059a356caea5c",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 14,
+   "diff_chars": 51583
+  },
+  {
+   "repo": "pydantic/pydantic-ai",
+   "sha": "68252f1904d0b73ddd859db20b5f5a2252b5c0ca",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 16,
+   "diff_chars": 70679
+  },
+  {
+   "repo": "pydantic/pydantic-ai",
+   "sha": "84146573e8ad6c4972ed8da624b70026dc4860e3",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 4,
+   "diff_chars": 9399
+  },
+  {
+   "repo": "pydantic/pydantic-ai",
+   "sha": "8a73c92827deac757a1330d27126edcd06f705e0",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 5,
+   "diff_chars": 62887
+  },
+  {
+   "repo": "pydantic/pydantic-ai",
+   "sha": "c0c2fce5a83e3f5c44e962247a4415477d9ac6e1",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 2,
+   "diff_chars": 3544
+  },
+  {
+   "repo": "pydantic/pydantic-ai",
+   "sha": "cfc19d4d7e726e4e358052c2d25a62f5e1772794",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 10,
+   "diff_chars": 38276
+  },
+  {
+   "repo": "pydantic/pydantic-ai",
+   "sha": "d07fd5fb2c264386a05943dad49042d4ed937091",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 15,
+   "diff_chars": 103094
+  },
+  {
+   "repo": "pydantic/pydantic-ai",
+   "sha": "fbd2beb0b549dcfa2e0bca3a2ac549093e51ea64",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 9,
+   "diff_chars": 88871
+  },
+  {
+   "repo": "Significant-Gravitas/AutoGPT",
+   "sha": "16c7bc5a575b9f7f74c126bd0ce74928ca9276bb",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 7,
+   "diff_chars": 14412
+  },
+  {
+   "repo": "Significant-Gravitas/AutoGPT",
+   "sha": "2254aa810424ef796b73bb015ecb0f864477f631",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 1,
+   "diff_chars": 562
+  },
+  {
+   "repo": "Significant-Gravitas/AutoGPT",
+   "sha": "4109de474f920aec5e344a9d95878050cbf46f02",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 20,
+   "diff_chars": 37115
+  },
+  {
+   "repo": "Significant-Gravitas/AutoGPT",
+   "sha": "448a85c9b584451b742acbaefd1751610896ec2b",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 26,
+   "diff_chars": 88541
+  },
+  {
+   "repo": "Significant-Gravitas/AutoGPT",
+   "sha": "64f832386e60f6596270d094502452ae1b4fc757",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 17,
+   "diff_chars": 24277
+  },
+  {
+   "repo": "Significant-Gravitas/AutoGPT",
+   "sha": "70928bb946246472485bec2d3f7867f59fc3a9b6",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 2,
+   "diff_chars": 5076
+  },
+  {
+   "repo": "Significant-Gravitas/AutoGPT",
+   "sha": "b2d39cab87f2b0be97b36ffe736f7ccf3b2e4a1c",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 56,
+   "diff_chars": 200000
+  },
+  {
+   "repo": "Significant-Gravitas/AutoGPT",
+   "sha": "d52b5adcd2dc9b0001532809fc35585a5bb78fa7",
+   "label": "agentic",
+   "ambiguous": false,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 96,
+   "diff_chars": 200000
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "sha": "026c3da2b615abe52f8446e37de460b844d07a43",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 2950
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "sha": "0f1893147aaacc492d290ce6cedc382315986f94",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 1985
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "sha": "1de100f27835a1a51d4db2a4c1be71a41f892ccc",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 50,
+   "diff_chars": 200000
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "sha": "234255c1c7427b5ed6dc505abad41ddfa6c9ff8f",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 5,
+   "diff_chars": 33077
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "sha": "554136ee21894391609ab7edb602be967e1d1435",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "agentic",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 3631
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "sha": "789c6abdc23dc32d7aa22c9648fc7e2d7a3d6c36",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "agentic",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 1608
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "sha": "7e9c916c7ec98e1930731060bd9cd36c9719c354",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 4,
+   "diff_chars": 8247
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "sha": "f03de61f266298723a058edae8cd7e869f395ca9",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 1,
+   "diff_chars": 1109
+  },
+  {
+   "repo": "run-llama/llama_index",
+   "sha": "20dffc62d5310cc3bb0ef111dfc6ed9c403e0dd8",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 1,
+   "diff_chars": 2331
+  },
+  {
+   "repo": "run-llama/llama_index",
+   "sha": "30e759af1f0ff1f4c062bc13f90c7236fae06c65",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 4,
+   "diff_chars": 7009
+  },
+  {
+   "repo": "run-llama/llama_index",
+   "sha": "4e4b2b74d5599b1d3bd7bb0f1d51eba6469671f9",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 2,
+   "diff_chars": 4954
+  },
+  {
+   "repo": "run-llama/llama_index",
+   "sha": "56beedf959cbf6356b0a8f5a4f468d066bb5b91f",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 4,
+   "diff_chars": 125613
+  },
+  {
+   "repo": "run-llama/llama_index",
+   "sha": "8a6e8e976079fa32461a7e45b93e3904e471a852",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 4875
+  },
+  {
+   "repo": "run-llama/llama_index",
+   "sha": "a847dee2db2a38316782292687e4259b6b0ad82c",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 2,
+   "diff_chars": 5364
+  },
+  {
+   "repo": "run-llama/llama_index",
+   "sha": "b13d30c362bd2a74edff98b12c3249a29181f643",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 1354
+  },
+  {
+   "repo": "run-llama/llama_index",
+   "sha": "d8021225eb7e7b276d5ceb476b0a4650240f27f8",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 3308
+  },
+  {
+   "repo": "deepset-ai/haystack",
+   "sha": "01b143a6c5e6fc3e804beb2f4ca6c87e916d754f",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 16,
+   "diff_chars": 51964
+  },
+  {
+   "repo": "deepset-ai/haystack",
+   "sha": "0da7c4ff3cc9f9ebaa8dd6b2e39bdc577d006140",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 14,
+   "diff_chars": 33740
+  },
+  {
+   "repo": "deepset-ai/haystack",
+   "sha": "2016e4244bda751233949ee40cf37644716fb5dd",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 26,
+   "diff_chars": 200000
+  },
+  {
+   "repo": "deepset-ai/haystack",
+   "sha": "33f00d0c56cbe62ce2a4551abbbd5fad7dbef222",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 2,
+   "diff_chars": 988
+  },
+  {
+   "repo": "deepset-ai/haystack",
+   "sha": "5d822978024fc58d831e80bdf8ad28acbd31a5b4",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 906
+  },
+  {
+   "repo": "deepset-ai/haystack",
+   "sha": "acc41487eee96747398cd99dac1a78ea8177dfb5",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "agentic",
+   "agentic_layers_on": true,
+   "touches_source": true,
+   "n_files": 10,
+   "diff_chars": 41133
+  },
+  {
+   "repo": "deepset-ai/haystack",
+   "sha": "d79762b61d1d5a1a7ca41d96858cf90dcd9dfb83",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 16,
+   "diff_chars": 38252
+  },
+  {
+   "repo": "deepset-ai/haystack",
+   "sha": "fe9a9420ba6f39abaea18e4c231aa511098c9117",
+   "label": "agentic",
+   "ambiguous": true,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 6436
+  },
+  {
+   "repo": "psf/requests",
+   "sha": "1190afd14fca74292946d62c4c8169880a47ff67",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 1,
+   "diff_chars": 380
+  },
+  {
+   "repo": "psf/requests",
+   "sha": "23953c0c875219a715f081cf3de7c149a7629ccf",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 1,
+   "diff_chars": 374
+  },
+  {
+   "repo": "psf/requests",
+   "sha": "611c6162cbc4ac2020a2f91c7cfa4f3abf9bbb60",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 1402
+  },
+  {
+   "repo": "psf/requests",
+   "sha": "661970d171d9c3e12e4c789c4768db647d8c4da0",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 10,
+   "diff_chars": 12132
+  },
+  {
+   "repo": "psf/requests",
+   "sha": "6af0b94158bbe10c45e754e85f9701f401e6aa9c",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 1,
+   "diff_chars": 372
+  },
+  {
+   "repo": "psf/requests",
+   "sha": "8f8b212de8c2129d7954c6cd373762880375620a",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 1,
+   "diff_chars": 372
+  },
+  {
+   "repo": "psf/requests",
+   "sha": "a634611dd1bbf1455723cff0af2ecc30866d880c",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 1402
+  },
+  {
+   "repo": "psf/requests",
+   "sha": "ded32878c0090f6b7b32a008176df6cecf36481f",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 1,
+   "diff_chars": 374
+  },
+  {
+   "repo": "pallets/flask",
+   "sha": "2a8a38b051fc248865730bf3511bf2e2ea325e81",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 1,
+   "diff_chars": 430
+  },
+  {
+   "repo": "pallets/flask",
+   "sha": "30d1c5d6fcbd62d9e902209d7a207f7510e9f5dc",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 2,
+   "diff_chars": 1080
+  },
+  {
+   "repo": "pallets/flask",
+   "sha": "3596b1ab61cea85edb8970e83ff61daa073facf8",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 441
+  },
+  {
+   "repo": "pallets/flask",
+   "sha": "81798b406f97ffe4795d2c9fc18db7db744a96dc",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 5,
+   "diff_chars": 3141
+  },
+  {
+   "repo": "pallets/flask",
+   "sha": "89992954ec71b594b1b911f98977cdc8ad46a057",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 2117
+  },
+  {
+   "repo": "pallets/flask",
+   "sha": "8b4fd5d18611e63080b826ecfefe8659dba7d2e4",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 2,
+   "diff_chars": 2328
+  },
+  {
+   "repo": "pallets/flask",
+   "sha": "d73fa1cdcbd8b1465c151db8924ba58b1dd14e35",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 1,
+   "diff_chars": 1330
+  },
+  {
+   "repo": "pallets/flask",
+   "sha": "de8429ffda8cfb54db175529e2bae72a24e1fa7e",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 2,
+   "diff_chars": 1211
+  },
+  {
+   "repo": "tiangolo/fastapi",
+   "sha": "02f80bc4d026bbbcbfcd9a79d4c674086764d9e7",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 633
+  },
+  {
+   "repo": "tiangolo/fastapi",
+   "sha": "041f7bc738b3fd972ab318a91bafdea499f47a77",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 2,
+   "diff_chars": 1861
+  },
+  {
+   "repo": "tiangolo/fastapi",
+   "sha": "1c1edb9b55c29b90762b7165cddbefd1276358cf",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 887
+  },
+  {
+   "repo": "tiangolo/fastapi",
+   "sha": "33d411dbc3236275dd64d200bfe18d5d60a49b2e",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 442
+  },
+  {
+   "repo": "tiangolo/fastapi",
+   "sha": "7b3effea754619f0c305af576be23a51865292a3",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 508
+  },
+  {
+   "repo": "tiangolo/fastapi",
+   "sha": "95f8322ee1dcda7ceace7b1c4f6c9915b36d748f",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 2,
+   "diff_chars": 802
+  },
+  {
+   "repo": "tiangolo/fastapi",
+   "sha": "b43dc5e10cb1a56b72a8a5f78e5b02e41cddbba0",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 6808
+  },
+  {
+   "repo": "tiangolo/fastapi",
+   "sha": "c744991f968f44b5dc6eb3c1636866986e653747",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 471
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "sha": "006884bac1cff49d2e2908c20fbbb0f0bc8e671b",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 188567
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "sha": "4c942a42d2060420da02cbbfde80db626b7d59e5",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 13,
+   "diff_chars": 7727
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "sha": "675f6ff0ce5ce6c16e7a7568e40a16bfeb7c4185",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 2,
+   "diff_chars": 1519
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "sha": "7186cd46553a14bfc1ee0e6e77e5daa6c3882bd4",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 6005
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "sha": "8f84744c418689e7b723d50aca54cd9d6c33af2e",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 439
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "sha": "9e9baa8440b75040777af4805966beaf9e37e282",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 1,
+   "diff_chars": 491
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "sha": "b33a27d12b93311cf6c41b77ebf2994e555e52f9",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 400
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "sha": "fc5ebf3c58c3f9652fa802388eb0f0cc1fae9819",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 841
+  },
+  {
+   "repo": "sqlalchemy/sqlalchemy",
+   "sha": "18370a09109391196e4b7c264d06f53041b168e8",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 517
+  },
+  {
+   "repo": "sqlalchemy/sqlalchemy",
+   "sha": "3213f9428bef89a41e4aba0c842b93cfbd9f2272",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 7,
+   "diff_chars": 4244
+  },
+  {
+   "repo": "sqlalchemy/sqlalchemy",
+   "sha": "41caa189ae948647074d06c5ccc4c292ba20d5f5",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 1035
+  },
+  {
+   "repo": "sqlalchemy/sqlalchemy",
+   "sha": "4914050a66d0dcb7ec1e5df5a8810fb0c08f25ce",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 4982
+  },
+  {
+   "repo": "sqlalchemy/sqlalchemy",
+   "sha": "c59306ff3246bdc17754857281d48d4491d091aa",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 2,
+   "diff_chars": 795
+  },
+  {
+   "repo": "sqlalchemy/sqlalchemy",
+   "sha": "c7f60b285c021c84627ab2b5c20a950fe6752821",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 5,
+   "diff_chars": 9852
+  },
+  {
+   "repo": "sqlalchemy/sqlalchemy",
+   "sha": "f2ed6422b34a4f738f7178706019ebdbec1e950d",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 7,
+   "diff_chars": 17669
+  },
+  {
+   "repo": "sqlalchemy/sqlalchemy",
+   "sha": "fb3b47d9eb54ae99721ededf115342177fa5aefd",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 3218
+  },
+  {
+   "repo": "celery/celery",
+   "sha": "3b5abc9cd89367d083d140df7dd9ca7134fcf24e",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 341
+  },
+  {
+   "repo": "celery/celery",
+   "sha": "3f2cf57d395a105dda9179b203040a1471d40a78",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 2794
+  },
+  {
+   "repo": "celery/celery",
+   "sha": "583fa06aff1b532bac61b6f897c3999b4990c95a",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 2,
+   "diff_chars": 5632
+  },
+  {
+   "repo": "celery/celery",
+   "sha": "5d4b17c0291c4cd5e89edfbcc59071c68239472e",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 1,
+   "diff_chars": 1792
+  },
+  {
+   "repo": "celery/celery",
+   "sha": "730ab395c9b9654fcf248d400b551f1f693b35e1",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 2,
+   "diff_chars": 1559
+  },
+  {
+   "repo": "celery/celery",
+   "sha": "a6da5f8ef3ae7c55d398d6b133bbb9816f859a48",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 5297
+  },
+  {
+   "repo": "celery/celery",
+   "sha": "f1d75abe0a3056ff49c8e89ccdde51d785f299be",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 1158
+  },
+  {
+   "repo": "celery/celery",
+   "sha": "ff6e7b972f32f826f2d685000a3f0a07b3dced48",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 23797
+  },
+  {
+   "repo": "urllib3/urllib3",
+   "sha": "09217b75d51f3c74d089b587f1be813b6bdfc7d7",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 2,
+   "diff_chars": 2196
+  },
+  {
+   "repo": "urllib3/urllib3",
+   "sha": "911bc94d227519483c82e516e2bf10860396afd5",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 4,
+   "diff_chars": 4107
+  },
+  {
+   "repo": "urllib3/urllib3",
+   "sha": "cd770b059b543be29298ea5c52afb0b1b090f5ed",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 4,
+   "diff_chars": 9134
+  },
+  {
+   "repo": "urllib3/urllib3",
+   "sha": "d7030c0077b6429a9d2ddeac703891973c82cbd5",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 4,
+   "diff_chars": 7368
+  },
+  {
+   "repo": "urllib3/urllib3",
+   "sha": "e05899a66391166442866f12dbdd4ff715166de6",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 2,
+   "diff_chars": 1110
+  },
+  {
+   "repo": "urllib3/urllib3",
+   "sha": "ed0ed075c6b93f7c515ebd3abe9a7248507ef8c5",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 8,
+   "diff_chars": 13770
+  },
+  {
+   "repo": "urllib3/urllib3",
+   "sha": "f4c411c09119f7999b29300b306d156992d699e6",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 1015
+  },
+  {
+   "repo": "urllib3/urllib3",
+   "sha": "f5cf122346141b187cca0db6e6445297d336b610",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 8,
+   "diff_chars": 5255
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "sha": "005e2fbe1a93a958946ba04aad0d8cf6e6d17d6a",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 8,
+   "diff_chars": 54841
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "sha": "4b5b295bb815bf845fa3570bf63781a88212db40",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 11,
+   "diff_chars": 15555
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "sha": "764bf92a1c96abe4615b59f3e5a7b738b0340a94",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 748
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "sha": "79fb1645a17118666144ead131a88fdc8d8cd59f",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 527
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "sha": "c27ba27258b314e8a03506a7677d47a699130b8f",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 641
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "sha": "c5baf90dbc3fdb23628ad59e92986c01bae57f4f",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 4,
+   "diff_chars": 46546
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "sha": "dc1ca3892c0285f2a3980e1fd08d50728fd1eaec",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 761
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "sha": "e43b1f9026d18a5ac227e7a7c65c7ccbf5d5e07f",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 2,
+   "diff_chars": 899
+  },
+  {
+   "repo": "pallets/click",
+   "sha": "10b43c211b825181cb81ef383e8091fd41750150",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 3577
+  },
+  {
+   "repo": "pallets/click",
+   "sha": "445310365b3a0437d5e46bf57fa2a801b704c30d",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 1,
+   "diff_chars": 741
+  },
+  {
+   "repo": "pallets/click",
+   "sha": "71f2bafa541e7f798834e74076786ff4281ac83e",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 5,
+   "diff_chars": 11068
+  },
+  {
+   "repo": "pallets/click",
+   "sha": "7a0a3447f6ddd2c15438c5d098e289323f9f9556",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 13,
+   "diff_chars": 17698
+  },
+  {
+   "repo": "pallets/click",
+   "sha": "a2ac5839f29f61cf7f3f229c67b97d07988e479b",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 4364
+  },
+  {
+   "repo": "pallets/click",
+   "sha": "a6256bfb5971d5e58585fe7b6c656134e1ade5a4",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 3,
+   "diff_chars": 12830
+  },
+  {
+   "repo": "pallets/click",
+   "sha": "cb43e055741b2416bf3ec46b5f84b140cca23e18",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": false,
+   "n_files": 2,
+   "diff_chars": 5912
+  },
+  {
+   "repo": "pallets/click",
+   "sha": "f25f697a439acc2b0d84aa8f5413330f4e2e75cf",
+   "label": "plain_service",
+   "ambiguous": false,
+   "predicted": "plain_service",
+   "agentic_layers_on": false,
+   "touches_source": true,
+   "n_files": 5,
+   "diff_chars": 6223
+  }
+ ],
+ "valid": true,
+ "llm_errors": 0
+}

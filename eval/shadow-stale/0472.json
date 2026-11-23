@@ -1,0 +1,54 @@
+{
+ "repo": "pytoolz/toolz",
+ "number": 632,
+ "status": "ran",
+ "head": "13e849b18decba8cd3ea5dab4e1d336fd08e746a",
+ "base": "568c2b8393973cd172a466546c9d95779c452438",
+ "diff_bytes": 7288,
+ "map_base": "6cb5e6d5005016ad503507bbb7a58dd7396c6c4b",
+ "map_age_commits": 9,
+ "n_tests": 187,
+ "base_failing": 1,
+ "head_failing": 2,
+ "introduced": [
+  "toolz/tests/test_curried.py::test_curried_namespace"
+ ],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "test_intake_toolz_510.py",
+  "test_intake_toolz_529.py",
+  "test_intake_toolz_626.py",
+  "toolz/itertoolz.py",
+  "toolz/tests/test_itertoolz.py"
+ ],
+ "n_changed": 5,
+ "selected": 60,
+ "file_selected": 187,
+ "uncovered": [
+  "test_intake_toolz_510.py",
+  "test_intake_toolz_529.py",
+  "test_intake_toolz_626.py"
+ ],
+ "dyn_available": true,
+ "dyn_selected": 60,
+ "dyn_uncovered": [
+  "test_intake_toolz_510.py",
+  "test_intake_toolz_529.py",
+  "test_intake_toolz_626.py"
+ ],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0.01,
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.33,
+ "seconds_selected": 0.01,
+ "wall_seconds": 67.1,
+ "project": "toolz",
+ "image_code_sha": "d9e3c20"
+}

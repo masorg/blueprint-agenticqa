@@ -1,0 +1,37 @@
+{
+ "order": 72,
+ "pr_id": 3524728793,
+ "agent": "Claude_Code",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 18,
+ "repo": "modu-ai/moai-adk",
+ "number": 28,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "a959b4bf8c7d842fb1ccaca4cc6452d1798b2384",
+  "state": "done",
+  "verdict": "auto_approve",
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "",
+  "layer_states": {
+   "unit": "skipped",
+   "property": "skipped",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 35.1
+ },
+ "wall_seconds": 37.6,
+ "head_sha": "a959b4bf8c7d842fb1ccaca4cc6452d1798b2384"
+}

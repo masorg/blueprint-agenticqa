@@ -1,0 +1,46 @@
+{
+ "repo": "pallets/itsdangerous",
+ "number": 430,
+ "status": "ran",
+ "head": "d68599bffdd80c49f68232ab67dd7d46f4b9cf18",
+ "base": "672971d66a2ef9f85151e53283113f33d642dabd",
+ "diff_bytes": 2588,
+ "n_tests": 309,
+ "base_failing": 0,
+ "head_failing": 4,
+ "introduced": [
+  "tests/test_itsdangerous/test_timed.py::TestTimedSerializer::test_loads_rejects_unexpected_kwargs",
+  "tests/test_itsdangerous/test_url_safe.py::TestTimedSerializer::test_loads_rejects_unexpected_kwargs",
+  "tests/test_itsdangerous/test_url_safe.py::TestURLSafeTimedSerializer::test_loads_rejects_unexpected_kwargs[value0]",
+  "tests/test_itsdangerous/test_url_safe.py::TestURLSafeTimedSerializer::test_loads_rejects_unexpected_kwargs[zlib]"
+ ],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "CHANGES.rst",
+  "src/itsdangerous/serializer.py",
+  "tests/test_itsdangerous/test_serializer.py"
+ ],
+ "n_changed": 3,
+ "selected": 284,
+ "file_selected": 309,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "CHANGES.rst"
+ ],
+ "introduced_selected": [
+  "tests/test_itsdangerous/test_timed.py::TestTimedSerializer::test_loads_rejects_unexpected_kwargs",
+  "tests/test_itsdangerous/test_url_safe.py::TestTimedSerializer::test_loads_rejects_unexpected_kwargs",
+  "tests/test_itsdangerous/test_url_safe.py::TestURLSafeTimedSerializer::test_loads_rejects_unexpected_kwargs[value0]",
+  "tests/test_itsdangerous/test_url_safe.py::TestURLSafeTimedSerializer::test_loads_rejects_unexpected_kwargs[zlib]"
+ ],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 55.07,
+ "seconds_selected": 55.06,
+ "wall_seconds": 83.8,
+ "project": "itsdangerous",
+ "image_code_sha": "a874558"
+}

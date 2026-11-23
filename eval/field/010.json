@@ -1,0 +1,31 @@
+{
+ "order": 10,
+ "pr_id": 3300949868,
+ "agent": "Google_Jules",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 5,
+ "repo": "Breakthrough/DVR-Scan",
+ "number": 233,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "16eee30fa2df773e541d0f0da442981d16e0e8ea",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-a1yyifv3/tests/test_cli.py'. | E   ImportError: libxcb.so.1: cannot open shared object file: No such file or directory | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-a1yyifv3/tests/test_scan_context.py'. | E   ImportError: libxcb.so.1: cann",
+  "layer_states": {},
+  "seconds": 48.7
+ },
+ "wall_seconds": 59.9,
+ "head_sha": "16eee30fa2df773e541d0f0da442981d16e0e8ea"
+}

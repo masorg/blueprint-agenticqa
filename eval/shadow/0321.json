@@ -1,0 +1,10 @@
+{
+ "repo": "more-itertools/more-itertools",
+ "number": 1309,
+ "status": "empty_diff",
+ "head": "67fcf640477c78605580f5ee703a54c73c1e7a8a",
+ "base": "67fcf640477c78605580f5ee703a54c73c1e7a8a",
+ "diff_bytes": 0,
+ "project": "more-itertools",
+ "image_code_sha": "a874558"
+}

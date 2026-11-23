@@ -1,0 +1,11 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 736,
+ "status": "error",
+ "head": "93f9b82ded1cc89adb5e3787dca89b9cb3ff0eb8",
+ "base": "bd42b38f3627e6bca7274fb4d9af2e105f75da7c",
+ "diff_bytes": 10313,
+ "detail": "CollectionError: tests could not be collected (pytest exited 1): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-sb5wn7ly/tests/test_async.py'. | E   ModuleNotFoundError: No module named 'six'",
+ "project": "transitions",
+ "image_code_sha": "a874558"
+}

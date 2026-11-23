@@ -1,0 +1,32 @@
+{
+ "repo": "python-validators/validators",
+ "number": 529,
+ "status": "ran",
+ "head": "d9d31abbb4963cc0231a18d29ad471bdb3c20e4c",
+ "base": "a52b32478ce1a6299a7534b0ede0828dafb665f0",
+ "diff_bytes": 1465,
+ "n_tests": 1412,
+ "base_failing": 28,
+ "head_failing": 28,
+ "introduced": [],
+ "flaky": [],
+ "mode": "full",
+ "reason": "a build or test configuration file changed: uv.lock",
+ "changed": [
+  "uv.lock"
+ ],
+ "n_changed": 1,
+ "selected": 1412,
+ "file_selected": 1412,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.37,
+ "seconds_selected": 0.37,
+ "wall_seconds": 22.2,
+ "project": "validators",
+ "image_code_sha": "a874558"
+}

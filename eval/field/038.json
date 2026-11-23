@@ -1,0 +1,31 @@
+{
+ "order": 38,
+ "pr_id": 3324281897,
+ "agent": "Cursor",
+ "merged": false,
+ "says_tests_pass": true,
+ "n_commits": 1,
+ "repo": "BerriAI/litellm",
+ "number": 13641,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "19c54a6d50e2006c7aeba535898f89a9b35a3ee2",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (timed out): ",
+  "layer_states": {},
+  "seconds": 339.1
+ },
+ "wall_seconds": 367.8,
+ "head_sha": "19c54a6d50e2006c7aeba535898f89a9b35a3ee2"
+}

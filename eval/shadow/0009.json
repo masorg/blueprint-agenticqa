@@ -1,0 +1,34 @@
+{
+ "repo": "python-attrs/attrs",
+ "number": 1640,
+ "status": "ran",
+ "head": "672be2e83066564efc245f777c20debd24ecbec8",
+ "base": "a602f78ff670f22be90fb8aea501a6cc30e10fdd",
+ "diff_bytes": 1745,
+ "n_tests": 1412,
+ "base_failing": 5,
+ "head_failing": 5,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/CONTRIBUTING.md"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  ".github/CONTRIBUTING.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 19.81,
+ "seconds_selected": 0,
+ "wall_seconds": 129.1,
+ "project": "attrs",
+ "image_code_sha": "efa91d9"
+}

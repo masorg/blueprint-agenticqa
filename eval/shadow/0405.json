@@ -1,0 +1,37 @@
+{
+ "repo": "andialbrecht/sqlparse",
+ "number": 935,
+ "status": "ran",
+ "head": "e2003702b452475b3a94d04817b97f165b02fe56",
+ "base": "60cdc649726bf1bc4f1b336050560b336da715ec",
+ "diff_bytes": 2688,
+ "n_tests": 541,
+ "base_failing": 2,
+ "head_failing": 2,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "CHANGELOG",
+  "sqlparse/utils.py",
+  "tests/test_format.py",
+  "tests/test_utils.py"
+ ],
+ "n_changed": 4,
+ "selected": 541,
+ "file_selected": 541,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "CHANGELOG"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 1.8,
+ "seconds_selected": 1.8,
+ "wall_seconds": 79.6,
+ "project": "sqlparse",
+ "image_code_sha": "a874558"
+}

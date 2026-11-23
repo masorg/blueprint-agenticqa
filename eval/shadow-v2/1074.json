@@ -1,0 +1,54 @@
+{
+ "repo": "python-validators/validators",
+ "number": 494,
+ "status": "ran",
+ "head": "1a2b235ace3e014ff38c09f480a3c0c0736567c2",
+ "base": "cdbe4af7f2f86c639774d5d94d81d06cf2dc7063",
+ "diff_bytes": 6626,
+ "coverage_seconds": 5.5,
+ "coverage_files": 61,
+ "n_tests": 1069,
+ "base_failing": 18,
+ "head_failing": 18,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "CHANGES.md",
+  "LICENSE.txt",
+  "SECURITY.md",
+  "mkdocs.yaml",
+  "src/validators/__init__.py"
+ ],
+ "n_changed": 5,
+ "selected": 0,
+ "file_selected": 1069,
+ "uncovered": [
+  "src/validators/__init__.py"
+ ],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [
+  "src/validators/__init__.py"
+ ],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [
+  "mkdocs.yaml"
+ ],
+ "inert": [
+  "CHANGES.md",
+  "LICENSE.txt",
+  "SECURITY.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.26,
+ "seconds_selected": 0,
+ "wall_seconds": 22.0,
+ "project": "validators",
+ "image_code_sha": "a116495"
+}

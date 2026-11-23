@@ -1,0 +1,64 @@
+{
+ "order": 52,
+ "pr_id": 3492994182,
+ "agent": "Google_Jules",
+ "merged": false,
+ "says_tests_pass": true,
+ "n_commits": 2,
+ "repo": "laike9m/pdir2",
+ "number": 80,
+ "status": "ran",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "0d7053973cd57eef6f48e4c9ab2591976437b779",
+  "state": "awaiting_approval",
+  "verdict": "needs_human_review",
+  "completed": true,
+  "totals": {
+   "passed": 45,
+   "failed": 1,
+   "skipped": 0,
+   "total": 46
+  },
+  "failing": [
+   "tests/test_buggy_attrs.py::test_dataframe"
+  ],
+  "error": "",
+  "layer_states": {
+   "unit": "failed",
+   "property": "passed",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 6.0
+ },
+ "base": {
+  "sha": "780d1c98acb124e102d2e10d24a844192fd149f0",
+  "state": "awaiting_approval",
+  "verdict": "needs_human_review",
+  "completed": true,
+  "totals": {
+   "passed": 45,
+   "failed": 1,
+   "skipped": 0,
+   "total": 46
+  },
+  "failing": [
+   "tests/test_buggy_attrs.py::test_dataframe"
+  ],
+  "error": "",
+  "layer_states": {
+   "unit": "failed",
+   "property": "passed",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 3.9
+ },
+ "wall_seconds": 11.7,
+ "head_sha": "0d7053973cd57eef6f48e4c9ab2591976437b779",
+ "base_sha": "780d1c98acb124e102d2e10d24a844192fd149f0"
+}

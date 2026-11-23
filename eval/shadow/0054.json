@@ -1,0 +1,33 @@
+{
+ "repo": "mahmoud/boltons",
+ "number": 597,
+ "status": "ran",
+ "head": "9dfdf220a821a07e8357e20b07d46ead0a9c6884",
+ "base": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+ "diff_bytes": 2410,
+ "n_tests": 529,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "boltons/queueutils.py",
+  "tests/test_queueutils.py"
+ ],
+ "n_changed": 2,
+ "selected": 6,
+ "file_selected": 6,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 3.41,
+ "seconds_selected": 0.0,
+ "wall_seconds": 33.3,
+ "project": "boltons",
+ "image_code_sha": "efa91d9"
+}

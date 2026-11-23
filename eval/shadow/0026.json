@@ -1,0 +1,32 @@
+{
+ "repo": "pallets-eco/blinker",
+ "number": 192,
+ "status": "ran",
+ "head": "d5d08f9cf4b2cad18ce15bb4312d4866abe7d7e3",
+ "base": "c3364059663df1ddce32799d6b1922af89a345f6",
+ "diff_bytes": 283,
+ "n_tests": 25,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "full",
+ "reason": "a build or test configuration file changed: pyproject.toml",
+ "changed": [
+  "pyproject.toml"
+ ],
+ "n_changed": 1,
+ "selected": 25,
+ "file_selected": 25,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.0,
+ "seconds_selected": 0.0,
+ "wall_seconds": 94.0,
+ "project": "blinker",
+ "image_code_sha": "efa91d9"
+}

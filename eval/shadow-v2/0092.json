@@ -1,0 +1,42 @@
+{
+ "repo": "tkem/cachetools",
+ "number": 422,
+ "status": "ran",
+ "head": "4e8b8e8121f74149b6c8fc5f5aec0420ea04d10a",
+ "base": "3c082c654c2804b9354e4b62dbd2994f1aac464d",
+ "diff_bytes": 821,
+ "coverage_seconds": 10.0,
+ "coverage_files": 19,
+ "n_tests": 337,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "docs/index.rst"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  "docs/index.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 4.22,
+ "seconds_selected": 0,
+ "wall_seconds": 44.6,
+ "project": "cachetools",
+ "image_code_sha": "a116495"
+}

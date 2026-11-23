@@ -1,0 +1,33 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 751,
+ "status": "ran",
+ "head": "da8f5174aff3f17946d17eac2be40a9e8c9f519e",
+ "base": "bd42b38f3627e6bca7274fb4d9af2e105f75da7c",
+ "diff_bytes": 2585,
+ "n_tests": 3215,
+ "base_failing": 6,
+ "head_failing": 6,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "tests/test_add_remove.py",
+  "transitions/core.py"
+ ],
+ "n_changed": 2,
+ "selected": 3215,
+ "file_selected": 3215,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 26.01,
+ "seconds_selected": 26.01,
+ "wall_seconds": 78.9,
+ "project": "transitions",
+ "image_code_sha": "a874558"
+}

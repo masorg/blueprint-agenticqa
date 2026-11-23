@@ -1,0 +1,33 @@
+{
+ "repo": "python-validators/validators",
+ "number": 540,
+ "status": "ran",
+ "head": "df2317223dbb559a027000e79fc9e3b7c80edc4b",
+ "base": "22786cc6e7283a0fa452c179797e447f798db9f0",
+ "diff_bytes": 2785,
+ "n_tests": 1521,
+ "base_failing": 28,
+ "head_failing": 28,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "src/validators/crypto_addresses/btc_address.py",
+  "tests/crypto_addresses/test_btc_address.py"
+ ],
+ "n_changed": 2,
+ "selected": 35,
+ "file_selected": 1521,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.42,
+ "seconds_selected": 0.01,
+ "wall_seconds": 20.2,
+ "project": "validators",
+ "image_code_sha": "a874558"
+}

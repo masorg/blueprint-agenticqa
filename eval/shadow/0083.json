@@ -1,0 +1,33 @@
+{
+ "repo": "tkem/cachetools",
+ "number": 438,
+ "status": "ran",
+ "head": "e5a3c9eb827e0cd47f6389adecbe3e9304faf4e0",
+ "base": "0985ec0d8fefdce90bcbba2dfe88117dad9bb6f6",
+ "diff_bytes": 8852,
+ "n_tests": 346,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "src/cachetools/_cachedmethod.py",
+  "tests/test_cachedmethod.py"
+ ],
+ "n_changed": 2,
+ "selected": 346,
+ "file_selected": 346,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 4.27,
+ "seconds_selected": 4.27,
+ "wall_seconds": 21.3,
+ "project": "cachetools",
+ "image_code_sha": "efa91d9"
+}

@@ -1,0 +1,70 @@
+{
+ "order": 9,
+ "pr_id": 3400906416,
+ "agent": "Devin",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 4,
+ "repo": "AgentOps-AI/agentops",
+ "number": 1249,
+ "status": "ran",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "c4df251bea05088b8c949ed34697f23ecfd81d6d",
+  "state": "awaiting_approval",
+  "verdict": "needs_human_review",
+  "completed": true,
+  "totals": {
+   "passed": 252,
+   "failed": 4,
+   "skipped": 0,
+   "total": 256
+  },
+  "failing": [
+   "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_export_empty_spans_list",
+   "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_export_jwt_expired_exception",
+   "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_export_success",
+   "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_headers_protected_from_override"
+  ],
+  "error": "",
+  "layer_states": {
+   "unit": "error",
+   "property": "passed",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 82.7
+ },
+ "base": {
+  "sha": "37a63b6ad9afff55b90163a1d7fd6ca2d25360ff",
+  "state": "awaiting_approval",
+  "verdict": "needs_human_review",
+  "completed": true,
+  "totals": {
+   "passed": 252,
+   "failed": 4,
+   "skipped": 0,
+   "total": 256
+  },
+  "failing": [
+   "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_export_empty_spans_list",
+   "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_export_jwt_expired_exception",
+   "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_export_success",
+   "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_headers_protected_from_override"
+  ],
+  "error": "",
+  "layer_states": {
+   "unit": "error",
+   "property": "passed",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 32.5
+ },
+ "wall_seconds": 141.0,
+ "head_sha": "c4df251bea05088b8c949ed34697f23ecfd81d6d",
+ "base_sha": "37a63b6ad9afff55b90163a1d7fd6ca2d25360ff"
+}

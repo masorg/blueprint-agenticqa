@@ -1,0 +1,39 @@
+{
+ "repo": "tkem/cachetools",
+ "number": 414,
+ "status": "ran",
+ "head": "45a11ebfdf1b43ce13722127c276186f8c1835b3",
+ "base": "4500e3d04288738d25acbb4973eb3c3e1bf41db9",
+ "diff_bytes": 1077,
+ "n_tests": 334,
+ "base_failing": 0,
+ "head_failing": 2,
+ "introduced": [
+  "tests/test_func.py::TTLDecoratorTest::test_ttl_datetime",
+  "tests/test_ttl.py::TTLCacheTest::test_ttl_datetime"
+ ],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "src/cachetools/__init__.py",
+  "tests/test_ttl.py"
+ ],
+ "n_changed": 2,
+ "selected": 179,
+ "file_selected": 334,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [
+  "tests/test_func.py::TTLDecoratorTest::test_ttl_datetime",
+  "tests/test_ttl.py::TTLCacheTest::test_ttl_datetime"
+ ],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 4.23,
+ "seconds_selected": 4.17,
+ "wall_seconds": 25.9,
+ "project": "cachetools",
+ "image_code_sha": "efa91d9"
+}

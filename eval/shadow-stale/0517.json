@@ -1,0 +1,42 @@
+{
+ "repo": "python-validators/validators",
+ "number": 528,
+ "status": "ran",
+ "head": "4270230377db49fe896f6059c02ab51291589dbe",
+ "base": "f8c4a0f0e61f552d9df3e32b509e319c4d69481a",
+ "diff_bytes": 1044,
+ "map_base": "cdbe4af7f2f86c639774d5d94d81d06cf2dc7063",
+ "map_age_commits": 20,
+ "n_tests": 1412,
+ "base_failing": 28,
+ "head_failing": 28,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/sast.yaml"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  ".github/workflows/sast.yaml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 3.27,
+ "seconds_selected": 0,
+ "wall_seconds": 83.9,
+ "project": "validators",
+ "image_code_sha": "d9e3c20"
+}

@@ -1,0 +1,51 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 666,
+ "status": "ran",
+ "head": "344a68c24b8fa84b2def0f66b439ddfef53facb3",
+ "base": "e3015425e295d39a4c5dec57604ece07a3cc4582",
+ "diff_bytes": 9047,
+ "coverage_seconds": 36.3,
+ "coverage_files": 31,
+ "n_tests": 2564,
+ "base_failing": 6,
+ "head_failing": 6,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "Changelog.md",
+  "tests/test_graphviz.py",
+  "tests/test_nesting.py",
+  "tests/test_pygraphviz.py",
+  "transitions/extensions/diagrams.py",
+  "transitions/extensions/markup.pyi",
+  "transitions/extensions/nesting.py"
+ ],
+ "n_changed": 7,
+ "selected": 2489,
+ "file_selected": 2489,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 2489,
+ "dyn_uncovered": [
+  "transitions/extensions/diagrams.py"
+ ],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 23.66,
+ "out_of_scope": [],
+ "inert": [
+  "Changelog.md",
+  "transitions/extensions/markup.pyi"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 24.74,
+ "seconds_selected": 23.66,
+ "wall_seconds": 117.3,
+ "project": "transitions",
+ "image_code_sha": "a116495"
+}

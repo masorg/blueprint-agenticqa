@@ -1,0 +1,358 @@
+{
+ "generated_at": "2026-10-24T14:06:21.010316+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T14:06:21.185725+00:00",
+  "git_sha": "50fbf59b28502473383bc103654a4e01a24b092b",
+  "code_dirty": true,
+  "code_diff_sha256": "9913368fbf59cca4",
+  "corpus": "selection-testmon:click",
+  "corpus_fingerprint": "3405c2cfe93b1068",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-testmon",
+   "--project",
+   "click",
+   "--report",
+   "eval/reports/selection-replay-click-2026-10-24T03-29-10.509638+00-00.json"
+  ]
+ },
+ "summary": {
+  "projects": [
+   "click"
+  ],
+  "mutants": 23,
+  "killed": 15,
+  "testmon_missed": {
+   "k": 0,
+   "n": 15,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.204
+   ]
+  },
+  "gate_missed": {
+   "k": 0,
+   "n": 15,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.204
+   ]
+  },
+  "testmon_tests_share_mean": 0.0004,
+  "gate_tests_share_mean": 0.8697,
+  "testmon_missed_ids": [],
+  "baseline_seconds": {
+   "click": 2.2
+  },
+  "per_project": {
+   "click": {
+    "mutants": 23,
+    "killed": 15,
+    "testmon_missed": 0,
+    "gate_missed": 0,
+    "testmon_share": 0.0,
+    "gate_share": 0.87
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "click",
+   "seed": 20261023,
+   "status": "ran",
+   "rows": [
+    {
+     "id": "click-000",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.0,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-001",
+     "total": 2287,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.01,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": false,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-002",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.14,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-003",
+     "total": 2287,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.02,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": false,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-004",
+     "total": 2287,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.02,
+     "timed_out": false,
+     "gate_selected": 9,
+     "gate_caught": false,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-005",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 1.99,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-006",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.02,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-007",
+     "total": 2287,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.04,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-008",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.03,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-009",
+     "total": 2287,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.06,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": false,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-011",
+     "total": 2287,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.11,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": false,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-012",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.02,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-013",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.05,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-014",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 3.67,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-015",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 3.55,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-016",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.55,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-017",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.57,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-018",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.56,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-019",
+     "total": 2287,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.55,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": false,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-020",
+     "total": 2287,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.58,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-021",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.53,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-022",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.52,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    },
+    {
+     "id": "click-024",
+     "total": 2287,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.46,
+     "timed_out": false,
+     "gate_selected": 2287,
+     "gate_caught": true,
+     "seconds_full": 9.947
+    }
+   ],
+   "baseline_seconds": 2.2,
+   "baseline_counts": {
+    "passed": 0,
+    "failed": 0,
+    "error": 1,
+    "skipped": 0,
+    "deselected": 31000
+   }
+  }
+ ]
+}

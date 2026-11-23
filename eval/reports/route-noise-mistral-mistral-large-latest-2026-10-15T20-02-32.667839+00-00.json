@@ -1,0 +1,2657 @@
+{
+ "generated_at": "2026-10-15T20:02:32.667839+00:00",
+ "router": "mistral-mistral-large-latest",
+ "valid": true,
+ "llm_errors": 0,
+ "provenance": {
+  "started_at": "2026-10-15T20:02:32.792049+00:00",
+  "git_sha": "fbd345a34eed0f6c8cacd6031e048cbc98d8dbd8",
+  "code_dirty": false,
+  "code_diff_sha256": null,
+  "corpus": "route-noise",
+  "corpus_fingerprint": "f769dfb0d0cd52b1",
+  "n_scenarios": 7,
+  "provider": "mistral-mistral-large-latest",
+  "configured_model": "mistral-large-latest",
+  "response_models": [
+   "mistral-large-latest"
+  ],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "route-noise",
+   "--provider",
+   "mistral",
+   "--model",
+   "mistral-large-latest",
+   "--concurrency",
+   "1"
+  ],
+  "llm_calls": {
+   "calls": 427,
+   "errors": 0,
+   "prompt_tokens": 280044,
+   "completion_tokens": 105567,
+   "total_tokens": 385611
+  }
+ },
+ "summary": {
+  "calls": 420,
+  "flips": 119,
+  "flip_rate": 0.2833333333333333,
+  "cluster_by_description": {
+   "mean": 0.2833333333333333,
+   "ci95": [
+    0.257,
+    0.307
+   ],
+   "n_repos": 60,
+   "n": 420
+  },
+  "by_scenario": {
+   "stock-check-off-by-one": 0,
+   "stale-stock-bound-property-only": 1,
+   "name-length-bound-removed-adversarial-only": 2,
+   "support-clean-baseline": 55,
+   "support-trajectory-only": 9,
+   "support-judge-only": 40,
+   "support-adversarial-only": 12
+  },
+  "by_agent": {
+   "Claude_Code": 18,
+   "Copilot": 23,
+   "Cursor": 20,
+   "Devin": 23,
+   "Google_Jules": 17,
+   "OpenAI_Codex": 18
+  }
+ },
+ "baseline_routing": {
+  "stock-check-off-by-one": [
+   "plain_service",
+   [
+    "adversarial",
+    "property",
+    "unit"
+   ]
+  ],
+  "stale-stock-bound-property-only": [
+   "plain_service",
+   [
+    "adversarial",
+    "property",
+    "unit"
+   ]
+  ],
+  "name-length-bound-removed-adversarial-only": [
+   "plain_service",
+   [
+    "adversarial",
+    "property",
+    "unit"
+   ]
+  ],
+  "support-clean-baseline": [
+   "agentic",
+   [
+    "adversarial",
+    "llm_judge",
+    "property",
+    "trajectory",
+    "unit"
+   ]
+  ],
+  "support-trajectory-only": [
+   "agentic",
+   [
+    "adversarial",
+    "llm_judge",
+    "property",
+    "trajectory",
+    "unit"
+   ]
+  ],
+  "support-judge-only": [
+   "agentic",
+   [
+    "adversarial",
+    "llm_judge",
+    "property",
+    "trajectory",
+    "unit"
+   ]
+  ],
+  "support-adversarial-only": [
+   "agentic",
+   [
+    "adversarial",
+    "llm_judge",
+    "property",
+    "trajectory",
+    "unit"
+   ]
+  ]
+ },
+ "rows": [
+  {
+   "description_id": 2908771855,
+   "agent": "Claude_Code",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 2908771855,
+   "agent": "Claude_Code",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2908771855,
+   "agent": "Claude_Code",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2908771855,
+   "agent": "Claude_Code",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 2908771855,
+   "agent": "Claude_Code",
+   "scenario": "support-trajectory-only",
+   "flipped": true
+  },
+  {
+   "description_id": 2908771855,
+   "agent": "Claude_Code",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2908771855,
+   "agent": "Claude_Code",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3090065215,
+   "agent": "Claude_Code",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3090065215,
+   "agent": "Claude_Code",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3090065215,
+   "agent": "Claude_Code",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3090065215,
+   "agent": "Claude_Code",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3090065215,
+   "agent": "Claude_Code",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3090065215,
+   "agent": "Claude_Code",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3090065215,
+   "agent": "Claude_Code",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3124372773,
+   "agent": "Claude_Code",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3124372773,
+   "agent": "Claude_Code",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3124372773,
+   "agent": "Claude_Code",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3124372773,
+   "agent": "Claude_Code",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3124372773,
+   "agent": "Claude_Code",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3124372773,
+   "agent": "Claude_Code",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3124372773,
+   "agent": "Claude_Code",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3265118634,
+   "agent": "Claude_Code",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3265118634,
+   "agent": "Claude_Code",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3265118634,
+   "agent": "Claude_Code",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3265118634,
+   "agent": "Claude_Code",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3265118634,
+   "agent": "Claude_Code",
+   "scenario": "support-trajectory-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3265118634,
+   "agent": "Claude_Code",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3265118634,
+   "agent": "Claude_Code",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3271740125,
+   "agent": "Claude_Code",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3271740125,
+   "agent": "Claude_Code",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3271740125,
+   "agent": "Claude_Code",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3271740125,
+   "agent": "Claude_Code",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3271740125,
+   "agent": "Claude_Code",
+   "scenario": "support-trajectory-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3271740125,
+   "agent": "Claude_Code",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3271740125,
+   "agent": "Claude_Code",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3368678620,
+   "agent": "Claude_Code",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3368678620,
+   "agent": "Claude_Code",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3368678620,
+   "agent": "Claude_Code",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3368678620,
+   "agent": "Claude_Code",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3368678620,
+   "agent": "Claude_Code",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3368678620,
+   "agent": "Claude_Code",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3368678620,
+   "agent": "Claude_Code",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3391474521,
+   "agent": "Claude_Code",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3391474521,
+   "agent": "Claude_Code",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3391474521,
+   "agent": "Claude_Code",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3391474521,
+   "agent": "Claude_Code",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3391474521,
+   "agent": "Claude_Code",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3391474521,
+   "agent": "Claude_Code",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3391474521,
+   "agent": "Claude_Code",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3519641294,
+   "agent": "Claude_Code",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3519641294,
+   "agent": "Claude_Code",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3519641294,
+   "agent": "Claude_Code",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3519641294,
+   "agent": "Claude_Code",
+   "scenario": "support-clean-baseline",
+   "flipped": false
+  },
+  {
+   "description_id": 3519641294,
+   "agent": "Claude_Code",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3519641294,
+   "agent": "Claude_Code",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3519641294,
+   "agent": "Claude_Code",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3520817025,
+   "agent": "Claude_Code",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3520817025,
+   "agent": "Claude_Code",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3520817025,
+   "agent": "Claude_Code",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3520817025,
+   "agent": "Claude_Code",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3520817025,
+   "agent": "Claude_Code",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3520817025,
+   "agent": "Claude_Code",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3520817025,
+   "agent": "Claude_Code",
+   "scenario": "support-adversarial-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3542892701,
+   "agent": "Claude_Code",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3542892701,
+   "agent": "Claude_Code",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3542892701,
+   "agent": "Claude_Code",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3542892701,
+   "agent": "Claude_Code",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3542892701,
+   "agent": "Claude_Code",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3542892701,
+   "agent": "Claude_Code",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3542892701,
+   "agent": "Claude_Code",
+   "scenario": "support-adversarial-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3280788887,
+   "agent": "Copilot",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3280788887,
+   "agent": "Copilot",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3280788887,
+   "agent": "Copilot",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3280788887,
+   "agent": "Copilot",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3280788887,
+   "agent": "Copilot",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3280788887,
+   "agent": "Copilot",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3280788887,
+   "agent": "Copilot",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3391413619,
+   "agent": "Copilot",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3391413619,
+   "agent": "Copilot",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3391413619,
+   "agent": "Copilot",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3391413619,
+   "agent": "Copilot",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3391413619,
+   "agent": "Copilot",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3391413619,
+   "agent": "Copilot",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3391413619,
+   "agent": "Copilot",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3407735694,
+   "agent": "Copilot",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3407735694,
+   "agent": "Copilot",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3407735694,
+   "agent": "Copilot",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3407735694,
+   "agent": "Copilot",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3407735694,
+   "agent": "Copilot",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3407735694,
+   "agent": "Copilot",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3407735694,
+   "agent": "Copilot",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3469822715,
+   "agent": "Copilot",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3469822715,
+   "agent": "Copilot",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3469822715,
+   "agent": "Copilot",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3469822715,
+   "agent": "Copilot",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3469822715,
+   "agent": "Copilot",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3469822715,
+   "agent": "Copilot",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3469822715,
+   "agent": "Copilot",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3494364350,
+   "agent": "Copilot",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3494364350,
+   "agent": "Copilot",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3494364350,
+   "agent": "Copilot",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3494364350,
+   "agent": "Copilot",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3494364350,
+   "agent": "Copilot",
+   "scenario": "support-trajectory-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3494364350,
+   "agent": "Copilot",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3494364350,
+   "agent": "Copilot",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3508447075,
+   "agent": "Copilot",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3508447075,
+   "agent": "Copilot",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3508447075,
+   "agent": "Copilot",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3508447075,
+   "agent": "Copilot",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3508447075,
+   "agent": "Copilot",
+   "scenario": "support-trajectory-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3508447075,
+   "agent": "Copilot",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3508447075,
+   "agent": "Copilot",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3518642537,
+   "agent": "Copilot",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3518642537,
+   "agent": "Copilot",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3518642537,
+   "agent": "Copilot",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3518642537,
+   "agent": "Copilot",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3518642537,
+   "agent": "Copilot",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3518642537,
+   "agent": "Copilot",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3518642537,
+   "agent": "Copilot",
+   "scenario": "support-adversarial-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3527528401,
+   "agent": "Copilot",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3527528401,
+   "agent": "Copilot",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3527528401,
+   "agent": "Copilot",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3527528401,
+   "agent": "Copilot",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3527528401,
+   "agent": "Copilot",
+   "scenario": "support-trajectory-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3527528401,
+   "agent": "Copilot",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3527528401,
+   "agent": "Copilot",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3527685626,
+   "agent": "Copilot",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3527685626,
+   "agent": "Copilot",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3527685626,
+   "agent": "Copilot",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3527685626,
+   "agent": "Copilot",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3527685626,
+   "agent": "Copilot",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3527685626,
+   "agent": "Copilot",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3527685626,
+   "agent": "Copilot",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3540846483,
+   "agent": "Copilot",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3540846483,
+   "agent": "Copilot",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3540846483,
+   "agent": "Copilot",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3540846483,
+   "agent": "Copilot",
+   "scenario": "support-clean-baseline",
+   "flipped": false
+  },
+  {
+   "description_id": 3540846483,
+   "agent": "Copilot",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3540846483,
+   "agent": "Copilot",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3540846483,
+   "agent": "Copilot",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3165243502,
+   "agent": "Cursor",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3165243502,
+   "agent": "Cursor",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3165243502,
+   "agent": "Cursor",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3165243502,
+   "agent": "Cursor",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3165243502,
+   "agent": "Cursor",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3165243502,
+   "agent": "Cursor",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3165243502,
+   "agent": "Cursor",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3226715971,
+   "agent": "Cursor",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3226715971,
+   "agent": "Cursor",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3226715971,
+   "agent": "Cursor",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3226715971,
+   "agent": "Cursor",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3226715971,
+   "agent": "Cursor",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3226715971,
+   "agent": "Cursor",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3226715971,
+   "agent": "Cursor",
+   "scenario": "support-adversarial-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3285649494,
+   "agent": "Cursor",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3285649494,
+   "agent": "Cursor",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3285649494,
+   "agent": "Cursor",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3285649494,
+   "agent": "Cursor",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3285649494,
+   "agent": "Cursor",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3285649494,
+   "agent": "Cursor",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3285649494,
+   "agent": "Cursor",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3319248927,
+   "agent": "Cursor",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3319248927,
+   "agent": "Cursor",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3319248927,
+   "agent": "Cursor",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3319248927,
+   "agent": "Cursor",
+   "scenario": "support-clean-baseline",
+   "flipped": false
+  },
+  {
+   "description_id": 3319248927,
+   "agent": "Cursor",
+   "scenario": "support-trajectory-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3319248927,
+   "agent": "Cursor",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3319248927,
+   "agent": "Cursor",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3389722288,
+   "agent": "Cursor",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3389722288,
+   "agent": "Cursor",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3389722288,
+   "agent": "Cursor",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3389722288,
+   "agent": "Cursor",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3389722288,
+   "agent": "Cursor",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3389722288,
+   "agent": "Cursor",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3389722288,
+   "agent": "Cursor",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3407097577,
+   "agent": "Cursor",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3407097577,
+   "agent": "Cursor",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3407097577,
+   "agent": "Cursor",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3407097577,
+   "agent": "Cursor",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3407097577,
+   "agent": "Cursor",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3407097577,
+   "agent": "Cursor",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3407097577,
+   "agent": "Cursor",
+   "scenario": "support-adversarial-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3469970303,
+   "agent": "Cursor",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3469970303,
+   "agent": "Cursor",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3469970303,
+   "agent": "Cursor",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3469970303,
+   "agent": "Cursor",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3469970303,
+   "agent": "Cursor",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3469970303,
+   "agent": "Cursor",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3469970303,
+   "agent": "Cursor",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3491988253,
+   "agent": "Cursor",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3491988253,
+   "agent": "Cursor",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3491988253,
+   "agent": "Cursor",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3491988253,
+   "agent": "Cursor",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3491988253,
+   "agent": "Cursor",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3491988253,
+   "agent": "Cursor",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3491988253,
+   "agent": "Cursor",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3505638957,
+   "agent": "Cursor",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3505638957,
+   "agent": "Cursor",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3505638957,
+   "agent": "Cursor",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3505638957,
+   "agent": "Cursor",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3505638957,
+   "agent": "Cursor",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3505638957,
+   "agent": "Cursor",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3505638957,
+   "agent": "Cursor",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3551006215,
+   "agent": "Cursor",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3551006215,
+   "agent": "Cursor",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3551006215,
+   "agent": "Cursor",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3551006215,
+   "agent": "Cursor",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3551006215,
+   "agent": "Cursor",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3551006215,
+   "agent": "Cursor",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3551006215,
+   "agent": "Cursor",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2826117544,
+   "agent": "Devin",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 2826117544,
+   "agent": "Devin",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2826117544,
+   "agent": "Devin",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2826117544,
+   "agent": "Devin",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 2826117544,
+   "agent": "Devin",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2826117544,
+   "agent": "Devin",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 2826117544,
+   "agent": "Devin",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2834594365,
+   "agent": "Devin",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 2834594365,
+   "agent": "Devin",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2834594365,
+   "agent": "Devin",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2834594365,
+   "agent": "Devin",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 2834594365,
+   "agent": "Devin",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2834594365,
+   "agent": "Devin",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 2834594365,
+   "agent": "Devin",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2929590392,
+   "agent": "Devin",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 2929590392,
+   "agent": "Devin",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2929590392,
+   "agent": "Devin",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2929590392,
+   "agent": "Devin",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 2929590392,
+   "agent": "Devin",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2929590392,
+   "agent": "Devin",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 2929590392,
+   "agent": "Devin",
+   "scenario": "support-adversarial-only",
+   "flipped": true
+  },
+  {
+   "description_id": 2977963095,
+   "agent": "Devin",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 2977963095,
+   "agent": "Devin",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2977963095,
+   "agent": "Devin",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2977963095,
+   "agent": "Devin",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 2977963095,
+   "agent": "Devin",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2977963095,
+   "agent": "Devin",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 2977963095,
+   "agent": "Devin",
+   "scenario": "support-adversarial-only",
+   "flipped": true
+  },
+  {
+   "description_id": 2980666816,
+   "agent": "Devin",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 2980666816,
+   "agent": "Devin",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2980666816,
+   "agent": "Devin",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2980666816,
+   "agent": "Devin",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 2980666816,
+   "agent": "Devin",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 2980666816,
+   "agent": "Devin",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 2980666816,
+   "agent": "Devin",
+   "scenario": "support-adversarial-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3006036358,
+   "agent": "Devin",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3006036358,
+   "agent": "Devin",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3006036358,
+   "agent": "Devin",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3006036358,
+   "agent": "Devin",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3006036358,
+   "agent": "Devin",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3006036358,
+   "agent": "Devin",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3006036358,
+   "agent": "Devin",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3058704988,
+   "agent": "Devin",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3058704988,
+   "agent": "Devin",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3058704988,
+   "agent": "Devin",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3058704988,
+   "agent": "Devin",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3058704988,
+   "agent": "Devin",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3058704988,
+   "agent": "Devin",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3058704988,
+   "agent": "Devin",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3239945909,
+   "agent": "Devin",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3239945909,
+   "agent": "Devin",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3239945909,
+   "agent": "Devin",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3239945909,
+   "agent": "Devin",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3239945909,
+   "agent": "Devin",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3239945909,
+   "agent": "Devin",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3239945909,
+   "agent": "Devin",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3363720407,
+   "agent": "Devin",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3363720407,
+   "agent": "Devin",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3363720407,
+   "agent": "Devin",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3363720407,
+   "agent": "Devin",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3363720407,
+   "agent": "Devin",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3363720407,
+   "agent": "Devin",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3363720407,
+   "agent": "Devin",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3406061126,
+   "agent": "Devin",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3406061126,
+   "agent": "Devin",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3406061126,
+   "agent": "Devin",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3406061126,
+   "agent": "Devin",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3406061126,
+   "agent": "Devin",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3406061126,
+   "agent": "Devin",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3406061126,
+   "agent": "Devin",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3254770687,
+   "agent": "Google_Jules",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3254770687,
+   "agent": "Google_Jules",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3254770687,
+   "agent": "Google_Jules",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3254770687,
+   "agent": "Google_Jules",
+   "scenario": "support-clean-baseline",
+   "flipped": false
+  },
+  {
+   "description_id": 3254770687,
+   "agent": "Google_Jules",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3254770687,
+   "agent": "Google_Jules",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3254770687,
+   "agent": "Google_Jules",
+   "scenario": "support-adversarial-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3291058069,
+   "agent": "Google_Jules",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3291058069,
+   "agent": "Google_Jules",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3291058069,
+   "agent": "Google_Jules",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3291058069,
+   "agent": "Google_Jules",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3291058069,
+   "agent": "Google_Jules",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3291058069,
+   "agent": "Google_Jules",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3291058069,
+   "agent": "Google_Jules",
+   "scenario": "support-adversarial-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3297743182,
+   "agent": "Google_Jules",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3297743182,
+   "agent": "Google_Jules",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3297743182,
+   "agent": "Google_Jules",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3297743182,
+   "agent": "Google_Jules",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3297743182,
+   "agent": "Google_Jules",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3297743182,
+   "agent": "Google_Jules",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3297743182,
+   "agent": "Google_Jules",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3309794269,
+   "agent": "Google_Jules",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3309794269,
+   "agent": "Google_Jules",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3309794269,
+   "agent": "Google_Jules",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3309794269,
+   "agent": "Google_Jules",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3309794269,
+   "agent": "Google_Jules",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3309794269,
+   "agent": "Google_Jules",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3309794269,
+   "agent": "Google_Jules",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3364890256,
+   "agent": "Google_Jules",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3364890256,
+   "agent": "Google_Jules",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3364890256,
+   "agent": "Google_Jules",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3364890256,
+   "agent": "Google_Jules",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3364890256,
+   "agent": "Google_Jules",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3364890256,
+   "agent": "Google_Jules",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3364890256,
+   "agent": "Google_Jules",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3424031698,
+   "agent": "Google_Jules",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3424031698,
+   "agent": "Google_Jules",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3424031698,
+   "agent": "Google_Jules",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3424031698,
+   "agent": "Google_Jules",
+   "scenario": "support-clean-baseline",
+   "flipped": false
+  },
+  {
+   "description_id": 3424031698,
+   "agent": "Google_Jules",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3424031698,
+   "agent": "Google_Jules",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3424031698,
+   "agent": "Google_Jules",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3434699045,
+   "agent": "Google_Jules",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3434699045,
+   "agent": "Google_Jules",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3434699045,
+   "agent": "Google_Jules",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3434699045,
+   "agent": "Google_Jules",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3434699045,
+   "agent": "Google_Jules",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3434699045,
+   "agent": "Google_Jules",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3434699045,
+   "agent": "Google_Jules",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3455436164,
+   "agent": "Google_Jules",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3455436164,
+   "agent": "Google_Jules",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3455436164,
+   "agent": "Google_Jules",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3455436164,
+   "agent": "Google_Jules",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3455436164,
+   "agent": "Google_Jules",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3455436164,
+   "agent": "Google_Jules",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3455436164,
+   "agent": "Google_Jules",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3484202749,
+   "agent": "Google_Jules",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3484202749,
+   "agent": "Google_Jules",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3484202749,
+   "agent": "Google_Jules",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3484202749,
+   "agent": "Google_Jules",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3484202749,
+   "agent": "Google_Jules",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3484202749,
+   "agent": "Google_Jules",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3484202749,
+   "agent": "Google_Jules",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3508032478,
+   "agent": "Google_Jules",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3508032478,
+   "agent": "Google_Jules",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3508032478,
+   "agent": "Google_Jules",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3508032478,
+   "agent": "Google_Jules",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3508032478,
+   "agent": "Google_Jules",
+   "scenario": "support-trajectory-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3508032478,
+   "agent": "Google_Jules",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3508032478,
+   "agent": "Google_Jules",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3071804963,
+   "agent": "OpenAI_Codex",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3071804963,
+   "agent": "OpenAI_Codex",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3071804963,
+   "agent": "OpenAI_Codex",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3071804963,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3071804963,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3071804963,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3071804963,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3087621052,
+   "agent": "OpenAI_Codex",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3087621052,
+   "agent": "OpenAI_Codex",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3087621052,
+   "agent": "OpenAI_Codex",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3087621052,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3087621052,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3087621052,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3087621052,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3099735942,
+   "agent": "OpenAI_Codex",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3099735942,
+   "agent": "OpenAI_Codex",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3099735942,
+   "agent": "OpenAI_Codex",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3099735942,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3099735942,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-trajectory-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3099735942,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3099735942,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3108467281,
+   "agent": "OpenAI_Codex",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3108467281,
+   "agent": "OpenAI_Codex",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3108467281,
+   "agent": "OpenAI_Codex",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3108467281,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3108467281,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3108467281,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3108467281,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3136110660,
+   "agent": "OpenAI_Codex",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3136110660,
+   "agent": "OpenAI_Codex",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3136110660,
+   "agent": "OpenAI_Codex",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3136110660,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3136110660,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3136110660,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3136110660,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3159544492,
+   "agent": "OpenAI_Codex",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3159544492,
+   "agent": "OpenAI_Codex",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3159544492,
+   "agent": "OpenAI_Codex",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3159544492,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3159544492,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3159544492,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3159544492,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-adversarial-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3176428778,
+   "agent": "OpenAI_Codex",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3176428778,
+   "agent": "OpenAI_Codex",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3176428778,
+   "agent": "OpenAI_Codex",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3176428778,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3176428778,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3176428778,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3176428778,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3345607681,
+   "agent": "OpenAI_Codex",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3345607681,
+   "agent": "OpenAI_Codex",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3345607681,
+   "agent": "OpenAI_Codex",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3345607681,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3345607681,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3345607681,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3345607681,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3358767558,
+   "agent": "OpenAI_Codex",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3358767558,
+   "agent": "OpenAI_Codex",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3358767558,
+   "agent": "OpenAI_Codex",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3358767558,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3358767558,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3358767558,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-judge-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3358767558,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3460886604,
+   "agent": "OpenAI_Codex",
+   "scenario": "stock-check-off-by-one",
+   "flipped": false
+  },
+  {
+   "description_id": 3460886604,
+   "agent": "OpenAI_Codex",
+   "scenario": "stale-stock-bound-property-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3460886604,
+   "agent": "OpenAI_Codex",
+   "scenario": "name-length-bound-removed-adversarial-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3460886604,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-clean-baseline",
+   "flipped": true
+  },
+  {
+   "description_id": 3460886604,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-trajectory-only",
+   "flipped": false
+  },
+  {
+   "description_id": 3460886604,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-judge-only",
+   "flipped": true
+  },
+  {
+   "description_id": 3460886604,
+   "agent": "OpenAI_Codex",
+   "scenario": "support-adversarial-only",
+   "flipped": true
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "repo": "pallets/markupsafe",
+ "number": 519,
+ "status": "ran",
+ "head": "03155ed31d9727bad10a013022bc2bbe2fa20973",
+ "base": "b2e4d9c7687be25695fffbe93a37622302b24fb1",
+ "diff_bytes": 8901,
+ "n_tests": 80,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "CHANGES.rst",
+  "src/markupsafe/_speedups.c"
+ ],
+ "n_changed": 2,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [
+  "src/markupsafe/_speedups.c"
+ ],
+ "out_of_scope": [],
+ "inert": [
+  "CHANGES.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "success",
+ "seconds_full": 0.21,
+ "seconds_selected": 0,
+ "wall_seconds": 33.6,
+ "project": "markupsafe",
+ "image_code_sha": "a874558"
+}

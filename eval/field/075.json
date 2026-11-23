@@ -1,0 +1,31 @@
+{
+ "order": 75,
+ "pr_id": 3034982691,
+ "agent": "Devin",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 2,
+ "repo": "reflex-dev/reflex-web",
+ "number": 1339,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "c610ca403915b7eebcdf5ff6a48fced8ff4b21bf",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "RuntimeError: command failed (1): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/ba74ced73d13d3b6/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-yi06twc6/requirements.txt\nUsing Python 3.12.15 environment at: /tmp/agenticqa-workspaces/venv-cache/ba74ced73d13d3b6/.venv\n   Updating https://github.com/reflex-dev/reflex (main)\n    Updated https://github.com/reflex-dev/ref",
+  "layer_states": {},
+  "seconds": 49.4
+ },
+ "wall_seconds": 55.1,
+ "head_sha": "c610ca403915b7eebcdf5ff6a48fced8ff4b21bf"
+}

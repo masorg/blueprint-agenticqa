@@ -1,0 +1,5 @@
+{
+  "scenario": "real-packaging",
+  "could_not_run": true,
+  "reason": "state=failed, tests run=0: OSError: [Errno 7] Argument list too long: '/var/folders/30/34gt5kz10l3d6g62w45ygl6r0000gn/T/agenticqa-workspaces/venv-cache/4668af95d216859a/.venv/bin/python'"
+}

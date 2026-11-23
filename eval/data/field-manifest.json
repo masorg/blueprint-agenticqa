@@ -1,0 +1,847 @@
+{
+ "dataset": "hao-li/AIDev@v4",
+ "seed": 20261015,
+ "note": "ids and derived booleans only; no description text or code",
+ "attempts": [
+  {
+   "pr_id": 3256172444,
+   "number": 695,
+   "agent": "Claude_Code",
+   "repo": "robusta-dev/holmesgpt",
+   "merged": true,
+   "n_commits": 14,
+   "says_tests_pass": false,
+   "order": 0
+  },
+  {
+   "pr_id": 3414255897,
+   "number": 186,
+   "agent": "Copilot",
+   "repo": "bpwhelan/GameSentenceMiner",
+   "merged": false,
+   "n_commits": 6,
+   "says_tests_pass": false,
+   "order": 1
+  },
+  {
+   "pr_id": 3484182986,
+   "number": 283,
+   "agent": "Cursor",
+   "repo": "llama-farm/llamafarm",
+   "merged": true,
+   "n_commits": 9,
+   "says_tests_pass": false,
+   "order": 2
+  },
+  {
+   "pr_id": 2927463862,
+   "number": 865,
+   "agent": "Devin",
+   "repo": "AgentOps-AI/agentops",
+   "merged": false,
+   "n_commits": 4,
+   "says_tests_pass": false,
+   "order": 3
+  },
+  {
+   "pr_id": 3300760158,
+   "number": 1338,
+   "agent": "Google_Jules",
+   "repo": "NethServer/nethsecurity",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 4
+  },
+  {
+   "pr_id": 3097650858,
+   "number": 1057,
+   "agent": "OpenAI_Codex",
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 5
+  },
+  {
+   "pr_id": 3489912171,
+   "number": 2344,
+   "agent": "Claude_Code",
+   "repo": "explodinggradients/ragas",
+   "merged": false,
+   "n_commits": 6,
+   "says_tests_pass": true,
+   "order": 6
+  },
+  {
+   "pr_id": 3457109197,
+   "number": 2177,
+   "agent": "Copilot",
+   "repo": "DLR-RM/stable-baselines3",
+   "merged": true,
+   "n_commits": 3,
+   "says_tests_pass": false,
+   "order": 7
+  },
+  {
+   "pr_id": 3242573593,
+   "number": 2478,
+   "agent": "Cursor",
+   "repo": "browser-use/browser-use",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 8
+  },
+  {
+   "pr_id": 3400906416,
+   "number": 1249,
+   "agent": "Devin",
+   "repo": "AgentOps-AI/agentops",
+   "merged": true,
+   "n_commits": 4,
+   "says_tests_pass": false,
+   "order": 9
+  },
+  {
+   "pr_id": 3300949868,
+   "number": 233,
+   "agent": "Google_Jules",
+   "repo": "Breakthrough/DVR-Scan",
+   "merged": true,
+   "n_commits": 5,
+   "says_tests_pass": false,
+   "order": 10
+  },
+  {
+   "pr_id": 3088635714,
+   "number": 731,
+   "agent": "OpenAI_Codex",
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 11
+  },
+  {
+   "pr_id": 3287356173,
+   "number": 232,
+   "agent": "Claude_Code",
+   "repo": "blarApp/blarify",
+   "merged": true,
+   "n_commits": 11,
+   "says_tests_pass": false,
+   "order": 12
+  },
+  {
+   "pr_id": 3449720298,
+   "number": 17924,
+   "agent": "Copilot",
+   "repo": "mlflow/mlflow",
+   "merged": true,
+   "n_commits": 2,
+   "says_tests_pass": false,
+   "order": 13
+  },
+  {
+   "pr_id": 3221411520,
+   "number": 1227,
+   "agent": "Cursor",
+   "repo": "iterative/datachain",
+   "merged": false,
+   "n_commits": 3,
+   "says_tests_pass": false,
+   "order": 14
+  },
+  {
+   "pr_id": 3225967102,
+   "number": 3145,
+   "agent": "Devin",
+   "repo": "crewAIInc/crewAI",
+   "merged": false,
+   "n_commits": 2,
+   "says_tests_pass": false,
+   "order": 15
+  },
+  {
+   "pr_id": 3305259894,
+   "number": 567,
+   "agent": "Google_Jules",
+   "repo": "geoalchemy/geoalchemy2",
+   "merged": true,
+   "n_commits": 5,
+   "says_tests_pass": false,
+   "order": 16
+  },
+  {
+   "pr_id": 3183407781,
+   "number": 2671,
+   "agent": "OpenAI_Codex",
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 17
+  },
+  {
+   "pr_id": 3338367670,
+   "number": 87,
+   "agent": "Claude_Code",
+   "repo": "doobidoo/mcp-memory-service",
+   "merged": true,
+   "n_commits": 7,
+   "says_tests_pass": true,
+   "order": 18
+  },
+  {
+   "pr_id": 3366786682,
+   "number": 17479,
+   "agent": "Copilot",
+   "repo": "mlflow/mlflow",
+   "merged": true,
+   "n_commits": 2,
+   "says_tests_pass": false,
+   "order": 19
+  },
+  {
+   "pr_id": 3478630550,
+   "number": 100820,
+   "agent": "Cursor",
+   "repo": "getsentry/sentry",
+   "merged": false,
+   "n_commits": 2,
+   "says_tests_pass": false,
+   "order": 20
+  },
+  {
+   "pr_id": 2901256184,
+   "number": 55234,
+   "agent": "Devin",
+   "repo": "airbytehq/airbyte",
+   "merged": true,
+   "n_commits": 2,
+   "says_tests_pass": false,
+   "order": 21
+  },
+  {
+   "pr_id": 3307718349,
+   "number": 5,
+   "agent": "Google_Jules",
+   "repo": "sunriseapps/imagesorcery-mcp",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 22
+  },
+  {
+   "pr_id": 3119086225,
+   "number": 489,
+   "agent": "OpenAI_Codex",
+   "repo": "jrkropp/open-webui-developer-toolkit",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 23
+  },
+  {
+   "pr_id": 3431634736,
+   "number": 14,
+   "agent": "Claude_Code",
+   "repo": "microsoft/amplifier",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 24
+  },
+  {
+   "pr_id": 3541610915,
+   "number": 192,
+   "agent": "Copilot",
+   "repo": "SkBlaz/py3plex",
+   "merged": true,
+   "n_commits": 3,
+   "says_tests_pass": false,
+   "order": 25
+  },
+  {
+   "pr_id": 3294302152,
+   "number": 2606,
+   "agent": "Cursor",
+   "repo": "browser-use/browser-use",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 26
+  },
+  {
+   "pr_id": 2761325861,
+   "number": 1808,
+   "agent": "Devin",
+   "repo": "crewAIInc/crewAI",
+   "merged": true,
+   "n_commits": 2,
+   "says_tests_pass": false,
+   "order": 27
+  },
+  {
+   "pr_id": 3226481597,
+   "number": 3342,
+   "agent": "Google_Jules",
+   "repo": "bmaltais/kohya_ss",
+   "merged": true,
+   "n_commits": 4,
+   "says_tests_pass": false,
+   "order": 28
+  },
+  {
+   "pr_id": 3186679333,
+   "number": 2782,
+   "agent": "OpenAI_Codex",
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 29
+  },
+  {
+   "pr_id": 3308420893,
+   "number": 10595,
+   "agent": "Claude_Code",
+   "repo": "Significant-Gravitas/AutoGPT",
+   "merged": true,
+   "n_commits": 6,
+   "says_tests_pass": false,
+   "order": 30
+  },
+  {
+   "pr_id": 3305381341,
+   "number": 2,
+   "agent": "Copilot",
+   "repo": "RetroGameSets/RGSX",
+   "merged": true,
+   "n_commits": 2,
+   "says_tests_pass": false,
+   "order": 31
+  },
+  {
+   "pr_id": 3172177351,
+   "number": 94178,
+   "agent": "Cursor",
+   "repo": "getsentry/sentry",
+   "merged": false,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 32
+  },
+  {
+   "pr_id": 2889090308,
+   "number": 55019,
+   "agent": "Devin",
+   "repo": "airbytehq/airbyte",
+   "merged": false,
+   "n_commits": 3,
+   "says_tests_pass": false,
+   "order": 33
+  },
+  {
+   "pr_id": 3456576214,
+   "number": 1822,
+   "agent": "Google_Jules",
+   "repo": "OWASP/CheatSheetSeries",
+   "merged": false,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 34
+  },
+  {
+   "pr_id": 3097475639,
+   "number": 1053,
+   "agent": "OpenAI_Codex",
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 35
+  },
+  {
+   "pr_id": 3386053013,
+   "number": 17554,
+   "agent": "Claude_Code",
+   "repo": "mlflow/mlflow",
+   "merged": true,
+   "n_commits": 11,
+   "says_tests_pass": true,
+   "order": 36
+  },
+  {
+   "pr_id": 3438235089,
+   "number": 17861,
+   "agent": "Copilot",
+   "repo": "mlflow/mlflow",
+   "merged": true,
+   "n_commits": 4,
+   "says_tests_pass": false,
+   "order": 37
+  },
+  {
+   "pr_id": 3324281897,
+   "number": 13641,
+   "agent": "Cursor",
+   "repo": "BerriAI/litellm",
+   "merged": false,
+   "n_commits": 1,
+   "says_tests_pass": true,
+   "order": 38
+  },
+  {
+   "pr_id": 3221977522,
+   "number": 3137,
+   "agent": "Devin",
+   "repo": "crewAIInc/crewAI",
+   "merged": false,
+   "n_commits": 3,
+   "says_tests_pass": false,
+   "order": 39
+  },
+  {
+   "pr_id": 3317961577,
+   "number": 53,
+   "agent": "Google_Jules",
+   "repo": "florestefano1975/comfyui-portrait-master",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 40
+  },
+  {
+   "pr_id": 3086671266,
+   "number": 30,
+   "agent": "OpenAI_Codex",
+   "repo": "dropseed/plain",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 41
+  },
+  {
+   "pr_id": 3326833240,
+   "number": 751,
+   "agent": "Claude_Code",
+   "repo": "WEIFENG2333/VideoCaptioner",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 42
+  },
+  {
+   "pr_id": 3307848370,
+   "number": 254,
+   "agent": "Copilot",
+   "repo": "machinewrapped/llm-subtrans",
+   "merged": false,
+   "n_commits": 3,
+   "says_tests_pass": false,
+   "order": 43
+  },
+  {
+   "pr_id": 3222749303,
+   "number": 95327,
+   "agent": "Cursor",
+   "repo": "getsentry/sentry",
+   "merged": false,
+   "n_commits": 3,
+   "says_tests_pass": false,
+   "order": 44
+  },
+  {
+   "pr_id": 3154494868,
+   "number": 1435,
+   "agent": "Devin",
+   "repo": "reflex-dev/reflex-web",
+   "merged": true,
+   "n_commits": 8,
+   "says_tests_pass": false,
+   "order": 45
+  },
+  {
+   "pr_id": 3307181626,
+   "number": 90,
+   "agent": "Google_Jules",
+   "repo": "lukas-clarke/eight_sleep",
+   "merged": true,
+   "n_commits": 11,
+   "says_tests_pass": false,
+   "order": 46
+  },
+  {
+   "pr_id": 3070783861,
+   "number": 46,
+   "agent": "OpenAI_Codex",
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 47
+  },
+  {
+   "pr_id": 3353482793,
+   "number": 541,
+   "agent": "Claude_Code",
+   "repo": "oraios/serena",
+   "merged": false,
+   "n_commits": 4,
+   "says_tests_pass": false,
+   "order": 48
+  },
+  {
+   "pr_id": 3301764972,
+   "number": 1330,
+   "agent": "Copilot",
+   "repo": "django-components/django-components",
+   "merged": true,
+   "n_commits": 4,
+   "says_tests_pass": false,
+   "order": 49
+  },
+  {
+   "pr_id": 3158599292,
+   "number": 509,
+   "agent": "Cursor",
+   "repo": "WorkflowAI/WorkflowAI",
+   "merged": true,
+   "n_commits": 7,
+   "says_tests_pass": false,
+   "order": 50
+  },
+  {
+   "pr_id": 3101032367,
+   "number": 60978,
+   "agent": "Devin",
+   "repo": "airbytehq/airbyte",
+   "merged": false,
+   "n_commits": 2,
+   "says_tests_pass": false,
+   "order": 51
+  },
+  {
+   "pr_id": 3492994182,
+   "number": 80,
+   "agent": "Google_Jules",
+   "repo": "laike9m/pdir2",
+   "merged": false,
+   "n_commits": 2,
+   "says_tests_pass": true,
+   "order": 52
+  },
+  {
+   "pr_id": 3070837303,
+   "number": 37,
+   "agent": "OpenAI_Codex",
+   "repo": "jrkropp/open-webui-developer-toolkit",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 53
+  },
+  {
+   "pr_id": 3342964412,
+   "number": 247,
+   "agent": "Claude_Code",
+   "repo": "BeehiveInnovations/zen-mcp-server",
+   "merged": true,
+   "n_commits": 3,
+   "says_tests_pass": true,
+   "order": 54
+  },
+  {
+   "pr_id": 3322234233,
+   "number": 498,
+   "agent": "Copilot",
+   "repo": "microsoft/fabric-cicd",
+   "merged": true,
+   "n_commits": 5,
+   "says_tests_pass": false,
+   "order": 55
+  },
+  {
+   "pr_id": 3264665958,
+   "number": 908,
+   "agent": "Cursor",
+   "repo": "harvard-edge/cs249r_book",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 56
+  },
+  {
+   "pr_id": 3521747457,
+   "number": 1851,
+   "agent": "Devin",
+   "repo": "567-labs/instructor",
+   "merged": false,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 57
+  },
+  {
+   "pr_id": 3334183582,
+   "number": 7,
+   "agent": "Google_Jules",
+   "repo": "kgcrom/cluefin",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 58
+  },
+  {
+   "pr_id": 3110056212,
+   "number": 1424,
+   "agent": "OpenAI_Codex",
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 59
+  },
+  {
+   "pr_id": 3262310380,
+   "number": 713,
+   "agent": "Claude_Code",
+   "repo": "graphistry/pygraphistry",
+   "merged": false,
+   "n_commits": 3,
+   "says_tests_pass": false,
+   "order": 60
+  },
+  {
+   "pr_id": 3430002756,
+   "number": 6243,
+   "agent": "Copilot",
+   "repo": "espnet/espnet",
+   "merged": false,
+   "n_commits": 3,
+   "says_tests_pass": false,
+   "order": 61
+  },
+  {
+   "pr_id": 3239555233,
+   "number": 33,
+   "agent": "Cursor",
+   "repo": "Bandit-HaxUnit/haxunit",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 62
+  },
+  {
+   "pr_id": 3039769863,
+   "number": 2756,
+   "agent": "Devin",
+   "repo": "crewAIInc/crewAI",
+   "merged": false,
+   "n_commits": 5,
+   "says_tests_pass": true,
+   "order": 63
+  },
+  {
+   "pr_id": 3277187585,
+   "number": 1017,
+   "agent": "Google_Jules",
+   "repo": "googleads/google-ads-python",
+   "merged": true,
+   "n_commits": 3,
+   "says_tests_pass": false,
+   "order": 64
+  },
+  {
+   "pr_id": 3108501995,
+   "number": 468,
+   "agent": "OpenAI_Codex",
+   "repo": "jrkropp/open-webui-developer-toolkit",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 65
+  },
+  {
+   "pr_id": 3246680171,
+   "number": 386,
+   "agent": "Claude_Code",
+   "repo": "numbagg/numbagg",
+   "merged": true,
+   "n_commits": 2,
+   "says_tests_pass": false,
+   "order": 66
+  },
+  {
+   "pr_id": 3410356602,
+   "number": 17697,
+   "agent": "Copilot",
+   "repo": "mlflow/mlflow",
+   "merged": true,
+   "n_commits": 7,
+   "says_tests_pass": false,
+   "order": 67
+  },
+  {
+   "pr_id": 3542335195,
+   "number": 437,
+   "agent": "Cursor",
+   "repo": "ucbepic/docetl",
+   "merged": true,
+   "n_commits": 3,
+   "says_tests_pass": false,
+   "order": 68
+  },
+  {
+   "pr_id": 3287298199,
+   "number": 3267,
+   "agent": "Devin",
+   "repo": "crewAIInc/crewAI",
+   "merged": false,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 69
+  },
+  {
+   "pr_id": 3226520746,
+   "number": 3343,
+   "agent": "Google_Jules",
+   "repo": "bmaltais/kohya_ss",
+   "merged": false,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 70
+  },
+  {
+   "pr_id": 3182953009,
+   "number": 2666,
+   "agent": "OpenAI_Codex",
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 71
+  },
+  {
+   "pr_id": 3524728793,
+   "number": 28,
+   "agent": "Claude_Code",
+   "repo": "modu-ai/moai-adk",
+   "merged": true,
+   "n_commits": 18,
+   "says_tests_pass": false,
+   "order": 72
+  },
+  {
+   "pr_id": 3298554111,
+   "number": 475,
+   "agent": "Copilot",
+   "repo": "microsoft/fabric-cicd",
+   "merged": true,
+   "n_commits": 2,
+   "says_tests_pass": false,
+   "order": 73
+  },
+  {
+   "pr_id": 3131698049,
+   "number": 11564,
+   "agent": "Cursor",
+   "repo": "BerriAI/litellm",
+   "merged": true,
+   "n_commits": 2,
+   "says_tests_pass": true,
+   "order": 74
+  },
+  {
+   "pr_id": 3034982691,
+   "number": 1339,
+   "agent": "Devin",
+   "repo": "reflex-dev/reflex-web",
+   "merged": true,
+   "n_commits": 2,
+   "says_tests_pass": false,
+   "order": 75
+  },
+  {
+   "pr_id": 3226434312,
+   "number": 3340,
+   "agent": "Google_Jules",
+   "repo": "bmaltais/kohya_ss",
+   "merged": false,
+   "n_commits": 4,
+   "says_tests_pass": false,
+   "order": 76
+  },
+  {
+   "pr_id": 3079663447,
+   "number": 141,
+   "agent": "OpenAI_Codex",
+   "repo": "PrunaAI/pruna",
+   "merged": false,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 77
+  },
+  {
+   "pr_id": 3482738367,
+   "number": 1490,
+   "agent": "Claude_Code",
+   "repo": "TracecatHQ/tracecat",
+   "merged": true,
+   "n_commits": 3,
+   "says_tests_pass": false,
+   "order": 78
+  },
+  {
+   "pr_id": 3433057940,
+   "number": 17828,
+   "agent": "Copilot",
+   "repo": "mlflow/mlflow",
+   "merged": true,
+   "n_commits": 3,
+   "says_tests_pass": true,
+   "order": 79
+  },
+  {
+   "pr_id": 3278439625,
+   "number": 96803,
+   "agent": "Cursor",
+   "repo": "getsentry/sentry",
+   "merged": false,
+   "n_commits": 2,
+   "says_tests_pass": false,
+   "order": 80
+  },
+  {
+   "pr_id": 3074156029,
+   "number": 862,
+   "agent": "Devin",
+   "repo": "saturday06/VRM-Addon-for-Blender",
+   "merged": false,
+   "n_commits": 2,
+   "says_tests_pass": true,
+   "order": 81
+  },
+  {
+   "pr_id": 3332973837,
+   "number": 3,
+   "agent": "Google_Jules",
+   "repo": "minaminao/erever",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 82
+  },
+  {
+   "pr_id": 3115743577,
+   "number": 1520,
+   "agent": "OpenAI_Codex",
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "merged": true,
+   "n_commits": 1,
+   "says_tests_pass": false,
+   "order": 83
+  }
+ ]
+}

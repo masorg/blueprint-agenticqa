@@ -1,0 +1,294 @@
+{
+  "generated_at": "2026-10-14T18:49:57.199136+00:00",
+  "provider": "stub+oracle-routing",
+  "provenance": {
+    "started_at": "2026-10-14T18:49:57.183615+00:00",
+    "git_sha": "244663e23b68e77127f8690342c2feefa4657be1",
+    "code_dirty": true,
+    "code_diff_sha256": null,
+    "corpus": "local",
+    "corpus_fingerprint": "f197db1cd00e1de5",
+    "n_scenarios": 4,
+    "provider": "stub+oracle-routing",
+    "configured_model": null,
+    "response_models": [],
+    "python": "3.14.7",
+    "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+    "argv": [
+      "eval-run",
+      "--provider",
+      "stub",
+      "--corpus",
+      "local",
+      "--routing",
+      "oracle"
+    ]
+  },
+  "n_scenarios": 4,
+  "verdict_confusion": {
+    "true_positive_needs_review": 3,
+    "true_negative_auto_approve": 1,
+    "false_positive_needs_review": 0,
+    "false_negative_auto_approve": 0,
+    "accuracy": 1.0
+  },
+  "routing_agreement_rate": 1.0,
+  "repo_kind_accuracy": 1.0,
+  "classification_agreement_rate_mean": 1.0,
+  "classification_verified_rate_mean": 1.0,
+  "total_wall_seconds": 13.15,
+  "total_llm_tokens": null,
+  "total_llm_calls": 0,
+  "total_llm_errors": 0,
+  "total_demoted_to_fallback_layer": 0,
+  "total_guardrail_overrides": 0,
+  "coverage_failures": [],
+  "all_discovered_tests_ran": true,
+  "scenarios": [
+    {
+      "scenario": "clean-baseline",
+      "expected_verdict": "auto_approve",
+      "actual_verdict": "auto_approve",
+      "verdict_correct": true,
+      "layers": {
+        "states": {
+          "unit": "passed",
+          "property": "passed",
+          "trajectory": "pending",
+          "llm_judge": "pending",
+          "adversarial": "passed"
+        },
+        "expected_failing": [],
+        "actual_failing": [],
+        "correctly_caught": [],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "expected_repo_kind": "plain_service",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true,
+        "summary": "Ground-truth routing (evaluation oracle)."
+      },
+      "triage_report": "Ran 18 tests across the applicable layers: **18 passed**, **0 failed**, 0 skipped.\n\n- **Unit**: \u2713 passed - 7/7 passed\n- **Property-based**: \u2713 passed - 4/4 passed\n- **Adversarial / Safety**: \u2713 passed - 7/7 passed\n\nAll applicable layers are green.",
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 1.0,
+        "verified_rate": 1.0,
+        "disagreements": [],
+        "demoted_to_fallback_layer": []
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 3.15,
+      "llm_usage": null,
+      "totals": {
+        "passed": 18,
+        "failed": 0,
+        "skipped": 0,
+        "total": 18
+      },
+      "n_discovered": 18,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "stock-check-off-by-one",
+      "expected_verdict": "needs_human_review",
+      "actual_verdict": "needs_human_review",
+      "verdict_correct": true,
+      "layers": {
+        "states": {
+          "unit": "failed",
+          "property": "failed",
+          "trajectory": "pending",
+          "llm_judge": "pending",
+          "adversarial": "passed"
+        },
+        "expected_failing": [
+          "property",
+          "unit"
+        ],
+        "actual_failing": [
+          "property",
+          "unit"
+        ],
+        "correctly_caught": [
+          "property",
+          "unit"
+        ],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "expected_repo_kind": "plain_service",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true,
+        "summary": "Ground-truth routing (evaluation oracle)."
+      },
+      "triage_report": "Ran 18 tests across the applicable layers: **16 passed**, **2 failed**, 0 skipped.\n\n- **Unit**: \u2717 failed - 6/7 passed, 1 failed\n- **Property-based**: \u2717 failed - 3/4 passed, 1 failed\n- **Adversarial / Safety**: \u2713 passed - 7/7 passed\n\n**Failing tests requiring attention:**\n- `tests/test_orders.py::test_order_exact_remaining_stock_succeeds`\n- `tests/test_properties.py::test_property_any_valid_order_must_succeed`",
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 1.0,
+        "verified_rate": 1.0,
+        "disagreements": [],
+        "demoted_to_fallback_layer": []
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 3.33,
+      "llm_usage": null,
+      "totals": {
+        "passed": 16,
+        "failed": 2,
+        "skipped": 0,
+        "total": 18
+      },
+      "n_discovered": 18,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "stale-stock-bound-property-only",
+      "expected_verdict": "needs_human_review",
+      "actual_verdict": "needs_human_review",
+      "verdict_correct": true,
+      "layers": {
+        "states": {
+          "unit": "passed",
+          "property": "failed",
+          "trajectory": "pending",
+          "llm_judge": "pending",
+          "adversarial": "passed"
+        },
+        "expected_failing": [
+          "property"
+        ],
+        "actual_failing": [
+          "property"
+        ],
+        "correctly_caught": [
+          "property"
+        ],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "expected_repo_kind": "plain_service",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true,
+        "summary": "Ground-truth routing (evaluation oracle)."
+      },
+      "triage_report": "Ran 18 tests across the applicable layers: **17 passed**, **1 failed**, 0 skipped.\n\n- **Unit**: \u2713 passed - 7/7 passed\n- **Property-based**: \u2717 failed - 3/4 passed, 1 failed\n- **Adversarial / Safety**: \u2713 passed - 7/7 passed\n\n**Failing tests requiring attention:**\n- `tests/test_properties.py::test_property_stock_never_negative`",
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 1.0,
+        "verified_rate": 1.0,
+        "disagreements": [],
+        "demoted_to_fallback_layer": []
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 3.35,
+      "llm_usage": null,
+      "totals": {
+        "passed": 17,
+        "failed": 1,
+        "skipped": 0,
+        "total": 18
+      },
+      "n_discovered": 18,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "name-length-bound-removed-adversarial-only",
+      "expected_verdict": "needs_human_review",
+      "actual_verdict": "needs_human_review",
+      "verdict_correct": true,
+      "layers": {
+        "states": {
+          "unit": "passed",
+          "property": "passed",
+          "trajectory": "pending",
+          "llm_judge": "pending",
+          "adversarial": "failed"
+        },
+        "expected_failing": [
+          "adversarial"
+        ],
+        "actual_failing": [
+          "adversarial"
+        ],
+        "correctly_caught": [
+          "adversarial"
+        ],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "expected_repo_kind": "plain_service",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true,
+        "summary": "Ground-truth routing (evaluation oracle)."
+      },
+      "triage_report": "Ran 18 tests across the applicable layers: **17 passed**, **1 failed**, 0 skipped.\n\n- **Unit**: \u2713 passed - 7/7 passed\n- **Property-based**: \u2713 passed - 4/4 passed\n- **Adversarial / Safety**: \u2717 failed - 6/7 passed, 1 failed\n\n**Failing tests requiring attention:**\n- `tests/test_adversarial.py::test_oversized_name_rejected`",
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 1.0,
+        "verified_rate": 1.0,
+        "disagreements": [],
+        "demoted_to_fallback_layer": []
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 3.32,
+      "llm_usage": null,
+      "totals": {
+        "passed": 17,
+        "failed": 1,
+        "skipped": 0,
+        "total": 18
+      },
+      "n_discovered": 18,
+      "coverage_ok": true
+    }
+  ]
+}

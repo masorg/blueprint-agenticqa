@@ -1,0 +1,61 @@
+{
+ "repo": "tkem/cachetools",
+ "number": 424,
+ "status": "ran",
+ "head": "19ed0ad151644a414f6faeba654a3c036b196a19",
+ "base": "3c082c654c2804b9354e4b62dbd2994f1aac464d",
+ "diff_bytes": 89709,
+ "coverage_seconds": 11.9,
+ "coverage_files": 19,
+ "n_tests": 353,
+ "base_failing": 0,
+ "head_failing": 1,
+ "introduced": [
+  "tests/test_cachedmethod.py::ClassMethodTest::test_classmethod"
+ ],
+ "flaky": [],
+ "mode": "full",
+ "reason": "a build or test configuration file changed: pyproject.toml",
+ "changed": [
+  ".github/copilot-instructions.md",
+  ".github/copilot-review.md",
+  ".github/workflows/ci.yml",
+  "CHANGELOG.rst",
+  "docs/index.rst",
+  "pyproject.toml",
+  "src/cachetools/__init__.py",
+  "src/cachetools/__init__.pyi",
+  "src/cachetools/_cached.py",
+  "src/cachetools/_cachedmethod.py",
+  "src/cachetools/_descriptor.py",
+  "src/cachetools/func.pyi",
+  "tests/test_cached.py",
+  "tests/test_cachedmethod.py",
+  "tests/test_classmethod.py",
+  "tests/test_rr.py"
+ ],
+ "n_changed": 16,
+ "selected": 353,
+ "file_selected": 353,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 353,
+ "dyn_uncovered": [],
+ "dyn_mode": "full",
+ "introduced_selected_dyn": [
+  "tests/test_cachedmethod.py::ClassMethodTest::test_classmethod"
+ ],
+ "seconds_dyn": 4.23,
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [
+  "tests/test_cachedmethod.py::ClassMethodTest::test_classmethod"
+ ],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 4.23,
+ "seconds_selected": 4.23,
+ "wall_seconds": 46.8,
+ "project": "cachetools",
+ "image_code_sha": "a116495"
+}

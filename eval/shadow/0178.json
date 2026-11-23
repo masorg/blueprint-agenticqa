@@ -1,0 +1,33 @@
+{
+ "repo": "mahmoud/glom",
+ "number": 331,
+ "status": "ran",
+ "head": "9ae004b06f3e27318af4a91b34bfda94706c5eca",
+ "base": "fd70d3051a6a1bcb5152ec2d8e2cdc8e852f95e6",
+ "diff_bytes": 1395,
+ "n_tests": 205,
+ "base_failing": 1,
+ "head_failing": 1,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "glom/grouping.py",
+  "glom/test/test_grouping.py"
+ ],
+ "n_changed": 2,
+ "selected": 205,
+ "file_selected": 205,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.42,
+ "seconds_selected": 0.42,
+ "wall_seconds": 24.1,
+ "project": "glom",
+ "image_code_sha": "a874558"
+}

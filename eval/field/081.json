@@ -1,0 +1,31 @@
+{
+ "order": 81,
+ "pr_id": 3074156029,
+ "agent": "Devin",
+ "merged": false,
+ "says_tests_pass": true,
+ "n_commits": 2,
+ "repo": "saturday06/VRM-Addon-for-Blender",
+ "number": 862,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "3c40d613c046d602885e38917be1d45f83a5b15a",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-h1x_ifmg/tests/test_common.py'. | E   ModuleNotFoundError: No module named 'bpy' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-h1x_ifmg/tests/test_importer.py'. | E   ModuleNotFoundError: No module named 'bpy' | ImportError while importing",
+  "layer_states": {},
+  "seconds": 3.0
+ },
+ "wall_seconds": 11.3,
+ "head_sha": "3c40d613c046d602885e38917be1d45f83a5b15a"
+}

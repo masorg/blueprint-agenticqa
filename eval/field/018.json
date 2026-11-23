@@ -1,0 +1,31 @@
+{
+ "order": 18,
+ "pr_id": 3338367670,
+ "agent": "Claude_Code",
+ "merged": true,
+ "says_tests_pass": true,
+ "n_commits": 7,
+ "repo": "doobidoo/mcp-memory-service",
+ "number": 87,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "71e424b44f4d2889ec0348adb6190e805966199f",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "RuntimeError: command timed out after 420.0s: /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/ec6bc602d3efea1d/.venv/bin/python pytest pytest-reportlog PyPDF2>=3.0.0 aiofiles>=23.2.1 aiohttp>=3.8.0 build>=0.10.0 chardet>=5.0.0 chromadb==0.5.23 click>=8.0.0 fastapi>=0.115.0 httpx>=0.24.0 mcp>=1.0.0,<2.0.0 psutil>=5.9.0 python-multipart>=0.0.9 sentence-transformers>=2.2.2",
+  "layer_states": {},
+  "seconds": 420.1
+ },
+ "wall_seconds": 422.6,
+ "head_sha": "71e424b44f4d2889ec0348adb6190e805966199f"
+}

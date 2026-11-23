@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-10-25T05:49:52.484871+00:00",
+ "summary": {
+  "projects": 10,
+  "test_files": 4734,
+  "cue_named": 14,
+  "projects_with_any": 3,
+  "note": "name-based: test files whose path matches the cues of the trajectory and LLM-judge layers; default branch at the time of the scan"
+ },
+ "results": [
+  {
+   "repo": "huggingface/smolagents",
+   "sha": "96f33faaf028479119ec8d34507b47694cf14e34",
+   "test_files": 27,
+   "cue_named": 0,
+   "cue_files": []
+  },
+  {
+   "repo": "pydantic/pydantic-ai",
+   "sha": "4ee11516b5be6b767654304ec8fe346b81369597",
+   "test_files": 1050,
+   "cue_named": 7,
+   "cue_files": [
+    "tests/evals/test_llm_as_a_judge.py",
+    "tests/evals/test_typesafe_judges.py",
+    "tests/harness/tool_call_judge/__init__.py",
+    "tests/harness/tool_call_judge/test_durable_tool_call_judge.py",
+    "tests/harness/tool_call_judge/test_tool_call_judge.py",
+    "tests/harness/trajectory_judge/__init__.py",
+    "tests/harness/trajectory_judge/test_trajectory_judge.py"
+   ]
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "sha": "38db11e3324fa0e23beb5eecd0d87e8e31ca2bb0",
+   "test_files": 486,
+   "cue_named": 0,
+   "cue_files": []
+  },
+  {
+   "repo": "langchain-ai/langgraph",
+   "sha": "4c52e129eb1ab69a3da58b799f67929f77d81149",
+   "test_files": 237,
+   "cue_named": 0,
+   "cue_files": []
+  },
+  {
+   "repo": "openai/openai-agents-python",
+   "sha": "0dc4cf152bff1f50bdc0e41f28808563406545b2",
+   "test_files": 457,
+   "cue_named": 0,
+   "cue_files": []
+  },
+  {
+   "repo": "microsoft/autogen",
+   "sha": "004749e6b7102c8fd317b9b1499ce5807223c278",
+   "test_files": 124,
+   "cue_named": 0,
+   "cue_files": []
+  },
+  {
+   "repo": "run-llama/llama_index",
+   "sha": "619d74664e8404612038bc15a1a40c686037277c",
+   "test_files": 1605,
+   "cue_named": 0,
+   "cue_files": []
+  },
+  {
+   "repo": "explodinggradients/ragas",
+   "sha": "298b68274234c060deacab3cf5fb52aa3a20e885",
+   "test_files": 109,
+   "cue_named": 2,
+   "cue_files": [
+    "tests/unit/test_domain_specific_rubrics_collections.py",
+    "tests/unit/test_instance_specific_rubrics_collections.py"
+   ]
+  },
+  {
+   "repo": "confident-ai/deepeval",
+   "sha": "5410e3822dda5f889d5f35de3325a3738004aeb1",
+   "test_files": 476,
+   "cue_named": 5,
+   "cue_files": [
+    "tests/test_core/test_models/test_judge_matrix.py",
+    "tests/test_metrics/test_audio_judge_checks.py",
+    "tests/test_metrics/test_g_eval_trajectory.py",
+    "tests/test_metrics/test_judge_prompt_inputs.py",
+    "tests/test_models/test_judges_live.py"
+   ]
+  },
+  {
+   "repo": "stanfordnlp/dspy",
+   "sha": "98830391be6fbf81523757271432bba1c6c4eb80",
+   "test_files": 163,
+   "cue_named": 0,
+   "cue_files": []
+  }
+ ]
+}

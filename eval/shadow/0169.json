@@ -1,0 +1,33 @@
+{
+ "repo": "gruns/furl",
+ "number": 189,
+ "status": "ran",
+ "head": "ed2d48a3625c41dbec9c5418b66bd5a686d40071",
+ "base": "46d9ea79c98bb14b970a199fb924705d024f29ad",
+ "diff_bytes": 2362,
+ "n_tests": 77,
+ "base_failing": 3,
+ "head_failing": 3,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "furl/furl.py",
+  "tests/test_furl.py"
+ ],
+ "n_changed": 2,
+ "selected": 77,
+ "file_selected": 77,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 7.96,
+ "seconds_selected": 7.96,
+ "wall_seconds": 32.6,
+ "project": "furl",
+ "image_code_sha": "a874558"
+}

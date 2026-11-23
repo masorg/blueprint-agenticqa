@@ -1,0 +1,33 @@
+{
+ "repo": "python-validators/validators",
+ "number": 526,
+ "status": "ran",
+ "head": "ea748acb94491107564a32463258d710e6e48d54",
+ "base": "6ffd8625ee4272dade063653bff615014bdc4734",
+ "diff_bytes": 3421,
+ "n_tests": 1123,
+ "base_failing": 18,
+ "head_failing": 18,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "src/validators/email.py",
+  "tests/test_email.py"
+ ],
+ "n_changed": 2,
+ "selected": 1123,
+ "file_selected": 1123,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.28,
+ "seconds_selected": 0.28,
+ "wall_seconds": 20.5,
+ "project": "validators",
+ "image_code_sha": "a874558"
+}

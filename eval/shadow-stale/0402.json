@@ -1,0 +1,11 @@
+{
+ "repo": "andialbrecht/sqlparse",
+ "number": 938,
+ "status": "error",
+ "head": "4a7fe2dc89bce38c8e89f2a78720d1036d39b783",
+ "base": "60cdc649726bf1bc4f1b336050560b336da715ec",
+ "diff_bytes": 2612,
+ "detail": "RuntimeError: command failed (2): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/ef83239cb50aee09/.venv/bin/python pytest pytest-reportlog build coverage furo hatch>=1.18.0 pytest ruff sphinx\nUsing Python 3.12.15 environment at: /tmp/agenticqa-workspaces/venv-cache/ef83239cb50aee09/.venv\nResolved 74 packages in 23.59s\nDownloading babel (9.7MiB)\nDownloading cryptography",
+ "project": "sqlparse",
+ "image_code_sha": "d9e3c20"
+}

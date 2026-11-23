@@ -1,0 +1,13 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 673,
+ "status": "run_error",
+ "head": "2a8eaf372acfca7c60a540f1856c3f28a655ebed",
+ "base": "dccae40a247f09a9e1b0f192c295a30786878d5a",
+ "diff_bytes": 352,
+ "coverage_seconds": 40.4,
+ "coverage_error": "exit 1: sertionError\n=========================== short test summary info ============================\nFAILED tests/test_threading.py::TestLockedHierarchicalTransitions::test_pickle\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1234 passed, 1296 skipped in 37.57s\n",
+ "detail": "2319 of 2567 selected tests produced no result",
+ "project": "transitions",
+ "image_code_sha": "a116495"
+}

@@ -1,0 +1,38 @@
+{
+ "repo": "python-attrs/attrs",
+ "number": 1638,
+ "status": "ran",
+ "head": "b30f2c51f5d888fd8321f9a5094c2ab267bf5105",
+ "base": "a602f78ff670f22be90fb8aea501a6cc30e10fdd",
+ "diff_bytes": 6367,
+ "n_tests": 1423,
+ "base_failing": 5,
+ "head_failing": 5,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "changelog.d/1638.change.md",
+  "docs/glossary.md",
+  "src/attr/_make.py",
+  "tests/test_slots.py"
+ ],
+ "n_changed": 4,
+ "selected": 1423,
+ "file_selected": 1423,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "changelog.d/1638.change.md",
+  "docs/glossary.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 22.39,
+ "seconds_selected": 22.39,
+ "wall_seconds": 150.5,
+ "project": "attrs",
+ "image_code_sha": "efa91d9"
+}

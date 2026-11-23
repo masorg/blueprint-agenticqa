@@ -1,0 +1,33 @@
+{
+ "repo": "tartley/colorama",
+ "number": 426,
+ "status": "ran",
+ "head": "e659221a26ba3c9943c3e0feea268a47c00a47c2",
+ "base": "841634ed2a0da5d5ac2d867db533da8131266cb2",
+ "diff_bytes": 2460,
+ "n_tests": 54,
+ "base_failing": 14,
+ "head_failing": 14,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "colorama/ansitowin32.py",
+  "colorama/tests/ansitowin32_test.py"
+ ],
+ "n_changed": 2,
+ "selected": 54,
+ "file_selected": 54,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.03,
+ "seconds_selected": 0.03,
+ "wall_seconds": 11.0,
+ "project": "colorama",
+ "image_code_sha": "efa91d9"
+}

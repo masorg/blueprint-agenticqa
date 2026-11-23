@@ -1,0 +1,433 @@
+{
+ "generated_at": "2026-10-24T14:09:27.608042+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T14:09:27.790104+00:00",
+  "git_sha": "50fbf59b28502473383bc103654a4e01a24b092b",
+  "code_dirty": true,
+  "code_diff_sha256": "9913368fbf59cca4",
+  "corpus": "selection-testmon:sqlparse",
+  "corpus_fingerprint": "d0bc77324b1154dc",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-testmon",
+   "--project",
+   "sqlparse",
+   "--report",
+   "eval/reports/selection-replay-sqlparse-2026-10-24T03-29-29.235829+00-00.json"
+  ]
+ },
+ "summary": {
+  "projects": [
+   "sqlparse"
+  ],
+  "mutants": 29,
+  "killed": 27,
+  "testmon_missed": {
+   "k": 2,
+   "n": 27,
+   "rate": 0.07407407407407407,
+   "ci95": [
+    0.021,
+    0.234
+   ]
+  },
+  "gate_missed": {
+   "k": 0,
+   "n": 27,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.125
+   ]
+  },
+  "testmon_tests_share_mean": 0.3547,
+  "gate_tests_share_mean": 0.76,
+  "testmon_missed_ids": [
+   "sqlparse-018",
+   "sqlparse-019"
+  ],
+  "baseline_seconds": {
+   "sqlparse": 3.8
+  },
+  "per_project": {
+   "sqlparse": {
+    "mutants": 29,
+    "killed": 27,
+    "testmon_missed": 2,
+    "gate_missed": 0,
+    "testmon_share": 0.355,
+    "gate_share": 0.76
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "sqlparse",
+   "seed": 20261023,
+   "status": "ran",
+   "rows": [
+    {
+     "id": "sqlparse-000",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 472,
+     "testmon_failed": 469,
+     "testmon_seconds": 9.17,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-001",
+     "total": 509,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.64,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-002",
+     "total": 509,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.65,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": false,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-003",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 451,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.92,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-004",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 4,
+     "testmon_failed": 3,
+     "testmon_seconds": 0.87,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-005",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 472,
+     "testmon_failed": 9,
+     "testmon_seconds": 3.09,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-006",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 18,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.99,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-007",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 105,
+     "testmon_failed": 91,
+     "testmon_seconds": 2.38,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-008",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 3,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.8,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-009",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 395,
+     "testmon_failed": 10,
+     "testmon_seconds": 3.0,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-010",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 451,
+     "testmon_failed": 242,
+     "testmon_seconds": 5.56,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-011",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 4,
+     "testmon_failed": 4,
+     "testmon_seconds": 0.82,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-012",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.92,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-013",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 394,
+     "testmon_failed": 19,
+     "testmon_seconds": 3.27,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-015",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 16,
+     "testmon_failed": 10,
+     "testmon_seconds": 0.92,
+     "timed_out": false,
+     "gate_selected": 21,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-016",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 394,
+     "testmon_failed": 238,
+     "testmon_seconds": 5.46,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-017",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 472,
+     "testmon_failed": 463,
+     "testmon_seconds": 9.3,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-018",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.62,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-019",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.79,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-020",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 451,
+     "testmon_failed": 4,
+     "testmon_seconds": 2.98,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-021",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 5,
+     "testmon_seconds": 0.84,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-022",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 472,
+     "testmon_failed": 10,
+     "testmon_seconds": 3.01,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-023",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 45,
+     "testmon_failed": 27,
+     "testmon_seconds": 2.07,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-024",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 93,
+     "testmon_failed": 73,
+     "testmon_seconds": 2.69,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-025",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 3,
+     "testmon_failed": 3,
+     "testmon_seconds": 0.83,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-026",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 5,
+     "testmon_failed": 5,
+     "testmon_seconds": 0.99,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-027",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 451,
+     "testmon_failed": 2,
+     "testmon_seconds": 2.94,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-028",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 54,
+     "testmon_failed": 3,
+     "testmon_seconds": 1.2,
+     "timed_out": false,
+     "gate_selected": 509,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    },
+    {
+     "id": "sqlparse-029",
+     "total": 509,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.8,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 2.382
+    }
+   ],
+   "baseline_seconds": 3.8,
+   "baseline_counts": {
+    "passed": 509,
+    "failed": 0,
+    "error": 0,
+    "skipped": 0,
+    "deselected": 0
+   }
+  }
+ ]
+}

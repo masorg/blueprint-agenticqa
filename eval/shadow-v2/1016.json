@@ -1,0 +1,59 @@
+{
+ "repo": "pytoolz/toolz",
+ "number": 609,
+ "status": "ran",
+ "head": "a033e7f1c22ca510470d6089816db4d1cacb2770",
+ "base": "8aca7ee07a1397b14e42c8f1d8aaaffbc109cd03",
+ "diff_bytes": 6465,
+ "coverage_seconds": 44.6,
+ "coverage_files": 46,
+ "n_tests": 205,
+ "base_failing": 2,
+ "head_failing": 2,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/pre-commit.yml",
+  ".github/workflows/publish_pypi.yml",
+  ".github/workflows/test.yml",
+  ".pre-commit-config.yaml",
+  "conda.recipe/bld.bat",
+  "conda.recipe/build.sh",
+  "conda.recipe/meta.yaml"
+ ],
+ "n_changed": 7,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [
+  "conda.recipe/bld.bat",
+  "conda.recipe/build.sh"
+ ],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [
+  "conda.recipe/bld.bat",
+  "conda.recipe/build.sh"
+ ],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [
+  ".pre-commit-config.yaml",
+  "conda.recipe/meta.yaml"
+ ],
+ "inert": [
+  ".github/workflows/pre-commit.yml",
+  ".github/workflows/publish_pypi.yml",
+  ".github/workflows/test.yml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 5.14,
+ "seconds_selected": 0,
+ "wall_seconds": 76.3,
+ "project": "toolz",
+ "image_code_sha": "a116495"
+}

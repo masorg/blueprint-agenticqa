@@ -1,0 +1,43 @@
+{
+ "repo": "scrapy/w3lib",
+ "number": 396,
+ "status": "ran",
+ "head": "cb6d398c70654fd43bb8e1abc2dbd343f837d43c",
+ "base": "eaefacddb86250ef302e680453e3887072b47c9b",
+ "diff_bytes": 1977,
+ "map_base": "3ea9e8f3e2c4a744cebeedfb41b4e451ff903d2c",
+ "map_age_commits": 77,
+ "n_tests": 1870,
+ "base_failing": 170,
+ "head_failing": 171,
+ "introduced": [],
+ "flaky": [
+  "tests/test_url.py::TestParseUrlProperties::test_no_exception"
+ ],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "tests/test_html.py",
+  "w3lib/html.py"
+ ],
+ "n_changed": 2,
+ "selected": 349,
+ "file_selected": 349,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 349,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 46.8,
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 131.61,
+ "seconds_selected": 46.8,
+ "wall_seconds": 426.3,
+ "project": "w3lib",
+ "image_code_sha": "d9e3c20"
+}

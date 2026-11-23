@@ -1,0 +1,13 @@
+{
+ "repo": "scrapy/w3lib",
+ "number": 378,
+ "status": "run_error",
+ "head": "08c0c35111b24285d2630aabba0c9fbc1701ded0",
+ "base": "ade4b62e55da45a8e5ead6ed21dcdedd018b9672",
+ "diff_bytes": 564,
+ "map_base": "3ea9e8f3e2c4a744cebeedfb41b4e451ff903d2c",
+ "map_age_commits": 56,
+ "detail": "layer timed out after 300.0s",
+ "project": "w3lib",
+ "image_code_sha": "d9e3c20"
+}

@@ -1,0 +1,31 @@
+{
+ "order": 78,
+ "pr_id": 3482738367,
+ "agent": "Claude_Code",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 3,
+ "repo": "TracecatHQ/tracecat",
+ "number": 1490,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "b1ad023990760dbef6111243b1762dacaa5140e6",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "RuntimeError: command failed (1): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/5b1a666d111b1fad/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-vb3sx93v/requirements.txt\nUsing Python 3.12.15 environment at: /tmp/agenticqa-workspaces/venv-cache/5b1a666d111b1fad/.venv\nerror: Distribution not found at: file:///app/packages/tracecat-ee\n",
+  "layer_states": {},
+  "seconds": 0.4
+ },
+ "wall_seconds": 5.2,
+ "head_sha": "b1ad023990760dbef6111243b1762dacaa5140e6"
+}

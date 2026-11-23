@@ -1,0 +1,33 @@
+{
+ "repo": "pallets/itsdangerous",
+ "number": 437,
+ "status": "ran",
+ "head": "974a575337fd10f03e812fd0586bcc32affd3805",
+ "base": "672971d66a2ef9f85151e53283113f33d642dabd",
+ "diff_bytes": 9002,
+ "n_tests": 307,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "src/itsdangerous/timed.py",
+  "tests/test_itsdangerous/test_timed.py"
+ ],
+ "n_changed": 2,
+ "selected": 307,
+ "file_selected": 307,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 55.05,
+ "seconds_selected": 55.05,
+ "wall_seconds": 37.4,
+ "project": "itsdangerous",
+ "image_code_sha": "a874558"
+}

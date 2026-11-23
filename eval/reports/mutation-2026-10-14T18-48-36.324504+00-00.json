@@ -1,0 +1,2348 @@
+{
+  "generated_at": "2026-10-14T18:48:36.324504+00:00",
+  "provenance": {
+    "started_at": "2026-10-14T18:48:36.406384+00:00",
+    "git_sha": "244663e23b68e77127f8690342c2feefa4657be1",
+    "code_dirty": false,
+    "code_diff_sha256": null,
+    "corpus": "mutants:inventory,support",
+    "corpus_fingerprint": "e0a00b06e16b7ccd",
+    "n_scenarios": 10,
+    "provider": "none (no LLM; heuristic classifier, oracle routing)",
+    "configured_model": null,
+    "response_models": [],
+    "python": "3.14.7",
+    "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+    "argv": [
+      "mutation-run",
+      "--system",
+      "all"
+    ],
+    "hypothesis_seed": 0,
+    "sample_seed": 20261014,
+    "n_requested": null
+  },
+  "summary": {
+    "all": {
+      "n_generated": 97,
+      "n_valid": 97,
+      "n_invalid": 0,
+      "n_killed": 61,
+      "n_survived": 36,
+      "per_layer": {
+        "unit": {
+          "kills": 42,
+          "unique_kills": 6,
+          "unique_ids": [
+            "inventory-007",
+            "inventory-019",
+            "support-008",
+            "support-011",
+            "support-023",
+            "support-034"
+          ]
+        },
+        "property": {
+          "kills": 41,
+          "unique_kills": 7,
+          "unique_ids": [
+            "inventory-005",
+            "inventory-006",
+            "support-017",
+            "support-025",
+            "support-029",
+            "support-031",
+            "support-053"
+          ]
+        },
+        "trajectory": {
+          "kills": 16,
+          "unique_kills": 1,
+          "unique_ids": [
+            "support-057"
+          ]
+        },
+        "llm_judge": {
+          "kills": 23,
+          "unique_kills": 0,
+          "unique_ids": []
+        },
+        "adversarial": {
+          "kills": 33,
+          "unique_kills": 10,
+          "unique_ids": [
+            "inventory-009",
+            "inventory-015",
+            "inventory-030",
+            "inventory-031",
+            "inventory-033",
+            "inventory-034",
+            "inventory-035",
+            "inventory-036",
+            "support-013",
+            "support-018"
+          ]
+        }
+      },
+      "baselines": {
+        "unit-only": {
+          "k": 42,
+          "n": 97,
+          "rate": 0.4329896907216495,
+          "ci95": [
+            0.339,
+            0.532
+          ]
+        },
+        "unit+adversarial": {
+          "k": 53,
+          "n": 97,
+          "rate": 0.5463917525773195,
+          "ci95": [
+            0.447,
+            0.642
+          ]
+        },
+        "unit+property": {
+          "k": 50,
+          "n": 97,
+          "rate": 0.5154639175257731,
+          "ci95": [
+            0.417,
+            0.612
+          ]
+        },
+        "full-pyramid": {
+          "k": 61,
+          "n": 97,
+          "rate": 0.6288659793814433,
+          "ci95": [
+            0.53,
+            0.718
+          ]
+        }
+      },
+      "by_operator": {
+        "const-shift": {
+          "generated": 33,
+          "valid": 33,
+          "killed": 11
+        },
+        "if-negate": {
+          "generated": 19,
+          "valid": 19,
+          "killed": 19
+        },
+        "not-drop": {
+          "generated": 6,
+          "valid": 6,
+          "killed": 6
+        },
+        "raise-drop": {
+          "generated": 19,
+          "valid": 19,
+          "killed": 14
+        },
+        "cmp-flip": {
+          "generated": 8,
+          "valid": 8,
+          "killed": 4
+        },
+        "bool-swap": {
+          "generated": 7,
+          "valid": 7,
+          "killed": 4
+        },
+        "arith-swap": {
+          "generated": 5,
+          "valid": 5,
+          "killed": 3
+        }
+      },
+      "survivor_ids": [
+        "inventory-000",
+        "inventory-003",
+        "inventory-018",
+        "inventory-020",
+        "inventory-021",
+        "inventory-022",
+        "inventory-023",
+        "inventory-024",
+        "inventory-025",
+        "inventory-026",
+        "inventory-027",
+        "inventory-028",
+        "inventory-029",
+        "inventory-032",
+        "inventory-037",
+        "inventory-038",
+        "support-000",
+        "support-001",
+        "support-002",
+        "support-003",
+        "support-004",
+        "support-005",
+        "support-007",
+        "support-016",
+        "support-020",
+        "support-022",
+        "support-026",
+        "support-027",
+        "support-028",
+        "support-033",
+        "support-036",
+        "support-037",
+        "support-038",
+        "support-045",
+        "support-048",
+        "support-056"
+      ]
+    },
+    "inventory": {
+      "n_generated": 39,
+      "n_valid": 39,
+      "n_invalid": 0,
+      "n_killed": 23,
+      "n_survived": 16,
+      "per_layer": {
+        "unit": {
+          "kills": 12,
+          "unique_kills": 2,
+          "unique_ids": [
+            "inventory-007",
+            "inventory-019"
+          ]
+        },
+        "property": {
+          "kills": 13,
+          "unique_kills": 2,
+          "unique_ids": [
+            "inventory-005",
+            "inventory-006"
+          ]
+        },
+        "trajectory": {
+          "kills": 0,
+          "unique_kills": 0,
+          "unique_ids": []
+        },
+        "llm_judge": {
+          "kills": 0,
+          "unique_kills": 0,
+          "unique_ids": []
+        },
+        "adversarial": {
+          "kills": 18,
+          "unique_kills": 8,
+          "unique_ids": [
+            "inventory-009",
+            "inventory-015",
+            "inventory-030",
+            "inventory-031",
+            "inventory-033",
+            "inventory-034",
+            "inventory-035",
+            "inventory-036"
+          ]
+        }
+      },
+      "baselines": {
+        "unit-only": {
+          "k": 12,
+          "n": 39,
+          "rate": 0.3076923076923077,
+          "ci95": [
+            0.186,
+            0.464
+          ]
+        },
+        "unit+adversarial": {
+          "k": 21,
+          "n": 39,
+          "rate": 0.5384615384615384,
+          "ci95": [
+            0.386,
+            0.684
+          ]
+        },
+        "unit+property": {
+          "k": 15,
+          "n": 39,
+          "rate": 0.38461538461538464,
+          "ci95": [
+            0.249,
+            0.541
+          ]
+        },
+        "full-pyramid": {
+          "k": 23,
+          "n": 39,
+          "rate": 0.5897435897435898,
+          "ci95": [
+            0.434,
+            0.729
+          ]
+        }
+      },
+      "by_operator": {
+        "const-shift": {
+          "generated": 17,
+          "valid": 17,
+          "killed": 5
+        },
+        "if-negate": {
+          "generated": 7,
+          "valid": 7,
+          "killed": 7
+        },
+        "not-drop": {
+          "generated": 1,
+          "valid": 1,
+          "killed": 1
+        },
+        "raise-drop": {
+          "generated": 12,
+          "valid": 12,
+          "killed": 8
+        },
+        "cmp-flip": {
+          "generated": 2,
+          "valid": 2,
+          "killed": 2
+        }
+      },
+      "survivor_ids": [
+        "inventory-000",
+        "inventory-003",
+        "inventory-018",
+        "inventory-020",
+        "inventory-021",
+        "inventory-022",
+        "inventory-023",
+        "inventory-024",
+        "inventory-025",
+        "inventory-026",
+        "inventory-027",
+        "inventory-028",
+        "inventory-029",
+        "inventory-032",
+        "inventory-037",
+        "inventory-038"
+      ]
+    },
+    "support": {
+      "n_generated": 58,
+      "n_valid": 58,
+      "n_invalid": 0,
+      "n_killed": 38,
+      "n_survived": 20,
+      "per_layer": {
+        "unit": {
+          "kills": 30,
+          "unique_kills": 4,
+          "unique_ids": [
+            "support-008",
+            "support-011",
+            "support-023",
+            "support-034"
+          ]
+        },
+        "property": {
+          "kills": 28,
+          "unique_kills": 5,
+          "unique_ids": [
+            "support-017",
+            "support-025",
+            "support-029",
+            "support-031",
+            "support-053"
+          ]
+        },
+        "trajectory": {
+          "kills": 16,
+          "unique_kills": 1,
+          "unique_ids": [
+            "support-057"
+          ]
+        },
+        "llm_judge": {
+          "kills": 23,
+          "unique_kills": 0,
+          "unique_ids": []
+        },
+        "adversarial": {
+          "kills": 15,
+          "unique_kills": 2,
+          "unique_ids": [
+            "support-013",
+            "support-018"
+          ]
+        }
+      },
+      "baselines": {
+        "unit-only": {
+          "k": 30,
+          "n": 58,
+          "rate": 0.5172413793103449,
+          "ci95": [
+            0.392,
+            0.641
+          ]
+        },
+        "unit+adversarial": {
+          "k": 32,
+          "n": 58,
+          "rate": 0.5517241379310345,
+          "ci95": [
+            0.425,
+            0.673
+          ]
+        },
+        "unit+property": {
+          "k": 35,
+          "n": 58,
+          "rate": 0.603448275862069,
+          "ci95": [
+            0.475,
+            0.719
+          ]
+        },
+        "full-pyramid": {
+          "k": 38,
+          "n": 58,
+          "rate": 0.6551724137931034,
+          "ci95": [
+            0.527,
+            0.764
+          ]
+        }
+      },
+      "by_operator": {
+        "const-shift": {
+          "generated": 16,
+          "valid": 16,
+          "killed": 6
+        },
+        "cmp-flip": {
+          "generated": 6,
+          "valid": 6,
+          "killed": 2
+        },
+        "bool-swap": {
+          "generated": 7,
+          "valid": 7,
+          "killed": 4
+        },
+        "arith-swap": {
+          "generated": 5,
+          "valid": 5,
+          "killed": 3
+        },
+        "if-negate": {
+          "generated": 12,
+          "valid": 12,
+          "killed": 12
+        },
+        "raise-drop": {
+          "generated": 7,
+          "valid": 7,
+          "killed": 6
+        },
+        "not-drop": {
+          "generated": 5,
+          "valid": 5,
+          "killed": 5
+        }
+      },
+      "survivor_ids": [
+        "support-000",
+        "support-001",
+        "support-002",
+        "support-003",
+        "support-004",
+        "support-005",
+        "support-007",
+        "support-016",
+        "support-020",
+        "support-022",
+        "support-026",
+        "support-027",
+        "support-028",
+        "support-033",
+        "support-036",
+        "support-037",
+        "support-038",
+        "support-045",
+        "support-048",
+        "support-056"
+      ]
+    }
+  },
+  "mutants": [
+    {
+      "system": "inventory",
+      "id": "inventory-000",
+      "operator": "const-shift",
+      "line": 53,
+      "description": "const-shift @L53: '0' -> '1'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-001",
+      "operator": "if-negate",
+      "line": 85,
+      "description": "if-negate @L85: 'not sku' -> 'not (not sku)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 11
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-002",
+      "operator": "not-drop",
+      "line": 85,
+      "description": "not-drop @L85: 'not sku' -> 'sku'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 11
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-003",
+      "operator": "raise-drop",
+      "line": 86,
+      "description": "raise-drop @L86: 'raise ValueError(\"sku is required\")' -> 'pass'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-004",
+      "operator": "if-negate",
+      "line": 87,
+      "description": "if-negate @L87: 'stock < 0' -> 'not (stock < 0)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 12
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-005",
+      "operator": "cmp-flip",
+      "line": 87,
+      "description": "cmp-flip @L87: '<' -> '<='",
+      "status": "killed",
+      "killers": [
+        "property"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "failed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 3
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-006",
+      "operator": "const-shift",
+      "line": 87,
+      "description": "const-shift @L87: '0' -> '1'",
+      "status": "killed",
+      "killers": [
+        "property"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "failed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 3
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-007",
+      "operator": "raise-drop",
+      "line": 88,
+      "description": "raise-drop @L88: 'raise ValueError(\"stock cannot be negative\")' -> 'pass'",
+      "status": "killed",
+      "killers": [
+        "unit"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-008",
+      "operator": "if-negate",
+      "line": 98,
+      "description": "if-negate @L98: 'item is None' -> 'not (item is None)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 7
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-009",
+      "operator": "raise-drop",
+      "line": 99,
+      "description": "raise-drop @L99: 'raise KeyError(sku)' -> 'pass'",
+      "status": "killed",
+      "killers": [
+        "adversarial"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-010",
+      "operator": "if-negate",
+      "line": 104,
+      "description": "if-negate @L104: 'quantity <= 0' -> 'not (quantity <= 0)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 8
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-011",
+      "operator": "cmp-flip",
+      "line": 104,
+      "description": "cmp-flip @L104: '<=' -> '<'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 2
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-012",
+      "operator": "const-shift",
+      "line": 104,
+      "description": "const-shift @L104: '0' -> '1'",
+      "status": "killed",
+      "killers": [
+        "property",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "failed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 2
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-013",
+      "operator": "raise-drop",
+      "line": 105,
+      "description": "raise-drop @L105: 'raise ValueError(\"quantity must be positive\")' -> 'pass'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 3
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-014",
+      "operator": "if-negate",
+      "line": 107,
+      "description": "if-negate @L107: 'item is None' -> 'not (item is None)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 9
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-015",
+      "operator": "raise-drop",
+      "line": 108,
+      "description": "raise-drop @L108: 'raise KeyError(sku)' -> 'pass'",
+      "status": "killed",
+      "killers": [
+        "adversarial"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-016",
+      "operator": "if-negate",
+      "line": 123,
+      "description": "if-negate @L123: 'insufficient' -> 'not (insufficient)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 8
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-017",
+      "operator": "raise-drop",
+      "line": 124,
+      "description": "raise-drop @L124: 'raise ValueError(\"insufficient stock\")' -> 'pass'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 4
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-018",
+      "operator": "const-shift",
+      "line": 127,
+      "description": "const-shift @L127: '1' -> '2'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-019",
+      "operator": "if-negate",
+      "line": 136,
+      "description": "if-negate @L136: 'order is None' -> 'not (order is None)'",
+      "status": "killed",
+      "killers": [
+        "unit"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-020",
+      "operator": "raise-drop",
+      "line": 137,
+      "description": "raise-drop @L137: 'raise KeyError(order_id)' -> 'pass'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-021",
+      "operator": "const-shift",
+      "line": 148,
+      "description": "const-shift @L148: '1' -> '2'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-022",
+      "operator": "const-shift",
+      "line": 148,
+      "description": "const-shift @L148: '64' -> '65'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-023",
+      "operator": "const-shift",
+      "line": 149,
+      "description": "const-shift @L149: '1' -> '2'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-024",
+      "operator": "const-shift",
+      "line": 150,
+      "description": "const-shift @L150: '0' -> '1'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-025",
+      "operator": "const-shift",
+      "line": 154,
+      "description": "const-shift @L154: '1' -> '2'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-026",
+      "operator": "const-shift",
+      "line": 154,
+      "description": "const-shift @L154: '64' -> '65'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-027",
+      "operator": "const-shift",
+      "line": 163,
+      "description": "const-shift @L163: '201' -> '202'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-028",
+      "operator": "raise-drop",
+      "line": 168,
+      "description": "raise-drop @L168: 'raise HTTPException(status_code=400, detail=str(exc)) from exc' -> 'pass'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-029",
+      "operator": "const-shift",
+      "line": 168,
+      "description": "const-shift @L168: '400' -> '401'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-030",
+      "operator": "raise-drop",
+      "line": 176,
+      "description": "raise-drop @L176: 'raise HTTPException(status_code=404, detail=\"item not found\") from exc' -> 'pass'",
+      "status": "killed",
+      "killers": [
+        "adversarial"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-031",
+      "operator": "const-shift",
+      "line": 176,
+      "description": "const-shift @L176: '404' -> '405'",
+      "status": "killed",
+      "killers": [
+        "adversarial"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-032",
+      "operator": "const-shift",
+      "line": 179,
+      "description": "const-shift @L179: '201' -> '202'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-033",
+      "operator": "raise-drop",
+      "line": 184,
+      "description": "raise-drop @L184: 'raise HTTPException(status_code=400, detail=str(exc)) from exc' -> 'pass'",
+      "status": "killed",
+      "killers": [
+        "adversarial"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 2
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-034",
+      "operator": "const-shift",
+      "line": 184,
+      "description": "const-shift @L184: '400' -> '401'",
+      "status": "killed",
+      "killers": [
+        "adversarial"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 2
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-035",
+      "operator": "raise-drop",
+      "line": 186,
+      "description": "raise-drop @L186: 'raise HTTPException(status_code=404, detail=\"item not found\") from exc' -> 'pass'",
+      "status": "killed",
+      "killers": [
+        "adversarial"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-036",
+      "operator": "const-shift",
+      "line": 186,
+      "description": "const-shift @L186: '404' -> '405'",
+      "status": "killed",
+      "killers": [
+        "adversarial"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "failed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-037",
+      "operator": "raise-drop",
+      "line": 194,
+      "description": "raise-drop @L194: 'raise HTTPException(status_code=404, detail=\"order not found\") from exc' -> 'pass'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "inventory",
+      "id": "inventory-038",
+      "operator": "const-shift",
+      "line": 194,
+      "description": "const-shift @L194: '404' -> '405'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "pending",
+        "llm_judge": "pending",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-000",
+      "operator": "const-shift",
+      "line": 40,
+      "description": "const-shift @L40: '100.0' -> '101.0'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-001",
+      "operator": "const-shift",
+      "line": 41,
+      "description": "const-shift @L41: '30' -> '31'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-002",
+      "operator": "const-shift",
+      "line": 96,
+      "description": "const-shift @L96: '2' -> '3'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-003",
+      "operator": "cmp-flip",
+      "line": 127,
+      "description": "cmp-flip @L127: '>' -> '>='",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-004",
+      "operator": "const-shift",
+      "line": 127,
+      "description": "const-shift @L127: '2' -> '3'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-005",
+      "operator": "bool-swap",
+      "line": 127,
+      "description": "bool-swap @L127: 'and' -> 'or'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-006",
+      "operator": "arith-swap",
+      "line": 130,
+      "description": "arith-swap @L130: '+' -> '-'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "trajectory",
+        "llm_judge",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "failed",
+        "llm_judge": "failed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 7
+    },
+    {
+      "system": "support",
+      "id": "support-007",
+      "operator": "const-shift",
+      "line": 131,
+      "description": "const-shift @L131: '1' -> '2'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-008",
+      "operator": "if-negate",
+      "line": 132,
+      "description": "if-negate @L132: 'matched' -> 'not (matched)'",
+      "status": "killed",
+      "killers": [
+        "unit"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 3
+    },
+    {
+      "system": "support",
+      "id": "support-009",
+      "operator": "const-shift",
+      "line": 134,
+      "description": "const-shift @L134: '0' -> '1'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "trajectory",
+        "llm_judge"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "failed",
+        "llm_judge": "failed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 5
+    },
+    {
+      "system": "support",
+      "id": "support-010",
+      "operator": "if-negate",
+      "line": 140,
+      "description": "if-negate @L140: 'kb_id not in KB' -> 'not (kb_id not in KB)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "trajectory",
+        "llm_judge",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "failed",
+        "llm_judge": "failed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 14
+    },
+    {
+      "system": "support",
+      "id": "support-011",
+      "operator": "raise-drop",
+      "line": 141,
+      "description": "raise-drop @L141: 'raise ToolError(f\"no policy for {topic!r}\")' -> 'pass'",
+      "status": "killed",
+      "killers": [
+        "unit"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "support",
+      "id": "support-012",
+      "operator": "if-negate",
+      "line": 146,
+      "description": "if-negate @L146: 'invoice_id not in _invoices' -> 'not (invoice_id not in _invoices)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "trajectory",
+        "llm_judge",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "failed",
+        "llm_judge": "failed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 13
+    },
+    {
+      "system": "support",
+      "id": "support-013",
+      "operator": "raise-drop",
+      "line": 147,
+      "description": "raise-drop @L147: 'raise ToolError(f\"unknown invoice {invoice_id!r}\")' -> 'pass'",
+      "status": "killed",
+      "killers": [
+        "adversarial"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "support",
+      "id": "support-014",
+      "operator": "if-negate",
+      "line": 152,
+      "description": "if-negate @L152: 'not (isinstance(amount, (int, float)) and math.isfinite(amount) and amount > 0)' -> 'not (not (isinstance(amount, (int, float)) and math.isfinite(amount) and amount > 0))'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "llm_judge",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "passed",
+        "llm_judge": "failed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 6
+    },
+    {
+      "system": "support",
+      "id": "support-015",
+      "operator": "not-drop",
+      "line": 152,
+      "description": "not-drop @L152: 'not (isinstance(amount, (int, float)) and math.isfinite(amount) and amount > 0)' -> 'isinstance(amount, (int, float)) and math.isfinite(amount) and amount > 0'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "llm_judge",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "passed",
+        "llm_judge": "failed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 6
+    },
+    {
+      "system": "support",
+      "id": "support-016",
+      "operator": "cmp-flip",
+      "line": 152,
+      "description": "cmp-flip @L152: '>' -> '>='",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-017",
+      "operator": "const-shift",
+      "line": 152,
+      "description": "const-shift @L152: '0' -> '1'",
+      "status": "killed",
+      "killers": [
+        "property"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "failed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "support",
+      "id": "support-018",
+      "operator": "raise-drop",
+      "line": 153,
+      "description": "raise-drop @L153: 'raise ToolError(\"refund amount must be a positive number\")' -> 'pass'",
+      "status": "killed",
+      "killers": [
+        "adversarial"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "support",
+      "id": "support-019",
+      "operator": "if-negate",
+      "line": 155,
+      "description": "if-negate @L155: 'inv is None' -> 'not (inv is None)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "llm_judge"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "passed",
+        "llm_judge": "failed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 5
+    },
+    {
+      "system": "support",
+      "id": "support-020",
+      "operator": "raise-drop",
+      "line": 156,
+      "description": "raise-drop @L156: 'raise ToolError(f\"unknown invoice {invoice_id!r}\")' -> 'pass'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-021",
+      "operator": "if-negate",
+      "line": 157,
+      "description": "if-negate @L157: 'inv[\"age_days\"] > REFUND_WINDOW_DAYS' -> 'not (inv[\"age_days\"] > REFUND_WINDOW_DAYS)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "llm_judge"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "passed",
+        "llm_judge": "failed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 6
+    },
+    {
+      "system": "support",
+      "id": "support-022",
+      "operator": "cmp-flip",
+      "line": 157,
+      "description": "cmp-flip @L157: '>' -> '>='",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-023",
+      "operator": "raise-drop",
+      "line": 158,
+      "description": "raise-drop @L158: 'raise ToolError(\"invoice is outside the refund window\")' -> 'pass'",
+      "status": "killed",
+      "killers": [
+        "unit"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "support",
+      "id": "support-024",
+      "operator": "if-negate",
+      "line": 159,
+      "description": "if-negate @L159: 'inv[\"refunded\"] + amount > inv[\"total\"] + 1e-9' -> 'not (inv[\"refunded\"] + amount > inv[\"total\"] + 1e-9)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "llm_judge"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "passed",
+        "llm_judge": "failed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 5
+    },
+    {
+      "system": "support",
+      "id": "support-025",
+      "operator": "arith-swap",
+      "line": 159,
+      "description": "arith-swap @L159: '+' -> '-'",
+      "status": "killed",
+      "killers": [
+        "property"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "failed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "support",
+      "id": "support-026",
+      "operator": "cmp-flip",
+      "line": 159,
+      "description": "cmp-flip @L159: '>' -> '>='",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-027",
+      "operator": "arith-swap",
+      "line": 159,
+      "description": "arith-swap @L159: '+' -> '-'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-028",
+      "operator": "const-shift",
+      "line": 159,
+      "description": "const-shift @L159: '1e-9' -> '1.000000001'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-029",
+      "operator": "raise-drop",
+      "line": 160,
+      "description": "raise-drop @L160: 'raise ToolError(\"refund exceeds the invoice total\")' -> 'pass'",
+      "status": "killed",
+      "killers": [
+        "property"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "failed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "support",
+      "id": "support-030",
+      "operator": "if-negate",
+      "line": 161,
+      "description": "if-negate @L161: 'amount > REFUND_APPROVAL_THRESHOLD and (invoice_id, round(amount, 2)) not in _approvals' -> 'not (amount > REFUND_APPROVAL_THRESHOLD and (invoice_id, round(amount, 2)) not in _approvals)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "llm_judge"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "passed",
+        "llm_judge": "failed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 5
+    },
+    {
+      "system": "support",
+      "id": "support-031",
+      "operator": "cmp-flip",
+      "line": 161,
+      "description": "cmp-flip @L161: '>' -> '>='",
+      "status": "killed",
+      "killers": [
+        "property"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "failed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "support",
+      "id": "support-032",
+      "operator": "bool-swap",
+      "line": 161,
+      "description": "bool-swap @L161: 'and' -> 'or'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "llm_judge"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "passed",
+        "llm_judge": "failed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 4
+    },
+    {
+      "system": "support",
+      "id": "support-033",
+      "operator": "const-shift",
+      "line": 161,
+      "description": "const-shift @L161: '2' -> '3'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-034",
+      "operator": "raise-drop",
+      "line": 162,
+      "description": "raise-drop @L162: 'raise ApprovalRequired(f\"refunds above ${REFUND_APPROVAL_THRESHOLD:.0f} need human approval\")' -> 'pass'",
+      "status": "killed",
+      "killers": [
+        "unit"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "support",
+      "id": "support-035",
+      "operator": "arith-swap",
+      "line": 163,
+      "description": "arith-swap @L163: '+' -> '-'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 2
+    },
+    {
+      "system": "support",
+      "id": "support-036",
+      "operator": "const-shift",
+      "line": 163,
+      "description": "const-shift @L163: '2' -> '3'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-037",
+      "operator": "arith-swap",
+      "line": 168,
+      "description": "arith-swap @L168: '+' -> '-'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-038",
+      "operator": "const-shift",
+      "line": 168,
+      "description": "const-shift @L168: '1' -> '2'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-039",
+      "operator": "const-shift",
+      "line": 189,
+      "description": "const-shift @L189: '0.0' -> '1.0'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 6
+    },
+    {
+      "system": "support",
+      "id": "support-040",
+      "operator": "bool-swap",
+      "line": 197,
+      "description": "bool-swap @L197: 'or' -> 'and'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "trajectory",
+        "llm_judge",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "failed",
+        "llm_judge": "failed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 24
+    },
+    {
+      "system": "support",
+      "id": "support-041",
+      "operator": "if-negate",
+      "line": 200,
+      "description": "if-negate @L200: '\"refund\" in message.lower()' -> 'not (\"refund\" in message.lower())'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "trajectory",
+        "llm_judge",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "failed",
+        "llm_judge": "failed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 16
+    },
+    {
+      "system": "support",
+      "id": "support-042",
+      "operator": "if-negate",
+      "line": 207,
+      "description": "if-negate @L207: 'not hits' -> 'not (not hits)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "llm_judge"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "failed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 2
+    },
+    {
+      "system": "support",
+      "id": "support-043",
+      "operator": "not-drop",
+      "line": 207,
+      "description": "not-drop @L207: 'not hits' -> 'hits'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "llm_judge"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "failed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 2
+    },
+    {
+      "system": "support",
+      "id": "support-044",
+      "operator": "const-shift",
+      "line": 209,
+      "description": "const-shift @L209: '0' -> '1'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "trajectory",
+        "llm_judge"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "passed",
+        "trajectory": "failed",
+        "llm_judge": "failed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 3
+    },
+    {
+      "system": "support",
+      "id": "support-045",
+      "operator": "const-shift",
+      "line": 226,
+      "description": "const-shift @L226: '2' -> '3'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-046",
+      "operator": "if-negate",
+      "line": 231,
+      "description": "if-negate @L231: 'not inv_match or not amt_match' -> 'not (not inv_match or not amt_match)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "trajectory",
+        "llm_judge",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "failed",
+        "llm_judge": "failed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 16
+    },
+    {
+      "system": "support",
+      "id": "support-047",
+      "operator": "not-drop",
+      "line": 231,
+      "description": "not-drop @L231: 'not inv_match' -> 'inv_match'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "trajectory",
+        "llm_judge",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "failed",
+        "llm_judge": "failed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 14
+    },
+    {
+      "system": "support",
+      "id": "support-048",
+      "operator": "bool-swap",
+      "line": 231,
+      "description": "bool-swap @L231: 'or' -> 'and'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-049",
+      "operator": "not-drop",
+      "line": 231,
+      "description": "not-drop @L231: 'not amt_match' -> 'amt_match'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "trajectory",
+        "llm_judge",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "failed",
+        "llm_judge": "failed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 14
+    },
+    {
+      "system": "support",
+      "id": "support-050",
+      "operator": "const-shift",
+      "line": 236,
+      "description": "const-shift @L236: '0' -> '1'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "trajectory",
+        "llm_judge",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "failed",
+        "llm_judge": "failed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 19
+    },
+    {
+      "system": "support",
+      "id": "support-051",
+      "operator": "const-shift",
+      "line": 236,
+      "description": "const-shift @L236: '1' -> '2'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "trajectory",
+        "llm_judge",
+        "adversarial"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "failed",
+        "llm_judge": "failed",
+        "adversarial": "failed"
+      },
+      "failed_tests": 19
+    },
+    {
+      "system": "support",
+      "id": "support-052",
+      "operator": "if-negate",
+      "line": 246,
+      "description": "if-negate @L246: 'amount > REFUND_APPROVAL_THRESHOLD and not self._human_approved(message, invoice_id, amount)' -> 'not (amount > REFUND_APPROVAL_THRESHOLD and not self._human_approved(message, invoice_id, amount))'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "trajectory",
+        "llm_judge"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "failed",
+        "llm_judge": "failed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 10
+    },
+    {
+      "system": "support",
+      "id": "support-053",
+      "operator": "cmp-flip",
+      "line": 246,
+      "description": "cmp-flip @L246: '>' -> '>='",
+      "status": "killed",
+      "killers": [
+        "property"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "failed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 1
+    },
+    {
+      "system": "support",
+      "id": "support-054",
+      "operator": "bool-swap",
+      "line": 246,
+      "description": "bool-swap @L246: 'and' -> 'or'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "trajectory"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "failed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 6
+    },
+    {
+      "system": "support",
+      "id": "support-055",
+      "operator": "not-drop",
+      "line": 246,
+      "description": "not-drop @L246: 'not self._human_approved(message, invoice_id, amount)' -> 'self._human_approved(message, invoice_id, amount)'",
+      "status": "killed",
+      "killers": [
+        "unit",
+        "property",
+        "trajectory",
+        "llm_judge"
+      ],
+      "states": {
+        "unit": "failed",
+        "property": "failed",
+        "trajectory": "failed",
+        "llm_judge": "failed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 5
+    },
+    {
+      "system": "support",
+      "id": "support-056",
+      "operator": "bool-swap",
+      "line": 249,
+      "description": "bool-swap @L249: 'or' -> 'and'",
+      "status": "survived",
+      "killers": [],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "passed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 0
+    },
+    {
+      "system": "support",
+      "id": "support-057",
+      "operator": "bool-swap",
+      "line": 257,
+      "description": "bool-swap @L257: 'or' -> 'and'",
+      "status": "killed",
+      "killers": [
+        "trajectory"
+      ],
+      "states": {
+        "unit": "passed",
+        "property": "passed",
+        "trajectory": "failed",
+        "llm_judge": "passed",
+        "adversarial": "passed"
+      },
+      "failed_tests": 1
+    }
+  ]
+}

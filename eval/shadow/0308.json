@@ -1,0 +1,36 @@
+{
+ "repo": "more-itertools/more-itertools",
+ "number": 1330,
+ "status": "ran",
+ "head": "973bc0163d28475e37ed787eb844098c5db8b4a4",
+ "base": "737c261c21271e1a6eb949f7d188297bebe8b125",
+ "diff_bytes": 3214,
+ "n_tests": 768,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "docs/versions.rst",
+  "more_itertools/more.py",
+  "tests/test_more.py"
+ ],
+ "n_changed": 3,
+ "selected": 623,
+ "file_selected": 768,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "docs/versions.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 47.92,
+ "seconds_selected": 13.36,
+ "wall_seconds": 129.6,
+ "project": "more-itertools",
+ "image_code_sha": "a874558"
+}

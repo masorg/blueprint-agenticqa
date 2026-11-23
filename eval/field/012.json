@@ -1,0 +1,31 @@
+{
+ "order": 12,
+ "pr_id": 3287356173,
+ "agent": "Claude_Code",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 11,
+ "repo": "blarApp/blarify",
+ "number": 232,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "cec9e483da196dd055080edfbed7ed6daeb8ce2c",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-4a42qgme/test_complete_workflow.py'. | E   ModuleNotFoundError: No module named 'langgraph' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-4a42qgme/test_framework_workflow.py'. | E   ModuleNotFoundError: No module named 'langgraph' | Import",
+  "layer_states": {},
+  "seconds": 2.4
+ },
+ "wall_seconds": 6.8,
+ "head_sha": "cec9e483da196dd055080edfbed7ed6daeb8ce2c"
+}

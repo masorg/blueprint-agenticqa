@@ -1,0 +1,33 @@
+{
+ "repo": "mahmoud/glom",
+ "number": 319,
+ "status": "ran",
+ "head": "655f93d4c1903ba57d99aba97f1fa66ee075a800",
+ "base": "30b477ab65560914a38f331614947d0894701044",
+ "diff_bytes": 2225,
+ "n_tests": 210,
+ "base_failing": 1,
+ "head_failing": 1,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "glom/streaming.py",
+  "glom/test/test_streaming.py"
+ ],
+ "n_changed": 2,
+ "selected": 210,
+ "file_selected": 210,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.42,
+ "seconds_selected": 0.42,
+ "wall_seconds": 20.2,
+ "project": "glom",
+ "image_code_sha": "a874558"
+}

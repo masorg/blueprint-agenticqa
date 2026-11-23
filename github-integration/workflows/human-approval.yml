@@ -1,0 +1,58 @@
+# Agentic QA — approval relay (fallback)
+#
+# Copy this file into your repository at `.github/workflows/human-approval.yml`.
+#
+# Use this ONLY if you can't (or don't want to) configure a repository webhook
+# pointing at the app. It fires when someone comments `/approve` or `/reject` on
+# a PR and forwards the *exact* GitHub event payload — signed with the same HMAC
+# secret — to the app's `/api/v1/github/webhook` endpoint. The app then runs the
+# identical path as a native webhook: verify signature → check the commenter's
+# write access via the GitHub API → resolve the run. The comment text is never
+# trusted for authorization.
+#
+# If you configure a real repository webhook instead, you do NOT need this file.
+#
+# Required repository secrets:
+#   AGENTICQA_URL             Base URL of the deployed app.
+#   AGENTICQA_WEBHOOK_SECRET  Matches the app's AGENTICQA_GITHUB_WEBHOOK_SECRET.
+
+name: Agentic QA Approval
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+
+jobs:
+  relay:
+    # Only PR comments carrying an approve/reject command.
+    if: >-
+      github.event.issue.pull_request &&
+      (contains(github.event.comment.body, '/approve') ||
+       contains(github.event.comment.body, '/reject'))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Relay signed event to Agentic QA
+        env:
+          AGENTICQA_URL: ${{ secrets.AGENTICQA_URL }}
+          AGENTICQA_WEBHOOK_SECRET: ${{ secrets.AGENTICQA_WEBHOOK_SECRET }}
+        run: |
+          if [ -z "$AGENTICQA_URL" ] || [ -z "$AGENTICQA_WEBHOOK_SECRET" ]; then
+            echo "AGENTICQA_URL / AGENTICQA_WEBHOOK_SECRET not set — skipping." >&2
+            exit 0
+          fi
+          # GITHUB_EVENT_PATH holds the exact issue_comment payload GitHub gave us.
+          # Sign the same bytes we POST so the app's HMAC check passes.
+          sig="sha256=$(openssl dgst -sha256 -hmac "$AGENTICQA_WEBHOOK_SECRET" \
+                        < "$GITHUB_EVENT_PATH" | awk '{print $NF}')"
+          code=$(curl -sS -o resp.json -w '%{http_code}' \
+            --max-time 30 \
+            -X POST "$AGENTICQA_URL/api/v1/github/webhook" \
+            -H "Content-Type: application/json" \
+            -H "X-GitHub-Event: issue_comment" \
+            -H "X-Hub-Signature-256: $sig" \
+            --data-binary @"$GITHUB_EVENT_PATH")
+          echo "HTTP $code"; cat resp.json
+          [ "$code" = "200" ]

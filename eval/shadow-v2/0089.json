@@ -1,0 +1,42 @@
+{
+ "repo": "tkem/cachetools",
+ "number": 427,
+ "status": "ran",
+ "head": "47678b08ede1432dcf9a613690939287f42b5be7",
+ "base": "11153c947675edae9da06a5295bfa4a54b8a4f53",
+ "diff_bytes": 549,
+ "coverage_seconds": 9.0,
+ "coverage_files": 19,
+ "n_tests": 338,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/ci.yml"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  ".github/workflows/ci.yml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 5.34,
+ "seconds_selected": 0,
+ "wall_seconds": 44.8,
+ "project": "cachetools",
+ "image_code_sha": "a116495"
+}

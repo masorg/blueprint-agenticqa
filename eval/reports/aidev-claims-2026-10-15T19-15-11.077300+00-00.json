@@ -1,0 +1,318 @@
+{
+ "generated_at": "2026-10-15T19:15:11.077300+00:00",
+ "dataset": {
+  "repo": "hao-li/AIDev",
+  "revision": "v4",
+  "rows": 71677,
+  "table": "pull_request (popular repositories)"
+ },
+ "patterns": {
+  "says_tests_pass": "\\b(all\\s+)?(the\\s+)?(unit\\s+|existing\\s+|new\\s+|related\\s+)?tests?\\s+(all\\s+)?(pass|passes|passed|passing|are\\s+passing|are\\s+green)\\b|\\ball\\s+(checks|tests)\\s+(pass|passed|are\\s+green)\\b|\\b(tests?|checks?|ci)\\s*:?\\s*(\u2705|\u2714)",
+  "says_tests_were_run": "\\b(ran|run|running|executed)\\b[^.\\n]{0,40}\\b(tests?|test\\s+suite|pytest|jest|go\\s+test|cargo\\s+test)\\b|\\bnpm\\s+(run\\s+)?test\\b|\\bpytest\\b|\\btests?\\s+(run|ran)\\b",
+  "says_ready": "\\b(ready\\s+(to|for)\\s+(merge|review)|good\\s+to\\s+merge|lgtm)\\b",
+  "says_no_breakage": "\\bno\\s+(breaking\\s+changes?|regressions?|behaviou?r(al)?\\s+changes?|functional\\s+changes?)\\b",
+  "claims_review_or_approval": "\\b(approved|reviewed|signed[\\s-]off)\\s+by\\b"
+ },
+ "min_chars": 80,
+ "provenance": {
+  "started_at": "2026-10-15T19:15:11.206232+00:00",
+  "git_sha": "fbd345a34eed0f6c8cacd6031e048cbc98d8dbd8",
+  "code_dirty": false,
+  "code_diff_sha256": null,
+  "corpus": "aidev-claims",
+  "corpus_fingerprint": "b17ad532ce014255",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "aidev-claims"
+  ]
+ },
+ "prevalence": {
+  "overall": {
+   "n": 71677,
+   "empty_or_short": 1333,
+   "median_chars": 586,
+   "says_tests_pass": {
+    "hits": 5804,
+    "of": 70344,
+    "share": 0.0825088138291823
+   },
+   "says_tests_were_run": {
+    "hits": 11742,
+    "of": 70344,
+    "share": 0.16692255203002387
+   },
+   "says_ready": {
+    "hits": 166,
+    "of": 70344,
+    "share": 0.002359831684294325
+   },
+   "says_no_breakage": {
+    "hits": 4080,
+    "of": 70344,
+    "share": 0.058000682360968954
+   },
+   "claims_review_or_approval": {
+    "hits": 74,
+    "of": 70344,
+    "share": 0.0010519731604685546
+   },
+   "post_hoc_run_mentions_a_failure": {
+    "hits": 5326,
+    "of": 11742,
+    "share": 0.45358541986033046
+   },
+   "says_tests_pass_or_run": {
+    "hits": 16580,
+    "of": 70344,
+    "share": 0.2356988513590356
+   }
+  },
+  "by_agent": {
+   "Claude_Code": {
+    "n": 1942,
+    "empty_or_short": 14,
+    "median_chars": 2206,
+    "says_tests_pass": {
+     "hits": 559,
+     "of": 1928,
+     "share": 0.2899377593360996
+    },
+    "says_tests_were_run": {
+     "hits": 224,
+     "of": 1928,
+     "share": 0.11618257261410789
+    },
+    "says_ready": {
+     "hits": 29,
+     "of": 1928,
+     "share": 0.01504149377593361
+    },
+    "says_no_breakage": {
+     "hits": 248,
+     "of": 1928,
+     "share": 0.12863070539419086
+    },
+    "claims_review_or_approval": {
+     "hits": 8,
+     "of": 1928,
+     "share": 0.004149377593360996
+    },
+    "post_hoc_run_mentions_a_failure": {
+     "hits": 40,
+     "of": 224,
+     "share": 0.17857142857142858
+    },
+    "says_tests_pass_or_run": {
+     "hits": 683,
+     "of": 1928,
+     "share": 0.35425311203319504
+    }
+   },
+   "Copilot": {
+    "n": 23496,
+    "empty_or_short": 108,
+    "median_chars": 2732,
+    "says_tests_pass": {
+     "hits": 4331,
+     "of": 23388,
+     "share": 0.18518043441080898
+    },
+    "says_tests_were_run": {
+     "hits": 1764,
+     "of": 23388,
+     "share": 0.07542329399692149
+    },
+    "says_ready": {
+     "hits": 99,
+     "of": 23388,
+     "share": 0.004232939969214982
+    },
+    "says_no_breakage": {
+     "hits": 3231,
+     "of": 23388,
+     "share": 0.13814776808619805
+    },
+    "claims_review_or_approval": {
+     "hits": 15,
+     "of": 23388,
+     "share": 0.0006413545407901488
+    },
+    "post_hoc_run_mentions_a_failure": {
+     "hits": 364,
+     "of": 1764,
+     "share": 0.20634920634920634
+    },
+    "says_tests_pass_or_run": {
+     "hits": 5423,
+     "of": 23388,
+     "share": 0.2318710449803318
+    }
+   },
+   "Cursor": {
+    "n": 4059,
+    "empty_or_short": 365,
+    "median_chars": 1071,
+    "says_tests_pass": {
+     "hits": 179,
+     "of": 3694,
+     "share": 0.0484569572279372
+    },
+    "says_tests_were_run": {
+     "hits": 169,
+     "of": 3694,
+     "share": 0.04574986464537087
+    },
+    "says_ready": {
+     "hits": 22,
+     "of": 3694,
+     "share": 0.005955603681645912
+    },
+    "says_no_breakage": {
+     "hits": 95,
+     "of": 3694,
+     "share": 0.025717379534380077
+    },
+    "claims_review_or_approval": {
+     "hits": 47,
+     "of": 3694,
+     "share": 0.012723335138061722
+    },
+    "post_hoc_run_mentions_a_failure": {
+     "hits": 18,
+     "of": 169,
+     "share": 0.10650887573964497
+    },
+    "says_tests_pass_or_run": {
+     "hits": 317,
+     "of": 3694,
+     "share": 0.08581483486735246
+    }
+   },
+   "Devin": {
+    "n": 6172,
+    "empty_or_short": 30,
+    "median_chars": 1103,
+    "says_tests_pass": {
+     "hits": 646,
+     "of": 6142,
+     "share": 0.10517746662324975
+    },
+    "says_tests_were_run": {
+     "hits": 514,
+     "of": 6142,
+     "share": 0.08368609573428851
+    },
+    "says_ready": {
+     "hits": 3,
+     "of": 6142,
+     "share": 0.0004884402474763921
+    },
+    "says_no_breakage": {
+     "hits": 474,
+     "of": 6142,
+     "share": 0.07717355910126994
+    },
+    "claims_review_or_approval": {
+     "hits": 3,
+     "of": 6142,
+     "share": 0.0004884402474763921
+    },
+    "post_hoc_run_mentions_a_failure": {
+     "hits": 112,
+     "of": 514,
+     "share": 0.2178988326848249
+    },
+    "says_tests_pass_or_run": {
+     "hits": 1019,
+     "of": 6142,
+     "share": 0.16590687072614785
+    }
+   },
+   "Google_Jules": {
+    "n": 487,
+    "empty_or_short": 107,
+    "median_chars": 278,
+    "says_tests_pass": {
+     "hits": 3,
+     "of": 380,
+     "share": 0.007894736842105263
+    },
+    "says_tests_were_run": {
+     "hits": 9,
+     "of": 380,
+     "share": 0.02368421052631579
+    },
+    "says_ready": {
+     "hits": 1,
+     "of": 380,
+     "share": 0.002631578947368421
+    },
+    "says_no_breakage": {
+     "hits": 0,
+     "of": 380,
+     "share": 0.0
+    },
+    "claims_review_or_approval": {
+     "hits": 0,
+     "of": 380,
+     "share": 0.0
+    },
+    "post_hoc_run_mentions_a_failure": {
+     "hits": 0,
+     "of": 9,
+     "share": 0.0
+    },
+    "says_tests_pass_or_run": {
+     "hits": 12,
+     "of": 380,
+     "share": 0.031578947368421054
+    }
+   },
+   "OpenAI_Codex": {
+    "n": 35521,
+    "empty_or_short": 709,
+    "median_chars": 337,
+    "says_tests_pass": {
+     "hits": 86,
+     "of": 34812,
+     "share": 0.0024704125014362865
+    },
+    "says_tests_were_run": {
+     "hits": 9062,
+     "of": 34812,
+     "share": 0.26031253590715847
+    },
+    "says_ready": {
+     "hits": 12,
+     "of": 34812,
+     "share": 0.0003447087211306446
+    },
+    "says_no_breakage": {
+     "hits": 32,
+     "of": 34812,
+     "share": 0.0009192232563483856
+    },
+    "claims_review_or_approval": {
+     "hits": 1,
+     "of": 34812,
+     "share": 2.872572676088705e-05
+    },
+    "post_hoc_run_mentions_a_failure": {
+     "hits": 4792,
+     "of": 9062,
+     "share": 0.5288015890531892
+    },
+    "says_tests_pass_or_run": {
+     "hits": 9126,
+     "of": 34812,
+     "share": 0.26215098241985524
+    }
+   }
+  }
+ }
+}

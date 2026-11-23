@@ -1,0 +1,418 @@
+{
+  "generated_at": "2026-10-13T22:25:00.046769+00:00",
+  "provider": "openai-gpt-4o",
+  "n_scenarios": 6,
+  "verdict_confusion": {
+    "true_positive_needs_review": 4,
+    "true_negative_auto_approve": 2,
+    "false_positive_needs_review": 0,
+    "false_negative_auto_approve": 0,
+    "accuracy": 1.0
+  },
+  "routing_agreement_rate": 1.0,
+  "repo_kind_accuracy": 1.0,
+  "classification_agreement_rate_mean": 0.9537037037037037,
+  "classification_verified_rate_mean": 0.9537037037037037,
+  "total_wall_seconds": 73.92,
+  "total_llm_tokens": 22769,
+  "total_llm_calls": 18,
+  "total_llm_errors": 0,
+  "total_demoted_to_fallback_layer": 5,
+  "total_guardrail_overrides": 0,
+  "coverage_failures": [],
+  "all_discovered_tests_ran": true,
+  "scenarios": [
+    {
+      "scenario": "clean-baseline",
+      "expected_verdict": "auto_approve",
+      "actual_verdict": "auto_approve",
+      "verdict_correct": true,
+      "layers": {
+        "expected_failing": [],
+        "actual_failing": [],
+        "correctly_caught": [],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "expected_repo_kind": "plain_service",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true
+      },
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 0.9444444444444444,
+        "verified_rate": 0.9444444444444444,
+        "disagreements": [
+          {
+            "node_id": "tests/test_orders.py::test_add_item_then_get_item",
+            "llm_layer": "trajectory",
+            "heuristic_layer": "unit"
+          }
+        ],
+        "demoted_to_fallback_layer": [
+          "tests/test_orders.py::test_add_item_then_get_item"
+        ]
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 11.77,
+      "llm_usage": {
+        "calls": 3,
+        "errors": 0,
+        "prompt_tokens": 2033,
+        "completion_tokens": 1048,
+        "total_tokens": 3081
+      },
+      "totals": {
+        "passed": 18,
+        "failed": 0,
+        "skipped": 0,
+        "total": 18
+      },
+      "n_discovered": 18,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "stock-check-off-by-one",
+      "expected_verdict": "needs_human_review",
+      "actual_verdict": "needs_human_review",
+      "verdict_correct": true,
+      "layers": {
+        "expected_failing": [
+          "property",
+          "unit"
+        ],
+        "actual_failing": [
+          "property",
+          "unit"
+        ],
+        "correctly_caught": [
+          "property",
+          "unit"
+        ],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "expected_repo_kind": "plain_service",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true
+      },
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 0.9444444444444444,
+        "verified_rate": 0.9444444444444444,
+        "disagreements": [
+          {
+            "node_id": "tests/test_orders.py::test_add_item_then_get_item",
+            "llm_layer": "trajectory",
+            "heuristic_layer": "unit"
+          }
+        ],
+        "demoted_to_fallback_layer": [
+          "tests/test_orders.py::test_add_item_then_get_item"
+        ]
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 11.52,
+      "llm_usage": {
+        "calls": 3,
+        "errors": 0,
+        "prompt_tokens": 2243,
+        "completion_tokens": 1145,
+        "total_tokens": 3388
+      },
+      "totals": {
+        "passed": 16,
+        "failed": 2,
+        "skipped": 0,
+        "total": 18
+      },
+      "n_discovered": 18,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "stale-stock-bound-property-only",
+      "expected_verdict": "needs_human_review",
+      "actual_verdict": "needs_human_review",
+      "verdict_correct": true,
+      "layers": {
+        "expected_failing": [
+          "property"
+        ],
+        "actual_failing": [
+          "property"
+        ],
+        "correctly_caught": [
+          "property"
+        ],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "expected_repo_kind": "plain_service",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true
+      },
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 0.9444444444444444,
+        "verified_rate": 0.9444444444444444,
+        "disagreements": [
+          {
+            "node_id": "tests/test_orders.py::test_add_item_then_get_item",
+            "llm_layer": "trajectory",
+            "heuristic_layer": "unit"
+          }
+        ],
+        "demoted_to_fallback_layer": [
+          "tests/test_orders.py::test_add_item_then_get_item"
+        ]
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 10.58,
+      "llm_usage": {
+        "calls": 3,
+        "errors": 0,
+        "prompt_tokens": 2254,
+        "completion_tokens": 1124,
+        "total_tokens": 3378
+      },
+      "totals": {
+        "passed": 17,
+        "failed": 1,
+        "skipped": 0,
+        "total": 18
+      },
+      "n_discovered": 18,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "name-length-bound-removed-adversarial-only",
+      "expected_verdict": "needs_human_review",
+      "actual_verdict": "needs_human_review",
+      "verdict_correct": true,
+      "layers": {
+        "expected_failing": [
+          "adversarial"
+        ],
+        "actual_failing": [
+          "adversarial"
+        ],
+        "correctly_caught": [
+          "adversarial"
+        ],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "expected_repo_kind": "plain_service",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true
+      },
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 0.9444444444444444,
+        "verified_rate": 0.9444444444444444,
+        "disagreements": [
+          {
+            "node_id": "tests/test_orders.py::test_add_item_then_get_item",
+            "llm_layer": "trajectory",
+            "heuristic_layer": "unit"
+          }
+        ],
+        "demoted_to_fallback_layer": [
+          "tests/test_orders.py::test_add_item_then_get_item"
+        ]
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 10.81,
+      "llm_usage": {
+        "calls": 3,
+        "errors": 0,
+        "prompt_tokens": 2204,
+        "completion_tokens": 1139,
+        "total_tokens": 3343
+      },
+      "totals": {
+        "passed": 17,
+        "failed": 1,
+        "skipped": 0,
+        "total": 18
+      },
+      "n_discovered": 18,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "agenticproduct-pr1-regression",
+      "expected_verdict": "needs_human_review",
+      "actual_verdict": "needs_human_review",
+      "verdict_correct": true,
+      "layers": {
+        "expected_failing": [
+          "property",
+          "unit"
+        ],
+        "actual_failing": [
+          "property",
+          "unit"
+        ],
+        "correctly_caught": [
+          "property",
+          "unit"
+        ],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "expected_repo_kind": "plain_service",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true
+      },
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 0.9444444444444444,
+        "verified_rate": 0.9444444444444444,
+        "disagreements": [
+          {
+            "node_id": "tests/test_orders.py::test_add_item_then_get_item",
+            "llm_layer": "trajectory",
+            "heuristic_layer": "unit"
+          }
+        ],
+        "demoted_to_fallback_layer": [
+          "tests/test_orders.py::test_add_item_then_get_item"
+        ]
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 12.57,
+      "llm_usage": {
+        "calls": 3,
+        "errors": 0,
+        "prompt_tokens": 2305,
+        "completion_tokens": 1140,
+        "total_tokens": 3445
+      },
+      "totals": {
+        "passed": 16,
+        "failed": 2,
+        "skipped": 0,
+        "total": 18
+      },
+      "n_discovered": 18,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "agenticproduct-pr5-restock-agent",
+      "expected_verdict": "auto_approve",
+      "actual_verdict": "auto_approve",
+      "verdict_correct": true,
+      "layers": {
+        "expected_failing": [],
+        "actual_failing": [],
+        "correctly_caught": [],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "agentic",
+        "expected_repo_kind": "agentic",
+        "repo_kind_correct": true,
+        "applicable_layers": [
+          "adversarial",
+          "llm_judge",
+          "property",
+          "trajectory",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "llm_judge",
+          "property",
+          "trajectory",
+          "unit"
+        ],
+        "agrees_with_heuristic": true
+      },
+      "classification": {
+        "n_tests": 33,
+        "agreement_rate": 1.0,
+        "verified_rate": 1.0,
+        "disagreements": [],
+        "demoted_to_fallback_layer": []
+      },
+      "guardrail_overrides": [],
+      "wall_seconds": 16.67,
+      "llm_usage": {
+        "calls": 3,
+        "errors": 0,
+        "prompt_tokens": 4481,
+        "completion_tokens": 1653,
+        "total_tokens": 6134
+      },
+      "totals": {
+        "passed": 33,
+        "failed": 0,
+        "skipped": 0,
+        "total": 33
+      },
+      "n_discovered": 33,
+      "coverage_ok": true
+    }
+  ]
+}

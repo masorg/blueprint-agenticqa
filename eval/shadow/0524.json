@@ -1,0 +1,47 @@
+{
+ "repo": "python-validators/validators",
+ "number": 520,
+ "status": "ran",
+ "head": "f0eb665cc605b301c4e17bda6eff2f05b4ea435e",
+ "base": "6ffd8625ee4272dade063653bff615014bdc4734",
+ "diff_bytes": 3982,
+ "n_tests": 1126,
+ "base_failing": 18,
+ "head_failing": 22,
+ "introduced": [
+  "tests/test_email_ipv6_literal.py::test_email_accepts_ipv6_literal_with_prefix[usuario@[IPv6:2001:db8::1]]",
+  "tests/test_email_quoted_at_sign.py::test_email_accepts_at_sign_inside_quoted_local_part[\"user@name\"@example.com]",
+  "tests/test_ipv4_strict_cidr.py::test_ipv4_strict_cidr_rejects_dotted_netmask[192.168.1.0/255.255.255.0]",
+  "tests/test_ipv6_brackets.py::test_ipv6_accepts_address_in_brackets[[2001:db8::1]]"
+ ],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "src/validators/email.py",
+  "tests/test_email_control_character.py",
+  "tests/test_email_ipv6_literal.py",
+  "tests/test_email_quoted_at_sign.py",
+  "tests/test_ipv4_strict_cidr.py",
+  "tests/test_ipv6_brackets.py"
+ ],
+ "n_changed": 6,
+ "selected": 1126,
+ "file_selected": 1126,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [
+  "tests/test_email_ipv6_literal.py::test_email_accepts_ipv6_literal_with_prefix[usuario@[IPv6:2001:db8::1]]",
+  "tests/test_email_quoted_at_sign.py::test_email_accepts_at_sign_inside_quoted_local_part[\"user@name\"@example.com]",
+  "tests/test_ipv4_strict_cidr.py::test_ipv4_strict_cidr_rejects_dotted_netmask[192.168.1.0/255.255.255.0]",
+  "tests/test_ipv6_brackets.py::test_ipv6_accepts_address_in_brackets[[2001:db8::1]]"
+ ],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.28,
+ "seconds_selected": 0.28,
+ "wall_seconds": 26.7,
+ "project": "validators",
+ "image_code_sha": "a874558"
+}

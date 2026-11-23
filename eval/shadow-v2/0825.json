@@ -1,0 +1,10 @@
+{
+ "repo": "pallets/markupsafe",
+ "number": 499,
+ "status": "empty_diff",
+ "head": "82cabf9c5a2f8f1b27854afcc3e0d9bf5a32f0c2",
+ "base": "82cabf9c5a2f8f1b27854afcc3e0d9bf5a32f0c2",
+ "diff_bytes": 0,
+ "project": "markupsafe",
+ "image_code_sha": "a116495"
+}

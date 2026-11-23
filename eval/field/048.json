@@ -1,0 +1,31 @@
+{
+ "order": 48,
+ "pr_id": 3353482793,
+ "agent": "Claude_Code",
+ "merged": false,
+ "says_tests_pass": false,
+ "n_commits": 4,
+ "repo": "oraios/serena",
+ "number": 541,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "f709633f515c57efe69f02da3228301048d03eb8",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-nu317055/test/serena/test_edit_marker.py'. | E   ImportError: cannot import name 'eval_type_backport' from 'pydantic._internal._typing_extra' (/tmp/agenticqa-workspaces/venv-cache/1042d6c2ca51c048/.venv/lib/python3.12/site-packages/pydantic/_internal/_typing_extra.",
+  "layer_states": {},
+  "seconds": 66.5
+ },
+ "wall_seconds": 68.2,
+ "head_sha": "f709633f515c57efe69f02da3228301048d03eb8"
+}

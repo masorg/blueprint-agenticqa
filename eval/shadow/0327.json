@@ -1,0 +1,36 @@
+{
+ "repo": "pytest-dev/pluggy",
+ "number": 806,
+ "status": "ran",
+ "head": "bdbff4ed56b2e3a967b305a6f2a6b9bdbff118f0",
+ "base": "0224f79fc75efadaafe24dbab9deee2ff616ecd7",
+ "diff_bytes": 2373,
+ "n_tests": 226,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "changelog/806.bugfix.rst",
+  "src/pluggy/_caller.py",
+  "testing/test_pluginmanager.py"
+ ],
+ "n_changed": 3,
+ "selected": 226,
+ "file_selected": 226,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "changelog/806.bugfix.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.15,
+ "seconds_selected": 0.15,
+ "wall_seconds": 38.9,
+ "project": "pluggy",
+ "image_code_sha": "a874558"
+}

@@ -1,0 +1,418 @@
+{
+ "generated_at": "2026-10-24T14:16:06.459168+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T14:16:06.665068+00:00",
+  "git_sha": "00ec4a783095e173853b5798aa640d836d1e4742",
+  "code_dirty": true,
+  "code_diff_sha256": "bcf368538bda6cf7",
+  "corpus": "selection-testmon:w3lib",
+  "corpus_fingerprint": "7a19e100d2b9730b",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-testmon",
+   "--project",
+   "w3lib",
+   "--report",
+   "eval/reports/selection-mutants-w3lib-2026-10-24T04-21-24.127993+00-00.json"
+  ]
+ },
+ "summary": {
+  "projects": [
+   "w3lib"
+  ],
+  "mutants": 28,
+  "killed": 25,
+  "testmon_missed": {
+   "k": 0,
+   "n": 25,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.133
+   ]
+  },
+  "gate_missed": {
+   "k": 0,
+   "n": 25,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.133
+   ]
+  },
+  "testmon_tests_share_mean": 0.0037,
+  "gate_tests_share_mean": 0.3016,
+  "testmon_missed_ids": [],
+  "baseline_seconds": {
+   "w3lib": 0.8
+  },
+  "per_project": {
+   "w3lib": {
+    "mutants": 28,
+    "killed": 25,
+    "testmon_missed": 0,
+    "gate_missed": 0,
+    "testmon_share": 0.004,
+    "gate_share": 0.302
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "w3lib",
+   "seed": 20261023,
+   "status": "ran",
+   "rows": [
+    {
+     "id": "w3lib-000",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.86,
+     "timed_out": false,
+     "gate_selected": 1079,
+     "gate_caught": true,
+     "seconds_full": 34.49
+    },
+    {
+     "id": "w3lib-001",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.9,
+     "timed_out": false,
+     "gate_selected": 25,
+     "gate_caught": true,
+     "seconds_full": 34.06
+    },
+    {
+     "id": "w3lib-002",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.86,
+     "timed_out": false,
+     "gate_selected": 5,
+     "gate_caught": true,
+     "seconds_full": 31.9
+    },
+    {
+     "id": "w3lib-003",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.8,
+     "timed_out": false,
+     "gate_selected": 1535,
+     "gate_caught": true,
+     "seconds_full": 34.4
+    },
+    {
+     "id": "w3lib-004",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.82,
+     "timed_out": false,
+     "gate_selected": 61,
+     "gate_caught": true,
+     "seconds_full": 36.62
+    },
+    {
+     "id": "w3lib-006",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.91,
+     "timed_out": false,
+     "gate_selected": 114,
+     "gate_caught": true,
+     "seconds_full": 34.83
+    },
+    {
+     "id": "w3lib-007",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.86,
+     "timed_out": false,
+     "gate_selected": 105,
+     "gate_caught": true,
+     "seconds_full": 31.27
+    },
+    {
+     "id": "w3lib-008",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.85,
+     "timed_out": false,
+     "gate_selected": 140,
+     "gate_caught": true,
+     "seconds_full": 35.49
+    },
+    {
+     "id": "w3lib-009",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.91,
+     "timed_out": false,
+     "gate_selected": 25,
+     "gate_caught": true,
+     "seconds_full": 32.96
+    },
+    {
+     "id": "w3lib-010",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 1.42,
+     "timed_out": false,
+     "gate_selected": 5,
+     "gate_caught": true,
+     "seconds_full": 33.93
+    },
+    {
+     "id": "w3lib-011",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.82,
+     "timed_out": false,
+     "gate_selected": 1535,
+     "gate_caught": true,
+     "seconds_full": 271.35
+    },
+    {
+     "id": "w3lib-012",
+     "total": 1629,
+     "killed_full": false,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.88,
+     "timed_out": false,
+     "gate_selected": 61,
+     "gate_caught": false,
+     "seconds_full": 251.14
+    },
+    {
+     "id": "w3lib-014",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.86,
+     "timed_out": false,
+     "gate_selected": 126,
+     "gate_caught": true,
+     "seconds_full": 34.31
+    },
+    {
+     "id": "w3lib-015",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.84,
+     "timed_out": false,
+     "gate_selected": 15,
+     "gate_caught": true,
+     "seconds_full": 20.8
+    },
+    {
+     "id": "w3lib-016",
+     "total": 1629,
+     "killed_full": false,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.82,
+     "timed_out": false,
+     "gate_selected": 1629,
+     "gate_caught": false,
+     "seconds_full": 40.49
+    },
+    {
+     "id": "w3lib-017",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.84,
+     "timed_out": false,
+     "gate_selected": 25,
+     "gate_caught": true,
+     "seconds_full": 27.13
+    },
+    {
+     "id": "w3lib-018",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.86,
+     "timed_out": false,
+     "gate_selected": 5,
+     "gate_caught": true,
+     "seconds_full": 27.18
+    },
+    {
+     "id": "w3lib-019",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.94,
+     "timed_out": false,
+     "gate_selected": 1535,
+     "gate_caught": true,
+     "seconds_full": 30.86
+    },
+    {
+     "id": "w3lib-020",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.92,
+     "timed_out": false,
+     "gate_selected": 61,
+     "gate_caught": true,
+     "seconds_full": 30.19
+    },
+    {
+     "id": "w3lib-021",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.86,
+     "timed_out": false,
+     "gate_selected": 1387,
+     "gate_caught": true,
+     "seconds_full": 75.61
+    },
+    {
+     "id": "w3lib-022",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.83,
+     "timed_out": false,
+     "gate_selected": 105,
+     "gate_caught": true,
+     "seconds_full": 32.33
+    },
+    {
+     "id": "w3lib-023",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.87,
+     "timed_out": false,
+     "gate_selected": 1079,
+     "gate_caught": true,
+     "seconds_full": 65.76
+    },
+    {
+     "id": "w3lib-024",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.89,
+     "timed_out": false,
+     "gate_selected": 25,
+     "gate_caught": true,
+     "seconds_full": 35.6
+    },
+    {
+     "id": "w3lib-025",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.8,
+     "timed_out": false,
+     "gate_selected": 3,
+     "gate_caught": true,
+     "seconds_full": 33.7
+    },
+    {
+     "id": "w3lib-026",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 1.49,
+     "timed_out": false,
+     "gate_selected": 1535,
+     "gate_caught": true,
+     "seconds_full": 35.48
+    },
+    {
+     "id": "w3lib-027",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.82,
+     "timed_out": false,
+     "gate_selected": 61,
+     "gate_caught": true,
+     "seconds_full": 29.33
+    },
+    {
+     "id": "w3lib-028",
+     "total": 1629,
+     "killed_full": false,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.84,
+     "timed_out": false,
+     "gate_selected": 1387,
+     "gate_caught": false,
+     "seconds_full": 27.26
+    },
+    {
+     "id": "w3lib-029",
+     "total": 1629,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.89,
+     "timed_out": false,
+     "gate_selected": 87,
+     "gate_caught": true,
+     "seconds_full": 32.16
+    }
+   ],
+   "baseline_seconds": 0.8,
+   "baseline_counts": {
+    "passed": 0,
+    "failed": 0,
+    "error": 2,
+    "skipped": 4,
+    "deselected": 0
+   }
+  }
+ ]
+}

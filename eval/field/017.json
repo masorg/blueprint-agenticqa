@@ -1,0 +1,31 @@
+{
+ "order": 17,
+ "pr_id": 3183407781,
+ "agent": "OpenAI_Codex",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+ "number": 2671,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "fb184e801e184c93d11eac827c79eaaa7d85fac7",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 1): ls; falling back to network installs\nEnsuring baseline requirements (timeout 600s): /tmp/agenticqa-workspaces/venv-cache/fa789a055f3b0875/.venv/bin/python -m pip install --quiet -r /tmp/agenticqa-workspaces/ws-oen0avaa/alpha_factory_v1/requirements-core.txt\nFailed to install baseline requirements 1\n",
+  "layer_states": {},
+  "seconds": 162.2
+ },
+ "wall_seconds": 164.8,
+ "head_sha": "fb184e801e184c93d11eac827c79eaaa7d85fac7"
+}

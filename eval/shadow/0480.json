@@ -1,0 +1,33 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 745,
+ "status": "ran",
+ "head": "bdcb62653d0390dd98a4f0c654d470928b9fea88",
+ "base": "bd42b38f3627e6bca7274fb4d9af2e105f75da7c",
+ "diff_bytes": 1869,
+ "n_tests": 3216,
+ "base_failing": 6,
+ "head_failing": 6,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "tests/test_mermaid.py",
+  "transitions/extensions/diagrams_mermaid.py"
+ ],
+ "n_changed": 2,
+ "selected": 3142,
+ "file_selected": 3142,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 26.09,
+ "seconds_selected": 25.93,
+ "wall_seconds": 79.5,
+ "project": "transitions",
+ "image_code_sha": "a874558"
+}

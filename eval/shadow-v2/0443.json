@@ -1,0 +1,42 @@
+{
+ "repo": "hukkin/tomli",
+ "number": 302,
+ "status": "ran",
+ "head": "00a5015150b03731be745376be50f7ac22230c20",
+ "base": "5a77b12a7a9f052ce5a20c335d2825658f6aea52",
+ "diff_bytes": 963,
+ "coverage_seconds": 2.3,
+ "coverage_files": 9,
+ "n_tests": 18,
+ "base_failing": 1,
+ "head_failing": 1,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/tests.yaml"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  ".github/workflows/tests.yaml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 0.31,
+ "seconds_selected": 0,
+ "wall_seconds": 17.0,
+ "project": "tomli",
+ "image_code_sha": "a116495"
+}

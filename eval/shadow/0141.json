@@ -1,0 +1,33 @@
+{
+ "repo": "tartley/colorama",
+ "number": 424,
+ "status": "ran",
+ "head": "2a58ec7aa97a711ca96ff8fdc1cac954060aa6fd",
+ "base": "841634ed2a0da5d5ac2d867db533da8131266cb2",
+ "diff_bytes": 1855,
+ "n_tests": 53,
+ "base_failing": 14,
+ "head_failing": 14,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "colorama/initialise.py",
+  "tests/test_initialise.py"
+ ],
+ "n_changed": 2,
+ "selected": 53,
+ "file_selected": 53,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.03,
+ "seconds_selected": 0.03,
+ "wall_seconds": 11.9,
+ "project": "colorama",
+ "image_code_sha": "efa91d9"
+}

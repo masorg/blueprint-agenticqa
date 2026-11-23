@@ -1,0 +1,42 @@
+{
+ "repo": "kjd/idna",
+ "number": 243,
+ "status": "ran",
+ "head": "4627d5fb632bacb6477d536310dffedd7036c4f9",
+ "base": "d4bc9e742b753cff2ec6c53bd4be730863ca9c53",
+ "diff_bytes": 5934,
+ "coverage_seconds": 17.5,
+ "coverage_files": 16,
+ "n_tests": 6404,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/requirements/test.txt"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  ".github/requirements/test.txt"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 1.57,
+ "seconds_selected": 0,
+ "wall_seconds": 85.4,
+ "project": "idna",
+ "image_code_sha": "a116495"
+}

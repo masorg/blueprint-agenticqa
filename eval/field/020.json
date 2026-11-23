@@ -1,0 +1,31 @@
+{
+ "order": 20,
+ "pr_id": 3478630550,
+ "agent": "Cursor",
+ "merged": false,
+ "says_tests_pass": false,
+ "n_commits": 2,
+ "repo": "getsentry/sentry",
+ "number": 100820,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "528865fb79e08bbd69a6ea4154db4360abd4cfa5",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 3): ",
+  "layer_states": {},
+  "seconds": 272.7
+ },
+ "wall_seconds": 284.5,
+ "head_sha": "528865fb79e08bbd69a6ea4154db4360abd4cfa5"
+}

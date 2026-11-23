@@ -1,0 +1,36 @@
+{
+ "repo": "pytest-dev/pluggy",
+ "number": 785,
+ "status": "ran",
+ "head": "0fe5b0f842c780679b1d0706c64770e1c6587102",
+ "base": "6995073de5ebc58d97dc017a7c2b7c5904f4c485",
+ "diff_bytes": 1357,
+ "n_tests": 219,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/deploy.yml",
+  "changelog/437.feature.rst"
+ ],
+ "n_changed": 2,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  ".github/workflows/deploy.yml",
+  "changelog/437.feature.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.09,
+ "seconds_selected": 0,
+ "wall_seconds": 16.2,
+ "project": "pluggy",
+ "image_code_sha": "a874558"
+}

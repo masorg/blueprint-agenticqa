@@ -1,0 +1,36 @@
+{
+ "repo": "pytest-dev/pluggy",
+ "number": 805,
+ "status": "ran",
+ "head": "bba7d1cde9e70b91ebe447db06b11eb9023abbfc",
+ "base": "0224f79fc75efadaafe24dbab9deee2ff616ecd7",
+ "diff_bytes": 3775,
+ "n_tests": 228,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "changelog/805.bugfix.rst",
+  "src/pluggy/_tracing.py",
+  "testing/test_tracer.py"
+ ],
+ "n_changed": 3,
+ "selected": 228,
+ "file_selected": 228,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "changelog/805.bugfix.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.17,
+ "seconds_selected": 0.17,
+ "wall_seconds": 20.8,
+ "project": "pluggy",
+ "image_code_sha": "a874558"
+}

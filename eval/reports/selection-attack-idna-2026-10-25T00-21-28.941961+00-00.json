@@ -1,0 +1,2082 @@
+{
+ "generated_at": "2026-10-25T00:21:28.941961+00:00",
+ "provenance": {
+  "started_at": "2026-10-25T00:21:29.714375+00:00",
+  "git_sha": "a116495b2d4c9217ff697d1935a0b54ad4fadf19",
+  "code_dirty": true,
+  "code_diff_sha256": "a3e2d4d0c26763ea",
+  "corpus": "selection-attack:idna",
+  "corpus_fingerprint": "90e56941ef7df788",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-attack",
+   "--project",
+   "idna",
+   "--n",
+   "5"
+  ]
+ },
+ "summary": {
+  "n_cases": 40,
+  "n_projects": 1,
+  "n_mutants": 5,
+  "honest_flagged_cases": 40,
+  "invalid_timeouts": 2,
+  "m1_violations": 0,
+  "m2_violations": 0,
+  "upper_bound_95": 0.08762453925039232,
+  "by_advisor": {
+   "empty": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "garbage": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "everything": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "non-core-only": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "duplicates": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "huge": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "raises": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "reversed-core": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "idna",
+   "sha": "d55e65e1a3b1ede7f556bc202738066f5597e249",
+   "seed": 20261023,
+   "cases": [
+    {
+     "mutant": "idna-0",
+     "advisor": "empty",
+     "core_tests": 65,
+     "ran": 65,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       48,
+       48
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       48,
+       48
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ]
+     ],
+     "honest_seconds": 19.2,
+     "seconds": 16.1
+    },
+    {
+     "mutant": "idna-0",
+     "advisor": "garbage",
+     "core_tests": 65,
+     "ran": 65,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       48,
+       48
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       48,
+       48
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ]
+     ],
+     "honest_seconds": 19.2,
+     "seconds": 19.1
+    },
+    {
+     "mutant": "idna-0",
+     "advisor": "everything",
+     "core_tests": 65,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       48,
+       48
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 19.2,
+     "seconds": 52.3
+    },
+    {
+     "mutant": "idna-0",
+     "advisor": "non-core-only",
+     "core_tests": 65,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       48,
+       48
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 19.2,
+     "seconds": 48.1
+    },
+    {
+     "mutant": "idna-0",
+     "advisor": "duplicates",
+     "core_tests": 65,
+     "ran": 65,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       48,
+       48
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       48,
+       48
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ]
+     ],
+     "honest_seconds": 19.2,
+     "seconds": 20.4
+    },
+    {
+     "mutant": "idna-0",
+     "advisor": "huge",
+     "core_tests": 65,
+     "ran": 65,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       48,
+       48
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       48,
+       48
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ]
+     ],
+     "honest_seconds": 19.2,
+     "seconds": 20.5
+    },
+    {
+     "mutant": "idna-0",
+     "advisor": "raises",
+     "core_tests": 65,
+     "ran": 65,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       48,
+       48
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       48,
+       48
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ]
+     ],
+     "honest_seconds": 19.2,
+     "seconds": 20.8
+    },
+    {
+     "mutant": "idna-0",
+     "advisor": "reversed-core",
+     "core_tests": 65,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       48,
+       48
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 19.2,
+     "seconds": 61.7
+    },
+    {
+     "mutant": "idna-1",
+     "advisor": "empty",
+     "core_tests": 6442,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 219.1,
+     "seconds": 198.4
+    },
+    {
+     "mutant": "idna-1",
+     "advisor": "garbage",
+     "core_tests": 6442,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 219.1,
+     "seconds": 178.6
+    },
+    {
+     "mutant": "idna-1",
+     "advisor": "everything",
+     "core_tests": 6442,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 219.1,
+     "seconds": 211.4
+    },
+    {
+     "mutant": "idna-1",
+     "advisor": "non-core-only",
+     "core_tests": 6442,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 219.1,
+     "seconds": 203.0
+    },
+    {
+     "mutant": "idna-1",
+     "advisor": "duplicates",
+     "core_tests": 6442,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 219.1,
+     "seconds": 82.0
+    },
+    {
+     "mutant": "idna-1",
+     "advisor": "huge",
+     "core_tests": 6442,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 219.1,
+     "seconds": 82.4
+    },
+    {
+     "mutant": "idna-1",
+     "advisor": "raises",
+     "core_tests": 6442,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 219.1,
+     "seconds": 82.5
+    },
+    {
+     "mutant": "idna-1",
+     "advisor": "reversed-core",
+     "core_tests": 6442,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 219.1,
+     "seconds": 83.1
+    },
+    {
+     "mutant": "idna-2",
+     "advisor": "empty",
+     "core_tests": 6442,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 247.3,
+     "seconds": 239.5
+    },
+    {
+     "mutant": "idna-2",
+     "advisor": "garbage",
+     "core_tests": 6442,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 247.3,
+     "seconds": 240.1
+    },
+    {
+     "mutant": "idna-2",
+     "advisor": "everything",
+     "core_tests": 6442,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 247.3,
+     "seconds": 241.1
+    },
+    {
+     "mutant": "idna-2",
+     "advisor": "non-core-only",
+     "core_tests": 6442,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 247.3,
+     "seconds": 241.6
+    },
+    {
+     "mutant": "idna-2",
+     "advisor": "duplicates",
+     "core_tests": 6442,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 247.3,
+     "seconds": 240.8
+    },
+    {
+     "mutant": "idna-2",
+     "advisor": "huge",
+     "core_tests": 6442,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 247.3,
+     "seconds": 290.1
+    },
+    {
+     "mutant": "idna-2",
+     "advisor": "raises",
+     "core_tests": 6442,
+     "ran": 5166,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": true,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "layer timed out after 300.0s",
+       "error",
+       6424,
+       5148
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 247.3,
+     "seconds": 317.3
+    },
+    {
+     "mutant": "idna-2",
+     "advisor": "reversed-core",
+     "core_tests": 6442,
+     "ran": 4622,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": true,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "layer timed out after 300.0s",
+       "error",
+       6424,
+       4604
+      ],
+      [
+       "property",
+       "",
+       "failed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 247.3,
+     "seconds": 315.2
+    },
+    {
+     "mutant": "idna-3",
+     "advisor": "empty",
+     "core_tests": 1,
+     "ran": 1,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 4.3,
+     "seconds": 4.5
+    },
+    {
+     "mutant": "idna-3",
+     "advisor": "garbage",
+     "core_tests": 1,
+     "ran": 1,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 4.3,
+     "seconds": 4.1
+    },
+    {
+     "mutant": "idna-3",
+     "advisor": "everything",
+     "core_tests": 1,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 4.3,
+     "seconds": 55.5
+    },
+    {
+     "mutant": "idna-3",
+     "advisor": "non-core-only",
+     "core_tests": 1,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 4.3,
+     "seconds": 62.9
+    },
+    {
+     "mutant": "idna-3",
+     "advisor": "duplicates",
+     "core_tests": 1,
+     "ran": 4,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       4,
+       4
+      ]
+     ],
+     "honest_seconds": 4.3,
+     "seconds": 12.3
+    },
+    {
+     "mutant": "idna-3",
+     "advisor": "huge",
+     "core_tests": 1,
+     "ran": 2,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "honest_seconds": 4.3,
+     "seconds": 12.6
+    },
+    {
+     "mutant": "idna-3",
+     "advisor": "raises",
+     "core_tests": 1,
+     "ran": 1,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 4.3,
+     "seconds": 5.2
+    },
+    {
+     "mutant": "idna-3",
+     "advisor": "reversed-core",
+     "core_tests": 1,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 4.3,
+     "seconds": 18.5
+    },
+    {
+     "mutant": "idna-4",
+     "advisor": "empty",
+     "core_tests": 37,
+     "ran": 37,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       36,
+       36
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       36,
+       36
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 5.4,
+     "seconds": 5.1
+    },
+    {
+     "mutant": "idna-4",
+     "advisor": "garbage",
+     "core_tests": 37,
+     "ran": 37,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       36,
+       36
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       36,
+       36
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 5.4,
+     "seconds": 5.0
+    },
+    {
+     "mutant": "idna-4",
+     "advisor": "everything",
+     "core_tests": 37,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       36,
+       36
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 5.4,
+     "seconds": 18.0
+    },
+    {
+     "mutant": "idna-4",
+     "advisor": "non-core-only",
+     "core_tests": 37,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       36,
+       36
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 5.4,
+     "seconds": 35.8
+    },
+    {
+     "mutant": "idna-4",
+     "advisor": "duplicates",
+     "core_tests": 37,
+     "ran": 40,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       36,
+       36
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       39,
+       39
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 5.4,
+     "seconds": 15.6
+    },
+    {
+     "mutant": "idna-4",
+     "advisor": "huge",
+     "core_tests": 37,
+     "ran": 38,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       36,
+       36
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       37,
+       37
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 5.4,
+     "seconds": 14.6
+    },
+    {
+     "mutant": "idna-4",
+     "advisor": "raises",
+     "core_tests": 37,
+     "ran": 37,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       36,
+       36
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       36,
+       36
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 5.4,
+     "seconds": 15.5
+    },
+    {
+     "mutant": "idna-4",
+     "advisor": "reversed-core",
+     "core_tests": 37,
+     "ran": 6442,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       36,
+       36
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6424,
+       6424
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       17,
+       17
+      ],
+      [
+       "adversarial",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 5.4,
+     "seconds": 65.7
+    }
+   ],
+   "status": "ran"
+  }
+ ]
+}

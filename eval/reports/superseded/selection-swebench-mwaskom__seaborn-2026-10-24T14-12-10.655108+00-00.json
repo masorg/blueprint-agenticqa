@@ -1,0 +1,120 @@
+{
+ "generated_at": "2026-10-24T14:12:10.655108+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T14:12:10.931413+00:00",
+  "git_sha": "00ec4a783095e173853b5798aa640d836d1e4742",
+  "code_dirty": false,
+  "code_diff_sha256": "6e3dd0ea245b92e9",
+  "corpus": "selection-swebench:mwaskom/seaborn",
+  "corpus_fingerprint": "ce2a2539357bcaa8",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-swebench",
+   "--repo",
+   "mwaskom/seaborn",
+   "--cap",
+   "20"
+  ]
+ },
+ "summary": {
+  "attempted": 2,
+  "analysed": 2,
+  "usable": 2,
+  "failed_to_analyse": 0,
+  "exposing_tests_not_located": 0,
+  "caught": {
+   "k": 2,
+   "n": 2,
+   "rate": 1.0,
+   "ci95": [
+    0.342,
+    1.0
+   ]
+  },
+  "missed": {
+   "k": 0,
+   "n": 2,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.658
+   ]
+  },
+  "missed_ids": [],
+  "caught_by_a_selected_test": {
+   "k": 2,
+   "n": 2,
+   "rate": 1.0,
+   "ci95": [
+    0.342,
+    1.0
+   ]
+  },
+  "caught_by_review": 0,
+  "caught_by_full_run": 0,
+  "targets_selected_share": 1.0,
+  "selected_share": {
+   "mean": 0.5911,
+   "median": 0.5911
+  },
+  "file_level_selected_share": 0.5911,
+  "by_repo": {
+   "mwaskom/seaborn": {
+    "usable": 2,
+    "caught": 2,
+    "mean_selected_share": 0.591
+   }
+  }
+ },
+ "results": [
+  {
+   "instance_id": "mwaskom__seaborn-3187",
+   "repo": "mwaskom/seaborn",
+   "version": "0.12",
+   "status": "ok",
+   "n_tests": 1387,
+   "n_changed": 2,
+   "n_source_files": 2,
+   "n_f2p": 2,
+   "n_targets": 2,
+   "n_targets_selected": 2,
+   "selected": 1387,
+   "mode": "change",
+   "reason": "name/function",
+   "uncovered": [],
+   "out_of_scope": [],
+   "caught": true,
+   "caught_by_test": true,
+   "caught_by_review": false,
+   "caught_by_full": false,
+   "file_selected": 1387
+  },
+  {
+   "instance_id": "mwaskom__seaborn-3069",
+   "repo": "mwaskom/seaborn",
+   "version": "0.12",
+   "status": "ok",
+   "n_tests": 1355,
+   "n_changed": 1,
+   "n_source_files": 1,
+   "n_f2p": 2,
+   "n_targets": 2,
+   "n_targets_selected": 2,
+   "selected": 247,
+   "mode": "change",
+   "reason": "name/function",
+   "uncovered": [],
+   "out_of_scope": [],
+   "caught": true,
+   "caught_by_test": true,
+   "caught_by_review": false,
+   "caught_by_full": false,
+   "file_selected": 247
+  }
+ ]
+}

@@ -1,0 +1,442 @@
+{
+ "generated_at": "2026-10-24T14:05:44.016732+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T14:05:44.175471+00:00",
+  "git_sha": "50fbf59b28502473383bc103654a4e01a24b092b",
+  "code_dirty": true,
+  "code_diff_sha256": "9913368fbf59cca4",
+  "corpus": "selection-testmon:boltons",
+  "corpus_fingerprint": "65f5e60e6138ae8f",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-testmon",
+   "--project",
+   "boltons",
+   "--report",
+   "eval/reports/selection-replay-boltons-2026-10-24T03-28-33.468320+00-00.json"
+  ]
+ },
+ "summary": {
+  "projects": [
+   "boltons"
+  ],
+  "mutants": 30,
+  "killed": 16,
+  "testmon_missed": {
+   "k": 0,
+   "n": 16,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.194
+   ]
+  },
+  "gate_missed": {
+   "k": 0,
+   "n": 16,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.194
+   ]
+  },
+  "testmon_tests_share_mean": 0.0138,
+  "gate_tests_share_mean": 0.0346,
+  "testmon_missed_ids": [],
+  "baseline_seconds": {
+   "boltons": 4.0
+  },
+  "per_project": {
+   "boltons": {
+    "mutants": 30,
+    "killed": 16,
+    "testmon_missed": 0,
+    "gate_missed": 0,
+    "testmon_share": 0.014,
+    "gate_share": 0.035
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "boltons",
+   "seed": 20261023,
+   "status": "ran",
+   "rows": [
+    {
+     "id": "boltons-000",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 3,
+     "testmon_failed": 3,
+     "testmon_seconds": 0.57,
+     "timed_out": false,
+     "gate_selected": 27,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-001",
+     "total": 525,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.41,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-002",
+     "total": 525,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.42,
+     "timed_out": false,
+     "gate_selected": 9,
+     "gate_caught": false,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-003",
+     "total": 525,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.48,
+     "timed_out": false,
+     "gate_selected": 5,
+     "gate_caught": false,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-004",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.52,
+     "timed_out": false,
+     "gate_selected": 2,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-005",
+     "total": 525,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.49,
+     "timed_out": false,
+     "gate_selected": 4,
+     "gate_caught": false,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-006",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.54,
+     "timed_out": false,
+     "gate_selected": 16,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-007",
+     "total": 525,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.45,
+     "timed_out": false,
+     "gate_selected": 4,
+     "gate_caught": false,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-008",
+     "total": 525,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.44,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-009",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 6,
+     "testmon_seconds": 0.56,
+     "timed_out": false,
+     "gate_selected": 6,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-010",
+     "total": 525,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.41,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-011",
+     "total": 525,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.44,
+     "timed_out": false,
+     "gate_selected": 8,
+     "gate_caught": false,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-012",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 93,
+     "testmon_failed": 74,
+     "testmon_seconds": 3.87,
+     "timed_out": false,
+     "gate_selected": 95,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-013",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 16,
+     "testmon_failed": 15,
+     "testmon_seconds": 1.06,
+     "timed_out": false,
+     "gate_selected": 207,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-014",
+     "total": 525,
+     "killed_full": false,
+     "testmon_run": 5,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.53,
+     "timed_out": false,
+     "gate_selected": 5,
+     "gate_caught": false,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-015",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 5,
+     "testmon_seconds": 0.58,
+     "timed_out": false,
+     "gate_selected": 6,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-016",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.51,
+     "timed_out": false,
+     "gate_selected": 2,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-017",
+     "total": 525,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.46,
+     "timed_out": false,
+     "gate_selected": 2,
+     "gate_caught": false,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-018",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.61,
+     "timed_out": false,
+     "gate_selected": 16,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-019",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.51,
+     "timed_out": false,
+     "gate_selected": 1,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-020",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.49,
+     "timed_out": false,
+     "gate_selected": 7,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-021",
+     "total": 525,
+     "killed_full": false,
+     "testmon_run": 4,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.51,
+     "timed_out": false,
+     "gate_selected": 9,
+     "gate_caught": false,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-022",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.59,
+     "timed_out": false,
+     "gate_selected": 2,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-023",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 4,
+     "testmon_failed": 4,
+     "testmon_seconds": 0.56,
+     "timed_out": false,
+     "gate_selected": 4,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-024",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 8,
+     "testmon_failed": 3,
+     "testmon_seconds": 0.68,
+     "timed_out": false,
+     "gate_selected": 13,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-025",
+     "total": 525,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.48,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-026",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 45,
+     "testmon_failed": 42,
+     "testmon_seconds": 1.22,
+     "timed_out": false,
+     "gate_selected": 88,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-027",
+     "total": 525,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.52,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-028",
+     "total": 525,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.45,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    },
+    {
+     "id": "boltons-029",
+     "total": 525,
+     "killed_full": true,
+     "testmon_run": 3,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.49,
+     "timed_out": false,
+     "gate_selected": 7,
+     "gate_caught": true,
+     "seconds_full": 3.138
+    }
+   ],
+   "baseline_seconds": 4.0,
+   "baseline_counts": {
+    "passed": 525,
+    "failed": 0,
+    "error": 0,
+    "skipped": 0,
+    "deselected": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "repo": "mahmoud/boltons",
+ "number": 594,
+ "status": "ran",
+ "head": "ff1e680876b68fe9ab99eb7d72a082c1460c79eb",
+ "base": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+ "diff_bytes": 4773,
+ "n_tests": 529,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "boltons/timeutils.py",
+  "tests/test_timeutils.py"
+ ],
+ "n_changed": 2,
+ "selected": 17,
+ "file_selected": 17,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 3.58,
+ "seconds_selected": 0.01,
+ "wall_seconds": 34.1,
+ "project": "boltons",
+ "image_code_sha": "efa91d9"
+}

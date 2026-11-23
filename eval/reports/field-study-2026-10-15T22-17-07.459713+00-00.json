@@ -1,0 +1,3070 @@
+{
+ "generated_at": "2026-10-15T22:17:07.459713+00:00",
+ "provenance": {
+  "started_at": "2026-10-15T22:17:07.705195+00:00",
+  "git_sha": "221f456fa2bb3b70d5587a7e246de4fb1f504359",
+  "code_dirty": true,
+  "code_diff_sha256": "e65b4ffa9a7d24dc",
+  "corpus": "field-study",
+  "corpus_fingerprint": "290cc7ea22a6127b",
+  "n_scenarios": 1,
+  "provider": "none (no LLM; heuristic routing)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "field-summary",
+   "--results",
+   "eval/field"
+  ]
+ },
+ "summary": {
+  "attempted": 84,
+  "funnel": {
+   "collection_failed": 42,
+   "build_or_run_failed": 27,
+   "no_tests": 6,
+   "ran": 9
+  },
+  "ran": 9,
+  "with_base": 8,
+  "ran_share": {
+   "k": 9,
+   "n": 84,
+   "rate": 0.10714285714285714,
+   "ci95": [
+    0.057,
+    0.191
+   ]
+  },
+  "distinct_repos_attempted": 53,
+  "distinct_repos_ran": 7,
+  "failure_reasons": {
+   "tests import a package we did not install": 33,
+   "dependencies could not be installed": 12,
+   "the repository has no tests": 6,
+   "timeout while building or collecting": 11,
+   "tests could not be collected (other)": 4,
+   "the test runner found no pytest-style tests": 4,
+   "could not build or run (other)": 5
+  },
+  "head_flagged": {
+   "k": 4,
+   "n": 9,
+   "rate": 0.4444444444444444,
+   "ci95": [
+    0.189,
+    0.733
+   ]
+  },
+  "introduced_failures": {
+   "k": 0,
+   "n": 8,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.324
+   ]
+  },
+  "by_agent": {
+   "Claude_Code": {
+    "k": 0,
+    "n": 2,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.658
+    ]
+   },
+   "Devin": {
+    "k": 0,
+    "n": 2,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.658
+    ]
+   },
+   "Google_Jules": {
+    "k": 0,
+    "n": 2,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.658
+    ]
+   },
+   "OpenAI_Codex": {
+    "k": 0,
+    "n": 2,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.658
+    ]
+   }
+  },
+  "claims_vs_reality": {
+   "says_tests_pass_and_introduced_failures": {
+    "k": 0,
+    "n": 1,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.793
+    ]
+   },
+   "no_claim_and_introduced_failures": {
+    "k": 0,
+    "n": 7,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.354
+    ]
+   }
+  },
+  "outcome": {
+   "merged_and_introduced_failures": {
+    "k": 0,
+    "n": 7,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.354
+    ]
+   },
+   "not_merged_and_introduced_failures": {
+    "k": 0,
+    "n": 1,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.793
+    ]
+   }
+  }
+ },
+ "results": [
+  {
+   "order": 0,
+   "pr_id": 3256172444,
+   "agent": "Claude_Code",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 14,
+   "repo": "robusta-dev/holmesgpt",
+   "number": 695,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "65aad793cd5374138e75b9aba0a953e9c0095ad5",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 4): ImportError while loading conftest '/tmp/agenticqa-workspaces/ws-w6743hc_/conftest.py'. | E   ModuleNotFoundError: No module named 'pytest_shared_session_scope'",
+    "layer_states": {},
+    "seconds": 2.2
+   },
+   "wall_seconds": 10.7,
+   "head_sha": "65aad793cd5374138e75b9aba0a953e9c0095ad5"
+  },
+  {
+   "order": 1,
+   "pr_id": 3414255897,
+   "agent": "Copilot",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 6,
+   "repo": "bpwhelan/GameSentenceMiner",
+   "number": 186,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "cdf2b768e70864371f85ccf2a5a3e63d9e4f4305",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command failed (2): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/c91351130bed8e22/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-10mvt6fk/requirements.txt\nerror: Couldn't parse requirement in `/tmp/agenticqa-workspaces/ws-10mvt6fk/requirements.txt` at position 358\n  cause: The ~= operator requires at least two segments in the release version\n         ",
+    "layer_states": {},
+    "seconds": 0.1
+   },
+   "wall_seconds": 2.5,
+   "head_sha": "cdf2b768e70864371f85ccf2a5a3e63d9e4f4305"
+  },
+  {
+   "order": 2,
+   "pr_id": 3484182986,
+   "agent": "Cursor",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 9,
+   "repo": "llama-farm/llamafarm",
+   "number": 283,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "20026160ad238007048c6dfe39e132a7cacff9c3",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): E   ModuleNotFoundError: No module named 'pydantic' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-hi4wiqqw/models/example_strategies/test_loading.py'. | E   ModuleNotFoundError: No module named 'pydantic' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-hi4wiqqw/models/tests/test_cli_m",
+    "layer_states": {},
+    "seconds": 3.5
+   },
+   "wall_seconds": 17.8,
+   "head_sha": "20026160ad238007048c6dfe39e132a7cacff9c3"
+  },
+  {
+   "order": 3,
+   "pr_id": 2927463862,
+   "agent": "Devin",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 4,
+   "repo": "AgentOps-AI/agentops",
+   "number": 865,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "e207aa50addde159448de7d534afcfb003239a15",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 4): ImportError while loading conftest '/tmp/agenticqa-workspaces/ws-g484xr51/tests/unit/conftest.py'. | E   ImportError: cannot import name 'start_session' from 'agentops.legacy' (/tmp/agenticqa-workspaces/ws-g484xr51/agentops/legacy/__init__.py)",
+    "layer_states": {},
+    "seconds": 100.1
+   },
+   "wall_seconds": 130.9,
+   "head_sha": "e207aa50addde159448de7d534afcfb003239a15"
+  },
+  {
+   "order": 4,
+   "pr_id": 3300760158,
+   "agent": "Google_Jules",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "NethServer/nethsecurity",
+   "number": 1338,
+   "status": "no_tests",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "wall_seconds": 1.8,
+   "head": "a922afda548e54d8cdd845ee926d682a5ee14226"
+  },
+  {
+   "order": 5,
+   "pr_id": 3097650858,
+   "agent": "OpenAI_Codex",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 1057,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "2b46f17ea5f38cb534650756f205f0d4f8d8627a",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command timed out after 420.0s: /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/a3354c20ef813597/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-yw5zslc1/requirements.txt",
+    "layer_states": {},
+    "seconds": 420.1
+   },
+   "wall_seconds": 423.0,
+   "head_sha": "2b46f17ea5f38cb534650756f205f0d4f8d8627a"
+  },
+  {
+   "order": 6,
+   "pr_id": 3489912171,
+   "agent": "Claude_Code",
+   "merged": false,
+   "says_tests_pass": true,
+   "n_commits": 6,
+   "repo": "explodinggradients/ragas",
+   "number": 2344,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "468e108402b8877d1f00fcd77e86cddc6f484d28",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command timed out after 420.0s: /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/eae6f14da35793db/.venv/bin/python pytest pytest-reportlog appdirs arize-phoenix>=6.1.0 build>=1.3.0 datasets>=4.0.0 diskcache>=5.6.3 gitpython instructor langchain langchain-community langchain-core langchain_openai nbmake nest-asyncio networkx notebook numpy>=1.21.0,<3.0.0 ope",
+    "layer_states": {},
+    "seconds": 420.1
+   },
+   "wall_seconds": 429.7,
+   "head_sha": "468e108402b8877d1f00fcd77e86cddc6f484d28"
+  },
+  {
+   "order": 7,
+   "pr_id": 3457109197,
+   "agent": "Copilot",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 3,
+   "repo": "DLR-RM/stable-baselines3",
+   "number": 2177,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "12ee2db30967ecb5cbb0f7f49566eb95767bad92",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-zplwpayq/tests/test_buffers.py'. | E   ModuleNotFoundError: No module named 'gymnasium' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-zplwpayq/tests/test_callbacks.py'. | E   ModuleNotFoundError: No module named 'gymnasium' | ImportError w",
+    "layer_states": {},
+    "seconds": 3.1
+   },
+   "wall_seconds": 5.1,
+   "head_sha": "12ee2db30967ecb5cbb0f7f49566eb95767bad92"
+  },
+  {
+   "order": 8,
+   "pr_id": 3242573593,
+   "agent": "Cursor",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "browser-use/browser-use",
+   "number": 2478,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "9856306ba4c37da8b821df3b78fa9ad88ad8c850",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 4): ERROR: usage: python -m pytest [options] [file_or_dir] [file_or_dir] [...]",
+    "layer_states": {},
+    "seconds": 311.8
+   },
+   "wall_seconds": 313.6,
+   "head_sha": "9856306ba4c37da8b821df3b78fa9ad88ad8c850"
+  },
+  {
+   "order": 9,
+   "pr_id": 3400906416,
+   "agent": "Devin",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 4,
+   "repo": "AgentOps-AI/agentops",
+   "number": 1249,
+   "status": "ran",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "c4df251bea05088b8c949ed34697f23ecfd81d6d",
+    "state": "awaiting_approval",
+    "verdict": "needs_human_review",
+    "completed": true,
+    "totals": {
+     "passed": 252,
+     "failed": 4,
+     "skipped": 0,
+     "total": 256
+    },
+    "failing": [
+     "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_export_empty_spans_list",
+     "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_export_jwt_expired_exception",
+     "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_export_success",
+     "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_headers_protected_from_override"
+    ],
+    "error": "",
+    "layer_states": {
+     "unit": "error",
+     "property": "passed",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 82.7
+   },
+   "base": {
+    "sha": "37a63b6ad9afff55b90163a1d7fd6ca2d25360ff",
+    "state": "awaiting_approval",
+    "verdict": "needs_human_review",
+    "completed": true,
+    "totals": {
+     "passed": 252,
+     "failed": 4,
+     "skipped": 0,
+     "total": 256
+    },
+    "failing": [
+     "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_export_empty_spans_list",
+     "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_export_jwt_expired_exception",
+     "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_export_success",
+     "tests/unit/sdk/test_exporters.py::TestAuthenticatedOTLPExporter::test_headers_protected_from_override"
+    ],
+    "error": "",
+    "layer_states": {
+     "unit": "error",
+     "property": "passed",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 32.5
+   },
+   "wall_seconds": 141.0,
+   "head_sha": "c4df251bea05088b8c949ed34697f23ecfd81d6d",
+   "base_sha": "37a63b6ad9afff55b90163a1d7fd6ca2d25360ff"
+  },
+  {
+   "order": 10,
+   "pr_id": 3300949868,
+   "agent": "Google_Jules",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 5,
+   "repo": "Breakthrough/DVR-Scan",
+   "number": 233,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "16eee30fa2df773e541d0f0da442981d16e0e8ea",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-a1yyifv3/tests/test_cli.py'. | E   ImportError: libxcb.so.1: cannot open shared object file: No such file or directory | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-a1yyifv3/tests/test_scan_context.py'. | E   ImportError: libxcb.so.1: cann",
+    "layer_states": {},
+    "seconds": 48.7
+   },
+   "wall_seconds": 59.9,
+   "head_sha": "16eee30fa2df773e541d0f0da442981d16e0e8ea"
+  },
+  {
+   "order": 11,
+   "pr_id": 3088635714,
+   "agent": "OpenAI_Codex",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 731,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "e7c60d7ba6277a037d31e692e3f7f10174a29d71",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command timed out after 420.0s: /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/a3354c20ef813597/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-l9hsjov8/requirements.txt",
+    "layer_states": {},
+    "seconds": 420.1
+   },
+   "wall_seconds": 422.1,
+   "head_sha": "e7c60d7ba6277a037d31e692e3f7f10174a29d71"
+  },
+  {
+   "order": 12,
+   "pr_id": 3287356173,
+   "agent": "Claude_Code",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 11,
+   "repo": "blarApp/blarify",
+   "number": 232,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "cec9e483da196dd055080edfbed7ed6daeb8ce2c",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-4a42qgme/test_complete_workflow.py'. | E   ModuleNotFoundError: No module named 'langgraph' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-4a42qgme/test_framework_workflow.py'. | E   ModuleNotFoundError: No module named 'langgraph' | Import",
+    "layer_states": {},
+    "seconds": 2.4
+   },
+   "wall_seconds": 6.8,
+   "head_sha": "cec9e483da196dd055080edfbed7ed6daeb8ce2c"
+  },
+  {
+   "order": 13,
+   "pr_id": 3449720298,
+   "agent": "Copilot",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 2,
+   "repo": "mlflow/mlflow",
+   "number": 17924,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "8fc2a3930bb56bfe95d34c0d0b692c4c403c93ef",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   M",
+    "layer_states": {},
+    "seconds": 363.4
+   },
+   "wall_seconds": 452.4,
+   "head_sha": "8fc2a3930bb56bfe95d34c0d0b692c4c403c93ef"
+  },
+  {
+   "order": 14,
+   "pr_id": 3221411520,
+   "agent": "Cursor",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 3,
+   "repo": "iterative/datachain",
+   "number": 1227,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "d69254936ed034ecd1459c343543edade3e7df26",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command timed out after 420.0s: /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/d4ca0db3e02659f4/.venv/bin/python pytest pytest-reportlog Pillow>=10.0.0,<12 adlfs>=2024.2.0 aiotools>=1.7.0 attrs>=21.3.0 cloudpickle datamodel-code-generator>=0.25 dulwich dvc-data>=3.10,<4 dvc-objects>=4,<6 dvc-studio-client>=0.21,<1 fsspec>=2024.2.0 gcsfs>=2024.2.0 huggingf",
+    "layer_states": {},
+    "seconds": 420.2
+   },
+   "wall_seconds": 422.3,
+   "head_sha": "d69254936ed034ecd1459c343543edade3e7df26"
+  },
+  {
+   "order": 15,
+   "pr_id": 3225967102,
+   "agent": "Devin",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 2,
+   "repo": "crewAIInc/crewAI",
+   "number": 3145,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "9497715b4268006aece7ff00c2600ff6e9594304",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-wrp7i1pr/tests/cli/cli_test.py'. | E   StopIteration | E   importlib.metadata.PackageNotFoundError: No package metadata was found for crewai | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-wrp7i1pr/tests/cli/organization/test_main.py'. | E  ",
+    "layer_states": {},
+    "seconds": 190.2
+   },
+   "wall_seconds": 204.8,
+   "head_sha": "9497715b4268006aece7ff00c2600ff6e9594304"
+  },
+  {
+   "order": 16,
+   "pr_id": 3305259894,
+   "agent": "Google_Jules",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 5,
+   "repo": "geoalchemy/geoalchemy2",
+   "number": 567,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "e77cb911c83f54bb7b98da5d7f75b4c255fda553",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command failed (1): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/168756cc2ca792cb/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-j1yjo7sc/requirements.txt\nUsing Python 3.12.15 environment at: /tmp/agenticqa-workspaces/venv-cache/168756cc2ca792cb/.venv\nResolved 37 packages in 1.87s\nDownloading pygments (1.2MiB)\nDownloading mypy (13.8MiB)\nDownloading as",
+    "layer_states": {},
+    "seconds": 4.6
+   },
+   "wall_seconds": 6.4,
+   "head_sha": "e77cb911c83f54bb7b98da5d7f75b4c255fda553"
+  },
+  {
+   "order": 17,
+   "pr_id": 3183407781,
+   "agent": "OpenAI_Codex",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 2671,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "fb184e801e184c93d11eac827c79eaaa7d85fac7",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 1): ls; falling back to network installs\nEnsuring baseline requirements (timeout 600s): /tmp/agenticqa-workspaces/venv-cache/fa789a055f3b0875/.venv/bin/python -m pip install --quiet -r /tmp/agenticqa-workspaces/ws-oen0avaa/alpha_factory_v1/requirements-core.txt\nFailed to install baseline requirements 1\n",
+    "layer_states": {},
+    "seconds": 162.2
+   },
+   "wall_seconds": 164.8,
+   "head_sha": "fb184e801e184c93d11eac827c79eaaa7d85fac7"
+  },
+  {
+   "order": 18,
+   "pr_id": 3338367670,
+   "agent": "Claude_Code",
+   "merged": true,
+   "says_tests_pass": true,
+   "n_commits": 7,
+   "repo": "doobidoo/mcp-memory-service",
+   "number": 87,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "71e424b44f4d2889ec0348adb6190e805966199f",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command timed out after 420.0s: /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/ec6bc602d3efea1d/.venv/bin/python pytest pytest-reportlog PyPDF2>=3.0.0 aiofiles>=23.2.1 aiohttp>=3.8.0 build>=0.10.0 chardet>=5.0.0 chromadb==0.5.23 click>=8.0.0 fastapi>=0.115.0 httpx>=0.24.0 mcp>=1.0.0,<2.0.0 psutil>=5.9.0 python-multipart>=0.0.9 sentence-transformers>=2.2.2",
+    "layer_states": {},
+    "seconds": 420.1
+   },
+   "wall_seconds": 422.6,
+   "head_sha": "71e424b44f4d2889ec0348adb6190e805966199f"
+  },
+  {
+   "order": 19,
+   "pr_id": 3366786682,
+   "agent": "Copilot",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 2,
+   "repo": "mlflow/mlflow",
+   "number": 17479,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "29bd898b3224835d7bdf3a931fcc0ba16eed097f",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'boto3'\u001b[0m | E   ModuleNotFoundError: No module named 'autogen'\u001b[0m | E   ModuleNotFoundError: No module named 'agno'\u001b[0m | E   ",
+    "layer_states": {},
+    "seconds": 94.9
+   },
+   "wall_seconds": 188.6,
+   "head_sha": "29bd898b3224835d7bdf3a931fcc0ba16eed097f"
+  },
+  {
+   "order": 20,
+   "pr_id": 3478630550,
+   "agent": "Cursor",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 2,
+   "repo": "getsentry/sentry",
+   "number": 100820,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "528865fb79e08bbd69a6ea4154db4360abd4cfa5",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 3): ",
+    "layer_states": {},
+    "seconds": 272.7
+   },
+   "wall_seconds": 284.5,
+   "head_sha": "528865fb79e08bbd69a6ea4154db4360abd4cfa5"
+  },
+  {
+   "order": 21,
+   "pr_id": 2901256184,
+   "agent": "Devin",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 2,
+   "repo": "airbytehq/airbyte",
+   "number": 55234,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "1fb3c77d739a5253c9b26363fea023ce3a0f9283",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): E   ModuleNotFoundError: No module named 'tests.test_models'\u001b[0m | E   ModuleNotFoundError: No module named 'tests.test_secrets_manager'\u001b[0m | E   ModuleNotFoundError: No module named 'tests.test_dbml_assembler'\u001b[0m | E   ModuleNotFoundError: No module named 'tests.test_relationships'\u001b[0m | E   ModuleNotFoundError: No module named 't",
+    "layer_states": {},
+    "seconds": 13.1
+   },
+   "wall_seconds": 36.1,
+   "head_sha": "1fb3c77d739a5253c9b26363fea023ce3a0f9283"
+  },
+  {
+   "order": 22,
+   "pr_id": 3307718349,
+   "agent": "Google_Jules",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "sunriseapps/imagesorcery-mcp",
+   "number": 5,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "bb2fdff58e72e71e6f830c5616b8c7e13eb87c03",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command timed out after 420.0s: /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/3013d4ce8edf6adb/.venv/bin/python pytest pytest-reportlog Pillow build easyocr fastmcp>=2.10.0 huggingface_hub imutils>=0.5.4 opencv-python>=4.5.0 pydantic>=2.0.0 pytest pytest-asyncio requests ruff toml tqdm twine ultralytics",
+    "layer_states": {},
+    "seconds": 420.1
+   },
+   "wall_seconds": 423.4,
+   "head_sha": "bb2fdff58e72e71e6f830c5616b8c7e13eb87c03"
+  },
+  {
+   "order": 23,
+   "pr_id": 3119086225,
+   "agent": "OpenAI_Codex",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "jrkropp/open-webui-developer-toolkit",
+   "number": 489,
+   "status": "ran",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "6b973548d615ab324788bfd908d14720b592bc4d",
+    "state": "done",
+    "verdict": "auto_approve",
+    "completed": true,
+    "totals": {
+     "passed": 1,
+     "failed": 0,
+     "skipped": 0,
+     "total": 1
+    },
+    "failing": [],
+    "error": "",
+    "layer_states": {
+     "unit": "passed",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 14.2
+   },
+   "base": {
+    "sha": "5ae80b0454bb5b67fd0c76192020c21df1eac22a",
+    "state": "done",
+    "verdict": "auto_approve",
+    "completed": true,
+    "totals": {
+     "passed": 1,
+     "failed": 0,
+     "skipped": 0,
+     "total": 1
+    },
+    "failing": [],
+    "error": "",
+    "layer_states": {
+     "unit": "passed",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 6.0
+   },
+   "wall_seconds": 29.3,
+   "head_sha": "6b973548d615ab324788bfd908d14720b592bc4d",
+   "base_sha": "5ae80b0454bb5b67fd0c76192020c21df1eac22a"
+  },
+  {
+   "order": 24,
+   "pr_id": 3431634736,
+   "agent": "Claude_Code",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "microsoft/amplifier",
+   "number": 14,
+   "status": "ran",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "c09f73b0ed888e88affc4c904254ac2bba51790e",
+    "state": "done",
+    "verdict": "auto_approve",
+    "completed": true,
+    "totals": {
+     "passed": 4,
+     "failed": 0,
+     "skipped": 0,
+     "total": 4
+    },
+    "failing": [],
+    "error": "",
+    "layer_states": {
+     "unit": "passed",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 78.1
+   },
+   "base": {
+    "sha": "45d28848aa7cee12b2ba6d00fefbc08bb73f52d7",
+    "state": "done",
+    "verdict": "auto_approve",
+    "completed": true,
+    "totals": {
+     "passed": 4,
+     "failed": 0,
+     "skipped": 0,
+     "total": 4
+    },
+    "failing": [],
+    "error": "",
+    "layer_states": {
+     "unit": "passed",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 6.2
+   },
+   "wall_seconds": 86.1,
+   "head_sha": "c09f73b0ed888e88affc4c904254ac2bba51790e",
+   "base_sha": "45d28848aa7cee12b2ba6d00fefbc08bb73f52d7"
+  },
+  {
+   "order": 25,
+   "pr_id": 3541610915,
+   "agent": "Copilot",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 3,
+   "repo": "SkBlaz/py3plex",
+   "number": 192,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "f77c310e20525e187ca0721dca63a688a48b3355",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-1ih_d3l_/tests/test_multiplex_properties.py'. | E   ModuleNotFoundError: No module named 'hypothesis' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-1ih_d3l_/tests/test_properties.py'. | E   ModuleNotFoundError: No module named 'hypothesis'",
+    "layer_states": {},
+    "seconds": 189.7
+   },
+   "wall_seconds": 202.3,
+   "head_sha": "f77c310e20525e187ca0721dca63a688a48b3355"
+  },
+  {
+   "order": 26,
+   "pr_id": 3294302152,
+   "agent": "Cursor",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "browser-use/browser-use",
+   "number": 2606,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "39237e6cda8859caaa9785eba50da209db31bca3",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 4): ERROR: usage: python -m pytest [options] [file_or_dir] [file_or_dir] [...]",
+    "layer_states": {},
+    "seconds": 23.4
+   },
+   "wall_seconds": 25.5,
+   "head_sha": "39237e6cda8859caaa9785eba50da209db31bca3"
+  },
+  {
+   "order": 27,
+   "pr_id": 2761325861,
+   "agent": "Devin",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 2,
+   "repo": "crewAIInc/crewAI",
+   "number": 1808,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "d7d728ffa765d157937c2eec149a314a5dc88659",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-_7sosad4/tests/cli/cli_test.py'. | E   StopIteration | E   importlib.metadata.PackageNotFoundError: No package metadata was found for crewai | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-_7sosad4/tests/knowledge/knowledge_test.py'. | E   M",
+    "layer_states": {},
+    "seconds": 280.6
+   },
+   "wall_seconds": 283.0,
+   "head_sha": "d7d728ffa765d157937c2eec149a314a5dc88659"
+  },
+  {
+   "order": 28,
+   "pr_id": 3226481597,
+   "agent": "Google_Jules",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 4,
+   "repo": "bmaltais/kohya_ss",
+   "number": 3342,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "009ab4eeaac8453b8cb2b9b4212bf8262674fb0b",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command failed (1): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/26d0eaa0f2b57574/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-_h9n36un/requirements.txt\nUsing Python 3.12.15 environment at: /tmp/agenticqa-workspaces/venv-cache/26d0eaa0f2b57574/.venv\nerror: Distribution not found at: file:///app/sd-scripts\n",
+    "layer_states": {},
+    "seconds": 0.2
+   },
+   "wall_seconds": 2.0,
+   "head_sha": "009ab4eeaac8453b8cb2b9b4212bf8262674fb0b"
+  },
+  {
+   "order": 29,
+   "pr_id": 3186679333,
+   "agent": "OpenAI_Codex",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 2782,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "2ed2d35811220dad9f6f1d4a7bda264dae5fe7c7",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 1): ls; falling back to network installs\nEnsuring baseline requirements (timeout 600s): /tmp/agenticqa-workspaces/venv-cache/fa789a055f3b0875/.venv/bin/python -m pip install --quiet -r /tmp/agenticqa-workspaces/ws-ss64setl/alpha_factory_v1/requirements-core.txt\nFailed to install baseline requirements 1\n",
+    "layer_states": {},
+    "seconds": 160.4
+   },
+   "wall_seconds": 162.7,
+   "head_sha": "2ed2d35811220dad9f6f1d4a7bda264dae5fe7c7"
+  },
+  {
+   "order": 30,
+   "pr_id": 3308420893,
+   "agent": "Claude_Code",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 6,
+   "repo": "Significant-Gravitas/AutoGPT",
+   "number": 10595,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "2279cc135fbe7386059a23e2f9df4015a4133127",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: No framework runner matched the target repository.",
+    "layer_states": {},
+    "seconds": 2.1
+   },
+   "wall_seconds": 17.2,
+   "head_sha": "2279cc135fbe7386059a23e2f9df4015a4133127"
+  },
+  {
+   "order": 31,
+   "pr_id": 3305381341,
+   "agent": "Copilot",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 2,
+   "repo": "RetroGameSets/RGSX",
+   "number": 2,
+   "status": "no_tests",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "wall_seconds": 10.3,
+   "head": "57bc1bb8d083b9472857cca564bffb6e35e5849b"
+  },
+  {
+   "order": 32,
+   "pr_id": 3172177351,
+   "agent": "Cursor",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "getsentry/sentry",
+   "number": 94178,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "d8434dce3c55ae96e1a55a492b5bd1b208f4548f",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 4): ImportError while loading conftest '/tmp/agenticqa-workspaces/ws-km3abh4q/tests/conftest.py'. | E   ModuleNotFoundError: No module named 'psutil'",
+    "layer_states": {},
+    "seconds": 5.1
+   },
+   "wall_seconds": 16.7,
+   "head_sha": "d8434dce3c55ae96e1a55a492b5bd1b208f4548f"
+  },
+  {
+   "order": 33,
+   "pr_id": 2889090308,
+   "agent": "Devin",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 3,
+   "repo": "airbytehq/airbyte",
+   "number": 55019,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "551b26dfdcf69e5ff914384d26622d1014c292da",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): E   ModuleNotFoundError: No module named 'tests.test_models'\u001b[0m | E   ModuleNotFoundError: No module named 'tests.test_secrets_manager'\u001b[0m | E   ModuleNotFoundError: No module named 'tests.test_dbml_assembler'\u001b[0m | E   ModuleNotFoundError: No module named 'tests.test_relationships'\u001b[0m | E   ModuleNotFoundError: No module named 't",
+    "layer_states": {},
+    "seconds": 13.7
+   },
+   "wall_seconds": 43.9,
+   "head_sha": "551b26dfdcf69e5ff914384d26622d1014c292da"
+  },
+  {
+   "order": 34,
+   "pr_id": 3456576214,
+   "agent": "Google_Jules",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "OWASP/CheatSheetSeries",
+   "number": 1822,
+   "status": "no_tests",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "wall_seconds": 3.4,
+   "head": "4ec206f560d52658ed7f28790b6d3cec9722f389"
+  },
+  {
+   "order": 35,
+   "pr_id": 3097475639,
+   "agent": "OpenAI_Codex",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 1053,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "982deab825e7dc7cf2cea257a6481d960c7d9d10",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command timed out after 420.0s: /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/a3354c20ef813597/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-zbln2sv4/requirements.txt",
+    "layer_states": {},
+    "seconds": 420.2
+   },
+   "wall_seconds": 422.7,
+   "head_sha": "982deab825e7dc7cf2cea257a6481d960c7d9d10"
+  },
+  {
+   "order": 36,
+   "pr_id": 3386053013,
+   "agent": "Claude_Code",
+   "merged": true,
+   "says_tests_pass": true,
+   "n_commits": 11,
+   "repo": "mlflow/mlflow",
+   "number": 17554,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "6eb45ee73d98a120f731db683bdcdc331f503ba8",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'boto3'\u001b[0m | E   ModuleNotFoundError: No module named 'autogen'\u001b[0m | E   ModuleNotFoundError: No module named 'agno'\u001b[0m | E   ",
+    "layer_states": {},
+    "seconds": 256.8
+   },
+   "wall_seconds": 313.1,
+   "head_sha": "6eb45ee73d98a120f731db683bdcdc331f503ba8"
+  },
+  {
+   "order": 37,
+   "pr_id": 3438235089,
+   "agent": "Copilot",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 4,
+   "repo": "mlflow/mlflow",
+   "number": 17861,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "702a981ba9d850e9805f83850648059858a8a4db",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   M",
+    "layer_states": {},
+    "seconds": 334.1
+   },
+   "wall_seconds": 410.3,
+   "head_sha": "702a981ba9d850e9805f83850648059858a8a4db"
+  },
+  {
+   "order": 38,
+   "pr_id": 3324281897,
+   "agent": "Cursor",
+   "merged": false,
+   "says_tests_pass": true,
+   "n_commits": 1,
+   "repo": "BerriAI/litellm",
+   "number": 13641,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "19c54a6d50e2006c7aeba535898f89a9b35a3ee2",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (timed out): ",
+    "layer_states": {},
+    "seconds": 339.1
+   },
+   "wall_seconds": 367.8,
+   "head_sha": "19c54a6d50e2006c7aeba535898f89a9b35a3ee2"
+  },
+  {
+   "order": 39,
+   "pr_id": 3221977522,
+   "agent": "Devin",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 3,
+   "repo": "crewAIInc/crewAI",
+   "number": 3137,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "352b213f7ff55b4f35230b5b9c4c2b98790c84e7",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-1lykksys/tests/cli/cli_test.py'. | E   StopIteration | E   importlib.metadata.PackageNotFoundError: No package metadata was found for crewai | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-1lykksys/tests/cli/organization/test_main.py'. | E  ",
+    "layer_states": {},
+    "seconds": 142.4
+   },
+   "wall_seconds": 161.8,
+   "head_sha": "352b213f7ff55b4f35230b5b9c4c2b98790c84e7"
+  },
+  {
+   "order": 40,
+   "pr_id": 3317961577,
+   "agent": "Google_Jules",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "florestefano1975/comfyui-portrait-master",
+   "number": 53,
+   "status": "no_tests",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "wall_seconds": 1.9,
+   "head": "decf5f849d2b7667158685277e4ae5268472c925"
+  },
+  {
+   "order": 41,
+   "pr_id": 3086671266,
+   "agent": "OpenAI_Codex",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "dropseed/plain",
+   "number": 30,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "1c68ec5baf0382e06e9b5977166c3c54a01dc8c4",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: No framework runner matched the target repository.",
+    "layer_states": {},
+    "seconds": 1.6
+   },
+   "wall_seconds": 4.3,
+   "head_sha": "1c68ec5baf0382e06e9b5977166c3c54a01dc8c4"
+  },
+  {
+   "order": 42,
+   "pr_id": 3326833240,
+   "agent": "Claude_Code",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "WEIFENG2333/VideoCaptioner",
+   "number": 751,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "73572633971789625318a29366aae842705d63a9",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command failed (1): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/d581194b067d4759/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-cmk3ypsl/requirements.txt\nUsing Python 3.12.15 environment at: /tmp/agenticqa-workspaces/venv-cache/d581194b067d4759/.venv\nResolved 39 packages in 2.68s\n   Building xcffib==1.12.0\nDownloading openai (2.1MiB)\nDownloading cryp",
+    "layer_states": {},
+    "seconds": 50.3
+   },
+   "wall_seconds": 53.0,
+   "head_sha": "73572633971789625318a29366aae842705d63a9"
+  },
+  {
+   "order": 43,
+   "pr_id": 3307848370,
+   "agent": "Copilot",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 3,
+   "repo": "machinewrapped/llm-subtrans",
+   "number": 254,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "10558c56faed82e8b84d1aa98f15647e9c8391b1",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-mt4wcd9b/PySubtitle/UnitTests/test_BatchCommands.py'. | E   ImportError: libglib-2.0.so.0: cannot open shared object file: No such file or directory | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-mt4wcd9b/PySubtitle/UnitTests/test_ChineseDi",
+    "layer_states": {},
+    "seconds": 154.2
+   },
+   "wall_seconds": 156.1,
+   "head_sha": "10558c56faed82e8b84d1aa98f15647e9c8391b1"
+  },
+  {
+   "order": 44,
+   "pr_id": 3222749303,
+   "agent": "Cursor",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 3,
+   "repo": "getsentry/sentry",
+   "number": 95327,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "ac5d885030d0a05e82155491961c2f633a631491",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 4): ImportError while loading conftest '/tmp/agenticqa-workspaces/ws-z9lkqbjw/tests/conftest.py'. | E   ModuleNotFoundError: No module named 'psutil'",
+    "layer_states": {},
+    "seconds": 3.9
+   },
+   "wall_seconds": 13.6,
+   "head_sha": "ac5d885030d0a05e82155491961c2f633a631491"
+  },
+  {
+   "order": 45,
+   "pr_id": 3154494868,
+   "agent": "Devin",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 8,
+   "repo": "reflex-dev/reflex-web",
+   "number": 1435,
+   "status": "ran",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "a2ac47651cfe7e68d583982b4857f78b62fd3112",
+    "state": "awaiting_approval",
+    "verdict": "needs_human_review",
+    "completed": true,
+    "totals": {
+     "passed": 0,
+     "failed": 9,
+     "skipped": 1,
+     "total": 10
+    },
+    "failing": [
+     "tests/test_background_events.py::test_background_events[chromium]",
+     "tests/test_chaining_event.py::test_collatz[chromium]",
+     "tests/test_chaining_event.py::test_handler_from_handler[chromium]",
+     "tests/test_computed_vars.py::test_computed_vars[chromium]",
+     "tests/test_counter.py::test_counter[chromium]",
+     "tests/test_lambdas.py::test_lambdas[chromium]",
+     "tests/test_recharts.py::tests_recharts[chromium]",
+     "tests/test_server_side_events.py::test_server_side_events[chromium]",
+     "tests/test_titles.py::test_unique_titles"
+    ],
+    "error": "",
+    "layer_states": {
+     "unit": "failed",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 255.0
+   },
+   "base": {
+    "sha": "87061a41ce7902eebbbb3d401989424a2a5057f6",
+    "state": "awaiting_approval",
+    "verdict": "needs_human_review",
+    "completed": true,
+    "totals": {
+     "passed": 0,
+     "failed": 9,
+     "skipped": 1,
+     "total": 10
+    },
+    "failing": [
+     "tests/test_background_events.py::test_background_events[chromium]",
+     "tests/test_chaining_event.py::test_collatz[chromium]",
+     "tests/test_chaining_event.py::test_handler_from_handler[chromium]",
+     "tests/test_computed_vars.py::test_computed_vars[chromium]",
+     "tests/test_counter.py::test_counter[chromium]",
+     "tests/test_lambdas.py::test_lambdas[chromium]",
+     "tests/test_recharts.py::tests_recharts[chromium]",
+     "tests/test_server_side_events.py::test_server_side_events[chromium]",
+     "tests/test_titles.py::test_unique_titles"
+    ],
+    "error": "",
+    "layer_states": {
+     "unit": "failed",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 13.1
+   },
+   "wall_seconds": 281.6,
+   "head_sha": "a2ac47651cfe7e68d583982b4857f78b62fd3112",
+   "base_sha": "87061a41ce7902eebbbb3d401989424a2a5057f6"
+  },
+  {
+   "order": 46,
+   "pr_id": 3307181626,
+   "agent": "Google_Jules",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 11,
+   "repo": "lukas-clarke/eight_sleep",
+   "number": 90,
+   "status": "no_tests",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "wall_seconds": 1.6,
+   "head": "50c3c16ba18a31811fa429618d6d0c845be9c9ce"
+  },
+  {
+   "order": 47,
+   "pr_id": 3070783861,
+   "agent": "OpenAI_Codex",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 46,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "4d9de1851f38cd3966360f1718d4a37af037a3d0",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: No framework runner matched the target repository.",
+    "layer_states": {},
+    "seconds": 3.1
+   },
+   "wall_seconds": 4.9,
+   "head_sha": "4d9de1851f38cd3966360f1718d4a37af037a3d0"
+  },
+  {
+   "order": 48,
+   "pr_id": 3353482793,
+   "agent": "Claude_Code",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 4,
+   "repo": "oraios/serena",
+   "number": 541,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "f709633f515c57efe69f02da3228301048d03eb8",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-nu317055/test/serena/test_edit_marker.py'. | E   ImportError: cannot import name 'eval_type_backport' from 'pydantic._internal._typing_extra' (/tmp/agenticqa-workspaces/venv-cache/1042d6c2ca51c048/.venv/lib/python3.12/site-packages/pydantic/_internal/_typing_extra.",
+    "layer_states": {},
+    "seconds": 66.5
+   },
+   "wall_seconds": 68.2,
+   "head_sha": "f709633f515c57efe69f02da3228301048d03eb8"
+  },
+  {
+   "order": 49,
+   "pr_id": 3301764972,
+   "agent": "Copilot",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 4,
+   "repo": "django-components/django-components",
+   "number": 1330,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "35647093686182742281e04fae8662e666702bd8",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 4): ImportError while loading conftest '/tmp/agenticqa-workspaces/ws-xlhpfgy0/tests/conftest.py'. | E   ModuleNotFoundError: No module named 'requests'",
+    "layer_states": {},
+    "seconds": 4.0
+   },
+   "wall_seconds": 6.1,
+   "head_sha": "35647093686182742281e04fae8662e666702bd8"
+  },
+  {
+   "order": 50,
+   "pr_id": 3158599292,
+   "agent": "Cursor",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 7,
+   "repo": "WorkflowAI/WorkflowAI",
+   "number": 509,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "bae3926c0a4a9c6c43fa550506c2e5a65adc7688",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 4): ImportError while loading conftest '/tmp/agenticqa-workspaces/ws-eorfjpav/api/conftest.py'. | E   ModuleNotFoundError: No module named 'pytest_asyncio'",
+    "layer_states": {},
+    "seconds": 3.0
+   },
+   "wall_seconds": 20.1,
+   "head_sha": "bae3926c0a4a9c6c43fa550506c2e5a65adc7688"
+  },
+  {
+   "order": 51,
+   "pr_id": 3101032367,
+   "agent": "Devin",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 2,
+   "repo": "airbytehq/airbyte",
+   "number": 60978,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "b1d1c2e764f0f5f49142444d0d5c9a86db192d48",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): E   ModuleNotFoundError: No module named 'tests.test_models'\u001b[0m | E   ModuleNotFoundError: No module named 'tests.test_secrets_manager'\u001b[0m | E   ModuleNotFoundError: No module named 'tests.test_dbml_assembler'\u001b[0m | E   ModuleNotFoundError: No module named 'tests.test_relationships'\u001b[0m | E   ModuleNotFoundError: No module named 't",
+    "layer_states": {},
+    "seconds": 19.6
+   },
+   "wall_seconds": 58.4,
+   "head_sha": "b1d1c2e764f0f5f49142444d0d5c9a86db192d48"
+  },
+  {
+   "order": 52,
+   "pr_id": 3492994182,
+   "agent": "Google_Jules",
+   "merged": false,
+   "says_tests_pass": true,
+   "n_commits": 2,
+   "repo": "laike9m/pdir2",
+   "number": 80,
+   "status": "ran",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "0d7053973cd57eef6f48e4c9ab2591976437b779",
+    "state": "awaiting_approval",
+    "verdict": "needs_human_review",
+    "completed": true,
+    "totals": {
+     "passed": 45,
+     "failed": 1,
+     "skipped": 0,
+     "total": 46
+    },
+    "failing": [
+     "tests/test_buggy_attrs.py::test_dataframe"
+    ],
+    "error": "",
+    "layer_states": {
+     "unit": "failed",
+     "property": "passed",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 6.0
+   },
+   "base": {
+    "sha": "780d1c98acb124e102d2e10d24a844192fd149f0",
+    "state": "awaiting_approval",
+    "verdict": "needs_human_review",
+    "completed": true,
+    "totals": {
+     "passed": 45,
+     "failed": 1,
+     "skipped": 0,
+     "total": 46
+    },
+    "failing": [
+     "tests/test_buggy_attrs.py::test_dataframe"
+    ],
+    "error": "",
+    "layer_states": {
+     "unit": "failed",
+     "property": "passed",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 3.9
+   },
+   "wall_seconds": 11.7,
+   "head_sha": "0d7053973cd57eef6f48e4c9ab2591976437b779",
+   "base_sha": "780d1c98acb124e102d2e10d24a844192fd149f0"
+  },
+  {
+   "order": 53,
+   "pr_id": 3070837303,
+   "agent": "OpenAI_Codex",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "jrkropp/open-webui-developer-toolkit",
+   "number": 37,
+   "status": "ran",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "086ccaa199cb4dae81756f5c4148f5b2ec7bd19b",
+    "state": "done",
+    "verdict": "auto_approve",
+    "completed": true,
+    "totals": {
+     "passed": 9,
+     "failed": 0,
+     "skipped": 0,
+     "total": 9
+    },
+    "failing": [],
+    "error": "",
+    "layer_states": {
+     "unit": "passed",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 9.2
+   },
+   "base": {
+    "sha": "eeeca94504a5284b48babc07c8c8645986caa1ff",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-6nl8o4nb/tests/test_pipeline.py'. | E   ModuleNotFoundError: No module named 'fastapi' | ERROR tests/test_pipeline.py",
+    "layer_states": {},
+    "seconds": 1.4
+   },
+   "wall_seconds": 11.8,
+   "head_sha": "086ccaa199cb4dae81756f5c4148f5b2ec7bd19b",
+   "base_sha": "eeeca94504a5284b48babc07c8c8645986caa1ff"
+  },
+  {
+   "order": 54,
+   "pr_id": 3342964412,
+   "agent": "Claude_Code",
+   "merged": true,
+   "says_tests_pass": true,
+   "n_commits": 3,
+   "repo": "BeehiveInnovations/zen-mcp-server",
+   "number": 247,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "09d6ba4eac61b1df4fff833098f604512f9558b0",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): E   AttributeError: 'Server' object has no attribute 'list_tools' | E   AttributeError: 'Server' object has no attribute 'list_tools' | E   AttributeError: 'Server' object has no attribute 'list_tools' | E   AttributeError: 'Server' object has no attribute 'list_tools' | E   AttributeError: 'Server' object has no attribute 'list_tool",
+    "layer_states": {},
+    "seconds": 18.9
+   },
+   "wall_seconds": 21.2,
+   "head_sha": "09d6ba4eac61b1df4fff833098f604512f9558b0"
+  },
+  {
+   "order": 55,
+   "pr_id": 3322234233,
+   "agent": "Copilot",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 5,
+   "repo": "microsoft/fabric-cicd",
+   "number": 498,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "a579aeafbd93e5ac270c4ae4f4c4c74838b18b9e",
+    "state": "done",
+    "verdict": "auto_approve",
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "",
+    "layer_states": {
+     "unit": "skipped",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 20.4
+   },
+   "wall_seconds": 22.1,
+   "head_sha": "a579aeafbd93e5ac270c4ae4f4c4c74838b18b9e"
+  },
+  {
+   "order": 56,
+   "pr_id": 3264665958,
+   "agent": "Cursor",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "harvard-edge/cs249r_book",
+   "number": 908,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "65ee69d2e02765ca4cc8106c0031b7d2690b8c50",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: No framework runner matched the target repository.",
+    "layer_states": {},
+    "seconds": 2.7
+   },
+   "wall_seconds": 78.6,
+   "head_sha": "65ee69d2e02765ca4cc8106c0031b7d2690b8c50"
+  },
+  {
+   "order": 57,
+   "pr_id": 3521747457,
+   "agent": "Devin",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "567-labs/instructor",
+   "number": 1851,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "6b0236d2c3aaed37973f170b34d7c709f98a5010",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command failed (1): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/c831d9ff95b952ad/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-mupwrcpv/requirements.txt\nUsing Python 3.12.15 environment at: /tmp/agenticqa-workspaces/venv-cache/c831d9ff95b952ad/.venv\nResolved 239 packages in 5.75s\n   Building agenticqa @ file:///app\nDownloading google-cloud-aiplatfor",
+    "layer_states": {},
+    "seconds": 6.9
+   },
+   "wall_seconds": 35.5,
+   "head_sha": "6b0236d2c3aaed37973f170b34d7c709f98a5010"
+  },
+  {
+   "order": 58,
+   "pr_id": 3334183582,
+   "agent": "Google_Jules",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "kgcrom/cluefin",
+   "number": 7,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "7abbe8e120c9cf77aa08b888f867becf6a781d5f",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-xj6ghph2/packages/cluefin-openapi/tests/integration/kiwoom/test_auth.py'. | E   ModuleNotFoundError: No module named 'pydantic' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-xj6ghph2/packages/cluefin-openapi/tests/integration/kiwoom/test_d",
+    "layer_states": {},
+    "seconds": 7.3
+   },
+   "wall_seconds": 9.1,
+   "head_sha": "7abbe8e120c9cf77aa08b888f867becf6a781d5f"
+  },
+  {
+   "order": 59,
+   "pr_id": 3110056212,
+   "agent": "OpenAI_Codex",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 1424,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "6e29b19b1d4f737142ff884e17dff410808f9a16",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command timed out after 420.0s: /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/a3354c20ef813597/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-56j3xy9_/requirements.txt",
+    "layer_states": {},
+    "seconds": 420.3
+   },
+   "wall_seconds": 424.1,
+   "head_sha": "6e29b19b1d4f737142ff884e17dff410808f9a16"
+  },
+  {
+   "order": 60,
+   "pr_id": 3262310380,
+   "agent": "Claude_Code",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 3,
+   "repo": "graphistry/pygraphistry",
+   "number": 713,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "db54cb68bf1712d218646964456025fff888e583",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "Error: [('/tmp/field-14b6x5a9/test_env/lib64', '/tmp/agenticqa-workspaces/ws-vfqp8a8o/test_env/lib64', \"[Errno 2] No such file or directory: '/tmp/field-14b6x5a9/test_env/lib64'\"), ('/tmp/field-14b6x5a9/test_env/bin/python3', '/tmp/agenticqa-workspaces/ws-vfqp8a8o/test_env/bin/python3', \"[Errno 2] No such file or directory: '/tmp/field-14b6x5a9/test_env/bin/python3'\"), ('/tmp/field-14b6x5a9/test_e",
+    "layer_states": {},
+    "seconds": 0.1
+   },
+   "wall_seconds": 3.4,
+   "head_sha": "db54cb68bf1712d218646964456025fff888e583"
+  },
+  {
+   "order": 61,
+   "pr_id": 3430002756,
+   "agent": "Copilot",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 3,
+   "repo": "espnet/espnet",
+   "number": 6243,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "5408b42b047108066677eeb2bd4928083ee937d3",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "Error: [('/tmp/field-r1vizy77/egs2/zh_openslr38/asr1/utils/simple_dict.sh', '/tmp/agenticqa-workspaces/ws-qhvmo6yh/egs2/zh_openslr38/asr1/utils/simple_dict.sh', \"[Errno 2] No such file or directory: '/tmp/field-r1vizy77/egs2/zh_openslr38/asr1/utils/simple_dict.sh'\"), ('/tmp/field-r1vizy77/egs2/zeroth_korean/asr1/utils/simple_dict.sh', '/tmp/agenticqa-workspaces/ws-qhvmo6yh/egs2/zeroth_korean/asr1/",
+    "layer_states": {},
+    "seconds": 6.8
+   },
+   "wall_seconds": 15.8,
+   "head_sha": "5408b42b047108066677eeb2bd4928083ee937d3"
+  },
+  {
+   "order": 62,
+   "pr_id": 3239555233,
+   "agent": "Cursor",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "Bandit-HaxUnit/haxunit",
+   "number": 33,
+   "status": "no_tests",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "wall_seconds": 1.7,
+   "head": "2464437302f878a0829423cfb5f3aef5ccc9f6ea"
+  },
+  {
+   "order": 63,
+   "pr_id": 3039769863,
+   "agent": "Devin",
+   "merged": false,
+   "says_tests_pass": true,
+   "n_commits": 5,
+   "repo": "crewAIInc/crewAI",
+   "number": 2756,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "1867c798ec5cf746973b9473547b58fa0f48434d",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-g8t3j9ri/tests/cli/cli_test.py'. | E   StopIteration | E   importlib.metadata.PackageNotFoundError: No package metadata was found for crewai | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-g8t3j9ri/tests/knowledge/knowledge_test.py'. | E   M",
+    "layer_states": {},
+    "seconds": 178.5
+   },
+   "wall_seconds": 181.1,
+   "head_sha": "1867c798ec5cf746973b9473547b58fa0f48434d"
+  },
+  {
+   "order": 64,
+   "pr_id": 3277187585,
+   "agent": "Google_Jules",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 3,
+   "repo": "googleads/google-ads-python",
+   "number": 1017,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "e3d47bd2494feacc13d8b0ca0ab66c9521019dfc",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-kl5wbro4/tests/client_test.py'. | E   ModuleNotFoundError: No module named 'pyfakefs' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-kl5wbro4/tests/config_test.py'. | E   ModuleNotFoundError: No module named 'pyfakefs' | ImportError while i",
+    "layer_states": {},
+    "seconds": 6.5
+   },
+   "wall_seconds": 9.1,
+   "head_sha": "e3d47bd2494feacc13d8b0ca0ab66c9521019dfc"
+  },
+  {
+   "order": 65,
+   "pr_id": 3108501995,
+   "agent": "OpenAI_Codex",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "jrkropp/open-webui-developer-toolkit",
+   "number": 468,
+   "status": "ran",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "243032341e8c2f7da0e1195a3cbd972cf28827da",
+    "state": "done",
+    "verdict": "auto_approve",
+    "completed": true,
+    "totals": {
+     "passed": 1,
+     "failed": 0,
+     "skipped": 0,
+     "total": 1
+    },
+    "failing": [],
+    "error": "",
+    "layer_states": {
+     "unit": "passed",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 6.8
+   },
+   "base": {
+    "sha": "38ccaa25524395db5cc8a9e060fd500be6853ae2",
+    "state": "done",
+    "verdict": "auto_approve",
+    "completed": true,
+    "totals": {
+     "passed": 1,
+     "failed": 0,
+     "skipped": 0,
+     "total": 1
+    },
+    "failing": [],
+    "error": "",
+    "layer_states": {
+     "unit": "passed",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 3.0
+   },
+   "wall_seconds": 21.4,
+   "head_sha": "243032341e8c2f7da0e1195a3cbd972cf28827da",
+   "base_sha": "38ccaa25524395db5cc8a9e060fd500be6853ae2"
+  },
+  {
+   "order": 66,
+   "pr_id": 3246680171,
+   "agent": "Claude_Code",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 2,
+   "repo": "numbagg/numbagg",
+   "number": 386,
+   "status": "ran",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "8382774ef0824b4476c0bb37284404dc3abb89d4",
+    "state": "awaiting_approval",
+    "verdict": "needs_human_review",
+    "completed": true,
+    "totals": {
+     "passed": 711,
+     "failed": 51,
+     "skipped": 719,
+     "total": 1481
+    },
+    "failing": [
+     "numbagg/test/test_benchmark.py::test_benchmark_main[allnan-shape0-bottleneck]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[allnan-shape0-numbagg]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[allnan-shape0-pandas]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[allnan-shape2-bottleneck]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[allnan-shape2-numbagg]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[allnan-shape2-pandas]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[anynan-shape0-bottleneck]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[anynan-shape0-numbagg]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[anynan-shape0-pandas]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[anynan-shape2-bottleneck]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[anynan-shape2-numbagg]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[anynan-shape2-pandas]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[nancorrmatrix-shape2-numbagg]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[nancorrmatrix-shape2-numpy]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[nancovmatrix-shape2-numbagg]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[nancovmatrix-shape2-numpy]",
+     "numbagg/test/test_grouped.py::test_additional_dim_equivalence[bool-group_nanstd]",
+     "numbagg/test/test_grouped.py::test_additional_dim_equivalence[bool-group_nanvar]",
+     "numbagg/test/test_grouped.py::test_additional_dim_equivalence[int32-group_nanstd]",
+     "numbagg/test/test_grouped.py::test_additional_dim_equivalence[int32-group_nanvar]",
+     "numbagg/test/test_grouped.py::test_all_nan_for_label[group_nanargmax-<lambda>-nanargmax]",
+     "numbagg/test/test_grouped.py::test_all_nan_for_label[group_nanargmin-<lambda>-nanargmin]",
+     "numbagg/test/test_grouped.py::test_all_values_are_nan[group_nanargmax-<lambda>-nanargmax]",
+     "numbagg/test/test_grouped.py::test_all_values_are_nan[group_nanargmin-<lambda>-nanargmin]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanfirst-<lambda>-None-int16]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanfirst-<lambda>-None-int32]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanfirst-<lambda>-None-int64]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanfirst-<lambda>-None-int8]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanlast-<lambda>-None-int16]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanlast-<lambda>-None-int32]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanlast-<lambda>-None-int64]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanlast-<lambda>-None-int8]",
+     "numbagg/test/test_grouped.py::test_group_pandas_comparison[bool-group_nanstd-<lambda>-nanstd]",
+     "numbagg/test/test_grouped.py::test_group_pandas_comparison[bool-group_nanvar-<lambda>-nanvar]",
+     "numbagg/test/test_grouped.py::test_group_pandas_comparison[float64-group_nanargmax-<lambda>-nanargmax]",
+     "numbagg/test/test_grouped.py::test_group_pandas_comparison[float64-group_nanargmin-<lambda>-nanargmin]",
+     "numbagg/test/test_grouped.py::test_group_pandas_comparison[int32-group_nanprod-<lambda>-nanprod]",
+     "numbagg/test/test_grouped.py::test_group_pandas_comparison[int32-group_nanstd-<lambda>-nanstd]",
+     "numbagg/test/test_grouped.py::test_group_pandas_comparison[int32-group_nanvar-<lambda>-nanvar]",
+     "numbagg/test/test_grouped.py::test_groupby_empty_numeric_operations[group_nanargmin-<lambda>-nan]",
+     "numbagg/test/test_grouped.py::test_single_nan_for_label[group_nanargmax-<lambda>-nanargmax]",
+     "numbagg/test/test_grouped.py::test_single_nan_for_label[group_nanargmin-<lambda>-nanargmin]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-10-shape0-move_mean]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-10-shape0-move_std]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-10-shape0-move_sum]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-10-shape0-move_var]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-50-shape0-move_mean]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-50-shape0-move_std]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-50-shape0-move_sum]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-50-shape0-move_var]",
+     "numbagg/test/test_moving_exp.py::test_move_exp_nanmean_big_x"
+    ],
+    "error": "",
+    "layer_states": {
+     "unit": "failed",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 240.6
+   },
+   "base": {
+    "sha": "5da5c56eb83961cd536cc8a6613eecddeb24d999",
+    "state": "awaiting_approval",
+    "verdict": "needs_human_review",
+    "completed": true,
+    "totals": {
+     "passed": 711,
+     "failed": 51,
+     "skipped": 719,
+     "total": 1481
+    },
+    "failing": [
+     "numbagg/test/test_benchmark.py::test_benchmark_main[allnan-shape0-bottleneck]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[allnan-shape0-numbagg]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[allnan-shape0-pandas]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[allnan-shape2-bottleneck]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[allnan-shape2-numbagg]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[allnan-shape2-pandas]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[anynan-shape0-bottleneck]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[anynan-shape0-numbagg]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[anynan-shape0-pandas]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[anynan-shape2-bottleneck]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[anynan-shape2-numbagg]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[anynan-shape2-pandas]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[nancorrmatrix-shape2-numbagg]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[nancorrmatrix-shape2-numpy]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[nancovmatrix-shape2-numbagg]",
+     "numbagg/test/test_benchmark.py::test_benchmark_main[nancovmatrix-shape2-numpy]",
+     "numbagg/test/test_grouped.py::test_additional_dim_equivalence[bool-group_nanstd]",
+     "numbagg/test/test_grouped.py::test_additional_dim_equivalence[bool-group_nanvar]",
+     "numbagg/test/test_grouped.py::test_additional_dim_equivalence[int32-group_nanstd]",
+     "numbagg/test/test_grouped.py::test_additional_dim_equivalence[int32-group_nanvar]",
+     "numbagg/test/test_grouped.py::test_all_nan_for_label[group_nanargmax-<lambda>-nanargmax]",
+     "numbagg/test/test_grouped.py::test_all_nan_for_label[group_nanargmin-<lambda>-nanargmin]",
+     "numbagg/test/test_grouped.py::test_all_values_are_nan[group_nanargmax-<lambda>-nanargmax]",
+     "numbagg/test/test_grouped.py::test_all_values_are_nan[group_nanargmin-<lambda>-nanargmin]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanfirst-<lambda>-None-int16]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanfirst-<lambda>-None-int32]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanfirst-<lambda>-None-int64]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanfirst-<lambda>-None-int8]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanlast-<lambda>-None-int16]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanlast-<lambda>-None-int32]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanlast-<lambda>-None-int64]",
+     "numbagg/test/test_grouped.py::test_group_func_axis_1d_labels[group_nanlast-<lambda>-None-int8]",
+     "numbagg/test/test_grouped.py::test_group_pandas_comparison[bool-group_nanstd-<lambda>-nanstd]",
+     "numbagg/test/test_grouped.py::test_group_pandas_comparison[bool-group_nanvar-<lambda>-nanvar]",
+     "numbagg/test/test_grouped.py::test_group_pandas_comparison[float64-group_nanargmax-<lambda>-nanargmax]",
+     "numbagg/test/test_grouped.py::test_group_pandas_comparison[float64-group_nanargmin-<lambda>-nanargmin]",
+     "numbagg/test/test_grouped.py::test_group_pandas_comparison[int32-group_nanprod-<lambda>-nanprod]",
+     "numbagg/test/test_grouped.py::test_group_pandas_comparison[int32-group_nanstd-<lambda>-nanstd]",
+     "numbagg/test/test_grouped.py::test_group_pandas_comparison[int32-group_nanvar-<lambda>-nanvar]",
+     "numbagg/test/test_grouped.py::test_groupby_empty_numeric_operations[group_nanargmin-<lambda>-nan]",
+     "numbagg/test/test_grouped.py::test_single_nan_for_label[group_nanargmax-<lambda>-nanargmax]",
+     "numbagg/test/test_grouped.py::test_single_nan_for_label[group_nanargmin-<lambda>-nanargmin]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-10-shape0-move_mean]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-10-shape0-move_std]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-10-shape0-move_sum]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-10-shape0-move_var]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-50-shape0-move_mean]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-50-shape0-move_std]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-50-shape0-move_sum]",
+     "numbagg/test/test_moving.py::test_move_pandas_comp[0-50-shape0-move_var]",
+     "numbagg/test/test_moving_exp.py::test_move_exp_nanmean_big_x"
+    ],
+    "error": "",
+    "layer_states": {
+     "unit": "failed",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 150.8
+   },
+   "wall_seconds": 392.7,
+   "head_sha": "8382774ef0824b4476c0bb37284404dc3abb89d4",
+   "base_sha": "5da5c56eb83961cd536cc8a6613eecddeb24d999"
+  },
+  {
+   "order": 67,
+   "pr_id": 3410356602,
+   "agent": "Copilot",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 7,
+   "repo": "mlflow/mlflow",
+   "number": 17697,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "a026d07408103d8dbfb9a42a7f07daced195378e",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'boto3'\u001b[0m | E   ModuleNotFoundError: No module named 'autogen'\u001b[0m | E   ModuleNotFoundError: No module named 'agno'\u001b[0m | E   ",
+    "layer_states": {},
+    "seconds": 229.7
+   },
+   "wall_seconds": 315.9,
+   "head_sha": "a026d07408103d8dbfb9a42a7f07daced195378e"
+  },
+  {
+   "order": 68,
+   "pr_id": 3542335195,
+   "agent": "Cursor",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 3,
+   "repo": "ucbepic/docetl",
+   "number": 437,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "2bd2a3970e55e023c925394b2d7f89d268408261",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 4): ImportError while loading conftest '/tmp/agenticqa-workspaces/ws-v5ibb198/tests/conftest.py'. | E   ImportError: cannot import name 'BucketFullException' from 'pyrate_limiter' (/tmp/agenticqa-workspaces/venv-cache/ef30535cb4451f74/.venv/lib/python3.12/site-packages/pyrate_limiter/__init__.py)",
+    "layer_states": {},
+    "seconds": 226.8
+   },
+   "wall_seconds": 232.9,
+   "head_sha": "2bd2a3970e55e023c925394b2d7f89d268408261"
+  },
+  {
+   "order": 69,
+   "pr_id": 3287298199,
+   "agent": "Devin",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "crewAIInc/crewAI",
+   "number": 3267,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "ab1a6714b58307847560cdf9e88772c099173916",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-iit_vn1o/tests/cli/cli_test.py'. | E   StopIteration | E   importlib.metadata.PackageNotFoundError: No package metadata was found for crewai | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-iit_vn1o/tests/cli/organization/test_main.py'. | E  ",
+    "layer_states": {},
+    "seconds": 195.4
+   },
+   "wall_seconds": 215.5,
+   "head_sha": "ab1a6714b58307847560cdf9e88772c099173916"
+  },
+  {
+   "order": 70,
+   "pr_id": 3226520746,
+   "agent": "Google_Jules",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "bmaltais/kohya_ss",
+   "number": 3343,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "f6f3f353293a1a3a328dfc8ec47725c8c324a8df",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command failed (1): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/26d0eaa0f2b57574/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-f4l_51om/requirements.txt\nUsing Python 3.12.15 environment at: /tmp/agenticqa-workspaces/venv-cache/26d0eaa0f2b57574/.venv\nerror: Distribution not found at: file:///app/sd-scripts\n",
+    "layer_states": {},
+    "seconds": 0.1
+   },
+   "wall_seconds": 1.9,
+   "head_sha": "f6f3f353293a1a3a328dfc8ec47725c8c324a8df"
+  },
+  {
+   "order": 71,
+   "pr_id": 3182953009,
+   "agent": "OpenAI_Codex",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 2666,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "debc5c7ce82a92e456dafd4f8085931e5d7ef56c",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 1): ls; falling back to network installs\nEnsuring baseline requirements (timeout 600s): /tmp/agenticqa-workspaces/venv-cache/fa789a055f3b0875/.venv/bin/python -m pip install --quiet -r /tmp/agenticqa-workspaces/ws-rn5a36y5/alpha_factory_v1/requirements-core.txt\nFailed to install baseline requirements 1\n",
+    "layer_states": {},
+    "seconds": 140.6
+   },
+   "wall_seconds": 142.9,
+   "head_sha": "debc5c7ce82a92e456dafd4f8085931e5d7ef56c"
+  },
+  {
+   "order": 72,
+   "pr_id": 3524728793,
+   "agent": "Claude_Code",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 18,
+   "repo": "modu-ai/moai-adk",
+   "number": 28,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "a959b4bf8c7d842fb1ccaca4cc6452d1798b2384",
+    "state": "done",
+    "verdict": "auto_approve",
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "",
+    "layer_states": {
+     "unit": "skipped",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 35.1
+   },
+   "wall_seconds": 37.6,
+   "head_sha": "a959b4bf8c7d842fb1ccaca4cc6452d1798b2384"
+  },
+  {
+   "order": 73,
+   "pr_id": 3298554111,
+   "agent": "Copilot",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 2,
+   "repo": "microsoft/fabric-cicd",
+   "number": 475,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "2f08f10d207c0955b182580d2dd3aecb8a9ffde5",
+    "state": "done",
+    "verdict": "auto_approve",
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "",
+    "layer_states": {
+     "unit": "skipped",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 9.4
+   },
+   "wall_seconds": 11.0,
+   "head_sha": "2f08f10d207c0955b182580d2dd3aecb8a9ffde5"
+  },
+  {
+   "order": 74,
+   "pr_id": 3131698049,
+   "agent": "Cursor",
+   "merged": true,
+   "says_tests_pass": true,
+   "n_commits": 2,
+   "repo": "BerriAI/litellm",
+   "number": 11564,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "15819886097d51c8cd20d6b200d74bf4c7ba8d4f",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (timed out): ",
+    "layer_states": {},
+    "seconds": 306.2
+   },
+   "wall_seconds": 324.4,
+   "head_sha": "15819886097d51c8cd20d6b200d74bf4c7ba8d4f"
+  },
+  {
+   "order": 75,
+   "pr_id": 3034982691,
+   "agent": "Devin",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 2,
+   "repo": "reflex-dev/reflex-web",
+   "number": 1339,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "c610ca403915b7eebcdf5ff6a48fced8ff4b21bf",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command failed (1): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/ba74ced73d13d3b6/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-yi06twc6/requirements.txt\nUsing Python 3.12.15 environment at: /tmp/agenticqa-workspaces/venv-cache/ba74ced73d13d3b6/.venv\n   Updating https://github.com/reflex-dev/reflex (main)\n    Updated https://github.com/reflex-dev/ref",
+    "layer_states": {},
+    "seconds": 49.4
+   },
+   "wall_seconds": 55.1,
+   "head_sha": "c610ca403915b7eebcdf5ff6a48fced8ff4b21bf"
+  },
+  {
+   "order": 76,
+   "pr_id": 3226434312,
+   "agent": "Google_Jules",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 4,
+   "repo": "bmaltais/kohya_ss",
+   "number": 3340,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "009ab4eeaac8453b8cb2b9b4212bf8262674fb0b",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command failed (1): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/26d0eaa0f2b57574/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-rlwv0gqm/requirements.txt\nUsing Python 3.12.15 environment at: /tmp/agenticqa-workspaces/venv-cache/26d0eaa0f2b57574/.venv\nerror: Distribution not found at: file:///app/sd-scripts\n",
+    "layer_states": {},
+    "seconds": 0.1
+   },
+   "wall_seconds": 2.1,
+   "head_sha": "009ab4eeaac8453b8cb2b9b4212bf8262674fb0b"
+  },
+  {
+   "order": 77,
+   "pr_id": 3079663447,
+   "agent": "OpenAI_Codex",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "PrunaAI/pruna",
+   "number": 141,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "9c4514c6510859e93d142b1d2f5b03aa4cc418bd",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 4): ImportError while loading conftest '/tmp/agenticqa-workspaces/ws-9sq_eys9/tests/conftest.py'. | E   ModuleNotFoundError: No module named 'torch'",
+    "layer_states": {},
+    "seconds": 2.2
+   },
+   "wall_seconds": 4.5,
+   "head_sha": "9c4514c6510859e93d142b1d2f5b03aa4cc418bd"
+  },
+  {
+   "order": 78,
+   "pr_id": 3482738367,
+   "agent": "Claude_Code",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 3,
+   "repo": "TracecatHQ/tracecat",
+   "number": 1490,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "b1ad023990760dbef6111243b1762dacaa5140e6",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command failed (1): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/5b1a666d111b1fad/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-vb3sx93v/requirements.txt\nUsing Python 3.12.15 environment at: /tmp/agenticqa-workspaces/venv-cache/5b1a666d111b1fad/.venv\nerror: Distribution not found at: file:///app/packages/tracecat-ee\n",
+    "layer_states": {},
+    "seconds": 0.4
+   },
+   "wall_seconds": 5.2,
+   "head_sha": "b1ad023990760dbef6111243b1762dacaa5140e6"
+  },
+  {
+   "order": 79,
+   "pr_id": 3433057940,
+   "agent": "Copilot",
+   "merged": true,
+   "says_tests_pass": true,
+   "n_commits": 3,
+   "repo": "mlflow/mlflow",
+   "number": 17828,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "8c28a604b41ced94f677481e5dd53eb6d78bdc8a",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   M",
+    "layer_states": {},
+    "seconds": 301.2
+   },
+   "wall_seconds": 373.4,
+   "head_sha": "8c28a604b41ced94f677481e5dd53eb6d78bdc8a"
+  },
+  {
+   "order": 80,
+   "pr_id": 3278439625,
+   "agent": "Cursor",
+   "merged": false,
+   "says_tests_pass": false,
+   "n_commits": 2,
+   "repo": "getsentry/sentry",
+   "number": 96803,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "9a0f7c9eaa99673d2bbb8f463479eb6d165d939b",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 4): ImportError while loading conftest '/tmp/agenticqa-workspaces/ws-nd90h96n/tests/conftest.py'. | E   ModuleNotFoundError: No module named 'psutil'",
+    "layer_states": {},
+    "seconds": 4.0
+   },
+   "wall_seconds": 14.3,
+   "head_sha": "9a0f7c9eaa99673d2bbb8f463479eb6d165d939b"
+  },
+  {
+   "order": 81,
+   "pr_id": 3074156029,
+   "agent": "Devin",
+   "merged": false,
+   "says_tests_pass": true,
+   "n_commits": 2,
+   "repo": "saturday06/VRM-Addon-for-Blender",
+   "number": 862,
+   "status": "collection_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "3c40d613c046d602885e38917be1d45f83a5b15a",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-h1x_ifmg/tests/test_common.py'. | E   ModuleNotFoundError: No module named 'bpy' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-h1x_ifmg/tests/test_importer.py'. | E   ModuleNotFoundError: No module named 'bpy' | ImportError while importing",
+    "layer_states": {},
+    "seconds": 3.0
+   },
+   "wall_seconds": 11.3,
+   "head_sha": "3c40d613c046d602885e38917be1d45f83a5b15a"
+  },
+  {
+   "order": 82,
+   "pr_id": 3332973837,
+   "agent": "Google_Jules",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "minaminao/erever",
+   "number": 3,
+   "status": "ran",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "d253e398799b2375f6be44cd7e20611f716d5555",
+    "state": "done",
+    "verdict": "auto_approve",
+    "completed": true,
+    "totals": {
+     "passed": 4,
+     "failed": 0,
+     "skipped": 0,
+     "total": 4
+    },
+    "failing": [],
+    "error": "",
+    "layer_states": {
+     "unit": "passed",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 36.5
+   },
+   "base": {
+    "sha": "8475bec51bb93a35bef0d78e3f26bfd12ad36f05",
+    "state": "done",
+    "verdict": "auto_approve",
+    "completed": true,
+    "totals": {
+     "passed": 4,
+     "failed": 0,
+     "skipped": 0,
+     "total": 4
+    },
+    "failing": [],
+    "error": "",
+    "layer_states": {
+     "unit": "passed",
+     "property": "skipped",
+     "trajectory": "pending",
+     "llm_judge": "pending",
+     "adversarial": "skipped"
+    },
+    "seconds": 7.5
+   },
+   "wall_seconds": 45.3,
+   "head_sha": "d253e398799b2375f6be44cd7e20611f716d5555",
+   "base_sha": "8475bec51bb93a35bef0d78e3f26bfd12ad36f05"
+  },
+  {
+   "order": 83,
+   "pr_id": 3115743577,
+   "agent": "OpenAI_Codex",
+   "merged": true,
+   "says_tests_pass": false,
+   "n_commits": 1,
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 1520,
+   "status": "build_or_run_failed",
+   "python": "3.12.15",
+   "image_code_sha": "221f456fa2bb",
+   "head": {
+    "sha": "b93d4fb163a1ade50a1afa7cde97e689af127a9b",
+    "state": "failed",
+    "verdict": null,
+    "completed": false,
+    "totals": {
+     "passed": 0,
+     "failed": 0,
+     "skipped": 0,
+     "total": 0
+    },
+    "failing": [],
+    "error": "RuntimeError: command timed out after 420.0s: /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/a3354c20ef813597/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-8l22i1_9/requirements.txt",
+    "layer_states": {},
+    "seconds": 420.3
+   },
+   "wall_seconds": 422.4,
+   "head_sha": "b93d4fb163a1ade50a1afa7cde97e689af127a9b"
+  }
+ ]
+}

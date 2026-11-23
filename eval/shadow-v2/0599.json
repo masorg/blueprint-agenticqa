@@ -1,0 +1,42 @@
+{
+ "repo": "pallets-eco/blinker",
+ "number": 138,
+ "status": "ran",
+ "head": "653c4ee726623d19c7f243a196ae6f3e29401d55",
+ "base": "1e153b8b1fafd669a8c43e1cc489635007d91962",
+ "diff_bytes": 549,
+ "coverage_seconds": 1.5,
+ "coverage_files": 8,
+ "n_tests": 32,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/publish.yaml"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  ".github/workflows/publish.yaml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.01,
+ "seconds_selected": 0,
+ "wall_seconds": 12.9,
+ "project": "blinker",
+ "image_code_sha": "a116495"
+}

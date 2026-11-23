@@ -1,0 +1,33 @@
+{
+ "repo": "un33k/python-slugify",
+ "number": 204,
+ "status": "ran",
+ "head": "b4d515d48e87399cbe93b940322baf4a39babf7a",
+ "base": "866401ea6b346d7575cf941bc73ad32a362e34aa",
+ "diff_bytes": 3475,
+ "n_tests": 128,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "slugify/slugify.py",
+  "tests/test_modern_word_boundary.py"
+ ],
+ "n_changed": 2,
+ "selected": 125,
+ "file_selected": 128,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.82,
+ "seconds_selected": 0.82,
+ "wall_seconds": 16.3,
+ "project": "slugify",
+ "image_code_sha": "a874558"
+}

@@ -1,0 +1,42 @@
+{
+ "repo": "pyparsing/pyparsing",
+ "number": 689,
+ "status": "ran",
+ "head": "a1c46f49acd4968d30e93818d4d675510a8fe6b9",
+ "base": "f803ae834288032a700331977639fc49c62fcd7f",
+ "diff_bytes": 608,
+ "coverage_seconds": 443.3,
+ "coverage_error": "exit -24: ................................................................................................... [ 92%]\n.................................................... [ 94%]\n.................................... [ 96%]\n........................................................ [ 98%]\n.........................",
+ "n_tests": 2185,
+ "base_failing": 3,
+ "head_failing": 3,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "docs/_static/pyparsing.css"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": false,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  "docs/_static/pyparsing.css"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 135.59,
+ "seconds_selected": 0,
+ "wall_seconds": 730.2,
+ "project": "pyparsing",
+ "image_code_sha": "a116495"
+}

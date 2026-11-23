@@ -1,0 +1,43 @@
+{
+ "repo": "python-attrs/attrs",
+ "number": 1636,
+ "status": "ran",
+ "head": "ce52bb2e1332f861f30c2c23d5e772c563832116",
+ "base": "0a08cee06960e415f735dec4cf2fb91d669e2433",
+ "diff_bytes": 821,
+ "map_base": "4c438e0f92dc9a43480c10d9ecdab241bbede12a",
+ "map_age_commits": 50,
+ "n_tests": 1412,
+ "base_failing": 5,
+ "head_failing": 5,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "changelog.d/1636.change.md",
+  "src/attr/_funcs.py"
+ ],
+ "n_changed": 2,
+ "selected": 1412,
+ "file_selected": 1412,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 17,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 2.99,
+ "out_of_scope": [],
+ "inert": [
+  "changelog.d/1636.change.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 28.37,
+ "seconds_selected": 28.37,
+ "wall_seconds": 230.3,
+ "project": "attrs",
+ "image_code_sha": "d9e3c20"
+}

@@ -1,0 +1,8357 @@
+{
+ "generated_at": "2026-10-25T23:18:00.086946+00:00",
+ "provenance": {
+  "started_at": "2026-10-25T23:18:00.284642+00:00",
+  "git_sha": "1533afccdba45ae9657df66743adb81b7a15f13a",
+  "code_dirty": true,
+  "code_diff_sha256": "a1a839625e225474",
+  "corpus": "weakened-study",
+  "corpus_fingerprint": "512decde7b3e639e",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "weakened-study"
+  ]
+ },
+ "summary": {
+  "shadow": {
+   "analysed": 797,
+   "attempted": 829,
+   "weakened_prs": 30,
+   "share": 0.0376,
+   "by_kind": {
+    "skip added": 17,
+    "test removed": 24,
+    "fewer assertions": 12,
+    "test file deleted": 3
+   }
+  },
+  "agent": {
+   "analysed": 61,
+   "attempted": 84,
+   "weakened_prs": 5,
+   "share": 0.082,
+   "by_kind": {
+    "skip added": 2,
+    "test removed": 30
+   }
+  }
+ },
+ "results": [
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1649,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1648,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1647,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1646,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1645,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1644,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1643,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1642,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1641,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1640,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1639,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1638,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1636,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1635,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1634,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1633,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1632,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1631,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1630,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1629,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1628,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1626,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1625,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1624,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1623,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets-eco/blinker",
+   "number": 193,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets-eco/blinker",
+   "number": 192,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets-eco/blinker",
+   "number": 191,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets-eco/blinker",
+   "number": 190,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets-eco/blinker",
+   "number": 188,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets-eco/blinker",
+   "number": 187,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets-eco/blinker",
+   "number": 181,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets-eco/blinker",
+   "number": 180,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets-eco/blinker",
+   "number": 172,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets-eco/blinker",
+   "number": 167,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets-eco/blinker",
+   "number": 166,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets-eco/blinker",
+   "number": 165,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 602,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 601,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 599,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 598,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 597,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 596,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 595,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 594,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 593,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 592,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 591,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 590,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 589,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 588,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 587,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 586,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 585,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 584,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 583,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 582,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 580,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 578,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 577,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 576,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 575,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 449,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 448,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 447,
+   "status": "ok",
+   "weakened": [
+    "tests/test_cachedmethod.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 445,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 444,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 442,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 441,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 439,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 438,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 436,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 434,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 432,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 431,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 429,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 427,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 426,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 424,
+   "status": "ok",
+   "weakened": [
+    "tests/test_cached.py: test test_decorator_attributes removed",
+    "tests/test_cached.py: test test_decorator_clear removed",
+    "tests/test_cached.py: 4 assertion(s) fewer",
+    "tests/test_cachedmethod.py: test test_autospec_no_warnings removed",
+    "tests/test_cachedmethod.py: skip or xfail added",
+    "tests/test_classmethod.py: test file deleted"
+   ],
+   "kinds": [
+    "4",
+    "skip",
+    "test"
+   ],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 422,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 421,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 419,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 418,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 416,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 415,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 414,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 413,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3884,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3880,
+   "status": "ok",
+   "weakened": [
+    "tests/test_termui.py: test test_pager_shlex_split removed",
+    "tests/test_termui.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip",
+    "test"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3878,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3874,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3873,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3872,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3871,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3870,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3869,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3868,
+   "status": "ok",
+   "weakened": [
+    "tests/test_termui.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3867,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3864,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3863,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3862,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3859,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3857,
+   "status": "ok",
+   "weakened": [
+    "tests/test_termui.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3856,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3854,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 442,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 440,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 439,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 438,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 437,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 436,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 435,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 433,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 432,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 431,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 430,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 429,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 428,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 427,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 426,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 425,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 424,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 423,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 418,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 417,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 416,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 414,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 412,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 411,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 213,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 212,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 208,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 207,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 206,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 205,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 204,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 203,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 202,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 200,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 199,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 198,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 197,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 196,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 195,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 194,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 193,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 191,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 190,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 189,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 188,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 187,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 186,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 183,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 181,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 334,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 333,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 332,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 331,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 328,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 327,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 326,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 325,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 324,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 323,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 322,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 321,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 320,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 319,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 318,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 317,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 316,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 307,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 306,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 304,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 303,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 302,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 301,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 300,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "kjd/idna",
+   "number": 282,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "kjd/idna",
+   "number": 281,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "kjd/idna",
+   "number": 279,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "kjd/idna",
+   "number": 278,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "kjd/idna",
+   "number": 257,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 442,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 441,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 440,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 439,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 438,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 437,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 436,
+   "status": "ok",
+   "weakened": [
+    "tests/test_itsdangerous/test_url_safe.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 435,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 434,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 433,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 432,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 431,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 430,
+   "status": "ok",
+   "weakened": [
+    "tests/test_itsdangerous/test_serializer.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 428,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 427,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 426,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 425,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 424,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 422,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 421,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 419,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 418,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 415,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 413,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 412,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2277,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2276,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2275,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2273,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2272,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2271,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2270,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2268,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2267,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2266,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2265,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2264,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2262,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2261,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2260,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2259,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2256,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2254,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2253,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2252,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2251,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2250,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2249,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2248,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 539,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 532,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 529,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 528,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 527,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 526,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 524,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 519,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 512,
+   "status": "ok",
+   "weakened": [
+    "tests/test_markupsafe.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 510,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 507,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1341,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1340,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1338,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1337,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1335,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1334,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1333,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1330,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1329,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1325,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1323,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1322,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1321,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1320,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1317,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1312,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1311,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1310,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1306,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 810,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 806,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 805,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 804,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 803,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 802,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 801,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 800,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 798,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 797,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 796,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 795,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 793,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 791,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 789,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 786,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 785,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 784,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 783,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 782,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 781,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 704,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 703,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 701,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 700,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 699,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 698,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 697,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 696,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 694,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 692,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 691,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 690,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 689,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 688,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 687,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 686,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 685,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 683,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 682,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 681,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 680,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 678,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 677,
+   "status": "ok",
+   "weakened": [
+    "tests/test_unit.py: test testInfixNotationWithNonOperators removed"
+   ],
+   "kinds": [
+    "test"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 676,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 675,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 212,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 211,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 210,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 209,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 207,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 206,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 205,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 204,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 203,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 202,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 201,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 200,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 199,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 198,
+   "status": "ok",
+   "weakened": [
+    "tests/test_legacy.py: test test_max_length_rejects_bool removed",
+    "tests/test_legacy.py: 1 assertion(s) fewer",
+    "tox.ini: option that deselects or ignores tests added"
+   ],
+   "kinds": [
+    "1",
+    "option",
+    "test"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 197,
+   "status": "ok",
+   "weakened": [
+    "tests/test_legacy.py: test test_max_length_rejects_bool removed",
+    "tests/test_legacy.py: 1 assertion(s) fewer",
+    "tox.ini: option that deselects or ignores tests added"
+   ],
+   "kinds": [
+    "1",
+    "option",
+    "test"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 196,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 195,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 194,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 193,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 191,
+   "status": "ok",
+   "weakened": [
+    "tox.ini: option that deselects or ignores tests added"
+   ],
+   "kinds": [
+    "option"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 190,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 189,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 188,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 187,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 186,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 940,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 939,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 938,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 937,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 936,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 935,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 934,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 933,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 932,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 931,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 930,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 929,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 928,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 927,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 926,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 925,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 924,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 923,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 922,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 921,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 920,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 919,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 918,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 917,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 916,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 325,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 324,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 323,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 322,
+   "status": "ok",
+   "weakened": [
+    "tests/test_misc.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 320,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 319,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 318,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 317,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 316,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 315,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 314,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 311,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 310,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 308,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 307,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 306,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 305,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 302,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 301,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 300,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 299,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 297,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 296,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 295,
+   "status": "ok",
+   "weakened": [
+    "tests/test_misc.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 655,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 654,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 653,
+   "status": "ok",
+   "weakened": [
+    "toolz/tests/test_functoolz.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 651,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 650,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 649,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 648,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 647,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 646,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 645,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 644,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 643,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 642,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 641,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 640,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 639,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 638,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 637,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 636,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 635,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 634,
+   "status": "ok",
+   "weakened": [
+    "toolz/tests/test_functoolz.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 633,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 632,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 631,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 630,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 751,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 749,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 739,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 732,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 712,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 707,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 545,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 544,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 543,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 542,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 541,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 540,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 539,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 538,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 537,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 536,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 535,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 534,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 533,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 532,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 531,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 530,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 529,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 528,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 527,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 526,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 525,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 524,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 523,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 521,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 520,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 397,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 396,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 395,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 394,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 393,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 391,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 388,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 387,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 386,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 385,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 384,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 383,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 382,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 378,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 377,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 375,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 373,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 372,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1622,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1621,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1619,
+   "status": "ok",
+   "weakened": [
+    "tests/test_annotations.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1618,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1617,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1616,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1615,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1614,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1613,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1612,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1611,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1610,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1609,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1608,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1607,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1606,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1605,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1604,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1603,
+   "status": "ok",
+   "weakened": [
+    "tests/test_make.py: test test_match_args_pre_310 removed",
+    "tests/test_make.py: 1 assertion(s) fewer"
+   ],
+   "kinds": [
+    "1",
+    "test"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1602,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1601,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1600,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1599,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1598,
+   "status": "ok",
+   "weakened": [
+    "tests/test_annotations.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-attrs/attrs",
+   "number": 1597,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets-eco/blinker",
+   "number": 143,
+   "status": "ok",
+   "weakened": [
+    "tests/test_saferef.py: test file deleted"
+   ],
+   "kinds": [
+    "test"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets-eco/blinker",
+   "number": 138,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 574,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 573,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 572,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 571,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 570,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 569,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 568,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 567,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 564,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 563,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 562,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 561,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 560,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 559,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 558,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 557,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 556,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 555,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 554,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 552,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 550,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 549,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 548,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 547,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/boltons",
+   "number": 546,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 412,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 411,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 410,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 409,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 408,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 407,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 404,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 403,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 402,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 401,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 400,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 399,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 398,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 397,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 392,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 391,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 390,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 388,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tkem/cachetools",
+   "number": 386,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3853,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3852,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3849,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3845,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3844,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3842,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3839,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3837,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3836,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3835,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3834,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3833,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3830,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3828,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3827,
+   "status": "ok",
+   "weakened": [
+    "tests/test_arguments.py: test test_option_explicit_name_keeps_its_case removed",
+    "tests/test_arguments.py: test test_parameter_name_is_an_identifier_or_deprecated removed",
+    "tests/test_arguments.py: test test_parameter_name_not_an_identifier_is_deprecated removed",
+    "tests/test_arguments.py: test test_parameter_name_transform removed",
+    "tests/test_arguments.py: 1 assertion(s) fewer",
+    "tests/test_deprecations.py: test test_normalized_explicit_name_not_deprecated removed",
+    "tests/test_deprecations.py: test test_unnormalized_explicit_name_deprecated removed",
+    "tests/test_deprecations.py: test test_unnormalized_name_on_a_refused_option_is_silent removed",
+    "tests/test_deprecations.py: test test_unusable_name_deprecated removed",
+    "tests/test_deprecations.py: test test_unusable_name_names_the_release_that_refuses_it removed",
+    "tests/test_deprecations.py: test test_usable_name_not_deprecated removed",
+    "tests/test_deprecations.py: 5 assertion(s) fewer",
+    "tests/test_options.py: test test_option_name_may_be_a_python_keyword removed",
+    "tests/test_options.py: test test_option_prompt_still_guards_against_a_nameless_option removed"
+   ],
+   "kinds": [
+    "1",
+    "5",
+    "test"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3825,
+   "status": "ok",
+   "weakened": [
+    "tests/test_utils/test_open_file.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/click",
+   "number": 3823,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 410,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 408,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 406,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 404,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 402,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 398,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 397,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 395,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 393,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 391,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 390,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 386,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 384,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 379,
+   "status": "ok",
+   "weakened": [
+    "tox.ini: option that deselects or ignores tests added"
+   ],
+   "kinds": [
+    "option"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 377,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 376,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "tartley/colorama",
+   "number": 369,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 178,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 174,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 171,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 170,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 167,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 166,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 165,
+   "status": "ok",
+   "weakened": [
+    "tests/test_furl.py: 2 assertion(s) fewer"
+   ],
+   "kinds": [
+    "2"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 142,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 141,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 140,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 139,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 133,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 131,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 94,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 88,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "gruns/furl",
+   "number": 81,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 298,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 296,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 294,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 292,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 290,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 289,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 286,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 285,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 283,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 281,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 280,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 279,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 278,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 277,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 275,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 274,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 271,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 265,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "mahmoud/glom",
+   "number": 263,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "kjd/idna",
+   "number": 250,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "kjd/idna",
+   "number": 249,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "kjd/idna",
+   "number": 244,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "kjd/idna",
+   "number": 243,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "kjd/idna",
+   "number": 242,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "kjd/idna",
+   "number": 240,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "kjd/idna",
+   "number": 231,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 411,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 399,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 397,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/itsdangerous",
+   "number": 394,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2247,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2246,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2245,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2243,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2242,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2240,
+   "status": "ok",
+   "weakened": [
+    "tests/test_compile.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2239,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2238,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2237,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2236,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2235,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2233,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2231,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2230,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2229,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2228,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2227,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2226,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2225,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2223,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2222,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2221,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2220,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2219,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/jinja",
+   "number": 2218,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 492,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 489,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 482,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 476,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 462,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pallets/markupsafe",
+   "number": 456,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1301,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1299,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1297,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1295,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1292,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1289,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1286,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1283,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1281,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1274,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1271,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1265,
+   "status": "ok",
+   "weakened": [
+    "tests/test_recipes.py: test test_deque_version removed"
+   ],
+   "kinds": [
+    "test"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1264,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "more-itertools/more-itertools",
+   "number": 1262,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 780,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 779,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 778,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 777,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 775,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 773,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 772,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 771,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 770,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 768,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 766,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 765,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 764,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 754,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 747,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytest-dev/pluggy",
+   "number": 746,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 673,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 669,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 668,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 667,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 666,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 664,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 663,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 661,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 660,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 659,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 658,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 657,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 656,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 655,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 654,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 653,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 652,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 651,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 650,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 648,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 647,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 646,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 645,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pyparsing/pyparsing",
+   "number": 644,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 185,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 184,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 183,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 182,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 181,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 180,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 179,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 178,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 176,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 174,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 173,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 170,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 168,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 163,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 157,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 155,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 154,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 152,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 149,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "un33k/python-slugify",
+   "number": 148,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 915,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 914,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 913,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 912,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 911,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 910,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 909,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 908,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 907,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 906,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 905,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 904,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 903,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 902,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 901,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 900,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 899,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 898,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 897,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 896,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 895,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 894,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 893,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 892,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "andialbrecht/sqlparse",
+   "number": 891,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 294,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 293,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 292,
+   "status": "ok",
+   "weakened": [
+    "tests/test_misc.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 290,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 289,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 287,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 286,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 285,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 284,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 283,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 282,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 281,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 279,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 277,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 276,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 275,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 274,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 272,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 269,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 267,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "hukkin/tomli",
+   "number": 265,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 629,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 628,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 627,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 625,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 624,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 621,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 620,
+   "status": "ok",
+   "weakened": [
+    "toolz/tests/test_compatibility.py: test file deleted"
+   ],
+   "kinds": [
+    "test"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 619,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 618,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 617,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 616,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 615,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 614,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 613,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 611,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 610,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 609,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 608,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 607,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 603,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 600,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 599,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 598,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 595,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytoolz/toolz",
+   "number": 594,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 677,
+   "status": "ok",
+   "weakened": [
+    "tests/test_core.py: test test_may_transition_with_auto_transitions removed",
+    "tests/test_experimental.py: test test_override_decorator removed",
+    "tests/test_graphviz.py: 1 assertion(s) fewer"
+   ],
+   "kinds": [
+    "1",
+    "test"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 671,
+   "status": "ok",
+   "weakened": [
+    "tests/test_reuse.py: test test_reuse_prepare removed"
+   ],
+   "kinds": [
+    "test"
+   ],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 669,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 668,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 667,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 666,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 665,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 662,
+   "status": "fetch_failed",
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "pytransitions/transitions",
+   "number": 660,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 519,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 518,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 517,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 515,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 514,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 513,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 512,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 511,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 510,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 509,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 508,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 507,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 506,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 505,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 504,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 503,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 502,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 501,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 500,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 499,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 498,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 497,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 496,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 495,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "python-validators/validators",
+   "number": 494,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 370,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 369,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 368,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 367,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 366,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 361,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 360,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 358,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 356,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": true
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 351,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 350,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "scrapy/w3lib",
+   "number": 345,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "shadow",
+   "regression": false
+  },
+  {
+   "repo": "robusta-dev/holmesgpt",
+   "number": 695,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "bpwhelan/GameSentenceMiner",
+   "number": 186,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "llama-farm/llamafarm",
+   "number": 283,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "AgentOps-AI/agentops",
+   "number": 865,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "NethServer/nethsecurity",
+   "number": 1338,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 1057,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "explodinggradients/ragas",
+   "number": 2344,
+   "status": "ok",
+   "weakened": [
+    "tests/e2e/metrics_migration/test_answer_relevancy_migration.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "DLR-RM/stable-baselines3",
+   "number": 2177,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "browser-use/browser-use",
+   "number": 2478,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "AgentOps-AI/agentops",
+   "number": 1249,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "Breakthrough/DVR-Scan",
+   "number": 233,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 731,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "blarApp/blarify",
+   "number": 232,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "mlflow/mlflow",
+   "number": 17924,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "iterative/datachain",
+   "number": 1227,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "number": 3145,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "geoalchemy/geoalchemy2",
+   "number": 567,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 2671,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "doobidoo/mcp-memory-service",
+   "number": 87,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "mlflow/mlflow",
+   "number": 17479,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "getsentry/sentry",
+   "number": 100820,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "airbytehq/airbyte",
+   "number": 55234,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "sunriseapps/imagesorcery-mcp",
+   "number": 5,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "jrkropp/open-webui-developer-toolkit",
+   "number": 489,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "microsoft/amplifier",
+   "number": 14,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "SkBlaz/py3plex",
+   "number": 192,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "browser-use/browser-use",
+   "number": 2606,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "number": 1808,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "bmaltais/kohya_ss",
+   "number": 3342,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 2782,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "Significant-Gravitas/AutoGPT",
+   "number": 10595,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "RetroGameSets/RGSX",
+   "number": 2,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "getsentry/sentry",
+   "number": 94178,
+   "status": "fetch_failed",
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "airbytehq/airbyte",
+   "number": 55019,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "OWASP/CheatSheetSeries",
+   "number": 1822,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 1053,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "mlflow/mlflow",
+   "number": 17554,
+   "status": "ok",
+   "weakened": [
+    "tests/genai/judges/test_make_judge.py: test test_call_validates_missing_custom_variables removed",
+    "tests/genai/judges/test_make_judge.py: test test_call_with_custom_variables_from_inputs removed",
+    "tests/genai/judges/test_make_judge.py: test test_judge_registration_preserves_custom_variables removed",
+    "tests/genai/judges/test_make_judge.py: test test_prompt_formatting_with_all_variable_types removed"
+   ],
+   "kinds": [
+    "test"
+   ],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "mlflow/mlflow",
+   "number": 17861,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "BerriAI/litellm",
+   "number": 13641,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "number": 3137,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "florestefano1975/comfyui-portrait-master",
+   "number": 53,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "dropseed/plain",
+   "number": 30,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "WEIFENG2333/VideoCaptioner",
+   "number": 751,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "machinewrapped/llm-subtrans",
+   "number": 254,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "getsentry/sentry",
+   "number": 95327,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "reflex-dev/reflex-web",
+   "number": 1435,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "lukas-clarke/eight_sleep",
+   "number": 90,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 46,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "oraios/serena",
+   "number": 541,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "django-components/django-components",
+   "number": 1330,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "WorkflowAI/WorkflowAI",
+   "number": 509,
+   "status": "ok",
+   "weakened": [
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_last_active_first_basic removed",
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_last_active_first_multiple_schemas removed",
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_last_active_first_stable_ordering removed",
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_last_active_first_with_none_values removed",
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_most_costly_first removed",
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_most_costly_first_all_zero removed",
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_most_runs_first removed",
+    "api/api/routers/mcp/_utils/agent_sorting_test.py: test test_sort_by_most_runs_first_all_zero removed",
+    "api/api/routers/mcp/_utils/model_sorting_test.py: test test_sort_by_cheapest_first removed",
+    "api/api/routers/mcp/_utils/model_sorting_test.py: test test_sort_by_cheapest_first_same_cost removed",
+    "api/api/routers/mcp/_utils/model_sorting_test.py: test test_sort_by_latest_released_first removed",
+    "api/api/routers/mcp/_utils/model_sorting_test.py: test test_sort_by_latest_released_first_same_date removed",
+    "api/api/routers/mcp/_utils/model_sorting_test.py: test test_sort_by_smartest_first removed",
+    "api/api/routers/mcp/_utils/model_sorting_test.py: test test_sort_by_smartest_first_same_quality removed"
+   ],
+   "kinds": [
+    "test"
+   ],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "airbytehq/airbyte",
+   "number": 60978,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "laike9m/pdir2",
+   "number": 80,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "jrkropp/open-webui-developer-toolkit",
+   "number": 37,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "BeehiveInnovations/zen-mcp-server",
+   "number": 247,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "microsoft/fabric-cicd",
+   "number": 498,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "harvard-edge/cs249r_book",
+   "number": 908,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "567-labs/instructor",
+   "number": 1851,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "kgcrom/cluefin",
+   "number": 7,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 1424,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "graphistry/pygraphistry",
+   "number": 713,
+   "status": "ok",
+   "weakened": [
+    "graphistry/tests/compute/test_call_operations_gpu.py: test test_chain_dag_with_gpu_calls removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_empty removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_multi_node_works removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_output_not_found removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_output_selection removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_remote_not_implemented removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_single_node_works removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_validates removed",
+    "graphistry/tests/compute/test_chain_let.py: test test_chain_dag_via_gfql removed",
+    "graphistry/tests/compute/test_chain_let_gpu.py: test test_chain_dag_auto_detects_gpu removed",
+    "graphistry/tests/compute/test_chain_let_gpu.py: test test_chain_dag_engine_cudf removed",
+    "graphistry/tests/compute/test_chain_let_gpu.py: test test_chain_dag_with_cudf_edges removed"
+   ],
+   "kinds": [
+    "test"
+   ],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "espnet/espnet",
+   "number": 6243,
+   "status": "ok",
+   "weakened": [
+    "test/espnet2/bin/test_macos_mps_model.py: skip or xfail added"
+   ],
+   "kinds": [
+    "skip"
+   ],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "Bandit-HaxUnit/haxunit",
+   "number": 33,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "number": 2756,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "googleads/google-ads-python",
+   "number": 1017,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "jrkropp/open-webui-developer-toolkit",
+   "number": 468,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "numbagg/numbagg",
+   "number": 386,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "mlflow/mlflow",
+   "number": 17697,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "ucbepic/docetl",
+   "number": 437,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "number": 3267,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "bmaltais/kohya_ss",
+   "number": 3343,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 2666,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "modu-ai/moai-adk",
+   "number": 28,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "microsoft/fabric-cicd",
+   "number": 475,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "BerriAI/litellm",
+   "number": 11564,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "reflex-dev/reflex-web",
+   "number": 1339,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "bmaltais/kohya_ss",
+   "number": 3340,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "PrunaAI/pruna",
+   "number": 141,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "TracecatHQ/tracecat",
+   "number": 1490,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "mlflow/mlflow",
+   "number": 17828,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "getsentry/sentry",
+   "number": 96803,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "saturday06/VRM-Addon-for-Blender",
+   "number": 862,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "minaminao/erever",
+   "number": 3,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  },
+  {
+   "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+   "number": 1520,
+   "status": "ok",
+   "weakened": [],
+   "kinds": [],
+   "set": "agent",
+   "regression": null
+  }
+ ]
+}

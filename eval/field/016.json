@@ -1,0 +1,31 @@
+{
+ "order": 16,
+ "pr_id": 3305259894,
+ "agent": "Google_Jules",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 5,
+ "repo": "geoalchemy/geoalchemy2",
+ "number": 567,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "e77cb911c83f54bb7b98da5d7f75b4c255fda553",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "RuntimeError: command failed (1): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/168756cc2ca792cb/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-j1yjo7sc/requirements.txt\nUsing Python 3.12.15 environment at: /tmp/agenticqa-workspaces/venv-cache/168756cc2ca792cb/.venv\nResolved 37 packages in 1.87s\nDownloading pygments (1.2MiB)\nDownloading mypy (13.8MiB)\nDownloading as",
+  "layer_states": {},
+  "seconds": 4.6
+ },
+ "wall_seconds": 6.4,
+ "head_sha": "e77cb911c83f54bb7b98da5d7f75b4c255fda553"
+}

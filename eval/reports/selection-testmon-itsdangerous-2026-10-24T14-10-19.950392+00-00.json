@@ -1,0 +1,430 @@
+{
+ "generated_at": "2026-10-24T14:10:19.950392+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T14:10:20.112257+00:00",
+  "git_sha": "50fbf59b28502473383bc103654a4e01a24b092b",
+  "code_dirty": true,
+  "code_diff_sha256": "59105580c1e30aaa",
+  "corpus": "selection-testmon:itsdangerous",
+  "corpus_fingerprint": "1ed972803e3a5501",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-testmon",
+   "--project",
+   "itsdangerous",
+   "--report",
+   "eval/reports/selection-replay-itsdangerous-2026-10-24T03-29-42.673758+00-00.json"
+  ]
+ },
+ "summary": {
+  "projects": [
+   "itsdangerous"
+  ],
+  "mutants": 29,
+  "killed": 22,
+  "testmon_missed": {
+   "k": 0,
+   "n": 22,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.149
+   ]
+  },
+  "gate_missed": {
+   "k": 0,
+   "n": 22,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.149
+   ]
+  },
+  "testmon_tests_share_mean": 0.4721,
+  "gate_tests_share_mean": 0.9486,
+  "testmon_missed_ids": [],
+  "baseline_seconds": {
+   "itsdangerous": 1.6
+  },
+  "per_project": {
+   "itsdangerous": {
+    "mutants": 29,
+    "killed": 22,
+    "testmon_missed": 0,
+    "gate_missed": 0,
+    "testmon_share": 0.472,
+    "gate_share": 0.949
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "itsdangerous",
+   "seed": 20261023,
+   "status": "ran",
+   "rows": [
+    {
+     "id": "itsdangerous-000",
+     "total": 297,
+     "killed_full": false,
+     "testmon_run": 66,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.92,
+     "timed_out": false,
+     "gate_selected": 272,
+     "gate_caught": false,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-001",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 268,
+     "testmon_failed": 14,
+     "testmon_seconds": 1.46,
+     "timed_out": false,
+     "gate_selected": 283,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-003",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 98,
+     "testmon_failed": 91,
+     "testmon_seconds": 2.07,
+     "timed_out": false,
+     "gate_selected": 286,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-004",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 94,
+     "testmon_failed": 94,
+     "testmon_seconds": 2.12,
+     "timed_out": false,
+     "gate_selected": 286,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-005",
+     "total": 297,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.48,
+     "timed_out": false,
+     "gate_selected": 297,
+     "gate_caught": false,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-006",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 66,
+     "testmon_failed": 62,
+     "testmon_seconds": 1.96,
+     "timed_out": false,
+     "gate_selected": 269,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-007",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 268,
+     "testmon_failed": 158,
+     "testmon_seconds": 3.24,
+     "timed_out": false,
+     "gate_selected": 283,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-008",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 229,
+     "testmon_failed": 10,
+     "testmon_seconds": 1.3,
+     "timed_out": false,
+     "gate_selected": 271,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-009",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 269,
+     "testmon_failed": 1,
+     "testmon_seconds": 1.3,
+     "timed_out": false,
+     "gate_selected": 286,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-010",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 97,
+     "testmon_failed": 1,
+     "testmon_seconds": 1.09,
+     "timed_out": false,
+     "gate_selected": 283,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-011",
+     "total": 297,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.46,
+     "timed_out": false,
+     "gate_selected": 297,
+     "gate_caught": false,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-012",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 66,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.83,
+     "timed_out": false,
+     "gate_selected": 272,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-013",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 272,
+     "testmon_failed": 30,
+     "testmon_seconds": 1.72,
+     "timed_out": false,
+     "gate_selected": 288,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-014",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 233,
+     "testmon_failed": 173,
+     "testmon_seconds": 3.53,
+     "timed_out": false,
+     "gate_selected": 272,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-015",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 293,
+     "testmon_failed": 293,
+     "testmon_seconds": 4.39,
+     "timed_out": false,
+     "gate_selected": 297,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-016",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 97,
+     "testmon_failed": 85,
+     "testmon_seconds": 1.65,
+     "timed_out": false,
+     "gate_selected": 283,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-017",
+     "total": 297,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.44,
+     "timed_out": false,
+     "gate_selected": 297,
+     "gate_caught": false,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-018",
+     "total": 297,
+     "killed_full": false,
+     "testmon_run": 66,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.77,
+     "timed_out": false,
+     "gate_selected": 272,
+     "gate_caught": false,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-019",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 268,
+     "testmon_failed": 264,
+     "testmon_seconds": 4.68,
+     "timed_out": false,
+     "gate_selected": 283,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-020",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 229,
+     "testmon_failed": 22,
+     "testmon_seconds": 1.36,
+     "timed_out": false,
+     "gate_selected": 271,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-021",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 269,
+     "testmon_failed": 5,
+     "testmon_seconds": 1.3,
+     "timed_out": false,
+     "gate_selected": 286,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-022",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 97,
+     "testmon_failed": 15,
+     "testmon_seconds": 1.2,
+     "timed_out": false,
+     "gate_selected": 283,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-023",
+     "total": 297,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.42,
+     "timed_out": false,
+     "gate_selected": 297,
+     "gate_caught": false,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-024",
+     "total": 297,
+     "killed_full": false,
+     "testmon_run": 66,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.77,
+     "timed_out": false,
+     "gate_selected": 272,
+     "gate_caught": false,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-025",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 272,
+     "testmon_failed": 31,
+     "testmon_seconds": 1.38,
+     "timed_out": false,
+     "gate_selected": 288,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-026",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 142,
+     "testmon_failed": 56,
+     "testmon_seconds": 0.95,
+     "timed_out": false,
+     "gate_selected": 269,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-027",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 98,
+     "testmon_failed": 91,
+     "testmon_seconds": 1.86,
+     "timed_out": false,
+     "gate_selected": 286,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-028",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 77,
+     "testmon_failed": 4,
+     "testmon_seconds": 0.96,
+     "timed_out": false,
+     "gate_selected": 269,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    },
+    {
+     "id": "itsdangerous-029",
+     "total": 297,
+     "killed_full": true,
+     "testmon_run": 66,
+     "testmon_failed": 26,
+     "testmon_seconds": 0.96,
+     "timed_out": false,
+     "gate_selected": 272,
+     "gate_caught": true,
+     "seconds_full": 55.16
+    }
+   ],
+   "baseline_seconds": 1.6,
+   "baseline_counts": {
+    "passed": 297,
+    "failed": 0,
+    "error": 0,
+    "skipped": 0,
+    "deselected": 0
+   }
+  }
+ ]
+}

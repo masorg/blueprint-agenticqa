@@ -1,0 +1,31 @@
+{
+ "order": 57,
+ "pr_id": 3521747457,
+ "agent": "Devin",
+ "merged": false,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "567-labs/instructor",
+ "number": 1851,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "6b0236d2c3aaed37973f170b34d7c709f98a5010",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "RuntimeError: command failed (1): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/c831d9ff95b952ad/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-mupwrcpv/requirements.txt\nUsing Python 3.12.15 environment at: /tmp/agenticqa-workspaces/venv-cache/c831d9ff95b952ad/.venv\nResolved 239 packages in 5.75s\n   Building agenticqa @ file:///app\nDownloading google-cloud-aiplatfor",
+  "layer_states": {},
+  "seconds": 6.9
+ },
+ "wall_seconds": 35.5,
+ "head_sha": "6b0236d2c3aaed37973f170b34d7c709f98a5010"
+}

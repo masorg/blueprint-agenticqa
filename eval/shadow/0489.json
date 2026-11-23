@@ -1,0 +1,11 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 728,
+ "status": "run_error",
+ "head": "cbf74da0287d54617300e081dec0441be29688dc",
+ "base": "af00abab233f98cfaf71c5497308ae56f6bd4c5b",
+ "diff_bytes": 30720,
+ "detail": "2658 of 3214 selected tests produced no result",
+ "project": "transitions",
+ "image_code_sha": "a874558"
+}

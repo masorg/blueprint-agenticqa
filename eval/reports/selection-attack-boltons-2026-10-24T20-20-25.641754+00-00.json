@@ -1,0 +1,1343 @@
+{
+ "generated_at": "2026-10-24T20:20:25.641754+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T20:20:25.837631+00:00",
+  "git_sha": "a883b871840381bef5b1be3bfc8475bb53ee0b39",
+  "code_dirty": true,
+  "code_diff_sha256": "8e685da015b436b9",
+  "corpus": "selection-attack:boltons",
+  "corpus_fingerprint": "22e2912e9ad33f1a",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-attack",
+   "--project",
+   "boltons",
+   "--n",
+   "5"
+  ]
+ },
+ "summary": {
+  "n_cases": 40,
+  "n_projects": 1,
+  "n_mutants": 5,
+  "honest_flagged_cases": 24,
+  "invalid_timeouts": 0,
+  "m1_violations": 0,
+  "m2_violations": 0,
+  "upper_bound_95": 0.08762453925039232,
+  "by_advisor": {
+   "empty": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "garbage": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "everything": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "non-core-only": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "duplicates": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "huge": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "raises": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "reversed-core": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "boltons",
+   "sha": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+   "seed": 20261023,
+   "cases": [
+    {
+     "mutant": "boltons-0",
+     "advisor": "empty",
+     "core_tests": 27,
+     "ran": 27,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       27,
+       27
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       27,
+       27
+      ]
+     ],
+     "honest_seconds": 3.2,
+     "seconds": 3.1
+    },
+    {
+     "mutant": "boltons-0",
+     "advisor": "garbage",
+     "core_tests": 27,
+     "ran": 27,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       27,
+       27
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       27,
+       27
+      ]
+     ],
+     "honest_seconds": 3.2,
+     "seconds": 3.2
+    },
+    {
+     "mutant": "boltons-0",
+     "advisor": "everything",
+     "core_tests": 27,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       27,
+       27
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 3.2,
+     "seconds": 6.7
+    },
+    {
+     "mutant": "boltons-0",
+     "advisor": "non-core-only",
+     "core_tests": 27,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       27,
+       27
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 3.2,
+     "seconds": 6.7
+    },
+    {
+     "mutant": "boltons-0",
+     "advisor": "duplicates",
+     "core_tests": 27,
+     "ran": 30,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       27,
+       27
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       30,
+       30
+      ]
+     ],
+     "honest_seconds": 3.2,
+     "seconds": 3.2
+    },
+    {
+     "mutant": "boltons-0",
+     "advisor": "huge",
+     "core_tests": 27,
+     "ran": 28,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       27,
+       27
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       28,
+       28
+      ]
+     ],
+     "honest_seconds": 3.2,
+     "seconds": 3.2
+    },
+    {
+     "mutant": "boltons-0",
+     "advisor": "raises",
+     "core_tests": 27,
+     "ran": 27,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       27,
+       27
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       27,
+       27
+      ]
+     ],
+     "honest_seconds": 3.2,
+     "seconds": 3.2
+    },
+    {
+     "mutant": "boltons-0",
+     "advisor": "reversed-core",
+     "core_tests": 27,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       27,
+       27
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 3.2,
+     "seconds": 7.4
+    },
+    {
+     "mutant": "boltons-1",
+     "advisor": "empty",
+     "core_tests": 0,
+     "ran": 0,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [],
+     "honest_seconds": 1.7,
+     "seconds": 1.6
+    },
+    {
+     "mutant": "boltons-1",
+     "advisor": "garbage",
+     "core_tests": 0,
+     "ran": 0,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [],
+     "honest_seconds": 1.7,
+     "seconds": 1.7
+    },
+    {
+     "mutant": "boltons-1",
+     "advisor": "everything",
+     "core_tests": 0,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 1.7,
+     "seconds": 6.7
+    },
+    {
+     "mutant": "boltons-1",
+     "advisor": "non-core-only",
+     "core_tests": 0,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 1.7,
+     "seconds": 6.7
+    },
+    {
+     "mutant": "boltons-1",
+     "advisor": "duplicates",
+     "core_tests": 0,
+     "ran": 3,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       3,
+       3
+      ]
+     ],
+     "honest_seconds": 1.7,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "boltons-1",
+     "advisor": "huge",
+     "core_tests": 0,
+     "ran": 1,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 1.7,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "boltons-1",
+     "advisor": "raises",
+     "core_tests": 0,
+     "ran": 0,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [],
+     "honest_seconds": 1.7,
+     "seconds": 1.7
+    },
+    {
+     "mutant": "boltons-1",
+     "advisor": "reversed-core",
+     "core_tests": 0,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 1.7,
+     "seconds": 6.7
+    },
+    {
+     "mutant": "boltons-2",
+     "advisor": "empty",
+     "core_tests": 9,
+     "ran": 9,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       9,
+       9
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       9,
+       9
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 2.5
+    },
+    {
+     "mutant": "boltons-2",
+     "advisor": "garbage",
+     "core_tests": 9,
+     "ran": 9,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       9,
+       9
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       9,
+       9
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 2.2
+    },
+    {
+     "mutant": "boltons-2",
+     "advisor": "everything",
+     "core_tests": 9,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       9,
+       9
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 6.6
+    },
+    {
+     "mutant": "boltons-2",
+     "advisor": "non-core-only",
+     "core_tests": 9,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       9,
+       9
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 6.6
+    },
+    {
+     "mutant": "boltons-2",
+     "advisor": "duplicates",
+     "core_tests": 9,
+     "ran": 12,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       9,
+       9
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       12,
+       12
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "boltons-2",
+     "advisor": "huge",
+     "core_tests": 9,
+     "ran": 10,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       9,
+       9
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       10,
+       10
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "boltons-2",
+     "advisor": "raises",
+     "core_tests": 9,
+     "ran": 9,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       9,
+       9
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       9,
+       9
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "boltons-2",
+     "advisor": "reversed-core",
+     "core_tests": 9,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       9,
+       9
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 6.7
+    },
+    {
+     "mutant": "boltons-3",
+     "advisor": "empty",
+     "core_tests": 5,
+     "ran": 5,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "boltons-3",
+     "advisor": "garbage",
+     "core_tests": 5,
+     "ran": 5,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "boltons-3",
+     "advisor": "everything",
+     "core_tests": 5,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 6.7
+    },
+    {
+     "mutant": "boltons-3",
+     "advisor": "non-core-only",
+     "core_tests": 5,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 6.7
+    },
+    {
+     "mutant": "boltons-3",
+     "advisor": "duplicates",
+     "core_tests": 5,
+     "ran": 8,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "boltons-3",
+     "advisor": "huge",
+     "core_tests": 5,
+     "ran": 6,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       6,
+       6
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "boltons-3",
+     "advisor": "raises",
+     "core_tests": 5,
+     "ran": 5,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "boltons-3",
+     "advisor": "reversed-core",
+     "core_tests": 5,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 6.6
+    },
+    {
+     "mutant": "boltons-4",
+     "advisor": "empty",
+     "core_tests": 2,
+     "ran": 2,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "boltons-4",
+     "advisor": "garbage",
+     "core_tests": 2,
+     "ran": 2,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 2.4
+    },
+    {
+     "mutant": "boltons-4",
+     "advisor": "everything",
+     "core_tests": 2,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 6.7
+    },
+    {
+     "mutant": "boltons-4",
+     "advisor": "non-core-only",
+     "core_tests": 2,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 6.7
+    },
+    {
+     "mutant": "boltons-4",
+     "advisor": "duplicates",
+     "core_tests": 2,
+     "ran": 5,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "boltons-4",
+     "advisor": "huge",
+     "core_tests": 2,
+     "ran": 3,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       3,
+       3
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "boltons-4",
+     "advisor": "raises",
+     "core_tests": 2,
+     "ran": 2,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "boltons-4",
+     "advisor": "reversed-core",
+     "core_tests": 2,
+     "ran": 525,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       517,
+       517
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 2.3,
+     "seconds": 6.8
+    }
+   ],
+   "status": "ran"
+  }
+ ]
+}

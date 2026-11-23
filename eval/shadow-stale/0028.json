@@ -1,0 +1,43 @@
+{
+ "repo": "pallets-eco/blinker",
+ "number": 190,
+ "status": "ran",
+ "head": "c8dd30eccac40ca31a8c8bcb8153d5e5182adc10",
+ "base": "74df7a240affd4f3a17697a94a1dd9a1644ab48f",
+ "diff_bytes": 1582,
+ "map_base": "1e153b8b1fafd669a8c43e1cc489635007d91962",
+ "map_age_commits": 92,
+ "n_tests": 25,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "README.md",
+  "tests/test_signals.py"
+ ],
+ "n_changed": 2,
+ "selected": 19,
+ "file_selected": 19,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 19,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0.0,
+ "out_of_scope": [],
+ "inert": [
+  "README.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.01,
+ "seconds_selected": 0.0,
+ "wall_seconds": 250.1,
+ "project": "blinker",
+ "image_code_sha": "d9e3c20"
+}

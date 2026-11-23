@@ -1,0 +1,10 @@
+{
+ "repo": "scrapy/w3lib",
+ "number": 365,
+ "status": "empty_diff",
+ "head": "ac84165cbb61582787ed0b3953d4fccc76a4915f",
+ "base": "ac84165cbb61582787ed0b3953d4fccc76a4915f",
+ "diff_bytes": 0,
+ "project": "w3lib",
+ "image_code_sha": "a116495"
+}

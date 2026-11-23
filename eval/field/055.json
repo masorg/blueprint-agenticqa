@@ -1,0 +1,37 @@
+{
+ "order": 55,
+ "pr_id": 3322234233,
+ "agent": "Copilot",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 5,
+ "repo": "microsoft/fabric-cicd",
+ "number": 498,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "a579aeafbd93e5ac270c4ae4f4c4c74838b18b9e",
+  "state": "done",
+  "verdict": "auto_approve",
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "",
+  "layer_states": {
+   "unit": "skipped",
+   "property": "skipped",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 20.4
+ },
+ "wall_seconds": 22.1,
+ "head_sha": "a579aeafbd93e5ac270c4ae4f4c4c74838b18b9e"
+}

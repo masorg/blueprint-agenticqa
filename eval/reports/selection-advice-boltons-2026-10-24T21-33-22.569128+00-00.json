@@ -1,0 +1,185 @@
+{
+ "generated_at": "2026-10-24T21:33:22.569128+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T21:33:23.057285+00:00",
+  "git_sha": "3ad92ef6a749167a1272f4f716fe1d3001d5af31",
+  "code_dirty": true,
+  "code_diff_sha256": "8e685da015b436b9",
+  "corpus": "selection-advice:boltons",
+  "corpus_fingerprint": "50fa387d7f970d2c",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-advice",
+   "--project",
+   "boltons",
+   "--report",
+   "eval/reports/selection-replay-boltons-2026-10-24T21-21-25.082174+00-00.json",
+   "--provider",
+   "openai",
+   "--model",
+   "gpt-4o-mini",
+   "--limit",
+   "12"
+  ]
+ },
+ "summary": {
+  "n_mutants": 12,
+  "models": [
+   "openai:gpt-4o-mini"
+  ],
+  "mean_core_share": 0.0614,
+  "mean_added": 1.58,
+  "mutants_with_additions": 7,
+  "failing_tests_outside_core": 0,
+  "named_by_model": 0,
+  "mean_tokens": 12266,
+  "mean_seconds": 1.34
+ },
+ "results": [
+  {
+   "project": "boltons",
+   "provider": "openai",
+   "model": "gpt-4o-mini",
+   "rows": [
+    {
+     "mutant": "boltons-000",
+     "total": 525,
+     "core": 27,
+     "added": 5,
+     "failing_shown": 3,
+     "failing_outside_core": 0,
+     "named_failing_outside_core": 0,
+     "tokens": 12237,
+     "seconds": 2.84
+    },
+    {
+     "mutant": "boltons-004",
+     "total": 525,
+     "core": 2,
+     "added": 6,
+     "failing_shown": 2,
+     "failing_outside_core": 0,
+     "named_failing_outside_core": 0,
+     "tokens": 12379,
+     "seconds": 1.77
+    },
+    {
+     "mutant": "boltons-006",
+     "total": 525,
+     "core": 16,
+     "added": 2,
+     "failing_shown": 1,
+     "failing_outside_core": 0,
+     "named_failing_outside_core": 0,
+     "tokens": 12211,
+     "seconds": 1.19
+    },
+    {
+     "mutant": "boltons-009",
+     "total": 525,
+     "core": 6,
+     "added": 0,
+     "failing_shown": 6,
+     "failing_outside_core": 0,
+     "named_failing_outside_core": 0,
+     "tokens": 12263,
+     "seconds": 0.94
+    },
+    {
+     "mutant": "boltons-012",
+     "total": 525,
+     "core": 95,
+     "added": 0,
+     "failing_shown": 50,
+     "failing_outside_core": 0,
+     "named_failing_outside_core": 0,
+     "tokens": 12315,
+     "seconds": 1.29
+    },
+    {
+     "mutant": "boltons-013",
+     "total": 525,
+     "core": 207,
+     "added": 1,
+     "failing_shown": 15,
+     "failing_outside_core": 0,
+     "named_failing_outside_core": 0,
+     "tokens": 12381,
+     "seconds": 1.22
+    },
+    {
+     "mutant": "boltons-015",
+     "total": 525,
+     "core": 6,
+     "added": 0,
+     "failing_shown": 5,
+     "failing_outside_core": 0,
+     "named_failing_outside_core": 0,
+     "tokens": 12231,
+     "seconds": 0.94
+    },
+    {
+     "mutant": "boltons-016",
+     "total": 525,
+     "core": 2,
+     "added": 0,
+     "failing_shown": 2,
+     "failing_outside_core": 0,
+     "named_failing_outside_core": 0,
+     "tokens": 12221,
+     "seconds": 0.86
+    },
+    {
+     "mutant": "boltons-018",
+     "total": 525,
+     "core": 16,
+     "added": 0,
+     "failing_shown": 2,
+     "failing_outside_core": 0,
+     "named_failing_outside_core": 0,
+     "tokens": 12219,
+     "seconds": 0.81
+    },
+    {
+     "mutant": "boltons-019",
+     "total": 525,
+     "core": 1,
+     "added": 1,
+     "failing_shown": 1,
+     "failing_outside_core": 0,
+     "named_failing_outside_core": 0,
+     "tokens": 12209,
+     "seconds": 1.41
+    },
+    {
+     "mutant": "boltons-020",
+     "total": 525,
+     "core": 7,
+     "added": 1,
+     "failing_shown": 1,
+     "failing_outside_core": 0,
+     "named_failing_outside_core": 0,
+     "tokens": 12231,
+     "seconds": 1.04
+    },
+    {
+     "mutant": "boltons-022",
+     "total": 525,
+     "core": 2,
+     "added": 3,
+     "failing_shown": 2,
+     "failing_outside_core": 0,
+     "named_failing_outside_core": 0,
+     "tokens": 12295,
+     "seconds": 1.72
+    }
+   ],
+   "status": "ran"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "repo": "pytest-dev/pluggy",
+ "number": 781,
+ "status": "ran",
+ "head": "0545501e3183a1cf43a46bb7c584cd41288dfa3f",
+ "base": "87f130aa18d8fdf9c92585e72423eca7f3de727d",
+ "diff_bytes": 537,
+ "n_tests": 219,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".pre-commit-config.yaml"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "out_of_scope": [
+  ".pre-commit-config.yaml"
+ ],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.13,
+ "seconds_selected": 0,
+ "wall_seconds": 27.7,
+ "project": "pluggy",
+ "image_code_sha": "a874558"
+}

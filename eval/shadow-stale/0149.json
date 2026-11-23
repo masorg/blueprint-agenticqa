@@ -1,0 +1,42 @@
+{
+ "repo": "tartley/colorama",
+ "number": 411,
+ "status": "ran",
+ "head": "e557d7c0e0fcc2c3b46eae14586d1c34ec641665",
+ "base": "406153f134db6b5c5391f223be46f9e8a902e6b6",
+ "diff_bytes": 927,
+ "map_base": "406153f134db6b5c5391f223be46f9e8a902e6b6",
+ "map_age_commits": 0,
+ "n_tests": 52,
+ "base_failing": 14,
+ "head_failing": 14,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/lint_python.yml"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  ".github/workflows/lint_python.yml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 0.03,
+ "seconds_selected": 0,
+ "wall_seconds": 16.1,
+ "project": "colorama",
+ "image_code_sha": "d9e3c20"
+}

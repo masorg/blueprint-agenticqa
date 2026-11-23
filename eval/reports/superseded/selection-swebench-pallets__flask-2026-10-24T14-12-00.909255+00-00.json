@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-10-24T14:12:00.909255+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T14:12:01.123537+00:00",
+  "git_sha": "00ec4a783095e173853b5798aa640d836d1e4742",
+  "code_dirty": false,
+  "code_diff_sha256": "6e3dd0ea245b92e9",
+  "corpus": "selection-swebench:pallets/flask",
+  "corpus_fingerprint": "0e158f7630a5551d",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-swebench",
+   "--repo",
+   "pallets/flask",
+   "--cap",
+   "20"
+  ]
+ },
+ "summary": {
+  "attempted": 1,
+  "analysed": 1,
+  "usable": 1,
+  "failed_to_analyse": 0,
+  "exposing_tests_not_located": 0,
+  "caught": {
+   "k": 1,
+   "n": 1,
+   "rate": 1.0,
+   "ci95": [
+    0.207,
+    1.0
+   ]
+  },
+  "missed": {
+   "k": 0,
+   "n": 1,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.793
+   ]
+  },
+  "missed_ids": [],
+  "caught_by_a_selected_test": {
+   "k": 1,
+   "n": 1,
+   "rate": 1.0,
+   "ci95": [
+    0.207,
+    1.0
+   ]
+  },
+  "caught_by_review": 0,
+  "caught_by_full_run": 0,
+  "targets_selected_share": 1.0,
+  "selected_share": {
+   "mean": 1.0,
+   "median": 1.0
+  },
+  "file_level_selected_share": 1.0,
+  "by_repo": {
+   "pallets/flask": {
+    "usable": 1,
+    "caught": 1,
+    "mean_selected_share": 1.0
+   }
+  }
+ },
+ "results": [
+  {
+   "instance_id": "pallets__flask-5014",
+   "repo": "pallets/flask",
+   "version": "2.3",
+   "status": "ok",
+   "n_tests": 384,
+   "n_changed": 1,
+   "n_source_files": 1,
+   "n_f2p": 1,
+   "n_targets": 1,
+   "n_targets_selected": 1,
+   "selected": 384,
+   "mode": "change",
+   "reason": "name/function",
+   "uncovered": [],
+   "out_of_scope": [],
+   "caught": true,
+   "caught_by_test": true,
+   "caught_by_review": false,
+   "caught_by_full": false,
+   "file_selected": 384
+  }
+ ]
+}

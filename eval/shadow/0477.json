@@ -1,0 +1,36 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 748,
+ "status": "ran",
+ "head": "059b879ab693e7693b4e5d9060baa7dd52f297dc",
+ "base": "bd42b38f3627e6bca7274fb4d9af2e105f75da7c",
+ "diff_bytes": 3884,
+ "n_tests": 3226,
+ "base_failing": 6,
+ "head_failing": 6,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "Changelog.md",
+  "tests/test_markup.py",
+  "transitions/extensions/markup.py"
+ ],
+ "n_changed": 3,
+ "selected": 3152,
+ "file_selected": 3152,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "Changelog.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 27.19,
+ "seconds_selected": 27.04,
+ "wall_seconds": 80.5,
+ "project": "transitions",
+ "image_code_sha": "a874558"
+}

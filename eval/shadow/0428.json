@@ -1,0 +1,47 @@
+{
+ "repo": "hukkin/tomli",
+ "number": 322,
+ "status": "ran",
+ "head": "d326dd59d8e10d621cba4de3ee110a7db6324ddd",
+ "base": "871f2c1cf33bc451376c225eeff77611cf2dd5a9",
+ "diff_bytes": 20091,
+ "n_tests": 18,
+ "base_failing": 0,
+ "head_failing": 1,
+ "introduced": [
+  "tests/test_misc.py::TestMiscellaneous::test_lazy_import"
+ ],
+ "flaky": [],
+ "mode": "full",
+ "reason": "a build or test configuration file changed: pyproject.toml",
+ "changed": [
+  ".bumpversion.cfg",
+  ".flake8",
+  ".github/workflows/tests.yaml",
+  ".pre-commit-config.yaml",
+  "README.md",
+  "pyproject.toml",
+  "scripts/mypyc_tox",
+  "src/tomli/__init__.py",
+  "src/tomli/_parser.py",
+  "tests/test_misc.py",
+  "tomllib.md",
+  "zizmor.yaml"
+ ],
+ "n_changed": 12,
+ "selected": 18,
+ "file_selected": 18,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [
+  "tests/test_misc.py::TestMiscellaneous::test_lazy_import"
+ ],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.16,
+ "seconds_selected": 0.16,
+ "wall_seconds": 16.2,
+ "project": "tomli",
+ "image_code_sha": "a874558"
+}

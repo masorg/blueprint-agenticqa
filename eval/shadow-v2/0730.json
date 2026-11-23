@@ -1,0 +1,42 @@
+{
+ "repo": "mahmoud/glom",
+ "number": 289,
+ "status": "ran",
+ "head": "d8b326673b7d4ec50bfe1ad57f1caaf82f81d286",
+ "base": "c225e2abeb234be7119911b96b4378cc9d8d6478",
+ "diff_bytes": 911,
+ "coverage_seconds": 2.6,
+ "coverage_files": 27,
+ "n_tests": 200,
+ "base_failing": 1,
+ "head_failing": 1,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/tests.yaml"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  ".github/workflows/tests.yaml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 0.23,
+ "seconds_selected": 0,
+ "wall_seconds": 18.9,
+ "project": "glom",
+ "image_code_sha": "a116495"
+}

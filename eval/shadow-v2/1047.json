@@ -1,0 +1,11 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 623,
+ "status": "error",
+ "head": "7f1e16a41c2607e063e9162b5319174b74e55ab7",
+ "base": "f3e01de336d24005b8c4abb012185a89af9727d9",
+ "diff_bytes": 25810,
+ "detail": "CollectionError: tests could not be collected (pytest exited 1): ",
+ "project": "transitions",
+ "image_code_sha": "a116495"
+}

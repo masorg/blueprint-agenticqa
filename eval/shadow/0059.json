@@ -1,0 +1,33 @@
+{
+ "repo": "mahmoud/boltons",
+ "number": 592,
+ "status": "ran",
+ "head": "97a34fb5bb3bf604fb0e7f83bf71d1a8bb55471d",
+ "base": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+ "diff_bytes": 3489,
+ "n_tests": 528,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "boltons/listutils.py",
+  "tests/test_listutils.py"
+ ],
+ "n_changed": 2,
+ "selected": 16,
+ "file_selected": 16,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 3.59,
+ "seconds_selected": 0.47,
+ "wall_seconds": 34.8,
+ "project": "boltons",
+ "image_code_sha": "efa91d9"
+}

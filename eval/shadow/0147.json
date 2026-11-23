@@ -1,0 +1,32 @@
+{
+ "repo": "tartley/colorama",
+ "number": 414,
+ "status": "ran",
+ "head": "eaf2ad723cc3145964c31b6262cb1e32dd7089b8",
+ "base": "406153f134db6b5c5391f223be46f9e8a902e6b6",
+ "diff_bytes": 871,
+ "n_tests": 52,
+ "base_failing": 14,
+ "head_failing": 14,
+ "introduced": [],
+ "flaky": [],
+ "mode": "full",
+ "reason": "a build or test configuration file changed: pyproject.toml",
+ "changed": [
+  "pyproject.toml"
+ ],
+ "n_changed": 1,
+ "selected": 52,
+ "file_selected": 52,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.04,
+ "seconds_selected": 0.04,
+ "wall_seconds": 14.7,
+ "project": "colorama",
+ "image_code_sha": "efa91d9"
+}

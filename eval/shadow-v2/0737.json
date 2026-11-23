@@ -1,0 +1,42 @@
+{
+ "repo": "mahmoud/glom",
+ "number": 278,
+ "status": "ran",
+ "head": "3bdd5349f02415e9ed97b50bbbb3313fe7348488",
+ "base": "dc6ab4af65afb1e2440f5a75f783baef47288963",
+ "diff_bytes": 1254,
+ "coverage_seconds": 7.2,
+ "coverage_files": 27,
+ "n_tests": 199,
+ "base_failing": 1,
+ "head_failing": 1,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "README.md"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  "README.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 0.42,
+ "seconds_selected": 0,
+ "wall_seconds": 30.3,
+ "project": "glom",
+ "image_code_sha": "a116495"
+}

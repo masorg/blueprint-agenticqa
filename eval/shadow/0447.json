@@ -1,0 +1,32 @@
+{
+ "repo": "hukkin/tomli",
+ "number": 297,
+ "status": "ran",
+ "head": "a83c904f2f922eb0e7e6a23edb40541aca52373e",
+ "base": "50d7e476e7573b5515178957ca5284233d7fb711",
+ "diff_bytes": 945,
+ "n_tests": 18,
+ "base_failing": 1,
+ "head_failing": 1,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "src/tomli/_parser.py"
+ ],
+ "n_changed": 1,
+ "selected": 18,
+ "file_selected": 18,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.16,
+ "seconds_selected": 0.16,
+ "wall_seconds": 11.9,
+ "project": "tomli",
+ "image_code_sha": "a874558"
+}

@@ -1,0 +1,31 @@
+{
+ "order": 7,
+ "pr_id": 3457109197,
+ "agent": "Copilot",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 3,
+ "repo": "DLR-RM/stable-baselines3",
+ "number": 2177,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "12ee2db30967ecb5cbb0f7f49566eb95767bad92",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-zplwpayq/tests/test_buffers.py'. | E   ModuleNotFoundError: No module named 'gymnasium' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-zplwpayq/tests/test_callbacks.py'. | E   ModuleNotFoundError: No module named 'gymnasium' | ImportError w",
+  "layer_states": {},
+  "seconds": 3.1
+ },
+ "wall_seconds": 5.1,
+ "head_sha": "12ee2db30967ecb5cbb0f7f49566eb95767bad92"
+}

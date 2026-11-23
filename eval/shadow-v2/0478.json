@@ -1,0 +1,13 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 747,
+ "status": "run_error",
+ "head": "6719ac87ac1965153ebee52f0e9be29b0ff9a114",
+ "base": "bd42b38f3627e6bca7274fb4d9af2e105f75da7c",
+ "diff_bytes": 3776,
+ "coverage_seconds": 9.4,
+ "coverage_error": "exit 1: ionError: False is not true\n=========================== short test summary info ============================\nFAILED tests/test_async.py::TestAsync::test_async_timeout - AssertionError: F...\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 83 passed in 5.69s\n",
+ "detail": "2950 of 3214 selected tests produced no result",
+ "project": "transitions",
+ "image_code_sha": "a116495"
+}

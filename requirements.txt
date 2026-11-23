@@ -1,0 +1,14 @@
+# App runtime dependencies (pinned loosely; see pyproject.toml for the source of truth).
+# Install into the CML ML Runtime / dev conda env with:  pip install -r requirements.txt
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+pydantic-settings>=2.2
+sse-starlette>=2.1
+httpx>=0.27
+PyYAML>=6.0
+anthropic>=0.39
+openai>=1.30
+PyGithub>=2.3
+# uv is used to create per-run virtualenvs quickly; falls back to stdlib venv if absent.
+uv>=0.4

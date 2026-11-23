@@ -1,0 +1,32 @@
+{
+ "repo": "tkem/cachetools",
+ "number": 431,
+ "status": "ran",
+ "head": "8ac2770ac50b70994446c23100c24cb106c155fc",
+ "base": "3c082c654c2804b9354e4b62dbd2994f1aac464d",
+ "diff_bytes": 544,
+ "n_tests": 337,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "src/cachetools/__init__.py"
+ ],
+ "n_changed": 1,
+ "selected": 331,
+ "file_selected": 337,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 4.22,
+ "seconds_selected": 4.22,
+ "wall_seconds": 19.3,
+ "project": "cachetools",
+ "image_code_sha": "efa91d9"
+}

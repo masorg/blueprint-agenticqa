@@ -1,0 +1,46 @@
+{
+ "repo": "pytest-dev/pluggy",
+ "number": 786,
+ "status": "ran",
+ "head": "90e19c2d62cf7019603e9b75c8d7d4381fa1b469",
+ "base": "6995073de5ebc58d97dc017a7c2b7c5904f4c485",
+ "diff_bytes": 7291,
+ "n_tests": 221,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "changelog/258.doc.rst",
+  "docs/examples/directory_plugins/hookspecs.py",
+  "docs/examples/directory_plugins/host.py",
+  "docs/examples/directory_plugins/plugins/__init__.py",
+  "docs/examples/directory_plugins/plugins/english.py",
+  "docs/examples/directory_plugins/plugins/french.py",
+  "docs/index.rst",
+  "testing/test_directory_example.py"
+ ],
+ "n_changed": 8,
+ "selected": 2,
+ "file_selected": 2,
+ "uncovered": [],
+ "out_of_scope": [
+  "docs/examples/directory_plugins/hookspecs.py",
+  "docs/examples/directory_plugins/plugins/english.py",
+  "docs/examples/directory_plugins/plugins/french.py"
+ ],
+ "inert": [
+  "changelog/258.doc.rst",
+  "docs/index.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.44,
+ "seconds_selected": 0.31,
+ "wall_seconds": 33.3,
+ "project": "pluggy",
+ "image_code_sha": "a874558"
+}

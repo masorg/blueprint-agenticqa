@@ -1,0 +1,33 @@
+{
+ "repo": "kjd/idna",
+ "number": 257,
+ "status": "ran",
+ "head": "fa4d3ec97df039d5b601a4a0409b8cc3c706fa4a",
+ "base": "5a954ffed62b15e2a313e5de0f949f60ed15416e",
+ "diff_bytes": 3701,
+ "n_tests": 6405,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "idna/core.py",
+  "tests/test_idna.py"
+ ],
+ "n_changed": 2,
+ "selected": 6405,
+ "file_selected": 6405,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 2.77,
+ "seconds_selected": 2.77,
+ "wall_seconds": 75.3,
+ "project": "idna",
+ "image_code_sha": "a874558"
+}

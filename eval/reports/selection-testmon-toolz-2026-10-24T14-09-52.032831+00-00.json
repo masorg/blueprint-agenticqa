@@ -1,0 +1,394 @@
+{
+ "generated_at": "2026-10-24T14:09:52.032831+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T14:09:52.218750+00:00",
+  "git_sha": "50fbf59b28502473383bc103654a4e01a24b092b",
+  "code_dirty": true,
+  "code_diff_sha256": "59105580c1e30aaa",
+  "corpus": "selection-testmon:toolz",
+  "corpus_fingerprint": "f5536f7e01b1e25b",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-testmon",
+   "--project",
+   "toolz",
+   "--report",
+   "eval/reports/selection-replay-toolz-2026-10-24T03-29-52.586666+00-00.json"
+  ]
+ },
+ "summary": {
+  "projects": [
+   "toolz"
+  ],
+  "mutants": 26,
+  "killed": 18,
+  "testmon_missed": {
+   "k": 0,
+   "n": 18,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.176
+   ]
+  },
+  "gate_missed": {
+   "k": 0,
+   "n": 18,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.176
+   ]
+  },
+  "testmon_tests_share_mean": 0.0333,
+  "gate_tests_share_mean": 0.3418,
+  "testmon_missed_ids": [],
+  "baseline_seconds": {
+   "toolz": 1.6
+  },
+  "per_project": {
+   "toolz": {
+    "mutants": 26,
+    "killed": 18,
+    "testmon_missed": 0,
+    "gate_missed": 0,
+    "testmon_share": 0.033,
+    "gate_share": 0.342
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "toolz",
+   "seed": 20261023,
+   "status": "ran",
+   "rows": [
+    {
+     "id": "toolz-000",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.53,
+     "timed_out": false,
+     "gate_selected": 1,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-001",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 10,
+     "testmon_failed": 6,
+     "testmon_seconds": 0.68,
+     "timed_out": false,
+     "gate_selected": 193,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-002",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 8,
+     "testmon_failed": 3,
+     "testmon_seconds": 0.67,
+     "timed_out": false,
+     "gate_selected": 193,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-004",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 4,
+     "testmon_failed": 3,
+     "testmon_seconds": 0.57,
+     "timed_out": false,
+     "gate_selected": 12,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-006",
+     "total": 193,
+     "killed_full": false,
+     "testmon_run": 2,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.55,
+     "timed_out": false,
+     "gate_selected": 1,
+     "gate_caught": false,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-007",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 4,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.66,
+     "timed_out": false,
+     "gate_selected": 193,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-008",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.54,
+     "timed_out": false,
+     "gate_selected": 10,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-009",
+     "total": 193,
+     "killed_full": false,
+     "testmon_run": 2,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.69,
+     "timed_out": false,
+     "gate_selected": 10,
+     "gate_caught": false,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-010",
+     "total": 193,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.52,
+     "timed_out": false,
+     "gate_selected": 0,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-011",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 10,
+     "testmon_failed": 6,
+     "testmon_seconds": 0.74,
+     "timed_out": false,
+     "gate_selected": 193,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-012",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 4,
+     "testmon_failed": 4,
+     "testmon_seconds": 0.75,
+     "timed_out": false,
+     "gate_selected": 12,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-013",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 11,
+     "testmon_failed": 3,
+     "testmon_seconds": 0.7,
+     "timed_out": false,
+     "gate_selected": 193,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-014",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 4,
+     "testmon_failed": 3,
+     "testmon_seconds": 0.56,
+     "timed_out": false,
+     "gate_selected": 12,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-016",
+     "total": 193,
+     "killed_full": false,
+     "testmon_run": 2,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.51,
+     "timed_out": false,
+     "gate_selected": 1,
+     "gate_caught": false,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-017",
+     "total": 193,
+     "killed_full": false,
+     "testmon_run": 37,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.83,
+     "timed_out": false,
+     "gate_selected": 193,
+     "gate_caught": false,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-018",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.57,
+     "timed_out": false,
+     "gate_selected": 10,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-019",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.56,
+     "timed_out": false,
+     "gate_selected": 10,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-020",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.57,
+     "timed_out": false,
+     "gate_selected": 1,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-021",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 7,
+     "testmon_seconds": 0.65,
+     "timed_out": false,
+     "gate_selected": 41,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-022",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.66,
+     "timed_out": false,
+     "gate_selected": 17,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-023",
+     "total": 193,
+     "killed_full": false,
+     "testmon_run": 2,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.64,
+     "timed_out": false,
+     "gate_selected": 193,
+     "gate_caught": false,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-024",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 4,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.59,
+     "timed_out": false,
+     "gate_selected": 12,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-026",
+     "total": 193,
+     "killed_full": false,
+     "testmon_run": 2,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.52,
+     "timed_out": false,
+     "gate_selected": 1,
+     "gate_caught": false,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-027",
+     "total": 193,
+     "killed_full": false,
+     "testmon_run": 37,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.87,
+     "timed_out": false,
+     "gate_selected": 193,
+     "gate_caught": false,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-028",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.55,
+     "timed_out": false,
+     "gate_selected": 10,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    },
+    {
+     "id": "toolz-029",
+     "total": 193,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.72,
+     "timed_out": false,
+     "gate_selected": 10,
+     "gate_caught": true,
+     "seconds_full": 1.348
+    }
+   ],
+   "baseline_seconds": 1.6,
+   "baseline_counts": {
+    "passed": 192,
+    "failed": 1,
+    "error": 0,
+    "skipped": 0,
+    "deselected": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "order": 61,
+ "pr_id": 3430002756,
+ "agent": "Copilot",
+ "merged": false,
+ "says_tests_pass": false,
+ "n_commits": 3,
+ "repo": "espnet/espnet",
+ "number": 6243,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "5408b42b047108066677eeb2bd4928083ee937d3",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "Error: [('/tmp/field-r1vizy77/egs2/zh_openslr38/asr1/utils/simple_dict.sh', '/tmp/agenticqa-workspaces/ws-qhvmo6yh/egs2/zh_openslr38/asr1/utils/simple_dict.sh', \"[Errno 2] No such file or directory: '/tmp/field-r1vizy77/egs2/zh_openslr38/asr1/utils/simple_dict.sh'\"), ('/tmp/field-r1vizy77/egs2/zeroth_korean/asr1/utils/simple_dict.sh', '/tmp/agenticqa-workspaces/ws-qhvmo6yh/egs2/zeroth_korean/asr1/",
+  "layer_states": {},
+  "seconds": 6.8
+ },
+ "wall_seconds": 15.8,
+ "head_sha": "5408b42b047108066677eeb2bd4928083ee937d3"
+}

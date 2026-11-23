@@ -1,0 +1,11 @@
+{
+ "repo": "un33k/python-slugify",
+ "number": 191,
+ "status": "error",
+ "head": "0a4a9ac4862f1ead489c137fee23b52b5f4e549b",
+ "base": "7b6d5d96c1995e6dccb39a19a13ba78d7d0a3ee4",
+ "diff_bytes": 3923245,
+ "detail": "CollectionError: tests could not be collected (pytest exited 2): E   ModuleNotFoundError: No module named 'unidecode' | E   ModuleNotFoundError: No module named 'text_unidecode'\u001b[0m",
+ "project": "slugify",
+ "image_code_sha": "a874558"
+}

@@ -1,0 +1,43 @@
+{
+ "repo": "pallets/jinja",
+ "number": 2220,
+ "status": "ran",
+ "head": "8d7069bf1c952da8ef632d98da121793168b9174",
+ "base": "5ef70112a1ff19c05324ff889dd30405b1002044",
+ "diff_bytes": 992,
+ "coverage_seconds": 19.0,
+ "coverage_files": 49,
+ "n_tests": 911,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "docs/api.rst",
+  "src/jinja2/__init__.py"
+ ],
+ "n_changed": 2,
+ "selected": 911,
+ "file_selected": 911,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 911,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 2.11,
+ "out_of_scope": [],
+ "inert": [
+  "docs/api.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 2.11,
+ "seconds_selected": 2.11,
+ "wall_seconds": 79.1,
+ "project": "jinja",
+ "image_code_sha": "a116495"
+}

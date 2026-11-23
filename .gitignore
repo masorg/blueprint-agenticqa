@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.hypothesis/
+.ruff_cache/
+build/
+dist/
+
+# Virtualenvs
+.venv/
+venv/
+
+# Agentic QA runtime state
+data/
+# ...but the evaluation's pinned sample manifests are evidence and must be tracked
+!eval/data/
+*.db
+*.db-wal
+*.db-shm
+workspaces/
+.agenticqa-*.jsonl
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# LaTeX build products (main.tex and main.pdf are kept)
+docs/paper/ieee/*.aux
+docs/paper/ieee/*.log
+docs/paper/ieee/*.xdv
+docs/paper/ieee/*.out

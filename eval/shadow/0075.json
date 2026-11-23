@@ -1,0 +1,52 @@
+{
+ "repo": "tkem/cachetools",
+ "number": 449,
+ "status": "ran",
+ "head": "0b8c8174394b8088994f1e10dd87a2b3dc31b890",
+ "base": "6f23e2a7b75a42d30cb9d890ab3ca4059ee01bfd",
+ "diff_bytes": 58293,
+ "n_tests": 503,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "ASSIGNMENT_README.md",
+  "assignment_docs/setup_output_muhammad.txt",
+  "assignment_docs/setup_video.mp4",
+  "assignment_docs/test_cases_mian.xlsx",
+  "assignment_tests/data/lfu_cases_mian.csv",
+  "assignment_tests/test_lfu_csv_mian.py",
+  "assignment_tests/test_lfu_mian.py",
+  "assignment_tests/test_lru_muhammad.py",
+  "assignment_tests/test_ttl_basic_mian.py",
+  "assignment_tests/test_ttl_expiry_muhammad.py",
+  "notes/ecp_bva_mian.md",
+  "notes/ecp_bva_muhammad.md"
+ ],
+ "n_changed": 12,
+ "selected": 137,
+ "file_selected": 137,
+ "uncovered": [
+  "assignment_docs/setup_video.mp4",
+  "assignment_docs/test_cases_mian.xlsx"
+ ],
+ "out_of_scope": [
+  "assignment_docs/setup_output_muhammad.txt"
+ ],
+ "inert": [
+  "ASSIGNMENT_README.md",
+  "notes/ecp_bva_mian.md",
+  "notes/ecp_bva_muhammad.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "success",
+ "seconds_full": 0.89,
+ "seconds_selected": 0.02,
+ "wall_seconds": 19.7,
+ "project": "cachetools",
+ "image_code_sha": "efa91d9"
+}

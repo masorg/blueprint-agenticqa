@@ -1,0 +1,31 @@
+{
+ "order": 14,
+ "pr_id": 3221411520,
+ "agent": "Cursor",
+ "merged": false,
+ "says_tests_pass": false,
+ "n_commits": 3,
+ "repo": "iterative/datachain",
+ "number": 1227,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "d69254936ed034ecd1459c343543edade3e7df26",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "RuntimeError: command timed out after 420.0s: /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/d4ca0db3e02659f4/.venv/bin/python pytest pytest-reportlog Pillow>=10.0.0,<12 adlfs>=2024.2.0 aiotools>=1.7.0 attrs>=21.3.0 cloudpickle datamodel-code-generator>=0.25 dulwich dvc-data>=3.10,<4 dvc-objects>=4,<6 dvc-studio-client>=0.21,<1 fsspec>=2024.2.0 gcsfs>=2024.2.0 huggingf",
+  "layer_states": {},
+  "seconds": 420.2
+ },
+ "wall_seconds": 422.3,
+ "head_sha": "d69254936ed034ecd1459c343543edade3e7df26"
+}

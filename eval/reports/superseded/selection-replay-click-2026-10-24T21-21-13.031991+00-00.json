@@ -1,0 +1,300 @@
+{
+ "generated_at": "2026-10-24T21:21:13.031991+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T21:21:13.974480+00:00",
+  "git_sha": "3ad92ef6a749167a1272f4f716fe1d3001d5af31",
+  "code_dirty": true,
+  "code_diff_sha256": "8e685da015b436b9",
+  "corpus": "selection-replay:click",
+  "corpus_fingerprint": "deb60ba91e59c03a",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-replay",
+   "--project",
+   "click",
+   "--report",
+   "eval/reports/selection-mutants-click-2026-10-23T18-56-19.050673+00-00.json"
+  ]
+ },
+ "summary": {
+  "n_projects": 1,
+  "n_projects_ran": 0,
+  "valid_mutants": 0,
+  "killed_by_full_suite": 0,
+  "survivors": 0,
+  "levels": {
+   "file": {
+    "caught_by_selected_tests": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "missed_failures": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "missed_ids": [],
+    "extra_reviews_green_ci": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "selected_share": {
+     "median": null,
+     "mean": null,
+     "p90": null
+    },
+    "tests_saved_share": 1.0,
+    "all_tests_selected_share": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "name-file": {
+    "caught_by_selected_tests": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "missed_failures": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "missed_ids": [],
+    "extra_reviews_green_ci": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "selected_share": {
+     "median": null,
+     "mean": null,
+     "p90": null
+    },
+    "tests_saved_share": 1.0,
+    "all_tests_selected_share": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "name": {
+    "caught_by_selected_tests": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "missed_failures": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "missed_ids": [],
+    "extra_reviews_green_ci": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "selected_share": {
+     "median": null,
+     "mean": null,
+     "p90": null
+    },
+    "tests_saved_share": 1.0,
+    "all_tests_selected_share": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "name+advice": {
+    "caught_by_selected_tests": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "missed_failures": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "missed_ids": [],
+    "extra_reviews_green_ci": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "selected_share": {
+     "median": null,
+     "mean": null,
+     "p90": null
+    },
+    "tests_saved_share": 1.0,
+    "all_tests_selected_share": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "name-ignoring-dynamic-loading": {
+    "caught_by_selected_tests": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "missed_failures": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "missed_ids": [],
+    "extra_reviews_green_ci": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "selected_share": {
+     "median": null,
+     "mean": null,
+     "p90": null
+    },
+    "tests_saved_share": 1.0,
+    "all_tests_selected_share": {
+     "k": 0,
+     "n": 0,
+     "rate": null,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "full_run_fallback_share": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "seconds_full": 0,
+  "seconds_selected": 0,
+  "time_saved_share": null,
+  "selected_run_errors": 0,
+  "disagreements_between_derived_and_actual": 0,
+  "per_project": {
+   "click": {
+    "status": "error",
+    "n_tests": null,
+    "python_files": null,
+    "valid_mutants": 0,
+    "killed_by_full_suite": 0,
+    "missed_file": 0,
+    "mean_share_namefile": null,
+    "mean_share_nodyn": null,
+    "missed_name": 0,
+    "mean_share_file": null,
+    "mean_share_name": null,
+    "time_ratio": null
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "click",
+   "clone_url": "https://github.com/pallets/click.git",
+   "sha": "9f0bcdf0d868edfc71435cd0aac2dcc08cf94828",
+   "seed": 20261023,
+   "status": "error",
+   "mutants": [],
+   "replay_of": "click",
+   "detail": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/private/var/folders/30/34gt5kz10l3d6g62w45ygl6r0000gn/T/agenticqa-workspaces/ws-7gq8tmk5/tests/test_deprecations.py'. | E   StopIteration | E   importlib.metadata.PackageNotFoundError: No packa"
+  }
+ ]
+}

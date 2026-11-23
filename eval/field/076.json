@@ -1,0 +1,31 @@
+{
+ "order": 76,
+ "pr_id": 3226434312,
+ "agent": "Google_Jules",
+ "merged": false,
+ "says_tests_pass": false,
+ "n_commits": 4,
+ "repo": "bmaltais/kohya_ss",
+ "number": 3340,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "009ab4eeaac8453b8cb2b9b4212bf8262674fb0b",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "RuntimeError: command failed (1): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/26d0eaa0f2b57574/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-rlwv0gqm/requirements.txt\nUsing Python 3.12.15 environment at: /tmp/agenticqa-workspaces/venv-cache/26d0eaa0f2b57574/.venv\nerror: Distribution not found at: file:///app/sd-scripts\n",
+  "layer_states": {},
+  "seconds": 0.1
+ },
+ "wall_seconds": 2.1,
+ "head_sha": "009ab4eeaac8453b8cb2b9b4212bf8262674fb0b"
+}

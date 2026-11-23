@@ -1,0 +1,406 @@
+{
+ "generated_at": "2026-10-24T22:53:55.675930+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T22:53:56.277669+00:00",
+  "git_sha": "6e2055769d0f25b11e5e876a79b49b7428a1f2aa",
+  "code_dirty": true,
+  "code_diff_sha256": "a3e2d4d0c26763ea",
+  "corpus": "selection-testmon:idna",
+  "corpus_fingerprint": "33ae694326462149",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-testmon",
+   "--project",
+   "idna",
+   "--report",
+   "eval/reports/selection-mutants-idna-2026-10-24T22-45-08.160250+00-00.json"
+  ]
+ },
+ "summary": {
+  "projects": [
+   "idna"
+  ],
+  "mutants": 27,
+  "killed": 16,
+  "testmon_missed": {
+   "k": 0,
+   "n": 16,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.194
+   ]
+  },
+  "gate_missed": {
+   "k": 0,
+   "n": 16,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.194
+   ]
+  },
+  "testmon_tests_share_mean": 0.0002,
+  "gate_tests_share_mean": 0.4847,
+  "testmon_missed_ids": [],
+  "baseline_seconds": {
+   "idna": 3.7
+  },
+  "per_project": {
+   "idna": {
+    "mutants": 27,
+    "killed": 16,
+    "testmon_missed": 0,
+    "gate_missed": 0,
+    "testmon_share": 0.0,
+    "gate_share": 0.485
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "idna",
+   "seed": 20261023,
+   "status": "ran",
+   "rows": [
+    {
+     "id": "idna-000",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 4.88,
+     "timed_out": false,
+     "gate_selected": 65,
+     "gate_caught": true,
+     "seconds_full": 28.59
+    },
+    {
+     "id": "idna-001",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 4.07,
+     "timed_out": false,
+     "gate_selected": 6442,
+     "gate_caught": true,
+     "seconds_full": 163.27
+    },
+    {
+     "id": "idna-003",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 5.43,
+     "timed_out": false,
+     "gate_selected": 1,
+     "gate_caught": true,
+     "seconds_full": 48.96
+    },
+    {
+     "id": "idna-004",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 8.28,
+     "timed_out": false,
+     "gate_selected": 37,
+     "gate_caught": true,
+     "seconds_full": 28.93
+    },
+    {
+     "id": "idna-005",
+     "total": 6442,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 7.55,
+     "timed_out": false,
+     "gate_selected": 6442,
+     "gate_caught": false,
+     "seconds_full": 30.53
+    },
+    {
+     "id": "idna-006",
+     "total": 6442,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 5.56,
+     "timed_out": false,
+     "gate_selected": 6442,
+     "gate_caught": false,
+     "seconds_full": 32.61
+    },
+    {
+     "id": "idna-007",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 5.38,
+     "timed_out": false,
+     "gate_selected": 37,
+     "gate_caught": true,
+     "seconds_full": 68.36
+    },
+    {
+     "id": "idna-008",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 5.5,
+     "timed_out": false,
+     "gate_selected": 65,
+     "gate_caught": true,
+     "seconds_full": 138.38
+    },
+    {
+     "id": "idna-011",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 4.98,
+     "timed_out": false,
+     "gate_selected": 37,
+     "gate_caught": true,
+     "seconds_full": 65.01
+    },
+    {
+     "id": "idna-012",
+     "total": 6442,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 6.03,
+     "timed_out": false,
+     "gate_selected": 6442,
+     "gate_caught": false,
+     "seconds_full": 37.35
+    },
+    {
+     "id": "idna-013",
+     "total": 6442,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 6.94,
+     "timed_out": false,
+     "gate_selected": 6442,
+     "gate_caught": false,
+     "seconds_full": 42.57
+    },
+    {
+     "id": "idna-014",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 6.52,
+     "timed_out": false,
+     "gate_selected": 37,
+     "gate_caught": true,
+     "seconds_full": 110.22
+    },
+    {
+     "id": "idna-015",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 5.03,
+     "timed_out": false,
+     "gate_selected": 65,
+     "gate_caught": true,
+     "seconds_full": 121.54
+    },
+    {
+     "id": "idna-016",
+     "total": 6442,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 5.2,
+     "timed_out": false,
+     "gate_selected": 6442,
+     "gate_caught": false,
+     "seconds_full": 70.78
+    },
+    {
+     "id": "idna-017",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 8.25,
+     "timed_out": false,
+     "gate_selected": 10,
+     "gate_caught": true,
+     "seconds_full": 13.94
+    },
+    {
+     "id": "idna-018",
+     "total": 6442,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 7.38,
+     "timed_out": false,
+     "gate_selected": 6442,
+     "gate_caught": false,
+     "seconds_full": 15.25
+    },
+    {
+     "id": "idna-019",
+     "total": 6442,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 6.91,
+     "timed_out": false,
+     "gate_selected": 6442,
+     "gate_caught": false,
+     "seconds_full": 16.03
+    },
+    {
+     "id": "idna-020",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 6.23,
+     "timed_out": false,
+     "gate_selected": 37,
+     "gate_caught": true,
+     "seconds_full": 16.5
+    },
+    {
+     "id": "idna-021",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 5.88,
+     "timed_out": false,
+     "gate_selected": 65,
+     "gate_caught": true,
+     "seconds_full": 14.91
+    },
+    {
+     "id": "idna-022",
+     "total": 6442,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 5.21,
+     "timed_out": false,
+     "gate_selected": 6442,
+     "gate_caught": false,
+     "seconds_full": 12.1
+    },
+    {
+     "id": "idna-023",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 5.4,
+     "timed_out": false,
+     "gate_selected": 10,
+     "gate_caught": true,
+     "seconds_full": 49.76
+    },
+    {
+     "id": "idna-024",
+     "total": 6442,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 3.03,
+     "timed_out": false,
+     "gate_selected": 6442,
+     "gate_caught": false,
+     "seconds_full": 57.73
+    },
+    {
+     "id": "idna-025",
+     "total": 6442,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 3.62,
+     "timed_out": false,
+     "gate_selected": 6442,
+     "gate_caught": false,
+     "seconds_full": 56.76
+    },
+    {
+     "id": "idna-026",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 3.39,
+     "timed_out": false,
+     "gate_selected": 37,
+     "gate_caught": true,
+     "seconds_full": 39.79
+    },
+    {
+     "id": "idna-027",
+     "total": 6442,
+     "killed_full": false,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 4.16,
+     "timed_out": false,
+     "gate_selected": 65,
+     "gate_caught": false,
+     "seconds_full": 56.57
+    },
+    {
+     "id": "idna-028",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 4.33,
+     "timed_out": false,
+     "gate_selected": 6442,
+     "gate_caught": true,
+     "seconds_full": 94.26
+    },
+    {
+     "id": "idna-029",
+     "total": 6442,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 3.32,
+     "timed_out": false,
+     "gate_selected": 6442,
+     "gate_caught": true,
+     "seconds_full": 102.17
+    }
+   ],
+   "baseline_seconds": 3.7,
+   "baseline_counts": {
+    "passed": 0,
+    "failed": 0,
+    "error": 1,
+    "skipped": 0,
+    "deselected": 0
+   }
+  }
+ ]
+}

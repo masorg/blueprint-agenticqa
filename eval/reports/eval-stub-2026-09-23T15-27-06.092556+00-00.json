@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-09-23T15:27:06.092556+00:00",
+  "provider": "stub",
+  "n_scenarios": 2,
+  "verdict_confusion": {
+    "true_positive_needs_review": 1,
+    "true_negative_auto_approve": 1,
+    "false_positive_needs_review": 0,
+    "false_negative_auto_approve": 0,
+    "accuracy": 1.0
+  },
+  "routing_agreement_rate": 1.0,
+  "classification_agreement_rate_mean": 1.0,
+  "classification_verified_rate_mean": 1.0,
+  "total_wall_seconds": 21.26,
+  "total_llm_tokens": null,
+  "scenarios": [
+    {
+      "scenario": "clean-baseline",
+      "expected_verdict": "auto_approve",
+      "actual_verdict": "auto_approve",
+      "verdict_correct": true,
+      "layers": {
+        "expected_failing": [],
+        "actual_failing": [],
+        "correctly_caught": [],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true
+      },
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 1.0,
+        "verified_rate": 1.0,
+        "disagreements": []
+      },
+      "wall_seconds": 16.14,
+      "llm_usage": null,
+      "totals": {
+        "passed": 18,
+        "failed": 0,
+        "skipped": 0,
+        "total": 18
+      }
+    },
+    {
+      "scenario": "stock-check-off-by-one",
+      "expected_verdict": "needs_human_review",
+      "actual_verdict": "needs_human_review",
+      "verdict_correct": true,
+      "layers": {
+        "expected_failing": [
+          "property",
+          "unit"
+        ],
+        "actual_failing": [
+          "property",
+          "unit"
+        ],
+        "correctly_caught": [
+          "property",
+          "unit"
+        ],
+        "missed": [],
+        "unexpected_failures": []
+      },
+      "routing": {
+        "repo_kind": "plain_service",
+        "applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "heuristic_applicable_layers": [
+          "adversarial",
+          "property",
+          "unit"
+        ],
+        "agrees_with_heuristic": true
+      },
+      "classification": {
+        "n_tests": 18,
+        "agreement_rate": 1.0,
+        "verified_rate": 1.0,
+        "disagreements": []
+      },
+      "wall_seconds": 5.12,
+      "llm_usage": null,
+      "totals": {
+        "passed": 16,
+        "failed": 2,
+        "skipped": 0,
+        "total": 18
+      }
+    }
+  ]
+}

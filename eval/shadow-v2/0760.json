@@ -1,0 +1,42 @@
+{
+ "repo": "kjd/idna",
+ "number": 244,
+ "status": "ran",
+ "head": "5cfcc1f3ba0c56130fa3681a844827c610f7b7eb",
+ "base": "7bc9e4afd9350166c5cf34f24844b958ebe4d666",
+ "diff_bytes": 504,
+ "coverage_seconds": 22.1,
+ "coverage_files": 16,
+ "n_tests": 6404,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/python-package.yml"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  ".github/workflows/python-package.yml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 1.51,
+ "seconds_selected": 0,
+ "wall_seconds": 111.9,
+ "project": "idna",
+ "image_code_sha": "a116495"
+}

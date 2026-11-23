@@ -1,0 +1,80 @@
+{
+ "order": 45,
+ "pr_id": 3154494868,
+ "agent": "Devin",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 8,
+ "repo": "reflex-dev/reflex-web",
+ "number": 1435,
+ "status": "ran",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "a2ac47651cfe7e68d583982b4857f78b62fd3112",
+  "state": "awaiting_approval",
+  "verdict": "needs_human_review",
+  "completed": true,
+  "totals": {
+   "passed": 0,
+   "failed": 9,
+   "skipped": 1,
+   "total": 10
+  },
+  "failing": [
+   "tests/test_background_events.py::test_background_events[chromium]",
+   "tests/test_chaining_event.py::test_collatz[chromium]",
+   "tests/test_chaining_event.py::test_handler_from_handler[chromium]",
+   "tests/test_computed_vars.py::test_computed_vars[chromium]",
+   "tests/test_counter.py::test_counter[chromium]",
+   "tests/test_lambdas.py::test_lambdas[chromium]",
+   "tests/test_recharts.py::tests_recharts[chromium]",
+   "tests/test_server_side_events.py::test_server_side_events[chromium]",
+   "tests/test_titles.py::test_unique_titles"
+  ],
+  "error": "",
+  "layer_states": {
+   "unit": "failed",
+   "property": "skipped",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 255.0
+ },
+ "base": {
+  "sha": "87061a41ce7902eebbbb3d401989424a2a5057f6",
+  "state": "awaiting_approval",
+  "verdict": "needs_human_review",
+  "completed": true,
+  "totals": {
+   "passed": 0,
+   "failed": 9,
+   "skipped": 1,
+   "total": 10
+  },
+  "failing": [
+   "tests/test_background_events.py::test_background_events[chromium]",
+   "tests/test_chaining_event.py::test_collatz[chromium]",
+   "tests/test_chaining_event.py::test_handler_from_handler[chromium]",
+   "tests/test_computed_vars.py::test_computed_vars[chromium]",
+   "tests/test_counter.py::test_counter[chromium]",
+   "tests/test_lambdas.py::test_lambdas[chromium]",
+   "tests/test_recharts.py::tests_recharts[chromium]",
+   "tests/test_server_side_events.py::test_server_side_events[chromium]",
+   "tests/test_titles.py::test_unique_titles"
+  ],
+  "error": "",
+  "layer_states": {
+   "unit": "failed",
+   "property": "skipped",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 13.1
+ },
+ "wall_seconds": 281.6,
+ "head_sha": "a2ac47651cfe7e68d583982b4857f78b62fd3112",
+ "base_sha": "87061a41ce7902eebbbb3d401989424a2a5057f6"
+}

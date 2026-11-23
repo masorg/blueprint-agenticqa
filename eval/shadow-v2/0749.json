@@ -1,0 +1,11 @@
+{
+ "repo": "mahmoud/glom",
+ "number": 250,
+ "status": "error",
+ "head": "cb6918fb1c93a2b807161a169b2d50a852721682",
+ "base": "eea15107675eff868c08e18454684faaefb358c9",
+ "diff_bytes": 2506,
+ "detail": "RuntimeError: command failed (1): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/d0822cbb266a91b6/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-j5u6567w/requirements.txt\nls/build_meta.py\", line 317, in run_setup\n             exec(code, locals())  # noqa: S102 # exec is intentional here\n             ^^^^^^^^^^^^^^^^^^^^\n           File \"<string>\", line 271, in <modul",
+ "project": "glom",
+ "image_code_sha": "a116495"
+}

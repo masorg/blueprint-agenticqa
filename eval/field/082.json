@@ -1,0 +1,60 @@
+{
+ "order": 82,
+ "pr_id": 3332973837,
+ "agent": "Google_Jules",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "minaminao/erever",
+ "number": 3,
+ "status": "ran",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "d253e398799b2375f6be44cd7e20611f716d5555",
+  "state": "done",
+  "verdict": "auto_approve",
+  "completed": true,
+  "totals": {
+   "passed": 4,
+   "failed": 0,
+   "skipped": 0,
+   "total": 4
+  },
+  "failing": [],
+  "error": "",
+  "layer_states": {
+   "unit": "passed",
+   "property": "skipped",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 36.5
+ },
+ "base": {
+  "sha": "8475bec51bb93a35bef0d78e3f26bfd12ad36f05",
+  "state": "done",
+  "verdict": "auto_approve",
+  "completed": true,
+  "totals": {
+   "passed": 4,
+   "failed": 0,
+   "skipped": 0,
+   "total": 4
+  },
+  "failing": [],
+  "error": "",
+  "layer_states": {
+   "unit": "passed",
+   "property": "skipped",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 7.5
+ },
+ "wall_seconds": 45.3,
+ "head_sha": "d253e398799b2375f6be44cd7e20611f716d5555",
+ "base_sha": "8475bec51bb93a35bef0d78e3f26bfd12ad36f05"
+}

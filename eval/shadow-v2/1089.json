@@ -1,0 +1,55 @@
+{
+ "repo": "scrapy/w3lib",
+ "number": 356,
+ "status": "ran",
+ "head": "a0b4f10690c931b90cfca076707c55ae9538a101",
+ "base": "111e4c3951c30e56abd463f2c8ef865262d66206",
+ "diff_bytes": 22007,
+ "coverage_seconds": 55.4,
+ "coverage_files": 18,
+ "n_tests": 1634,
+ "base_failing": 370,
+ "head_failing": 350,
+ "introduced": [
+  "tests/test_url.py::test_safe_url_string_url[https://example.com#-https://example.com/#]",
+  "tests/test_url.py::test_safe_url_string_url[https://example.com?#-https://example.com/?#]",
+  "tests/test_url.py::test_safe_url_string_url[https://example.com?-https://example.com/?]"
+ ],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "tests/test_html.py",
+  "tests/test_url.py",
+  "tests/test_url_wpt.py",
+  "w3lib/url.py"
+ ],
+ "n_changed": 4,
+ "selected": 1540,
+ "file_selected": 1540,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 1540,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [
+  "tests/test_url.py::test_safe_url_string_url[https://example.com#-https://example.com/#]",
+  "tests/test_url.py::test_safe_url_string_url[https://example.com?#-https://example.com/?#]",
+  "tests/test_url.py::test_safe_url_string_url[https://example.com?-https://example.com/?]"
+ ],
+ "seconds_dyn": 28.85,
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [
+  "tests/test_url.py::test_safe_url_string_url[https://example.com#-https://example.com/#]",
+  "tests/test_url.py::test_safe_url_string_url[https://example.com?#-https://example.com/?#]",
+  "tests/test_url.py::test_safe_url_string_url[https://example.com?-https://example.com/?]"
+ ],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 30.07,
+ "seconds_selected": 28.85,
+ "wall_seconds": 170.6,
+ "project": "w3lib",
+ "image_code_sha": "a116495"
+}

@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-25T23:19:41.005937+00:00",
+ "provenance": {
+  "started_at": "2026-10-25T23:19:41.539845+00:00",
+  "git_sha": "1533afccdba45ae9657df66743adb81b7a15f13a",
+  "code_dirty": true,
+  "code_diff_sha256": "a1a839625e225474",
+  "corpus": "ablation-rules",
+  "corpus_fingerprint": "7199c6363769d67f",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "ablation-rules"
+  ]
+ },
+ "summary": {
+  "mutants": {
+   "mutants": 614,
+   "killed": 404,
+   "survivors": 210,
+   "static": {
+    "failures_caught_only_by_U": 11,
+    "ids": [
+     "furl-001",
+     "furl-005",
+     "furl-016",
+     "furl-019",
+     "furl-022",
+     "furl-025",
+     "sqlparse-006",
+     "sqlparse-012",
+     "sqlparse-018",
+     "sqlparse-026",
+     "sqlparse-029"
+    ],
+    "silent_approvals_avoided": 28
+   },
+   "dynamic": {
+    "failures_caught_only_by_U": 1,
+    "ids": [
+     "sqlparse-018"
+    ],
+    "silent_approvals_avoided": 41
+   },
+   "testmon_misses": 10,
+   "testmon_misses_caught_by_U_static": 1,
+   "testmon_miss_ids": [
+    "colorama-025",
+    "jinja-004",
+    "jinja-006",
+    "jinja-008",
+    "jinja-010",
+    "jinja-015",
+    "jinja-019",
+    "jinja-027",
+    "sqlparse-018",
+    "sqlparse-019"
+   ]
+  },
+  "swebench": {
+   "usable": 162,
+   "caught_only_by_U": 1,
+   "plain_gate_misses": 1
+  },
+  "shadow": {
+   "ran": 829,
+   "regressions": 26,
+   "static": {
+    "prs": 829,
+    "regressions": 26,
+    "regressions_caught_only_by_U": 1,
+    "ids": [
+     "pytoolz/toolz#632"
+    ],
+    "silent_approvals_avoided_U": 26,
+    "silent_approvals_avoided_W": 23,
+    "regressions_also_flagged_by_W": 7
+   },
+   "dynamic": {
+    "prs": 773,
+    "regressions": 26,
+    "regressions_caught_only_by_U": 1,
+    "ids": [
+     "pytoolz/toolz#632"
+    ],
+    "silent_approvals_avoided_U": 40,
+    "silent_approvals_avoided_W": 21,
+    "regressions_also_flagged_by_W": 7
+   }
+  }
+ },
+ "results": []
+}

@@ -1,0 +1,33 @@
+{
+ "repo": "mahmoud/boltons",
+ "number": 602,
+ "status": "ran",
+ "head": "0714309e897e9d211920a936cd6f1a9e7bc6ae8c",
+ "base": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+ "diff_bytes": 2513,
+ "n_tests": 531,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "boltons/socketutils.py",
+  "tests/test_socketutils.py"
+ ],
+ "n_changed": 2,
+ "selected": 17,
+ "file_selected": 17,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 3.32,
+ "seconds_selected": 0.88,
+ "wall_seconds": 33.6,
+ "project": "boltons",
+ "image_code_sha": "efa91d9"
+}

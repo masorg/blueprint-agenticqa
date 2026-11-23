@@ -1,0 +1,50 @@
+{
+ "repo": "tkem/cachetools",
+ "number": 447,
+ "status": "ran",
+ "head": "03d5ba21c28a46bdf4850f0845c8e5c0e2f0fdcc",
+ "base": "6f23e2a7b75a42d30cb9d890ab3ca4059ee01bfd",
+ "diff_bytes": 7044,
+ "map_base": "e5f8f0172ba97490ac67f971d040e70686d862f6",
+ "map_age_commits": 100,
+ "n_tests": 373,
+ "base_failing": 0,
+ "head_failing": 1,
+ "introduced": [
+  "tests/test_cachedmethod.py::UnboundMethodTest::test_class_call_deferred_annotations"
+ ],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "docs/index.rst",
+  "src/cachetools/_descriptor.py",
+  "tests/test_cachedmethod.py"
+ ],
+ "n_changed": 3,
+ "selected": 373,
+ "file_selected": 373,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 373,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [
+  "tests/test_cachedmethod.py::UnboundMethodTest::test_class_call_deferred_annotations"
+ ],
+ "seconds_dyn": 0.55,
+ "out_of_scope": [],
+ "inert": [
+  "docs/index.rst"
+ ],
+ "introduced_selected": [
+  "tests/test_cachedmethod.py::UnboundMethodTest::test_class_call_deferred_annotations"
+ ],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.55,
+ "seconds_selected": 0.55,
+ "wall_seconds": 22.2,
+ "project": "cachetools",
+ "image_code_sha": "d9e3c20"
+}

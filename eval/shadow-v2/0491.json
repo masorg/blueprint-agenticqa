@@ -1,0 +1,13 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 709,
+ "status": "run_error",
+ "head": "b7ff75c8c682e4f77cafd3dbbe37f1fd74082efa",
+ "base": "847499125afabad1b1b601d3442de8bbe59e650a",
+ "diff_bytes": 15873,
+ "coverage_seconds": 28.6,
+ "coverage_error": "exit 1: rtionError\n=========================== short test summary info ============================\nFAILED tests/test_threading.py::TestLockedTransitions::test_pickle - Assertio...\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1214 passed, 1781 skipped in 26.74s\n",
+ "detail": "208 of 3204 selected tests produced no result",
+ "project": "transitions",
+ "image_code_sha": "a116495"
+}

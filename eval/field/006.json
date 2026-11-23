@@ -1,0 +1,31 @@
+{
+ "order": 6,
+ "pr_id": 3489912171,
+ "agent": "Claude_Code",
+ "merged": false,
+ "says_tests_pass": true,
+ "n_commits": 6,
+ "repo": "explodinggradients/ragas",
+ "number": 2344,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "468e108402b8877d1f00fcd77e86cddc6f484d28",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "RuntimeError: command timed out after 420.0s: /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/eae6f14da35793db/.venv/bin/python pytest pytest-reportlog appdirs arize-phoenix>=6.1.0 build>=1.3.0 datasets>=4.0.0 diskcache>=5.6.3 gitpython instructor langchain langchain-community langchain-core langchain_openai nbmake nest-asyncio networkx notebook numpy>=1.21.0,<3.0.0 ope",
+  "layer_states": {},
+  "seconds": 420.1
+ },
+ "wall_seconds": 429.7,
+ "head_sha": "468e108402b8877d1f00fcd77e86cddc6f484d28"
+}

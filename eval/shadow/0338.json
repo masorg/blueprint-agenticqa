@@ -1,0 +1,37 @@
+{
+ "repo": "pytest-dev/pluggy",
+ "number": 795,
+ "status": "ran",
+ "head": "75a891465a1b466e9c5bb78642e8d4af24064089",
+ "base": "78e3f45d6c18a6efe6c46a2a79b63073f45a44bd",
+ "diff_bytes": 5570,
+ "n_tests": 235,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "changelog/794.bugfix.rst",
+  "src/pluggy/_decorators.py",
+  "src/pluggy/_manager.py",
+  "testing/test_class_hookspec.py"
+ ],
+ "n_changed": 4,
+ "selected": 235,
+ "file_selected": 235,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "changelog/794.bugfix.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.11,
+ "seconds_selected": 0.11,
+ "wall_seconds": 29.9,
+ "project": "pluggy",
+ "image_code_sha": "a874558"
+}

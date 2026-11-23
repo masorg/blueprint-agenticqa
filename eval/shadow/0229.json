@@ -1,0 +1,33 @@
+{
+ "repo": "pallets/itsdangerous",
+ "number": 438,
+ "status": "ran",
+ "head": "faedd27a05f09e9a9b03aaef85718420c53b3adb",
+ "base": "672971d66a2ef9f85151e53283113f33d642dabd",
+ "diff_bytes": 2471,
+ "n_tests": 301,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "src/itsdangerous/serializer.py",
+  "tests/test_itsdangerous/test_url_safe.py"
+ ],
+ "n_changed": 2,
+ "selected": 276,
+ "file_selected": 301,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 55.08,
+ "seconds_selected": 55.07,
+ "wall_seconds": 57.1,
+ "project": "itsdangerous",
+ "image_code_sha": "a874558"
+}

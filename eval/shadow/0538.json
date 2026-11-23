@@ -1,0 +1,11 @@
+{
+ "repo": "scrapy/w3lib",
+ "number": 383,
+ "status": "error",
+ "head": "0884ead6d4baecde796a8192dabb0a34ebd2ef6a",
+ "base": "9ded4ea3137a6db9dc04e32d3186f61007f3cb4d",
+ "diff_bytes": 1775,
+ "detail": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-bj2d0m9o/tests/test_html.py'. | E   ModuleNotFoundError: No module named 'hypothesis' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-bj2d0m9o/tests/test_url.py'. | E   ModuleNotFoundError: No module named 'hypothesis' | ERROR tests/test_htm",
+ "project": "w3lib",
+ "image_code_sha": "a874558"
+}

@@ -1,0 +1,47 @@
+{
+ "repo": "un33k/python-slugify",
+ "number": 148,
+ "status": "ran",
+ "head": "83d358fb5cc4c3a2fa6dbdd400c79f7becc7c8bc",
+ "base": "26b81c2e224ebb65c7fba40d37d17d762be3782f",
+ "diff_bytes": 1477,
+ "coverage_seconds": 1.3,
+ "coverage_error": "exit 5: \nno tests ran in 0.02s\n",
+ "n_tests": 0,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "slugify/special.py",
+  "test.py"
+ ],
+ "n_changed": 2,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [
+  "slugify/special.py",
+  "test.py"
+ ],
+ "dyn_available": false,
+ "dyn_selected": 0,
+ "dyn_uncovered": [
+  "slugify/special.py",
+  "test.py"
+ ],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "success",
+ "seconds_full": 0,
+ "seconds_selected": 0,
+ "wall_seconds": 12.6,
+ "project": "slugify",
+ "image_code_sha": "a116495"
+}

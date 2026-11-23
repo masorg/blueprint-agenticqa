@@ -1,0 +1,15 @@
+{
+ "order": 62,
+ "pr_id": 3239555233,
+ "agent": "Cursor",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "Bandit-HaxUnit/haxunit",
+ "number": 33,
+ "status": "no_tests",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "wall_seconds": 1.7,
+ "head": "2464437302f878a0829423cfb5f3aef5ccc9f6ea"
+}

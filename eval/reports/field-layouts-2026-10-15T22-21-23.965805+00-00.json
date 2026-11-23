@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-10-15T22:21:23.965805+00:00",
+ "method": "Top-level pyproject.toml / requirements.txt on each repository's default branch AT ANALYSIS TIME, not at the pull request's commit, so layouts may have changed since.",
+ "projects": [
+  {
+   "repo": "AgentOps-AI/agentops",
+   "layout": "standard [project] layout (read by the executor)"
+  },
+  {
+   "repo": "Breakthrough/DVR-Scan",
+   "layout": "standard [project] layout (read by the executor)"
+  },
+  {
+   "repo": "DLR-RM/stable-baselines3",
+   "layout": "no [project] table, Poetry table or requirements.txt at the top"
+  },
+  {
+   "repo": "PrunaAI/pruna",
+   "layout": "standard [project] layout (read by the executor)"
+  },
+  {
+   "repo": "SkBlaz/py3plex",
+   "layout": "standard [project] layout (read by the executor)"
+  },
+  {
+   "repo": "WorkflowAI/WorkflowAI",
+   "layout": "standard [project] layout (read by the executor)"
+  },
+  {
+   "repo": "airbytehq/airbyte",
+   "layout": "no [project] table, Poetry table or requirements.txt at the top"
+  },
+  {
+   "repo": "blarApp/blarify",
+   "layout": "Poetry only (not read by the executor)"
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "layout": "no [project] table, Poetry table or requirements.txt at the top"
+  },
+  {
+   "repo": "django-components/django-components",
+   "layout": "standard [project] layout (read by the executor)"
+  },
+  {
+   "repo": "getsentry/sentry",
+   "layout": "standard [project] layout (read by the executor)"
+  },
+  {
+   "repo": "googleads/google-ads-python",
+   "layout": "standard [project] layout (read by the executor)"
+  },
+  {
+   "repo": "kgcrom/cluefin",
+   "layout": "standard [project] layout (read by the executor)"
+  },
+  {
+   "repo": "llama-farm/llamafarm",
+   "layout": "no [project] table, Poetry table or requirements.txt at the top"
+  },
+  {
+   "repo": "machinewrapped/llm-subtrans",
+   "layout": "standard [project] layout (read by the executor)"
+  },
+  {
+   "repo": "mlflow/mlflow",
+   "layout": "standard [project] layout (read by the executor)"
+  },
+  {
+   "repo": "oraios/serena",
+   "layout": "standard [project] layout (read by the executor)"
+  },
+  {
+   "repo": "robusta-dev/holmesgpt",
+   "layout": "Poetry only (not read by the executor)"
+  },
+  {
+   "repo": "saturday06/VRM-Addon-for-Blender",
+   "layout": "standard [project] layout (read by the executor)"
+  },
+  {
+   "repo": "ucbepic/docetl",
+   "layout": "standard [project] layout (read by the executor)"
+  }
+ ],
+ "tally": {
+  "standard [project] layout (read by the executor)": 14,
+  "no [project] table, Poetry table or requirements.txt at the top": 4,
+  "Poetry only (not read by the executor)": 2
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "order": 4,
+ "pr_id": 3300760158,
+ "agent": "Google_Jules",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "NethServer/nethsecurity",
+ "number": 1338,
+ "status": "no_tests",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "wall_seconds": 1.8,
+ "head": "a922afda548e54d8cdd845ee926d682a5ee14226"
+}

@@ -1,0 +1,36 @@
+{
+ "repo": "pytoolz/toolz",
+ "number": 655,
+ "status": "ran",
+ "head": "36314982a66463486899b76f9c7183c8c4ec5526",
+ "base": "451af60dec590a6010e2babdbf391ea8f815122f",
+ "diff_bytes": 3274,
+ "n_tests": 197,
+ "base_failing": 1,
+ "head_failing": 1,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "bench/test_sliding_window.py",
+  "toolz/itertoolz.py",
+  "toolz/tests/test_itertoolz.py"
+ ],
+ "n_changed": 3,
+ "selected": 15,
+ "file_selected": 197,
+ "uncovered": [],
+ "out_of_scope": [
+  "bench/test_sliding_window.py"
+ ],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 0.22,
+ "seconds_selected": 0.01,
+ "wall_seconds": 20.0,
+ "project": "toolz",
+ "image_code_sha": "a874558"
+}

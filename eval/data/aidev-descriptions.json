@@ -1,0 +1,248 @@
+{
+ "dataset": "hao-li/AIDev@v4",
+ "seed": 20261015,
+ "min_chars": 80,
+ "note": "ids only; descriptions are re-read from the dataset, never redistributed",
+ "sample": [
+  {
+   "id": 2908771855,
+   "agent": "Claude_Code"
+  },
+  {
+   "id": 3090065215,
+   "agent": "Claude_Code"
+  },
+  {
+   "id": 3124372773,
+   "agent": "Claude_Code"
+  },
+  {
+   "id": 3265118634,
+   "agent": "Claude_Code"
+  },
+  {
+   "id": 3271740125,
+   "agent": "Claude_Code"
+  },
+  {
+   "id": 3368678620,
+   "agent": "Claude_Code"
+  },
+  {
+   "id": 3391474521,
+   "agent": "Claude_Code"
+  },
+  {
+   "id": 3519641294,
+   "agent": "Claude_Code"
+  },
+  {
+   "id": 3520817025,
+   "agent": "Claude_Code"
+  },
+  {
+   "id": 3542892701,
+   "agent": "Claude_Code"
+  },
+  {
+   "id": 3280788887,
+   "agent": "Copilot"
+  },
+  {
+   "id": 3391413619,
+   "agent": "Copilot"
+  },
+  {
+   "id": 3407735694,
+   "agent": "Copilot"
+  },
+  {
+   "id": 3469822715,
+   "agent": "Copilot"
+  },
+  {
+   "id": 3494364350,
+   "agent": "Copilot"
+  },
+  {
+   "id": 3508447075,
+   "agent": "Copilot"
+  },
+  {
+   "id": 3518642537,
+   "agent": "Copilot"
+  },
+  {
+   "id": 3527528401,
+   "agent": "Copilot"
+  },
+  {
+   "id": 3527685626,
+   "agent": "Copilot"
+  },
+  {
+   "id": 3540846483,
+   "agent": "Copilot"
+  },
+  {
+   "id": 3165243502,
+   "agent": "Cursor"
+  },
+  {
+   "id": 3226715971,
+   "agent": "Cursor"
+  },
+  {
+   "id": 3285649494,
+   "agent": "Cursor"
+  },
+  {
+   "id": 3319248927,
+   "agent": "Cursor"
+  },
+  {
+   "id": 3389722288,
+   "agent": "Cursor"
+  },
+  {
+   "id": 3407097577,
+   "agent": "Cursor"
+  },
+  {
+   "id": 3469970303,
+   "agent": "Cursor"
+  },
+  {
+   "id": 3491988253,
+   "agent": "Cursor"
+  },
+  {
+   "id": 3505638957,
+   "agent": "Cursor"
+  },
+  {
+   "id": 3551006215,
+   "agent": "Cursor"
+  },
+  {
+   "id": 2826117544,
+   "agent": "Devin"
+  },
+  {
+   "id": 2834594365,
+   "agent": "Devin"
+  },
+  {
+   "id": 2929590392,
+   "agent": "Devin"
+  },
+  {
+   "id": 2977963095,
+   "agent": "Devin"
+  },
+  {
+   "id": 2980666816,
+   "agent": "Devin"
+  },
+  {
+   "id": 3006036358,
+   "agent": "Devin"
+  },
+  {
+   "id": 3058704988,
+   "agent": "Devin"
+  },
+  {
+   "id": 3239945909,
+   "agent": "Devin"
+  },
+  {
+   "id": 3363720407,
+   "agent": "Devin"
+  },
+  {
+   "id": 3406061126,
+   "agent": "Devin"
+  },
+  {
+   "id": 3254770687,
+   "agent": "Google_Jules"
+  },
+  {
+   "id": 3291058069,
+   "agent": "Google_Jules"
+  },
+  {
+   "id": 3297743182,
+   "agent": "Google_Jules"
+  },
+  {
+   "id": 3309794269,
+   "agent": "Google_Jules"
+  },
+  {
+   "id": 3364890256,
+   "agent": "Google_Jules"
+  },
+  {
+   "id": 3424031698,
+   "agent": "Google_Jules"
+  },
+  {
+   "id": 3434699045,
+   "agent": "Google_Jules"
+  },
+  {
+   "id": 3455436164,
+   "agent": "Google_Jules"
+  },
+  {
+   "id": 3484202749,
+   "agent": "Google_Jules"
+  },
+  {
+   "id": 3508032478,
+   "agent": "Google_Jules"
+  },
+  {
+   "id": 3071804963,
+   "agent": "OpenAI_Codex"
+  },
+  {
+   "id": 3087621052,
+   "agent": "OpenAI_Codex"
+  },
+  {
+   "id": 3099735942,
+   "agent": "OpenAI_Codex"
+  },
+  {
+   "id": 3108467281,
+   "agent": "OpenAI_Codex"
+  },
+  {
+   "id": 3136110660,
+   "agent": "OpenAI_Codex"
+  },
+  {
+   "id": 3159544492,
+   "agent": "OpenAI_Codex"
+  },
+  {
+   "id": 3176428778,
+   "agent": "OpenAI_Codex"
+  },
+  {
+   "id": 3345607681,
+   "agent": "OpenAI_Codex"
+  },
+  {
+   "id": 3358767558,
+   "agent": "OpenAI_Codex"
+  },
+  {
+   "id": 3460886604,
+   "agent": "OpenAI_Codex"
+  }
+ ]
+}

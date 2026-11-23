@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agentic QA</title>
+  <link rel="stylesheet" href="/static/styles.css?v=4" />
+  <script defer src="/static/vendor/alpine.min.js"></script>
+  <script src="/static/pyramid.js?v=4"></script>
+  <script src="/static/app.js?v=4"></script>
+</head>
+<body>
+  <div class="shell" x-data="app()" x-init="init()" x-cloak>
+
+    <!-- ───────────────────────── sidebar ───────────────────────── -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2 4 5v6c0 5 3.4 8.3 8 10 4.6-1.7 8-5 8-10V5l-8-3z" /><path d="m8.5 12 2.2 2.2L15.5 9.5" />
+          </svg>
+        </div>
+        <div class="brand-name">Agentic <span>QA</span></div>
+      </div>
+
+      <nav class="nav">
+        <template x-for="item in nav" :key="item.id">
+          <button class="nav-item" :class="{active: view === item.id && !detailOpen}"
+                  @click="setView(item.id)">
+            <span class="nav-ico" x-html="icons[item.icon]"></span>
+            <span class="nav-label" x-text="item.label"></span>
+            <span class="nav-badge" x-show="badge(item.id)" x-text="badge(item.id)"
+                  :class="item.id === 'review' ? 'warn' : (item.id === 'blocked' ? 'bad' : '')"></span>
+          </button>
+        </template>
+      </nav>
+
+      <div class="side-foot">
+        <div class="kv">
+          <span>Model</span>
+          <button class="kv-model" @click="openLlmModal()" :title="'Configure model - ' + providerLabel">
+            <b x-text="providerLabel"></b><span class="kv-cog" x-html="icons.cog"></span>
+          </button>
+        </div>
+        <div class="kv" x-show="githubLabel"><span>GitHub</span><b x-text="githubLabel"></b></div>
+        <div class="kv"><span>Runs</span><b x-text="stats.total"></b></div>
+        <div class="powered">
+          <img src="/static/cloudera-logo.png" alt="Cloudera" class="cloudera-logo-img" />
+        </div>
+      </div>
+    </aside>
+
+    <!-- ───────────────────────── main ───────────────────────── -->
+    <div class="main">
+      <header class="topbar">
+        <div class="crumbs">
+          <template x-if="!detailOpen">
+            <h1 x-text="navLabel(view)"></h1>
+          </template>
+          <template x-if="detailOpen">
+            <div class="crumb-trail">
+              <button class="link" @click="closeDetail()">← <span x-text="navLabel(view)"></span></button>
+              <span class="sep">/</span>
+              <span class="crumb-cur" x-text="current ? current.repo : ''"></span>
+            </div>
+          </template>
+        </div>
+
+        <div class="top-actions">
+          <div class="conn" :class="conn" x-show="detailOpen && current && !isTerminal(current.runState)">
+            <span class="dot"></span><span x-text="connLabel"></span>
+          </div>
+          <button class="btn primary" @click="openModal()">
+            <span x-html="icons.plus"></span> New review
+          </button>
+          <button class="icon-btn" @click="toggleTheme()" :title="theme === 'dark' ? 'Switch to light' : 'Switch to dark'">
+            <span x-show="theme === 'dark'" x-html="icons.sun"></span>
+            <span x-show="theme !== 'dark'" x-html="icons.moon"></span>
+          </button>
+        </div>
+      </header>
+
+      <main class="content">
+
+        <!-- ══════════════ LIST VIEWS ══════════════ -->
+        <template x-if="!detailOpen">
+          <div>
+
+            <!-- ---------- Overview ---------- -->
+            <section x-show="view === 'overview'" class="view">
+              <div class="stat-grid">
+                <div class="stat-card">
+                  <div class="stat-top"><span class="stat-ico open" x-html="icons.activity"></span>
+                    <span class="stat-label">In progress</span></div>
+                  <div class="stat-num" x-text="stats.open"></div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-top"><span class="stat-ico warn" x-html="icons.userCheck"></span>
+                    <span class="stat-label">Needs review</span></div>
+                  <div class="stat-num" x-text="stats.review"></div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-top"><span class="stat-ico bad" x-html="icons.ban"></span>
+                    <span class="stat-label">Blocked</span></div>
+                  <div class="stat-num" x-text="stats.blocked"></div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-top"><span class="stat-ico ok" x-html="icons.gauge"></span>
+                    <span class="stat-label">Pass rate</span></div>
+                  <div class="stat-num" x-text="stats.pass_rate + '%'"></div>
+                  <div class="stat-foot"><span x-text="stats.passed"></span> passed of <span x-text="stats.passed + stats.blocked"></span> decided</div>
+                </div>
+              </div>
+
+              <div class="panel hero">
+                <div class="hero-grid">
+                  <div class="hero-pyramid">
+                    <svg viewBox="0 0 520 348" class="pyramid" preserveAspectRatio="xMidYMid meet">
+                      <g x-html="overviewPyramid.svg"></g>
+                    </svg>
+                  </div>
+                  <div class="hero-copy">
+                    <h2>The testing pyramid</h2>
+                    <p>Every change is routed through up to <b>five layers</b> of tests. The wider a layer sits, the more of it runs - fast unit checks at the base, sharper adversarial probes toward the apex.</p>
+                    <p class="hero-note"><b>✦ Trajectory</b> and <b>LLM-as-judge</b> apply only when the change is itself an <b>agentic system</b>; for a plain service they stay dark.</p>
+                    <button class="btn primary" @click="openModal()"><span x-html="icons.plus"></span> Start a review</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel">
+                <div class="panel-head">
+                  <h2>Recent activity</h2>
+                  <button class="link" @click="setView('pulls')">View all pull requests →</button>
+                </div>
+                <div class="pr-list" x-show="recent.length">
+                  <template x-for="r in recent" :key="r.id">
+                    <button class="pr-row" @click="openRun(r.id)">
+                      <span class="pr-kind" :class="r.repo_kind" x-text="r.repo_kind === 'agentic' ? 'Agentic' : 'Service'"></span>
+                      <span class="pr-main">
+                        <span class="pr-title" x-text="r.pr_title || 'Untitled change'"></span>
+                        <span class="pr-sub"><span x-text="r.repo"></span> · #<span x-text="r.pr_number"></span> · <code x-text="r.head_sha"></code></span>
+                      </span>
+                      <span class="tests" x-show="r.total">
+                        <span class="t-ok" x-show="r.passed" x-text="'✓ ' + r.passed"></span>
+                        <span class="t-bad" x-show="r.failed" x-text="'✗ ' + r.failed"></span>
+                      </span>
+                      <span class="pill" :class="statePill(r)" x-text="stateLabel(r)"></span>
+                      <span class="ago" x-text="ago(r.updated_at)"></span>
+                    </button>
+                  </template>
+                </div>
+                <div class="empty" x-show="!recent.length" x-text="'No runs yet. Start one with “New review”.'"></div>
+              </div>
+            </section>
+
+            <!-- ---------- Pull Requests / Review / Blocked share the table ---------- -->
+            <template x-for="v in ['pulls','review','blocked']" :key="v">
+              <section x-show="view === v" class="view">
+                <div class="panel">
+                  <div class="panel-head">
+                    <h2 x-text="navLabel(v)"></h2>
+                    <span class="count-note" x-text="listFor(v).length + ' ' + (listFor(v).length === 1 ? 'item' : 'items')"></span>
+                  </div>
+
+                  <div class="table" x-show="listFor(v).length">
+                    <div class="thead">
+                      <span>Change</span><span>Kind</span><span>Tests</span><span>Status</span><span>Updated</span>
+                    </div>
+                    <template x-for="r in listFor(v)" :key="r.id">
+                      <button class="trow" @click="openRun(r.id)">
+                        <span class="c-change">
+                          <span class="pr-title" x-text="r.pr_title || 'Untitled change'"></span>
+                          <span class="pr-sub"><span x-text="r.repo"></span> · #<span x-text="r.pr_number"></span> · <code x-text="r.head_sha"></code></span>
+                        </span>
+                        <span><span class="pr-kind" :class="r.repo_kind" x-text="r.repo_kind === 'agentic' ? 'Agentic' : 'Service'"></span></span>
+                        <span class="tests">
+                          <span class="t-ok" x-show="r.passed" x-text="'✓ ' + r.passed"></span>
+                          <span class="t-bad" x-show="r.failed" x-text="'✗ ' + r.failed"></span>
+                          <span class="muted" x-show="!r.total">-</span>
+                        </span>
+                        <span><span class="pill" :class="statePill(r)" x-text="stateLabel(r)"></span></span>
+                        <span class="ago" x-text="ago(r.updated_at)"></span>
+                      </button>
+                    </template>
+                  </div>
+
+                  <div class="empty" x-show="!listFor(v).length" x-text="emptyText(v)"></div>
+                </div>
+              </section>
+            </template>
+
+          </div>
+        </template>
+
+        <!-- ══════════════ DETAIL VIEW ══════════════ -->
+        <template x-if="detailOpen && current">
+          <section class="view detail">
+            <div class="detail-head">
+              <div class="dh-main">
+                <span class="pr-kind" :class="current.repoKind" x-text="current.repoKind === 'agentic' ? 'Agentic system' : 'Plain service'"></span>
+                <h2 x-text="current.prTitle || 'Untitled change'"></h2>
+                <div class="dh-sub">
+                  <span x-text="current.repo"></span>
+                  <span class="sep">·</span>
+                  <template x-if="current.prUrl">
+                    <a class="pr-link" :href="current.prUrl" target="_blank" rel="noopener">PR #<span x-text="current.prNumber"></span> ↗</a>
+                  </template>
+                  <template x-if="!current.prUrl">
+                    <span>PR #<span x-text="current.prNumber"></span></span>
+                  </template>
+                  <span class="sep">·</span> <code x-text="current.headSha"></code>
+                </div>
+              </div>
+              <span class="pill lg" :class="statePillState(current.runState, current.verdict, current.approvalState)"
+                    x-text="stateLabelDetail(current)"></span>
+            </div>
+
+            <!-- what the PR is about -->
+            <div class="panel about">
+              <div class="panel-head"><h3>What this PR is about</h3></div>
+              <div class="about-body" x-show="current.prBody" x-html="md(current.prBody)"></div>
+              <p class="about-body muted" x-show="!current.prBody">No description was provided on the pull request.</p>
+            </div>
+
+            <div class="detail-grid">
+              <!-- pyramid -->
+              <div class="panel pyramid-panel">
+                <div class="panel-head">
+                  <h3>Testing pyramid</h3>
+                  <span class="routing-kind" x-text="current.repoKind === 'agentic' ? '5 layers' : '3 of 5 layers'"></span>
+                </div>
+                <p class="routing-summary" x-text="current.routingSummary" x-show="current.routingSummary"></p>
+                <svg viewBox="0 0 520 348" class="pyramid" preserveAspectRatio="xMidYMid meet">
+                  <g x-html="pyramid.svg" @click="onBandClick($event)"></g>
+                </svg>
+                <div class="legend">
+                  <span><i class="sw ok"></i> passed</span>
+                  <span><i class="sw bad"></i> failed</span>
+                  <span><i class="sw run"></i> running</span>
+                  <span><i class="sw skip"></i> skipped</span>
+                  <span><i class="sw na"></i> n/a · ✦ agentic-only</span>
+                </div>
+              </div>
+
+              <!-- right column -->
+              <div class="detail-side">
+                <!-- approval / verdict -->
+                <div class="panel verdict" x-show="current.verdict" :class="verdictClass(current)">
+                  <template x-if="current.verdict === 'auto_approve'">
+                    <div class="v-body">
+                      <span class="v-ico" x-html="icons.check"></span>
+                      <div><b>Auto-approved</b><p>All applicable layers passed - no human action needed.</p></div>
+                    </div>
+                  </template>
+                  <template x-if="current.verdict === 'needs_human_review'">
+                    <div>
+                      <div class="v-body">
+                        <span class="v-ico" x-html="icons.alert"></span>
+                        <div><b>Needs human review</b><p x-text="approvalBlurb(current)"></p></div>
+                      </div>
+                      <div class="v-actions" x-show="current.approvalState === 'pending'">
+                        <button class="btn ok" @click="resolve(true)" :disabled="deciding">Approve &amp; merge</button>
+                        <button class="btn danger" @click="resolve(false)" :disabled="deciding">Reject</button>
+                      </div>
+                    </div>
+                  </template>
+                </div>
+
+                <!-- selected-layer tests, or layer summary -->
+                <div class="panel">
+                  <div class="panel-head">
+                    <h3 x-text="selectedLayer ? layerName(selectedLayer) + ' tests' : 'Layers'"></h3>
+                    <button class="link" x-show="selectedLayer" @click="selectedLayer = null">Show all</button>
+                  </div>
+                  <p class="hint sm" x-show="!selectedLayer">Tests discovered by <code>pytest --collect-only</code> on the PR's code, then routed to layers. Click a layer to see them.</p>
+                  <p class="hint sm" x-show="selectedLayer" x-text="selectedTests.length + ' test(s) routed to this layer.'"></p>
+
+                  <div x-show="!selectedLayer" class="layer-summary">
+                    <template x-for="l in layerList" :key="l.layer">
+                      <button class="layer-line" :class="{na: !l.applicable}"
+                              @click="l.applicable && (selectedLayer = l.layer)">
+                        <span class="ll-dot" :class="l.applicable ? l.state : 'na'"></span>
+                        <span class="ll-name" x-text="l.label"></span>
+                        <span class="ll-meta" x-show="l.applicable"
+                              x-text="l.planned_count ? (l.passed + '/' + l.planned_count) : (l.state === 'skipped' ? 'skipped' : '-')"></span>
+                        <span class="ll-meta muted" x-show="!l.applicable">n/a</span>
+                      </button>
+                    </template>
+                  </div>
+
+                  <div x-show="selectedLayer" class="test-list">
+                    <template x-for="t in selectedTests" :key="t.node_id">
+                      <div class="test-row" :class="t.outcome">
+                        <span class="t-sym" x-text="sym(t.outcome)"></span>
+                        <span class="t-id" x-text="t.node_id"></span>
+                        <span class="t-dur" x-show="t.duration" x-text="t.duration.toFixed(2) + 's'"></span>
+                      </div>
+                    </template>
+                    <div class="empty sm" x-show="!selectedTests.length" x-text="'No tests recorded for this layer.'"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- triage report -->
+            <div class="panel" x-show="current.triage">
+              <div class="panel-head"><h3>Triage report</h3></div>
+              <div class="triage" x-html="md(current.triage)"></div>
+            </div>
+
+            <!-- run failure -->
+            <div class="panel error-panel" x-show="current.error">
+              <div class="panel-head"><h3>Run failed</h3></div>
+              <pre class="err" x-text="current.error"></pre>
+            </div>
+
+            <!-- live log -->
+            <div class="panel" x-show="log.length">
+              <div class="panel-head">
+                <h3>Live log</h3>
+                <span class="count-note" x-text="log.length + ' events'"></span>
+              </div>
+              <div class="log" x-ref="log">
+                <template x-for="(line, i) in log" :key="i">
+                  <div class="log-line" :class="line.cls" x-text="line.text"></div>
+                </template>
+              </div>
+            </div>
+          </section>
+        </template>
+
+      </main>
+    </div>
+
+    <!-- ───────────────────────── Model provider modal ───────────────────────── -->
+    <div class="modal-backdrop" x-show="llmModal" x-transition.opacity @click.self="llmModal = false" style="display:none">
+      <div class="modal" x-show="llmModal" x-transition>
+        <div class="modal-head">
+          <h2>Model provider</h2>
+          <button class="icon-btn" @click="llmModal = false" x-html="icons.close"></button>
+        </div>
+        <p class="modal-note">
+          The LLM behind routing, classification and triage. <b>OpenAI</b> and <b>Cloudera AI Inference</b>
+          work over the OpenAI protocol; <b>Anthropic</b> / <b>Bedrock</b> need an OpenAI-compatible endpoint.
+          The key is held in memory only - for durable config use the <code>AGENTICQA_*</code> env vars.
+        </p>
+        <div class="field">
+          <label>Vendor</label>
+          <select class="input" x-model="llmForm.provider">
+            <template x-for="v in llmVendors" :key="v.id"><option :value="v.id" x-text="v.label"></option></template>
+          </select>
+        </div>
+        <template x-if="llmForm.provider !== 'stub'">
+          <div>
+            <div class="field">
+              <label>Endpoint <span class="fhint" x-text="vendorHint('endpoint')"></span></label>
+              <input class="input" type="text" x-model="llmForm.base_url" :placeholder="vendorHint('endpoint')" />
+            </div>
+            <div class="field">
+              <label>Model</label>
+              <input class="input" type="text" x-model="llmForm.model" :placeholder="vendorHint('model')" />
+            </div>
+            <div class="field">
+              <label>API key <span class="fhint">held in memory only</span></label>
+              <input class="input" type="password" x-model="llmForm.api_key" placeholder="paste key" autocomplete="off" />
+            </div>
+          </div>
+        </template>
+        <div class="modal-foot">
+          <button class="btn ghost" @click="llmModal = false">Cancel</button>
+          <button class="btn primary" @click="saveLlm()" :disabled="llmSaving">
+            <span x-text="llmSaving ? 'Applying…' : 'Apply'"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ───────────────────────── New review modal ───────────────────────── -->
+    <div class="modal-backdrop" x-show="modal" x-transition.opacity @click.self="modal = false" style="display:none">
+      <div class="modal" x-show="modal" x-transition>
+        <div class="modal-head">
+          <h2>New review</h2>
+          <button class="icon-btn" @click="modal = false" x-html="icons.close"></button>
+        </div>
+
+        <div class="seg-row" x-show="githubReady">
+          <button class="seg2" :class="{on: reviewMode === 'demo'}" @click="reviewMode = 'demo'">Demo run</button>
+          <button class="seg2" :class="{on: reviewMode === 'github'}" @click="reviewMode = 'github'; ensurePulls()">Review a GitHub PR</button>
+        </div>
+
+        <!-- Demo run -->
+        <template x-if="reviewMode === 'demo'">
+          <div>
+            <p class="modal-note">
+              Runs the bundled <b>Inventory &amp; Orders API</b> through the full pipeline - routing, layered tests,
+              triage and the approval gate - streaming live into the pyramid.
+            </p>
+            <div class="field">
+              <label>Scenario</label>
+              <div class="choices">
+                <button class="choice" :class="{sel: !form.bug}" @click="form.bug = false">
+                  <b>Clean change</b><span>All layers pass → auto-approved</span>
+                </button>
+                <button class="choice" :class="{sel: form.bug}" @click="form.bug = true">
+                  <b>Regression</b><span>Off-by-one in stock check → needs review</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </template>
+
+        <!-- Review a real GitHub PR -->
+        <template x-if="reviewMode === 'github'">
+          <div>
+            <p class="modal-note">
+              Reviews a real open pull request now - clones the repo, runs the pyramid, and posts the
+              <code>agentic-qa/review</code> status back to the PR. Same pipeline as the webhook, on demand.
+            </p>
+            <div class="field">
+              <label>Repository</label>
+              <select class="input" x-model="ghRepo" @change="loadPulls()" x-show="ghRepos.length">
+                <template x-for="r in ghRepos" :key="r"><option :value="r" x-text="r"></option></template>
+              </select>
+              <input class="input" type="text" x-model="ghRepo" @change="loadPulls()"
+                     placeholder="owner/name" x-show="!ghRepos.length" />
+            </div>
+            <div class="field">
+              <label>Open pull request <span class="fhint" x-show="ghLoading">loading…</span></label>
+              <select class="input" x-model.number="ghNumber" :disabled="!ghPulls.length">
+                <template x-for="p in ghPulls" :key="p.number">
+                  <option :value="p.number" x-text="'#' + p.number + ' - ' + p.title"></option>
+                </template>
+              </select>
+              <p class="fhint" x-show="!ghLoading && !ghPulls.length" style="margin-top:6px">No open PRs found - check the repo name.</p>
+            </div>
+          </div>
+        </template>
+
+        <div class="modal-foot">
+          <button class="btn ghost" @click="modal = false">Cancel</button>
+          <button class="btn primary" x-show="reviewMode === 'demo'" @click="trigger()" :disabled="submitting">
+            <span x-text="submitting ? 'Starting…' : 'Start review'"></span>
+          </button>
+          <button class="btn primary" x-show="reviewMode === 'github'" @click="reviewPr()" :disabled="submitting || !ghNumber">
+            <span x-text="submitting ? 'Starting…' : 'Review PR'"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

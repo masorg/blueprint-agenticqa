@@ -1,0 +1,15 @@
+{
+ "order": 31,
+ "pr_id": 3305381341,
+ "agent": "Copilot",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 2,
+ "repo": "RetroGameSets/RGSX",
+ "number": 2,
+ "status": "no_tests",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "wall_seconds": 10.3,
+ "head": "57bc1bb8d083b9472857cca564bffb6e35e5849b"
+}

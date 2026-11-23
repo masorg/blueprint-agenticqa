@@ -1,0 +1,10 @@
+{
+ "repo": "pytest-dev/pluggy",
+ "number": 756,
+ "status": "empty_diff",
+ "head": "6f8fa6837816aa7e5ddf586e43de44734e8d9670",
+ "base": "6f8fa6837816aa7e5ddf586e43de44734e8d9670",
+ "diff_bytes": 0,
+ "project": "pluggy",
+ "image_code_sha": "a116495"
+}

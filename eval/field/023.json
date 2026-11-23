@@ -1,0 +1,60 @@
+{
+ "order": 23,
+ "pr_id": 3119086225,
+ "agent": "OpenAI_Codex",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "jrkropp/open-webui-developer-toolkit",
+ "number": 489,
+ "status": "ran",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "6b973548d615ab324788bfd908d14720b592bc4d",
+  "state": "done",
+  "verdict": "auto_approve",
+  "completed": true,
+  "totals": {
+   "passed": 1,
+   "failed": 0,
+   "skipped": 0,
+   "total": 1
+  },
+  "failing": [],
+  "error": "",
+  "layer_states": {
+   "unit": "passed",
+   "property": "skipped",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 14.2
+ },
+ "base": {
+  "sha": "5ae80b0454bb5b67fd0c76192020c21df1eac22a",
+  "state": "done",
+  "verdict": "auto_approve",
+  "completed": true,
+  "totals": {
+   "passed": 1,
+   "failed": 0,
+   "skipped": 0,
+   "total": 1
+  },
+  "failing": [],
+  "error": "",
+  "layer_states": {
+   "unit": "passed",
+   "property": "skipped",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 6.0
+ },
+ "wall_seconds": 29.3,
+ "head_sha": "6b973548d615ab324788bfd908d14720b592bc4d",
+ "base_sha": "5ae80b0454bb5b67fd0c76192020c21df1eac22a"
+}

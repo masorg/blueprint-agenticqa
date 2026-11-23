@@ -1,0 +1,11 @@
+{
+ "repo": "pallets-eco/blinker",
+ "number": 172,
+ "status": "error",
+ "head": "f81969c72850bd801a0ad30a693ec107162cae1a",
+ "base": "f5915f3bfcd9f9da0caf6cd4858bf68068c52963",
+ "diff_bytes": 7490,
+ "detail": "CollectionError: tests could not be collected (pytest exited 3): cache/e3b0c44298fc1c14/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py\", line 1654, in issue_config_time_warning\nINTERNALERROR>     warnings.warn(warning, stacklevel=stacklevel)\nINTERNALERROR> pytest.PytestConfigWarning: Unknown config option: asyncio_mode\n\n25 tests collected in 0.10s\n",
+ "project": "blinker",
+ "image_code_sha": "efa91d9"
+}

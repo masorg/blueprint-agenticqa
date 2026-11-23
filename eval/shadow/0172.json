@@ -1,0 +1,34 @@
+{
+ "repo": "gruns/furl",
+ "number": 186,
+ "status": "ran",
+ "head": "28a176eba6046b83e96177cf00dfd83c1f18e2fe",
+ "base": "76f9418e282fcf141fa10c1872bac5fb22477d96",
+ "diff_bytes": 443,
+ "n_tests": 77,
+ "base_failing": 3,
+ "head_failing": 3,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/ci.yml"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  ".github/workflows/ci.yml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 7.97,
+ "seconds_selected": 0,
+ "wall_seconds": 38.4,
+ "project": "furl",
+ "image_code_sha": "a874558"
+}

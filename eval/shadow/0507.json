@@ -1,0 +1,33 @@
+{
+ "repo": "python-validators/validators",
+ "number": 538,
+ "status": "ran",
+ "head": "651dbd107e39b99f8c2dee235e711bf0d0cf0d6b",
+ "base": "22786cc6e7283a0fa452c179797e447f798db9f0",
+ "diff_bytes": 1962,
+ "n_tests": 1543,
+ "base_failing": 28,
+ "head_failing": 28,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "src/validators/uri.py",
+  "tests/test_uri.py"
+ ],
+ "n_changed": 2,
+ "selected": 88,
+ "file_selected": 88,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 0.4,
+ "seconds_selected": 0.02,
+ "wall_seconds": 24.3,
+ "project": "validators",
+ "image_code_sha": "a874558"
+}

@@ -1,0 +1,32 @@
+{
+ "repo": "gruns/furl",
+ "number": 190,
+ "status": "ran",
+ "head": "dff9920478ca1d27e09ea695bfd5b3604febc4ce",
+ "base": "46d9ea79c98bb14b970a199fb924705d024f29ad",
+ "diff_bytes": 326,
+ "n_tests": 77,
+ "base_failing": 3,
+ "head_failing": 3,
+ "introduced": [],
+ "flaky": [],
+ "mode": "full",
+ "reason": "a build or test configuration file changed: setup.py",
+ "changed": [
+  "setup.py"
+ ],
+ "n_changed": 1,
+ "selected": 77,
+ "file_selected": 77,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 7.98,
+ "seconds_selected": 7.98,
+ "wall_seconds": 33.6,
+ "project": "furl",
+ "image_code_sha": "a874558"
+}

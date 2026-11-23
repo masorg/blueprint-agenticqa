@@ -1,0 +1,46 @@
+{
+ "repo": "python-attrs/attrs",
+ "number": 1625,
+ "status": "ran",
+ "head": "6483af066ea2706eee075ef48449da5a173d7658",
+ "base": "bf47028ae4ec31975de7dfd389148756f15ee525",
+ "diff_bytes": 1013,
+ "coverage_seconds": 106.2,
+ "coverage_files": 48,
+ "n_tests": 1412,
+ "base_failing": 5,
+ "head_failing": 6,
+ "introduced": [],
+ "flaky": [
+  "tests/test_funcs.py::TestAsTuple::test_recurse_retain"
+ ],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "docs/api.rst",
+  "src/attr/_make.py"
+ ],
+ "n_changed": 2,
+ "selected": 0,
+ "file_selected": 1412,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  "docs/api.rst",
+  "src/attr/_make.py"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 44.12,
+ "seconds_selected": 0,
+ "wall_seconds": 336.9,
+ "project": "attrs",
+ "image_code_sha": "a116495"
+}

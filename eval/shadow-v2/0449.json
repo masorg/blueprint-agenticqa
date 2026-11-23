@@ -1,0 +1,51 @@
+{
+ "repo": "hukkin/tomli",
+ "number": 295,
+ "status": "ran",
+ "head": "f34eac13403799bd0a083b221ca7503dd557a6f7",
+ "base": "bbca44b6abbe4713cee9035fd4a21ef5686df05d",
+ "diff_bytes": 1696,
+ "coverage_seconds": 2.3,
+ "coverage_files": 9,
+ "n_tests": 18,
+ "base_failing": 0,
+ "head_failing": 1,
+ "introduced": [
+  "tests/test_misc.py::TestMiscellaneous::test_lazy_import"
+ ],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "src/tomli/_parser.py",
+  "tests/test_misc.py"
+ ],
+ "n_changed": 2,
+ "selected": 9,
+ "file_selected": 18,
+ "uncovered": [
+  "src/tomli/_parser.py"
+ ],
+ "dyn_available": true,
+ "dyn_selected": 9,
+ "dyn_uncovered": [
+  "src/tomli/_parser.py"
+ ],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [
+  "tests/test_misc.py::TestMiscellaneous::test_lazy_import"
+ ],
+ "seconds_dyn": 0.02,
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [
+  "tests/test_misc.py::TestMiscellaneous::test_lazy_import"
+ ],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.13,
+ "seconds_selected": 0.02,
+ "wall_seconds": 17.8,
+ "project": "tomli",
+ "image_code_sha": "a116495"
+}

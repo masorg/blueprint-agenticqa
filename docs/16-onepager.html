@@ -1,0 +1,427 @@
+<title>Agentic QA</title>
+<meta name="description" content="A deterministic quality gate for LLM-era pull requests, running live on Cloudera CAI." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,72,400;0,72,600;1,72,500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#f4f5f7;
+  --surface:#ffffff;
+  --surface-2:#eef0f3;
+  --ink:#12181f;
+  --ink-soft:#4b5563;
+  --ink-faint:#7b8494;
+  --line:#dbdfe5;
+  --accent:#d9591b;
+  --accent-soft:#f3e2d5;
+  --good:#1f8a5f;
+  --good-soft:#e3f2ea;
+  --warn:#a8730a;
+  --warn-soft:#f5ecd8;
+  --l1:#1d4e6b; --l2:#1f7a8c; --l3:#2fa1a0; --l4:#cf9a3e; --l5:#d9591b;
+  color-scheme: light;
+}
+:root:not([data-theme="light"]){
+  @media (prefers-color-scheme: dark){
+    --bg:#0d1117;
+    --surface:#151b23;
+    --surface-2:#1c2330;
+    --ink:#e8eaed;
+    --ink-soft:#a9b2c0;
+    --ink-faint:#77808f;
+    --line:#2a323f;
+    --accent:#ff8f52;
+    --accent-soft:#3a2417;
+    --good:#3ecf94;
+    --good-soft:#173025;
+    --warn:#e0b34d;
+    --warn-soft:#332a12;
+    --l1:#4d84a8; --l2:#3fa7bb; --l3:#4ccbc3; --l4:#e0b34d; --l5:#ff8f52;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0d1117;
+  --surface:#151b23;
+  --surface-2:#1c2330;
+  --ink:#e8eaed;
+  --ink-soft:#a9b2c0;
+  --ink-faint:#77808f;
+  --line:#2a323f;
+  --accent:#ff8f52;
+  --accent-soft:#3a2417;
+  --good:#3ecf94;
+  --good-soft:#173025;
+  --warn:#e0b34d;
+  --warn-soft:#332a12;
+  --l1:#4d84a8; --l2:#3fa7bb; --l3:#4ccbc3; --l4:#e0b34d; --l5:#ff8f52;
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"IBM Plex Sans", system-ui, sans-serif;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.page{
+  max-width:840px;
+  margin:0 auto;
+  padding:40px 20px 64px;
+}
+h1,h2,h3{ font-family:"Newsreader", Georgia, serif; text-wrap:balance; margin:0; }
+.eyebrow{
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:11px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+}
+.mono{ font-family:"IBM Plex Mono", ui-monospace, monospace; font-variant-numeric:tabular-nums; }
+
+/* ---- Masthead ---- */
+.masthead{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:20px;
+  flex-wrap:wrap;
+  padding-bottom:20px;
+  border-bottom:2px solid var(--ink);
+}
+.masthead h1{ font-size:clamp(30px,5vw,42px); font-weight:600; }
+.tagline{ color:var(--ink-soft); font-size:16px; margin-top:6px; max-width:46ch; }
+.status-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  font-family:"IBM Plex Mono", monospace;
+  font-size:11.5px;
+  letter-spacing:.03em;
+  background:var(--good-soft);
+  color:var(--good);
+  border:1px solid var(--good);
+  border-radius:100px;
+  padding:5px 12px 5px 10px;
+  white-space:nowrap;
+}
+.status-pill .dot{ width:7px; height:7px; border-radius:50%; background:var(--good); }
+
+/* ---- Sections ---- */
+section{ padding:34px 0; border-bottom:1px solid var(--line); }
+section:last-of-type{ border-bottom:none; }
+.section-head{ margin-bottom:16px; }
+.section-head h2{ font-size:22px; font-weight:600; }
+.lede{ font-size:17px; max-width:62ch; }
+.lede + .lede{ margin-top:10px; }
+
+/* ---- Stat tiles ---- */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+  border-radius:10px;
+  overflow:hidden;
+}
+.stat{ background:var(--surface); padding:18px 16px; }
+.stat .num{ font-family:"IBM Plex Mono",monospace; font-size:26px; font-weight:600; color:var(--accent); }
+.stat .label{ font-size:12.5px; color:var(--ink-soft); margin-top:4px; line-height:1.4; }
+@media (max-width:640px){ .stats{ grid-template-columns:repeat(2,1fr); } }
+
+/* ---- Diagram card ---- */
+.figure-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:20px 20px 10px;
+}
+figure{ margin:0; }
+figcaption{
+  font-size:13px;
+  color:var(--ink-faint);
+  margin-top:10px;
+  padding-top:10px;
+  border-top:1px dashed var(--line);
+}
+svg text{ fill:currentColor; }
+
+/* ---- Pyramid compare ---- */
+.compare{ display:flex; gap:22px; flex-wrap:wrap; }
+.compare > div{ flex:1 1 260px; }
+.compare h3{ font-size:14px; font-weight:600; font-family:"IBM Plex Sans",sans-serif; margin-bottom:8px; }
+.compare .cap{ font-size:12.5px; color:var(--ink-soft); margin-top:8px; }
+
+/* ---- Lists ---- */
+.check-list{ list-style:none; margin:0; padding:0; display:grid; gap:10px; }
+.check-list li{
+  position:relative;
+  padding-left:19px;
+  font-size:15px;
+}
+.check-list li::before{
+  content:"";
+  position:absolute;
+  left:0; top:8px;
+  width:7px; height:7px; border-radius:50%;
+  background:var(--accent);
+}
+
+/* ---- Lessons ---- */
+.lessons{ display:grid; gap:14px; }
+.lesson{
+  display:grid;
+  grid-template-columns:34px 1fr;
+  gap:14px;
+  padding:14px 16px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:10px;
+}
+.lesson .n{ font-family:"IBM Plex Mono",monospace; color:var(--ink-faint); font-size:13px; padding-top:2px; }
+.lesson .t{ font-weight:600; font-size:14.5px; }
+.lesson .d{ font-size:14px; color:var(--ink-soft); margin-top:3px; }
+
+/* ---- Footer / ask ---- */
+.ask{
+  background:var(--ink);
+  color:var(--bg);
+  border-radius:14px;
+  padding:26px 26px 24px;
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  flex-wrap:wrap;
+}
+:root[data-theme="dark"] .ask, :root:not([data-theme="light"]) .ask{ }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .ask{ background:var(--surface-2); color:var(--ink); border:1px solid var(--line); } }
+:root[data-theme="dark"] .ask{ background:var(--surface-2); color:var(--ink); border:1px solid var(--line); }
+.ask h2{ font-size:20px; color:inherit; font-weight:600; }
+.ask p{ margin:8px 0 0; opacity:.82; max-width:44ch; font-size:14.5px; }
+.copyline{
+  font-family:"IBM Plex Mono",monospace;
+  font-size:12.5px;
+  background:rgba(127,127,127,.16);
+  border-radius:8px;
+  padding:8px 10px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-top:12px;
+}
+.copyline button{
+  font-family:inherit;
+  font-size:11px;
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  border-radius:6px;
+  padding:4px 9px;
+  cursor:pointer;
+}
+.footnote{ font-size:12px; color:var(--ink-faint); margin-top:26px; text-align:center; }
+
+table.metrics{ width:100%; border-collapse:collapse; font-size:13.5px; }
+table.metrics th, table.metrics td{ text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); }
+table.metrics th{ font-size:11.5px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint); font-weight:600; }
+table.metrics td.mono, table.metrics th.mono{ font-family:"IBM Plex Mono",monospace; }
+table.metrics tr:last-child td{ border-bottom:none; }
+.tag{ display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:10.5px; padding:2px 7px; border-radius:5px; }
+.tag.good{ background:var(--good-soft); color:var(--good); }
+</style>
+
+<div class="page">
+
+  <div class="masthead">
+    <div>
+      <div class="eyebrow">Applied AI · Cloudera</div>
+      <h1>Agentic QA</h1>
+      <div class="tagline">A deterministic quality gate for LLM-era pull requests — the code decides, the model narrates.</div>
+    </div>
+    <span class="status-pill"><span class="dot"></span>runs as a Cloudera CML/CAI Application</span>
+  </div>
+
+  <section>
+    <div class="section-head"><h2>The problem with letting a model review its own PR</h2></div>
+    <p class="lede">Studies of a million+ real PRs show AI-agent review speeds up merges <em>without</em> clearly improving quality — and that review agents can be talked into approving vulnerable code by a persuasive PR description. The fix isn't less LLM. It's not letting the LLM be the last word.</p>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>The mechanism</h2>
+    </div>
+    <div class="figure-card">
+      <figure role="img" aria-label="A pull request is routed by an LLM proposal, bounded by a code-level guardrail, run through the applicable pyramid layers, and gated by a deterministic verdict rule that only a human approval on GitHub can clear.">
+        <svg viewBox="0 0 920 300" style="width:100%;height:auto;max-width:100%">
+          <defs>
+            <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L8,4 L0,8 Z" fill="currentColor"/>
+            </marker>
+          </defs>
+
+          <!-- lane labels -->
+          <text x="10" y="24" font-size="11" letter-spacing="1" font-family="IBM Plex Mono, monospace" fill="var(--l5)">LLM PROPOSES</text>
+          <text x="10" y="150" font-size="11" letter-spacing="1" font-family="IBM Plex Mono, monospace" fill="currentColor" opacity=".55">CODE DECIDES</text>
+
+          <!-- PR box -->
+          <rect x="4" y="60" width="112" height="52" rx="8" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <text x="60" y="82" text-anchor="middle" font-size="13" font-weight="600">PR opens</text>
+          <text x="60" y="98" text-anchor="middle" font-size="10.5" opacity=".6">GitHub webhook</text>
+
+          <line x1="116" y1="86" x2="168" y2="86" stroke="currentColor" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+          <!-- Router (LLM) -->
+          <rect x="170" y="34" width="150" height="52" rx="8" fill="none" stroke="var(--l5)" stroke-width="1.6" stroke-dasharray="4 3"/>
+          <text x="245" y="56" text-anchor="middle" font-size="13" font-weight="600">Router</text>
+          <text x="245" y="72" text-anchor="middle" font-size="10.5" opacity=".65">LLM: which layers apply?</text>
+
+          <line x1="245" y1="86" x2="245" y2="128" stroke="currentColor" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+          <!-- Guardrail (code) -->
+          <rect x="170" y="130" width="150" height="56" rx="8" fill="var(--surface-2)" stroke="currentColor" stroke-width="1.4"/>
+          <text x="245" y="153" text-anchor="middle" font-size="13" font-weight="600">Guardrail</text>
+          <text x="245" y="168" text-anchor="middle" font-size="10" opacity=".65">agentic-only layers forced</text>
+          <text x="245" y="180" text-anchor="middle" font-size="10" opacity=".65">off for a plain service</text>
+
+          <line x1="320" y1="158" x2="370" y2="158" stroke="currentColor" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+          <!-- pyramid mini -->
+          <g transform="translate(372,110)">
+            <rect x="0" y="0" width="140" height="96" rx="8" fill="var(--surface)" stroke="currentColor" stroke-width="1.2"/>
+            <text x="70" y="16" text-anchor="middle" font-size="10.5" font-weight="600">5-layer pyramid</text>
+            <g font-size="8.6" text-anchor="start">
+              <rect x="14" y="22" width="112" height="10" fill="var(--l1)"/>
+              <rect x="14" y="34" width="112" height="10" fill="var(--l2)"/>
+              <rect x="14" y="46" width="112" height="10" fill="var(--l3)" opacity="0.35"/>
+              <rect x="14" y="58" width="112" height="10" fill="var(--l4)" opacity="0.35"/>
+              <rect x="14" y="70" width="112" height="10" fill="var(--l5)"/>
+            </g>
+            <text x="70" y="90" text-anchor="middle" font-size="8" opacity=".6">runs whichever layers the guardrail left on</text>
+          </g>
+
+          <line x1="512" y1="158" x2="562" y2="158" stroke="currentColor" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+          <!-- Verdict gate (code) -->
+          <rect x="564" y="130" width="150" height="56" rx="8" fill="var(--surface-2)" stroke="currentColor" stroke-width="1.4"/>
+          <text x="639" y="153" text-anchor="middle" font-size="13" font-weight="600">Verdict gate</text>
+          <text x="639" y="169" text-anchor="middle" font-size="10" opacity=".65">any applicable layer failed?</text>
+
+          <line x1="639" y1="130" x2="639" y2="86" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 3"/>
+          <text x="639" y="60" text-anchor="middle" font-size="10.5" opacity=".6" font-family="IBM Plex Mono, monospace">no LLM here</text>
+
+          <!-- branch: no -->
+          <line x1="714" y1="145" x2="770" y2="90" stroke="var(--good)" stroke-width="1.5" marker-end="url(#arrow)"/>
+          <text x="742" y="108" font-size="10" fill="var(--good)" font-weight="600">no</text>
+          <rect x="772" y="60" width="140" height="46" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.3"/>
+          <text x="842" y="79" text-anchor="middle" font-size="12" font-weight="600" fill="var(--good)">Auto-approve</text>
+          <text x="842" y="94" text-anchor="middle" font-size="9.5" fill="var(--good)" opacity=".8">status: success</text>
+
+          <!-- branch: yes -->
+          <line x1="714" y1="172" x2="770" y2="222" stroke="var(--warn)" stroke-width="1.5" marker-end="url(#arrow)"/>
+          <text x="742" y="212" font-size="10" fill="var(--warn)" font-weight="600">yes</text>
+          <rect x="772" y="196" width="146" height="60" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.3"/>
+          <text x="845" y="216" text-anchor="middle" font-size="12" font-weight="600" fill="var(--warn)">Human approval</text>
+          <text x="845" y="231" text-anchor="middle" font-size="9.5" fill="var(--warn)" opacity=".85">/approve on the PR —</text>
+          <text x="845" y="243" text-anchor="middle" font-size="9.5" fill="var(--warn)" opacity=".85">write access checked live</text>
+        </svg>
+        <figcaption>The LLM touches two things: which layers apply, and the narrative. Everything downstream — applicability, verdict, who can clear a flagged PR — is deterministic code.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>The differentiator: it knows when the PR is itself an AI agent</h2></div>
+    <p class="lede">Ordinary CI can't test agent behavior. Agentic QA routes on it — same pyramid, two extra layers, only when the change touches an agentic/LLM system.</p>
+    <div class="compare" style="margin-top:18px">
+      <div class="figure-card" style="flex:1">
+        <svg viewBox="0 0 260 150" style="width:100%;height:auto" role="img" aria-label="Plain service PR: three of five layers light up, trajectory and LLM-as-judge stay dark">
+          <text x="130" y="16" text-anchor="middle" font-size="11" font-weight="600">Plain-service PR</text>
+          <g font-size="9">
+            <rect x="24" y="26" width="212" height="18" fill="var(--l5)"/><text x="34" y="39" fill="#fff">Adversarial</text>
+            <rect x="24" y="46" width="212" height="18" fill="currentColor" opacity=".08"/><text x="34" y="59" opacity=".45">LLM-as-judge — dark</text>
+            <rect x="24" y="66" width="212" height="18" fill="currentColor" opacity=".08"/><text x="34" y="79" opacity=".45">Trajectory — dark</text>
+            <rect x="24" y="86" width="212" height="18" fill="var(--l2)"/><text x="34" y="99" fill="#fff">Property-based</text>
+            <rect x="24" y="106" width="212" height="18" fill="var(--l1)"/><text x="34" y="119" fill="#fff">Unit</text>
+          </g>
+          <text x="130" y="140" text-anchor="middle" font-size="9.5" opacity=".55">3 of 5 layers apply</text>
+        </svg>
+      </div>
+      <div class="figure-card" style="flex:1">
+        <svg viewBox="0 0 260 150" style="width:100%;height:auto" role="img" aria-label="Agentic PR: all five layers light up, including trajectory and LLM-as-judge">
+          <text x="130" y="16" text-anchor="middle" font-size="11" font-weight="600">Agentic PR (touches an AI agent)</text>
+          <g font-size="9">
+            <rect x="24" y="26" width="212" height="18" fill="var(--l5)"/><text x="34" y="39" fill="#fff">Adversarial</text>
+            <rect x="24" y="46" width="212" height="18" fill="var(--l4)"/><text x="34" y="59" fill="#fff">LLM-as-judge — is the output grounded?</text>
+            <rect x="24" y="66" width="212" height="18" fill="var(--l3)"/><text x="34" y="79" fill="#fff">Trajectory — right tool-call order?</text>
+            <rect x="24" y="86" width="212" height="18" fill="var(--l2)"/><text x="34" y="99" fill="#fff">Property-based</text>
+            <rect x="24" y="106" width="212" height="18" fill="var(--l1)"/><text x="34" y="119" fill="#fff">Unit</text>
+          </g>
+          <text x="130" y="140" text-anchor="middle" font-size="9.5" fill="var(--accent)" font-weight="600">5 of 5 layers apply</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>What the first real measurements show</h2></div>
+    <p class="lede">Four scenarios, each a structurally different bug class — run through the production pipeline, free and against a real LLM.</p>
+    <div class="stats" style="margin-top:18px">
+      <div class="stat"><div class="num">4/4</div><div class="label">verdicts correct, incl. an LLM-run — right layer flagged every time</div></div>
+      <div class="stat"><div class="num">0</div><div class="label">tests ever silently skipped, even when the LLM misclassified one</div></div>
+      <div class="stat"><div class="num">1</div><div class="label">real numbered GitHub PR reviewed, gated, and approved end-to-end</div></div>
+      <div class="stat"><div class="num">3</div><div class="label">independent bug classes, each caught by exactly the layer built for it</div></div>
+    </div>
+    <div class="figure-card" style="margin-top:16px">
+      <table class="metrics">
+        <tr><th>metric</th><th class="mono">stub (free)</th><th class="mono">gpt-4o (real)</th></tr>
+        <tr><td>Verdict accuracy</td><td class="mono">4/4</td><td class="mono">4/4</td></tr>
+        <tr><td>Routing agreement vs. heuristic</td><td class="mono">100%</td><td class="mono">100%</td></tr>
+        <tr><td>Every discovered test executed</td><td class="mono"><span class="tag good">yes</span></td><td class="mono"><span class="tag good">yes</span></td></tr>
+        <tr><td>Wall-clock, 4 scenarios</td><td class="mono">22.3s</td><td class="mono">86.8s</td></tr>
+      </table>
+    </div>
+    <p style="font-size:13px;color:var(--ink-soft);margin-top:10px">Methodology + raw reports: <code class="mono" style="font-size:12px">docs/13-evaluation-harness.md</code>.</p>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Why this fits a Cloudera customer conversation</h2></div>
+    <ul class="check-list">
+      <li>Single-process <strong>Cloudera CML/CAI Application</strong> — no new infra, installs once against an org's GitHub.</li>
+      <li>Language-agnostic behind a runner interface; ships Python/pytest today.</li>
+      <li>Any LLM the customer trusts — OpenAI, Cloudera AI Inference, Anthropic/Bedrock — swappable at runtime.</li>
+      <li><strong>GitHub-native</strong> approval: a commit status and an <code class="mono" style="font-size:12.5px">/approve</code> comment, write-access checked live. Nothing new to learn.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Production, not a slide</h2></div>
+    <p class="lede" style="margin-bottom:16px">Deployed and broken in real, fixable ways — the credibility a platform team actually checks for.</p>
+    <div class="lessons">
+      <div class="lesson"><div class="n">01</div><div class="t">CAI's runtime sets PIP_USER=1, breaking pip inside a per-run virtualenv</div></div>
+      <div class="lesson"><div class="n">02</div><div class="t">CAI's default SAML gate silently 302s a webhook instead of erroring</div></div>
+      <div class="lesson"><div class="n">03</div><div class="t">Enterprise-level GitHub webhooks can't deliver pull_request events at all</div></div>
+    </div>
+    <p style="font-size:13px;color:var(--ink-soft);margin-top:14px">All 5, with root cause + fix: <code class="mono" style="font-size:12px">docs/14-production-lessons.md</code>.</p>
+  </section>
+
+  <div class="ask">
+    <div>
+      <h2>The ask</h2>
+      <p>A pilot conversation with one customer-facing team. The architecture is proven — the story now needs a customer's own shape.</p>
+    </div>
+    <div>
+      <div class="eyebrow" style="opacity:.7">Repo</div>
+      <div class="copyline">
+        <span>agentic-qa — see README.md</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="footnote">Agentic QA · internal Applied AI briefing</p>
+
+</div>

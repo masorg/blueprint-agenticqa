@@ -1,0 +1,36 @@
+{
+ "repo": "un33k/python-slugify",
+ "number": 199,
+ "status": "ran",
+ "head": "5af9cb1e684f24b154e73fba4a872b0184bbef0b",
+ "base": "54c356bc72003f8e9621a035413d3b35b615485f",
+ "diff_bytes": 1382,
+ "n_tests": 123,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/ci.yml",
+  ".github/workflows/dev.yml"
+ ],
+ "n_changed": 2,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  ".github/workflows/ci.yml",
+  ".github/workflows/dev.yml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 1.04,
+ "seconds_selected": 0,
+ "wall_seconds": 11.4,
+ "project": "slugify",
+ "image_code_sha": "a874558"
+}

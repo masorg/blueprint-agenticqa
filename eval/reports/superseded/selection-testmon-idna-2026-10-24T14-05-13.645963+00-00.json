@@ -1,0 +1,62 @@
+{
+ "generated_at": "2026-10-24T14:05:13.645963+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T14:05:14.771909+00:00",
+  "git_sha": "50fbf59b28502473383bc103654a4e01a24b092b",
+  "code_dirty": true,
+  "code_diff_sha256": "9913368fbf59cca4",
+  "corpus": "selection-testmon:idna",
+  "corpus_fingerprint": "33ae694326462149",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-testmon",
+   "--project",
+   "idna",
+   "--report",
+   "eval/reports/selection-replay-idna-2026-10-24T03-28-36.035233+00-00.json"
+  ]
+ },
+ "summary": {
+  "projects": [],
+  "mutants": 0,
+  "killed": 0,
+  "testmon_missed": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "gate_missed": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "testmon_tests_share_mean": null,
+  "gate_tests_share_mean": null,
+  "testmon_missed_ids": [],
+  "baseline_seconds": {},
+  "per_project": {}
+ },
+ "results": [
+  {
+   "project": "idna",
+   "seed": 20261023,
+   "status": "no_testmon_data",
+   "rows": [],
+   "baseline_seconds": 0.5,
+   "detail": "/var/folders/30/34gt5kz10l3d6g62w45ygl6r0000gn/T/agenticqa-workspaces/venv-cache/351cfb072767642c/.venv/bin/python: No module named pytest\n"
+  }
+ ]
+}

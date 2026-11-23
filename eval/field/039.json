@@ -1,0 +1,31 @@
+{
+ "order": 39,
+ "pr_id": 3221977522,
+ "agent": "Devin",
+ "merged": false,
+ "says_tests_pass": false,
+ "n_commits": 3,
+ "repo": "crewAIInc/crewAI",
+ "number": 3137,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "352b213f7ff55b4f35230b5b9c4c2b98790c84e7",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-1lykksys/tests/cli/cli_test.py'. | E   StopIteration | E   importlib.metadata.PackageNotFoundError: No package metadata was found for crewai | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-1lykksys/tests/cli/organization/test_main.py'. | E  ",
+  "layer_states": {},
+  "seconds": 142.4
+ },
+ "wall_seconds": 161.8,
+ "head_sha": "352b213f7ff55b4f35230b5b9c4c2b98790c84e7"
+}

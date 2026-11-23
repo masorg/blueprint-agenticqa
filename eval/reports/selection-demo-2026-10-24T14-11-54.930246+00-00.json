@@ -1,0 +1,47 @@
+{
+ "generated_at": "2026-10-24T14:11:54.930246+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T14:11:55.141292+00:00",
+  "git_sha": "00ec4a783095e173853b5798aa640d836d1e4742",
+  "code_dirty": false,
+  "code_diff_sha256": "6e3dd0ea245b92e9",
+  "corpus": "selection-demo",
+  "corpus_fingerprint": "8ec7b63bb1735cea",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-demo"
+  ]
+ },
+ "summary": {
+  "inventory": {
+   "n_tests": 18,
+   "mutants": 39,
+   "file": {
+    "mean_selected_share": 1.0,
+    "uncovered_changes": 0
+   },
+   "name": {
+    "mean_selected_share": 0.7322,
+    "uncovered_changes": 0
+   }
+  },
+  "support": {
+   "n_tests": 27,
+   "mutants": 58,
+   "file": {
+    "mean_selected_share": 1.0,
+    "uncovered_changes": 0
+   },
+   "name": {
+    "mean_selected_share": 0.7893,
+    "uncovered_changes": 0
+   }
+  }
+ },
+ "results": []
+}

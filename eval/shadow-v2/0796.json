@@ -1,0 +1,10 @@
+{
+ "repo": "pallets/itsdangerous",
+ "number": 382,
+ "status": "empty_diff",
+ "head": "2c98f9d61f38c707cae8ddd82a90e7544f0830ee",
+ "base": "2c98f9d61f38c707cae8ddd82a90e7544f0830ee",
+ "diff_bytes": 0,
+ "project": "itsdangerous",
+ "image_code_sha": "a116495"
+}

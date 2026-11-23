@@ -1,0 +1,46 @@
+{
+ "repo": "hukkin/tomli",
+ "number": 275,
+ "status": "ran",
+ "head": "1262cffed1d2655bd31911d8a68f03caa541ff38",
+ "base": "63820dfc5e148feca7079e93fadbec3d059c2e7a",
+ "diff_bytes": 1452,
+ "coverage_seconds": 4.0,
+ "coverage_files": 9,
+ "n_tests": 16,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".flake8",
+  "src/tomli/_parser.py",
+  "tests/burntsushi.py"
+ ],
+ "n_changed": 3,
+ "selected": 16,
+ "file_selected": 16,
+ "uncovered": [
+  ".flake8"
+ ],
+ "dyn_available": true,
+ "dyn_selected": 16,
+ "dyn_uncovered": [
+  ".flake8"
+ ],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0.11,
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "success",
+ "seconds_full": 0.11,
+ "seconds_selected": 0.11,
+ "wall_seconds": 17.9,
+ "project": "tomli",
+ "image_code_sha": "a116495"
+}

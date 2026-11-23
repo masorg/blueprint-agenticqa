@@ -1,0 +1,31 @@
+{
+ "order": 3,
+ "pr_id": 2927463862,
+ "agent": "Devin",
+ "merged": false,
+ "says_tests_pass": false,
+ "n_commits": 4,
+ "repo": "AgentOps-AI/agentops",
+ "number": 865,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "e207aa50addde159448de7d534afcfb003239a15",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 4): ImportError while loading conftest '/tmp/agenticqa-workspaces/ws-g484xr51/tests/unit/conftest.py'. | E   ImportError: cannot import name 'start_session' from 'agentops.legacy' (/tmp/agenticqa-workspaces/ws-g484xr51/agentops/legacy/__init__.py)",
+  "layer_states": {},
+  "seconds": 100.1
+ },
+ "wall_seconds": 130.9,
+ "head_sha": "e207aa50addde159448de7d534afcfb003239a15"
+}

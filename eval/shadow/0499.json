@@ -1,0 +1,38 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 678,
+ "status": "ran",
+ "head": "a55234860b9bebbc9864c89b1c0610fc6ba80098",
+ "base": "8614ce3e302a53106d36515ebaca9b2ac87580ad",
+ "diff_bytes": 16153,
+ "n_tests": 3063,
+ "base_failing": 6,
+ "head_failing": 6,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "README.md",
+  "transitions/extensions/diagrams.py",
+  "transitions/extensions/diagrams.pyi",
+  "transitions/extensions/diagrams_mermaid.py"
+ ],
+ "n_changed": 4,
+ "selected": 2992,
+ "file_selected": 2992,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "README.md",
+  "transitions/extensions/diagrams.pyi"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 23.72,
+ "seconds_selected": 23.53,
+ "wall_seconds": 76.9,
+ "project": "transitions",
+ "image_code_sha": "a874558"
+}

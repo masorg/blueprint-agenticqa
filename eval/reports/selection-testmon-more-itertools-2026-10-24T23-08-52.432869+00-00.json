@@ -1,0 +1,430 @@
+{
+ "generated_at": "2026-10-24T23:08:52.432869+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T23:08:52.838762+00:00",
+  "git_sha": "837f75bed944d609aecd762e8c8f7959f1496e38",
+  "code_dirty": true,
+  "code_diff_sha256": "a3e2d4d0c26763ea",
+  "corpus": "selection-testmon:more-itertools",
+  "corpus_fingerprint": "10d551ac97fa3efd",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-testmon",
+   "--project",
+   "more-itertools",
+   "--report",
+   "eval/reports/selection-mutants-more-itertools-2026-10-24T22-24-17.755644+00-00.json"
+  ]
+ },
+ "summary": {
+  "projects": [
+   "more-itertools"
+  ],
+  "mutants": 29,
+  "killed": 22,
+  "testmon_missed": {
+   "k": 0,
+   "n": 22,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.149
+   ]
+  },
+  "gate_missed": {
+   "k": 0,
+   "n": 22,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.149
+   ]
+  },
+  "testmon_tests_share_mean": 0.0978,
+  "gate_tests_share_mean": 0.0728,
+  "testmon_missed_ids": [],
+  "baseline_seconds": {
+   "more-itertools": 157.2
+  },
+  "per_project": {
+   "more-itertools": {
+    "mutants": 29,
+    "killed": 22,
+    "testmon_missed": 0,
+    "gate_missed": 0,
+    "testmon_share": 0.098,
+    "gate_share": 0.073
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "more-itertools",
+   "seed": 20261023,
+   "status": "ran",
+   "rows": [
+    {
+     "id": "more-itertools-000",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.58,
+     "timed_out": false,
+     "gate_selected": 39,
+     "gate_caught": true,
+     "seconds_full": 21.73
+    },
+    {
+     "id": "more-itertools-001",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 243,
+     "testmon_failed": 0,
+     "testmon_seconds": 90.25,
+     "timed_out": false,
+     "gate_selected": 8,
+     "gate_caught": false,
+     "seconds_full": 21.01
+    },
+    {
+     "id": "more-itertools-002",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 620,
+     "testmon_failed": 1,
+     "testmon_seconds": 111.78,
+     "timed_out": false,
+     "gate_selected": 40,
+     "gate_caught": true,
+     "seconds_full": 28.65
+    },
+    {
+     "id": "more-itertools-003",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 1,
+     "testmon_seconds": 3.58,
+     "timed_out": false,
+     "gate_selected": 2,
+     "gate_caught": true,
+     "seconds_full": 23.46
+    },
+    {
+     "id": "more-itertools-004",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 3,
+     "testmon_failed": 3,
+     "testmon_seconds": 4.89,
+     "timed_out": false,
+     "gate_selected": 60,
+     "gate_caught": true,
+     "seconds_full": 22.1
+    },
+    {
+     "id": "more-itertools-005",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 3599,
+     "testmon_failed": 3592,
+     "testmon_seconds": 388.89,
+     "timed_out": false,
+     "gate_selected": 767,
+     "gate_caught": true,
+     "seconds_full": 189.95
+    },
+    {
+     "id": "more-itertools-006",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 4,
+     "testmon_seconds": 3.98,
+     "timed_out": false,
+     "gate_selected": 7,
+     "gate_caught": true,
+     "seconds_full": 44.52
+    },
+    {
+     "id": "more-itertools-007",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 3.88,
+     "timed_out": false,
+     "gate_selected": 1,
+     "gate_caught": true,
+     "seconds_full": 20.87
+    },
+    {
+     "id": "more-itertools-008",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 160,
+     "testmon_failed": 155,
+     "testmon_seconds": 60.85,
+     "timed_out": false,
+     "gate_selected": 43,
+     "gate_caught": false,
+     "seconds_full": 60.57
+    },
+    {
+     "id": "more-itertools-009",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 4,
+     "testmon_seconds": 1.73,
+     "timed_out": false,
+     "gate_selected": 3,
+     "gate_caught": true,
+     "seconds_full": 22.59
+    },
+    {
+     "id": "more-itertools-010",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 4,
+     "testmon_failed": 2,
+     "testmon_seconds": 2.52,
+     "timed_out": false,
+     "gate_selected": 41,
+     "gate_caught": true,
+     "seconds_full": 22.55
+    },
+    {
+     "id": "more-itertools-011",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 8,
+     "testmon_failed": 0,
+     "testmon_seconds": 1.05,
+     "timed_out": false,
+     "gate_selected": 53,
+     "gate_caught": false,
+     "seconds_full": 21.76
+    },
+    {
+     "id": "more-itertools-012",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 4,
+     "testmon_failed": 0,
+     "testmon_seconds": 1.57,
+     "timed_out": false,
+     "gate_selected": 39,
+     "gate_caught": false,
+     "seconds_full": 22.97
+    },
+    {
+     "id": "more-itertools-013",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 4,
+     "testmon_failed": 2,
+     "testmon_seconds": 1.42,
+     "timed_out": false,
+     "gate_selected": 4,
+     "gate_caught": true,
+     "seconds_full": 22.76
+    },
+    {
+     "id": "more-itertools-014",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 8,
+     "testmon_failed": 2,
+     "testmon_seconds": 2.67,
+     "timed_out": false,
+     "gate_selected": 45,
+     "gate_caught": true,
+     "seconds_full": 21.79
+    },
+    {
+     "id": "more-itertools-015",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 1.37,
+     "timed_out": false,
+     "gate_selected": 1,
+     "gate_caught": true,
+     "seconds_full": 23.08
+    },
+    {
+     "id": "more-itertools-016",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 5,
+     "testmon_failed": 4,
+     "testmon_seconds": 3.1,
+     "timed_out": false,
+     "gate_selected": 42,
+     "gate_caught": true,
+     "seconds_full": 38.6
+    },
+    {
+     "id": "more-itertools-018",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 8,
+     "testmon_failed": 2,
+     "testmon_seconds": 2.92,
+     "timed_out": false,
+     "gate_selected": 45,
+     "gate_caught": true,
+     "seconds_full": 55.29
+    },
+    {
+     "id": "more-itertools-019",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 7,
+     "testmon_seconds": 4.33,
+     "timed_out": false,
+     "gate_selected": 46,
+     "gate_caught": true,
+     "seconds_full": 58.69
+    },
+    {
+     "id": "more-itertools-020",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 3,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.56,
+     "timed_out": false,
+     "gate_selected": 60,
+     "gate_caught": true,
+     "seconds_full": 53.34
+    },
+    {
+     "id": "more-itertools-021",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 243,
+     "testmon_failed": 0,
+     "testmon_seconds": 86.8,
+     "timed_out": false,
+     "gate_selected": 8,
+     "gate_caught": false,
+     "seconds_full": 42.41
+    },
+    {
+     "id": "more-itertools-022",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 28,
+     "testmon_failed": 25,
+     "testmon_seconds": 12.97,
+     "timed_out": false,
+     "gate_selected": 40,
+     "gate_caught": false,
+     "seconds_full": 69.3
+    },
+    {
+     "id": "more-itertools-023",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 4,
+     "testmon_seconds": 2.02,
+     "timed_out": false,
+     "gate_selected": 3,
+     "gate_caught": true,
+     "seconds_full": 58.95
+    },
+    {
+     "id": "more-itertools-024",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 5,
+     "testmon_failed": 4,
+     "testmon_seconds": 3.61,
+     "timed_out": false,
+     "gate_selected": 42,
+     "gate_caught": true,
+     "seconds_full": 49.71
+    },
+    {
+     "id": "more-itertools-025",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 4,
+     "testmon_seconds": 3.01,
+     "timed_out": false,
+     "gate_selected": 46,
+     "gate_caught": true,
+     "seconds_full": 37.37
+    },
+    {
+     "id": "more-itertools-026",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 3,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.62,
+     "timed_out": false,
+     "gate_selected": 41,
+     "gate_caught": true,
+     "seconds_full": 32.71
+    },
+    {
+     "id": "more-itertools-027",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 8,
+     "testmon_failed": 8,
+     "testmon_seconds": 3.89,
+     "timed_out": false,
+     "gate_selected": 46,
+     "gate_caught": true,
+     "seconds_full": 24.31
+    },
+    {
+     "id": "more-itertools-028",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 3,
+     "testmon_failed": 3,
+     "testmon_seconds": 2.75,
+     "timed_out": false,
+     "gate_selected": 40,
+     "gate_caught": true,
+     "seconds_full": 26.27
+    },
+    {
+     "id": "more-itertools-029",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 5,
+     "testmon_failed": 0,
+     "testmon_seconds": 78.81,
+     "timed_out": false,
+     "gate_selected": 8,
+     "gate_caught": false,
+     "seconds_full": 28.94
+    }
+   ],
+   "baseline_seconds": 157.2,
+   "baseline_counts": {
+    "passed": 767,
+    "failed": 0,
+    "error": 0,
+    "skipped": 0,
+    "deselected": 0
+   }
+  }
+ ]
+}

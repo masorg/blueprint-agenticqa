@@ -1,0 +1,45 @@
+{
+ "repo": "hukkin/tomli",
+ "number": 296,
+ "status": "ran",
+ "head": "70a2315af2dd8182536b61f6e6d680a1125fd27b",
+ "base": "bbca44b6abbe4713cee9035fd4a21ef5686df05d",
+ "diff_bytes": 1155,
+ "map_base": "0aa242f3188f4b892e434f1b4d23818fcd978615",
+ "map_age_commits": 30,
+ "n_tests": 17,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/tests.yaml",
+  "scripts/use_setuptools.py"
+ ],
+ "n_changed": 2,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [
+  "scripts/use_setuptools.py"
+ ],
+ "inert": [
+  ".github/workflows/tests.yaml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 1.87,
+ "seconds_selected": 0,
+ "wall_seconds": 44.6,
+ "project": "tomli",
+ "image_code_sha": "d9e3c20"
+}

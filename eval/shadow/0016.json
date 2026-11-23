@@ -1,0 +1,36 @@
+{
+ "repo": "python-attrs/attrs",
+ "number": 1632,
+ "status": "ran",
+ "head": "a56cab19b58729484ff4e7802bd0fd9e8509aa22",
+ "base": "8f767776326faaed11e6c2974798787f6e19b343",
+ "diff_bytes": 1498,
+ "n_tests": 1412,
+ "base_failing": 5,
+ "head_failing": 5,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/codeql-analysis.yml",
+  ".github/workflows/zizmor.yml"
+ ],
+ "n_changed": 2,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  ".github/workflows/codeql-analysis.yml",
+  ".github/workflows/zizmor.yml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 27.01,
+ "seconds_selected": 0,
+ "wall_seconds": 155.6,
+ "project": "attrs",
+ "image_code_sha": "efa91d9"
+}

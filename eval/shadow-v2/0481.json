@@ -1,0 +1,13 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 744,
+ "status": "run_error",
+ "head": "08d80d3df2f0378a2a921e884bd833ad41fbdb35",
+ "base": "bd42b38f3627e6bca7274fb4d9af2e105f75da7c",
+ "diff_bytes": 5658,
+ "coverage_seconds": 5.2,
+ "coverage_error": "exit 1: ncel running transitions...\n=========================== short test summary info ============================\nFAILED tests/test_async.py::TestAsync::test_async_timeout - AssertionError: F...\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 83 passed in 3.63s\n",
+ "detail": "37 of 3216 selected tests produced no result",
+ "project": "transitions",
+ "image_code_sha": "a116495"
+}

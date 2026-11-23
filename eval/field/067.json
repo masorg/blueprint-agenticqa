@@ -1,0 +1,31 @@
+{
+ "order": 67,
+ "pr_id": 3410356602,
+ "agent": "Copilot",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 7,
+ "repo": "mlflow/mlflow",
+ "number": 17697,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "a026d07408103d8dbfb9a42a7f07daced195378e",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'boto3'\u001b[0m | E   ModuleNotFoundError: No module named 'autogen'\u001b[0m | E   ModuleNotFoundError: No module named 'agno'\u001b[0m | E   ",
+  "layer_states": {},
+  "seconds": 229.7
+ },
+ "wall_seconds": 315.9,
+ "head_sha": "a026d07408103d8dbfb9a42a7f07daced195378e"
+}

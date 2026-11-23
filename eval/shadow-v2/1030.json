@@ -1,0 +1,42 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 669,
+ "status": "ran",
+ "head": "2810c7adc03121fe73e4d0861c5a56c0f71ad338",
+ "base": "cfb606473f291a5273d0bcf2f930f31338044859",
+ "diff_bytes": 588,
+ "coverage_seconds": 38.9,
+ "coverage_files": 32,
+ "n_tests": 2565,
+ "base_failing": 6,
+ "head_failing": 6,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "Changelog.md"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  "Changelog.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 21.74,
+ "seconds_selected": 0,
+ "wall_seconds": 115.1,
+ "project": "transitions",
+ "image_code_sha": "a116495"
+}

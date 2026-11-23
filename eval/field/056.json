@@ -1,0 +1,31 @@
+{
+ "order": 56,
+ "pr_id": 3264665958,
+ "agent": "Cursor",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "harvard-edge/cs249r_book",
+ "number": 908,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "65ee69d2e02765ca4cc8106c0031b7d2690b8c50",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "RuntimeError: No framework runner matched the target repository.",
+  "layer_states": {},
+  "seconds": 2.7
+ },
+ "wall_seconds": 78.6,
+ "head_sha": "65ee69d2e02765ca4cc8106c0031b7d2690b8c50"
+}

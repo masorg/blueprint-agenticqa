@@ -1,0 +1,43 @@
+{
+ "repo": "scrapy/w3lib",
+ "number": 393,
+ "status": "ran",
+ "head": "4ad32dc3ae1a27569c2427035de9467a74e36f0a",
+ "base": "5f50405946524286e3dbc689f88eaf545417bba0",
+ "diff_bytes": 3179,
+ "coverage_seconds": 123.2,
+ "coverage_files": 18,
+ "n_tests": 1860,
+ "base_failing": 171,
+ "head_failing": 172,
+ "introduced": [],
+ "flaky": [
+  "tests/test_url.py::TestSafeDownloadUrlProperties::test_no_exception"
+ ],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "tests/test_encoding.py",
+  "w3lib/encoding.py"
+ ],
+ "n_changed": 2,
+ "selected": 93,
+ "file_selected": 93,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 93,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0.19,
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 54.59,
+ "seconds_selected": 0.19,
+ "wall_seconds": 363.8,
+ "project": "w3lib",
+ "image_code_sha": "a116495"
+}

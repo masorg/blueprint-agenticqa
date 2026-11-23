@@ -1,0 +1,31 @@
+{
+ "order": 51,
+ "pr_id": 3101032367,
+ "agent": "Devin",
+ "merged": false,
+ "says_tests_pass": false,
+ "n_commits": 2,
+ "repo": "airbytehq/airbyte",
+ "number": 60978,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "b1d1c2e764f0f5f49142444d0d5c9a86db192d48",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): E   ModuleNotFoundError: No module named 'tests.test_models'\u001b[0m | E   ModuleNotFoundError: No module named 'tests.test_secrets_manager'\u001b[0m | E   ModuleNotFoundError: No module named 'tests.test_dbml_assembler'\u001b[0m | E   ModuleNotFoundError: No module named 'tests.test_relationships'\u001b[0m | E   ModuleNotFoundError: No module named 't",
+  "layer_states": {},
+  "seconds": 19.6
+ },
+ "wall_seconds": 58.4,
+ "head_sha": "b1d1c2e764f0f5f49142444d0d5c9a86db192d48"
+}

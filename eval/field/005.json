@@ -1,0 +1,31 @@
+{
+ "order": 5,
+ "pr_id": 3097650858,
+ "agent": "OpenAI_Codex",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+ "number": 1057,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "2b46f17ea5f38cb534650756f205f0d4f8d8627a",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "RuntimeError: command timed out after 420.0s: /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/a3354c20ef813597/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-yw5zslc1/requirements.txt",
+  "layer_states": {},
+  "seconds": 420.1
+ },
+ "wall_seconds": 423.0,
+ "head_sha": "2b46f17ea5f38cb534650756f205f0d4f8d8627a"
+}

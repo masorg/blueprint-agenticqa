@@ -1,0 +1,11 @@
+{
+ "repo": "kjd/idna",
+ "number": 282,
+ "status": "error",
+ "head": "ac35b09b3e779bccfa60f1304b9b4b68131466b0",
+ "base": "7c55529db07b94781037703199f57fc9b7c0dc40",
+ "diff_bytes": 1737,
+ "detail": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-7aebsegn/tests/test_idna_properties.py'. | E   ModuleNotFoundError: No module named 'hypothesis' | ERROR tests/test_idna_properties.py",
+ "project": "idna",
+ "image_code_sha": "a874558"
+}

@@ -1,0 +1,31 @@
+{
+ "order": 49,
+ "pr_id": 3301764972,
+ "agent": "Copilot",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 4,
+ "repo": "django-components/django-components",
+ "number": 1330,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "35647093686182742281e04fae8662e666702bd8",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 4): ImportError while loading conftest '/tmp/agenticqa-workspaces/ws-xlhpfgy0/tests/conftest.py'. | E   ModuleNotFoundError: No module named 'requests'",
+  "layer_states": {},
+  "seconds": 4.0
+ },
+ "wall_seconds": 6.1,
+ "head_sha": "35647093686182742281e04fae8662e666702bd8"
+}

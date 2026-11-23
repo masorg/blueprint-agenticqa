@@ -1,0 +1,39 @@
+{
+ "repo": "hukkin/tomli",
+ "number": 301,
+ "status": "ran",
+ "head": "dc75e508b13ff04aef60b50bafa7315ad2b1de42",
+ "base": "8479ed2902bafb7be7ac5f4431d42201ea640361",
+ "diff_bytes": 4806,
+ "n_tests": 18,
+ "base_failing": 1,
+ "head_failing": 1,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/tests.yaml",
+  ".github/zizmor.yml",
+  ".pre-commit-config.yaml"
+ ],
+ "n_changed": 3,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "out_of_scope": [
+  ".pre-commit-config.yaml"
+ ],
+ "inert": [
+  ".github/workflows/tests.yaml",
+  ".github/zizmor.yml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 0.17,
+ "seconds_selected": 0,
+ "wall_seconds": 11.4,
+ "project": "tomli",
+ "image_code_sha": "a874558"
+}

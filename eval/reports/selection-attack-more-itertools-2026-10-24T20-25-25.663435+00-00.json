@@ -1,0 +1,1431 @@
+{
+ "generated_at": "2026-10-24T20:25:25.663435+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T20:25:25.871964+00:00",
+  "git_sha": "a883b871840381bef5b1be3bfc8475bb53ee0b39",
+  "code_dirty": true,
+  "code_diff_sha256": "8e685da015b436b9",
+  "corpus": "selection-attack:more-itertools",
+  "corpus_fingerprint": "e429d698c27908a0",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-attack",
+   "--project",
+   "more-itertools",
+   "--n",
+   "5"
+  ]
+ },
+ "summary": {
+  "n_cases": 40,
+  "n_projects": 1,
+  "n_mutants": 5,
+  "honest_flagged_cases": 32,
+  "invalid_timeouts": 0,
+  "m1_violations": 0,
+  "m2_violations": 0,
+  "upper_bound_95": 0.08762453925039232,
+  "by_advisor": {
+   "empty": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "garbage": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "everything": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "non-core-only": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "duplicates": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "huge": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "raises": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   },
+   "reversed-core": {
+    "cases": 5,
+    "m1": 0,
+    "m2": 0
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "more-itertools",
+   "sha": "f89d7a3331ba6b5421273e556c0a738e3dd1dd35",
+   "seed": 20261023,
+   "cases": [
+    {
+     "mutant": "more-itertools-0",
+     "advisor": "empty",
+     "core_tests": 39,
+     "ran": 39,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       39,
+       39
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       39,
+       39
+      ]
+     ],
+     "honest_seconds": 2.0,
+     "seconds": 2.0
+    },
+    {
+     "mutant": "more-itertools-0",
+     "advisor": "garbage",
+     "core_tests": 39,
+     "ran": 39,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       39,
+       39
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       39,
+       39
+      ]
+     ],
+     "honest_seconds": 2.0,
+     "seconds": 2.0
+    },
+    {
+     "mutant": "more-itertools-0",
+     "advisor": "everything",
+     "core_tests": 39,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       39,
+       39
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 2.0,
+     "seconds": 13.2
+    },
+    {
+     "mutant": "more-itertools-0",
+     "advisor": "non-core-only",
+     "core_tests": 39,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       39,
+       39
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 2.0,
+     "seconds": 13.4
+    },
+    {
+     "mutant": "more-itertools-0",
+     "advisor": "duplicates",
+     "core_tests": 39,
+     "ran": 42,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       39,
+       39
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       42,
+       42
+      ]
+     ],
+     "honest_seconds": 2.0,
+     "seconds": 2.1
+    },
+    {
+     "mutant": "more-itertools-0",
+     "advisor": "huge",
+     "core_tests": 39,
+     "ran": 40,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       39,
+       39
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       40,
+       40
+      ]
+     ],
+     "honest_seconds": 2.0,
+     "seconds": 2.1
+    },
+    {
+     "mutant": "more-itertools-0",
+     "advisor": "raises",
+     "core_tests": 39,
+     "ran": 39,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       39,
+       39
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       39,
+       39
+      ]
+     ],
+     "honest_seconds": 2.0,
+     "seconds": 2.0
+    },
+    {
+     "mutant": "more-itertools-0",
+     "advisor": "reversed-core",
+     "core_tests": 39,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       39,
+       39
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 2.0,
+     "seconds": 13.4
+    },
+    {
+     "mutant": "more-itertools-1",
+     "advisor": "empty",
+     "core_tests": 8,
+     "ran": 8,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 7.1,
+     "seconds": 7.1
+    },
+    {
+     "mutant": "more-itertools-1",
+     "advisor": "garbage",
+     "core_tests": 8,
+     "ran": 8,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 7.1,
+     "seconds": 7.1
+    },
+    {
+     "mutant": "more-itertools-1",
+     "advisor": "everything",
+     "core_tests": 8,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 7.1,
+     "seconds": 13.9
+    },
+    {
+     "mutant": "more-itertools-1",
+     "advisor": "non-core-only",
+     "core_tests": 8,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 7.1,
+     "seconds": 13.5
+    },
+    {
+     "mutant": "more-itertools-1",
+     "advisor": "duplicates",
+     "core_tests": 8,
+     "ran": 11,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       11,
+       11
+      ]
+     ],
+     "honest_seconds": 7.1,
+     "seconds": 7.1
+    },
+    {
+     "mutant": "more-itertools-1",
+     "advisor": "huge",
+     "core_tests": 8,
+     "ran": 9,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       9,
+       9
+      ]
+     ],
+     "honest_seconds": 7.1,
+     "seconds": 7.1
+    },
+    {
+     "mutant": "more-itertools-1",
+     "advisor": "raises",
+     "core_tests": 8,
+     "ran": 8,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 7.1,
+     "seconds": 7.0
+    },
+    {
+     "mutant": "more-itertools-1",
+     "advisor": "reversed-core",
+     "core_tests": 8,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "auto_approve",
+     "verdict": "auto_approve",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       8,
+       8
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 7.1,
+     "seconds": 13.3
+    },
+    {
+     "mutant": "more-itertools-2",
+     "advisor": "empty",
+     "core_tests": 40,
+     "ran": 40,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       40,
+       40
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       40,
+       40
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 2.1
+    },
+    {
+     "mutant": "more-itertools-2",
+     "advisor": "garbage",
+     "core_tests": 40,
+     "ran": 40,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       40,
+       40
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       40,
+       40
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 2.1
+    },
+    {
+     "mutant": "more-itertools-2",
+     "advisor": "everything",
+     "core_tests": 40,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       40,
+       40
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 13.5
+    },
+    {
+     "mutant": "more-itertools-2",
+     "advisor": "non-core-only",
+     "core_tests": 40,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       40,
+       40
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 13.4
+    },
+    {
+     "mutant": "more-itertools-2",
+     "advisor": "duplicates",
+     "core_tests": 40,
+     "ran": 43,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       40,
+       40
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       43,
+       43
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 2.0
+    },
+    {
+     "mutant": "more-itertools-2",
+     "advisor": "huge",
+     "core_tests": 40,
+     "ran": 41,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       40,
+       40
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       41,
+       41
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 2.2
+    },
+    {
+     "mutant": "more-itertools-2",
+     "advisor": "raises",
+     "core_tests": 40,
+     "ran": 40,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       40,
+       40
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       40,
+       40
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 2.1
+    },
+    {
+     "mutant": "more-itertools-2",
+     "advisor": "reversed-core",
+     "core_tests": 40,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       40,
+       40
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 2.2,
+     "seconds": 13.4
+    },
+    {
+     "mutant": "more-itertools-3",
+     "advisor": "empty",
+     "core_tests": 2,
+     "ran": 2,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "honest_seconds": 1.9,
+     "seconds": 1.9
+    },
+    {
+     "mutant": "more-itertools-3",
+     "advisor": "garbage",
+     "core_tests": 2,
+     "ran": 2,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "honest_seconds": 1.9,
+     "seconds": 1.9
+    },
+    {
+     "mutant": "more-itertools-3",
+     "advisor": "everything",
+     "core_tests": 2,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 1.9,
+     "seconds": 15.4
+    },
+    {
+     "mutant": "more-itertools-3",
+     "advisor": "non-core-only",
+     "core_tests": 2,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 1.9,
+     "seconds": 13.3
+    },
+    {
+     "mutant": "more-itertools-3",
+     "advisor": "duplicates",
+     "core_tests": 2,
+     "ran": 5,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 1.9,
+     "seconds": 2.0
+    },
+    {
+     "mutant": "more-itertools-3",
+     "advisor": "huge",
+     "core_tests": 2,
+     "ran": 3,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       3,
+       3
+      ]
+     ],
+     "honest_seconds": 1.9,
+     "seconds": 2.1
+    },
+    {
+     "mutant": "more-itertools-3",
+     "advisor": "raises",
+     "core_tests": 2,
+     "ran": 2,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "honest_seconds": 1.9,
+     "seconds": 1.9
+    },
+    {
+     "mutant": "more-itertools-3",
+     "advisor": "reversed-core",
+     "core_tests": 2,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       2,
+       2
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 1.9,
+     "seconds": 13.4
+    },
+    {
+     "mutant": "more-itertools-4",
+     "advisor": "empty",
+     "core_tests": 60,
+     "ran": 60,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       60,
+       60
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       60,
+       60
+      ]
+     ],
+     "honest_seconds": 2.4,
+     "seconds": 2.3
+    },
+    {
+     "mutant": "more-itertools-4",
+     "advisor": "garbage",
+     "core_tests": 60,
+     "ran": 60,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       60,
+       60
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       60,
+       60
+      ]
+     ],
+     "honest_seconds": 2.4,
+     "seconds": 2.4
+    },
+    {
+     "mutant": "more-itertools-4",
+     "advisor": "everything",
+     "core_tests": 60,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       60,
+       60
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 2.4,
+     "seconds": 13.8
+    },
+    {
+     "mutant": "more-itertools-4",
+     "advisor": "non-core-only",
+     "core_tests": 60,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       60,
+       60
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 2.4,
+     "seconds": 13.6
+    },
+    {
+     "mutant": "more-itertools-4",
+     "advisor": "duplicates",
+     "core_tests": 60,
+     "ran": 63,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       60,
+       60
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       63,
+       63
+      ]
+     ],
+     "honest_seconds": 2.4,
+     "seconds": 2.5
+    },
+    {
+     "mutant": "more-itertools-4",
+     "advisor": "huge",
+     "core_tests": 60,
+     "ran": 61,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       60,
+       60
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       61,
+       61
+      ]
+     ],
+     "honest_seconds": 2.4,
+     "seconds": 2.4
+    },
+    {
+     "mutant": "more-itertools-4",
+     "advisor": "raises",
+     "core_tests": 60,
+     "ran": 60,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       60,
+       60
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       60,
+       60
+      ]
+     ],
+     "honest_seconds": 2.4,
+     "seconds": 2.4
+    },
+    {
+     "mutant": "more-itertools-4",
+     "advisor": "reversed-core",
+     "core_tests": 60,
+     "ran": 767,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       60,
+       60
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       766,
+       766
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 2.4,
+     "seconds": 13.6
+    }
+   ],
+   "status": "ran"
+  }
+ ]
+}

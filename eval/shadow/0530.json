@@ -1,0 +1,8 @@
+{
+ "repo": "scrapy/w3lib",
+ "number": 392,
+ "status": "error",
+ "detail": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa5 in position 2269: invalid start byte",
+ "project": "w3lib",
+ "image_code_sha": "a874558"
+}

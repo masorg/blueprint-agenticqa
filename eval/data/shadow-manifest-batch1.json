@@ -1,0 +1,4407 @@
+{
+ "rule": "the 25 highest-numbered pull requests of each project, read with git ls-remote",
+ "generated": "2026-10-24T20:55:38Z",
+ "attempts": [
+  {
+   "order": 0,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1649,
+   "batch": 1
+  },
+  {
+   "order": 1,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1648,
+   "batch": 1
+  },
+  {
+   "order": 2,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1647,
+   "batch": 1
+  },
+  {
+   "order": 3,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1646,
+   "batch": 1
+  },
+  {
+   "order": 4,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1645,
+   "batch": 1
+  },
+  {
+   "order": 5,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1644,
+   "batch": 1
+  },
+  {
+   "order": 6,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1643,
+   "batch": 1
+  },
+  {
+   "order": 7,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1642,
+   "batch": 1
+  },
+  {
+   "order": 8,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1641,
+   "batch": 1
+  },
+  {
+   "order": 9,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1640,
+   "batch": 1
+  },
+  {
+   "order": 10,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1639,
+   "batch": 1
+  },
+  {
+   "order": 11,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1638,
+   "batch": 1
+  },
+  {
+   "order": 12,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1636,
+   "batch": 1
+  },
+  {
+   "order": 13,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1635,
+   "batch": 1
+  },
+  {
+   "order": 14,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1634,
+   "batch": 1
+  },
+  {
+   "order": 15,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1633,
+   "batch": 1
+  },
+  {
+   "order": 16,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1632,
+   "batch": 1
+  },
+  {
+   "order": 17,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1631,
+   "batch": 1
+  },
+  {
+   "order": 18,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1630,
+   "batch": 1
+  },
+  {
+   "order": 19,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1629,
+   "batch": 1
+  },
+  {
+   "order": 20,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1628,
+   "batch": 1
+  },
+  {
+   "order": 21,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1626,
+   "batch": 1
+  },
+  {
+   "order": 22,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1625,
+   "batch": 1
+  },
+  {
+   "order": 23,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1624,
+   "batch": 1
+  },
+  {
+   "order": 24,
+   "project": "attrs",
+   "repo": "python-attrs/attrs",
+   "branch": "main",
+   "number": 1623,
+   "batch": 1
+  },
+  {
+   "order": 25,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 193,
+   "batch": 1
+  },
+  {
+   "order": 26,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 192,
+   "batch": 1
+  },
+  {
+   "order": 27,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 191,
+   "batch": 1
+  },
+  {
+   "order": 28,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 190,
+   "batch": 1
+  },
+  {
+   "order": 29,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 188,
+   "batch": 1
+  },
+  {
+   "order": 30,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 187,
+   "batch": 1
+  },
+  {
+   "order": 31,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 186,
+   "batch": 1
+  },
+  {
+   "order": 32,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 184,
+   "batch": 1
+  },
+  {
+   "order": 33,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 183,
+   "batch": 1
+  },
+  {
+   "order": 34,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 182,
+   "batch": 1
+  },
+  {
+   "order": 35,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 181,
+   "batch": 1
+  },
+  {
+   "order": 36,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 180,
+   "batch": 1
+  },
+  {
+   "order": 37,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 176,
+   "batch": 1
+  },
+  {
+   "order": 38,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 175,
+   "batch": 1
+  },
+  {
+   "order": 39,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 174,
+   "batch": 1
+  },
+  {
+   "order": 40,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 172,
+   "batch": 1
+  },
+  {
+   "order": 41,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 171,
+   "batch": 1
+  },
+  {
+   "order": 42,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 170,
+   "batch": 1
+  },
+  {
+   "order": 43,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 169,
+   "batch": 1
+  },
+  {
+   "order": 44,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 168,
+   "batch": 1
+  },
+  {
+   "order": 45,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 167,
+   "batch": 1
+  },
+  {
+   "order": 46,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 166,
+   "batch": 1
+  },
+  {
+   "order": 47,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 165,
+   "batch": 1
+  },
+  {
+   "order": 48,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 164,
+   "batch": 1
+  },
+  {
+   "order": 49,
+   "project": "blinker",
+   "repo": "pallets-eco/blinker",
+   "branch": "main",
+   "number": 163,
+   "batch": 1
+  },
+  {
+   "order": 50,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 602,
+   "batch": 1
+  },
+  {
+   "order": 51,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 601,
+   "batch": 1
+  },
+  {
+   "order": 52,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 599,
+   "batch": 1
+  },
+  {
+   "order": 53,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 598,
+   "batch": 1
+  },
+  {
+   "order": 54,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 597,
+   "batch": 1
+  },
+  {
+   "order": 55,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 596,
+   "batch": 1
+  },
+  {
+   "order": 56,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 595,
+   "batch": 1
+  },
+  {
+   "order": 57,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 594,
+   "batch": 1
+  },
+  {
+   "order": 58,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 593,
+   "batch": 1
+  },
+  {
+   "order": 59,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 592,
+   "batch": 1
+  },
+  {
+   "order": 60,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 591,
+   "batch": 1
+  },
+  {
+   "order": 61,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 590,
+   "batch": 1
+  },
+  {
+   "order": 62,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 589,
+   "batch": 1
+  },
+  {
+   "order": 63,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 588,
+   "batch": 1
+  },
+  {
+   "order": 64,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 587,
+   "batch": 1
+  },
+  {
+   "order": 65,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 586,
+   "batch": 1
+  },
+  {
+   "order": 66,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 585,
+   "batch": 1
+  },
+  {
+   "order": 67,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 584,
+   "batch": 1
+  },
+  {
+   "order": 68,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 583,
+   "batch": 1
+  },
+  {
+   "order": 69,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 582,
+   "batch": 1
+  },
+  {
+   "order": 70,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 580,
+   "batch": 1
+  },
+  {
+   "order": 71,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 578,
+   "batch": 1
+  },
+  {
+   "order": 72,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 577,
+   "batch": 1
+  },
+  {
+   "order": 73,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 576,
+   "batch": 1
+  },
+  {
+   "order": 74,
+   "project": "boltons",
+   "repo": "mahmoud/boltons",
+   "branch": "master",
+   "number": 575,
+   "batch": 1
+  },
+  {
+   "order": 75,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 449,
+   "batch": 1
+  },
+  {
+   "order": 76,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 448,
+   "batch": 1
+  },
+  {
+   "order": 77,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 447,
+   "batch": 1
+  },
+  {
+   "order": 78,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 445,
+   "batch": 1
+  },
+  {
+   "order": 79,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 444,
+   "batch": 1
+  },
+  {
+   "order": 80,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 442,
+   "batch": 1
+  },
+  {
+   "order": 81,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 441,
+   "batch": 1
+  },
+  {
+   "order": 82,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 439,
+   "batch": 1
+  },
+  {
+   "order": 83,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 438,
+   "batch": 1
+  },
+  {
+   "order": 84,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 436,
+   "batch": 1
+  },
+  {
+   "order": 85,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 434,
+   "batch": 1
+  },
+  {
+   "order": 86,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 432,
+   "batch": 1
+  },
+  {
+   "order": 87,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 431,
+   "batch": 1
+  },
+  {
+   "order": 88,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 429,
+   "batch": 1
+  },
+  {
+   "order": 89,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 427,
+   "batch": 1
+  },
+  {
+   "order": 90,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 426,
+   "batch": 1
+  },
+  {
+   "order": 91,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 424,
+   "batch": 1
+  },
+  {
+   "order": 92,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 422,
+   "batch": 1
+  },
+  {
+   "order": 93,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 421,
+   "batch": 1
+  },
+  {
+   "order": 94,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 419,
+   "batch": 1
+  },
+  {
+   "order": 95,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 418,
+   "batch": 1
+  },
+  {
+   "order": 96,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 416,
+   "batch": 1
+  },
+  {
+   "order": 97,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 415,
+   "batch": 1
+  },
+  {
+   "order": 98,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 414,
+   "batch": 1
+  },
+  {
+   "order": 99,
+   "project": "cachetools",
+   "repo": "tkem/cachetools",
+   "branch": "master",
+   "number": 413,
+   "batch": 1
+  },
+  {
+   "order": 100,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3884,
+   "batch": 1
+  },
+  {
+   "order": 101,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3880,
+   "batch": 1
+  },
+  {
+   "order": 102,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3878,
+   "batch": 1
+  },
+  {
+   "order": 103,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3877,
+   "batch": 1
+  },
+  {
+   "order": 104,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3876,
+   "batch": 1
+  },
+  {
+   "order": 105,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3874,
+   "batch": 1
+  },
+  {
+   "order": 106,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3873,
+   "batch": 1
+  },
+  {
+   "order": 107,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3872,
+   "batch": 1
+  },
+  {
+   "order": 108,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3871,
+   "batch": 1
+  },
+  {
+   "order": 109,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3870,
+   "batch": 1
+  },
+  {
+   "order": 110,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3869,
+   "batch": 1
+  },
+  {
+   "order": 111,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3868,
+   "batch": 1
+  },
+  {
+   "order": 112,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3867,
+   "batch": 1
+  },
+  {
+   "order": 113,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3866,
+   "batch": 1
+  },
+  {
+   "order": 114,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3865,
+   "batch": 1
+  },
+  {
+   "order": 115,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3864,
+   "batch": 1
+  },
+  {
+   "order": 116,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3863,
+   "batch": 1
+  },
+  {
+   "order": 117,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3862,
+   "batch": 1
+  },
+  {
+   "order": 118,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3861,
+   "batch": 1
+  },
+  {
+   "order": 119,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3860,
+   "batch": 1
+  },
+  {
+   "order": 120,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3859,
+   "batch": 1
+  },
+  {
+   "order": 121,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3858,
+   "batch": 1
+  },
+  {
+   "order": 122,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3857,
+   "batch": 1
+  },
+  {
+   "order": 123,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3856,
+   "batch": 1
+  },
+  {
+   "order": 124,
+   "project": "click",
+   "repo": "pallets/click",
+   "branch": "main",
+   "number": 3854,
+   "batch": 1
+  },
+  {
+   "order": 125,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 442,
+   "batch": 1
+  },
+  {
+   "order": 126,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 440,
+   "batch": 1
+  },
+  {
+   "order": 127,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 439,
+   "batch": 1
+  },
+  {
+   "order": 128,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 438,
+   "batch": 1
+  },
+  {
+   "order": 129,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 437,
+   "batch": 1
+  },
+  {
+   "order": 130,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 436,
+   "batch": 1
+  },
+  {
+   "order": 131,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 435,
+   "batch": 1
+  },
+  {
+   "order": 132,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 433,
+   "batch": 1
+  },
+  {
+   "order": 133,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 432,
+   "batch": 1
+  },
+  {
+   "order": 134,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 431,
+   "batch": 1
+  },
+  {
+   "order": 135,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 430,
+   "batch": 1
+  },
+  {
+   "order": 136,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 429,
+   "batch": 1
+  },
+  {
+   "order": 137,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 428,
+   "batch": 1
+  },
+  {
+   "order": 138,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 427,
+   "batch": 1
+  },
+  {
+   "order": 139,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 426,
+   "batch": 1
+  },
+  {
+   "order": 140,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 425,
+   "batch": 1
+  },
+  {
+   "order": 141,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 424,
+   "batch": 1
+  },
+  {
+   "order": 142,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 423,
+   "batch": 1
+  },
+  {
+   "order": 143,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 422,
+   "batch": 1
+  },
+  {
+   "order": 144,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 418,
+   "batch": 1
+  },
+  {
+   "order": 145,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 417,
+   "batch": 1
+  },
+  {
+   "order": 146,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 416,
+   "batch": 1
+  },
+  {
+   "order": 147,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 414,
+   "batch": 1
+  },
+  {
+   "order": 148,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 412,
+   "batch": 1
+  },
+  {
+   "order": 149,
+   "project": "colorama",
+   "repo": "tartley/colorama",
+   "branch": "master",
+   "number": 411,
+   "batch": 1
+  },
+  {
+   "order": 150,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 213,
+   "batch": 1
+  },
+  {
+   "order": 151,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 212,
+   "batch": 1
+  },
+  {
+   "order": 152,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 208,
+   "batch": 1
+  },
+  {
+   "order": 153,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 207,
+   "batch": 1
+  },
+  {
+   "order": 154,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 206,
+   "batch": 1
+  },
+  {
+   "order": 155,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 205,
+   "batch": 1
+  },
+  {
+   "order": 156,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 204,
+   "batch": 1
+  },
+  {
+   "order": 157,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 203,
+   "batch": 1
+  },
+  {
+   "order": 158,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 202,
+   "batch": 1
+  },
+  {
+   "order": 159,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 200,
+   "batch": 1
+  },
+  {
+   "order": 160,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 199,
+   "batch": 1
+  },
+  {
+   "order": 161,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 198,
+   "batch": 1
+  },
+  {
+   "order": 162,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 197,
+   "batch": 1
+  },
+  {
+   "order": 163,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 196,
+   "batch": 1
+  },
+  {
+   "order": 164,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 195,
+   "batch": 1
+  },
+  {
+   "order": 165,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 194,
+   "batch": 1
+  },
+  {
+   "order": 166,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 193,
+   "batch": 1
+  },
+  {
+   "order": 167,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 191,
+   "batch": 1
+  },
+  {
+   "order": 168,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 190,
+   "batch": 1
+  },
+  {
+   "order": 169,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 189,
+   "batch": 1
+  },
+  {
+   "order": 170,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 188,
+   "batch": 1
+  },
+  {
+   "order": 171,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 187,
+   "batch": 1
+  },
+  {
+   "order": 172,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 186,
+   "batch": 1
+  },
+  {
+   "order": 173,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 183,
+   "batch": 1
+  },
+  {
+   "order": 174,
+   "project": "furl",
+   "repo": "gruns/furl",
+   "branch": "master",
+   "number": 181,
+   "batch": 1
+  },
+  {
+   "order": 175,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 334,
+   "batch": 1
+  },
+  {
+   "order": 176,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 333,
+   "batch": 1
+  },
+  {
+   "order": 177,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 332,
+   "batch": 1
+  },
+  {
+   "order": 178,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 331,
+   "batch": 1
+  },
+  {
+   "order": 179,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 328,
+   "batch": 1
+  },
+  {
+   "order": 180,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 327,
+   "batch": 1
+  },
+  {
+   "order": 181,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 326,
+   "batch": 1
+  },
+  {
+   "order": 182,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 325,
+   "batch": 1
+  },
+  {
+   "order": 183,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 324,
+   "batch": 1
+  },
+  {
+   "order": 184,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 323,
+   "batch": 1
+  },
+  {
+   "order": 185,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 322,
+   "batch": 1
+  },
+  {
+   "order": 186,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 321,
+   "batch": 1
+  },
+  {
+   "order": 187,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 320,
+   "batch": 1
+  },
+  {
+   "order": 188,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 319,
+   "batch": 1
+  },
+  {
+   "order": 189,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 318,
+   "batch": 1
+  },
+  {
+   "order": 190,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 317,
+   "batch": 1
+  },
+  {
+   "order": 191,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 316,
+   "batch": 1
+  },
+  {
+   "order": 192,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 307,
+   "batch": 1
+  },
+  {
+   "order": 193,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 306,
+   "batch": 1
+  },
+  {
+   "order": 194,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 305,
+   "batch": 1
+  },
+  {
+   "order": 195,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 304,
+   "batch": 1
+  },
+  {
+   "order": 196,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 303,
+   "batch": 1
+  },
+  {
+   "order": 197,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 302,
+   "batch": 1
+  },
+  {
+   "order": 198,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 301,
+   "batch": 1
+  },
+  {
+   "order": 199,
+   "project": "glom",
+   "repo": "mahmoud/glom",
+   "branch": "master",
+   "number": 300,
+   "batch": 1
+  },
+  {
+   "order": 200,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 285,
+   "batch": 1
+  },
+  {
+   "order": 201,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 284,
+   "batch": 1
+  },
+  {
+   "order": 202,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 283,
+   "batch": 1
+  },
+  {
+   "order": 203,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 282,
+   "batch": 1
+  },
+  {
+   "order": 204,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 281,
+   "batch": 1
+  },
+  {
+   "order": 205,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 280,
+   "batch": 1
+  },
+  {
+   "order": 206,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 279,
+   "batch": 1
+  },
+  {
+   "order": 207,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 278,
+   "batch": 1
+  },
+  {
+   "order": 208,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 277,
+   "batch": 1
+  },
+  {
+   "order": 209,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 276,
+   "batch": 1
+  },
+  {
+   "order": 210,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 274,
+   "batch": 1
+  },
+  {
+   "order": 211,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 273,
+   "batch": 1
+  },
+  {
+   "order": 212,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 272,
+   "batch": 1
+  },
+  {
+   "order": 213,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 271,
+   "batch": 1
+  },
+  {
+   "order": 214,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 270,
+   "batch": 1
+  },
+  {
+   "order": 215,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 269,
+   "batch": 1
+  },
+  {
+   "order": 216,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 268,
+   "batch": 1
+  },
+  {
+   "order": 217,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 267,
+   "batch": 1
+  },
+  {
+   "order": 218,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 266,
+   "batch": 1
+  },
+  {
+   "order": 219,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 265,
+   "batch": 1
+  },
+  {
+   "order": 220,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 264,
+   "batch": 1
+  },
+  {
+   "order": 221,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 262,
+   "batch": 1
+  },
+  {
+   "order": 222,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 261,
+   "batch": 1
+  },
+  {
+   "order": 223,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 259,
+   "batch": 1
+  },
+  {
+   "order": 224,
+   "project": "idna",
+   "repo": "kjd/idna",
+   "branch": "master",
+   "number": 257,
+   "batch": 1
+  },
+  {
+   "order": 225,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 442,
+   "batch": 1
+  },
+  {
+   "order": 226,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 441,
+   "batch": 1
+  },
+  {
+   "order": 227,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 440,
+   "batch": 1
+  },
+  {
+   "order": 228,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 439,
+   "batch": 1
+  },
+  {
+   "order": 229,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 438,
+   "batch": 1
+  },
+  {
+   "order": 230,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 437,
+   "batch": 1
+  },
+  {
+   "order": 231,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 436,
+   "batch": 1
+  },
+  {
+   "order": 232,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 435,
+   "batch": 1
+  },
+  {
+   "order": 233,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 434,
+   "batch": 1
+  },
+  {
+   "order": 234,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 433,
+   "batch": 1
+  },
+  {
+   "order": 235,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 432,
+   "batch": 1
+  },
+  {
+   "order": 236,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 431,
+   "batch": 1
+  },
+  {
+   "order": 237,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 430,
+   "batch": 1
+  },
+  {
+   "order": 238,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 428,
+   "batch": 1
+  },
+  {
+   "order": 239,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 427,
+   "batch": 1
+  },
+  {
+   "order": 240,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 426,
+   "batch": 1
+  },
+  {
+   "order": 241,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 425,
+   "batch": 1
+  },
+  {
+   "order": 242,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 424,
+   "batch": 1
+  },
+  {
+   "order": 243,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 422,
+   "batch": 1
+  },
+  {
+   "order": 244,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 421,
+   "batch": 1
+  },
+  {
+   "order": 245,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 419,
+   "batch": 1
+  },
+  {
+   "order": 246,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 418,
+   "batch": 1
+  },
+  {
+   "order": 247,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 415,
+   "batch": 1
+  },
+  {
+   "order": 248,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 413,
+   "batch": 1
+  },
+  {
+   "order": 249,
+   "project": "itsdangerous",
+   "repo": "pallets/itsdangerous",
+   "branch": "main",
+   "number": 412,
+   "batch": 1
+  },
+  {
+   "order": 250,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2277,
+   "batch": 1
+  },
+  {
+   "order": 251,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2276,
+   "batch": 1
+  },
+  {
+   "order": 252,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2275,
+   "batch": 1
+  },
+  {
+   "order": 253,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2273,
+   "batch": 1
+  },
+  {
+   "order": 254,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2272,
+   "batch": 1
+  },
+  {
+   "order": 255,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2271,
+   "batch": 1
+  },
+  {
+   "order": 256,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2270,
+   "batch": 1
+  },
+  {
+   "order": 257,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2268,
+   "batch": 1
+  },
+  {
+   "order": 258,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2267,
+   "batch": 1
+  },
+  {
+   "order": 259,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2266,
+   "batch": 1
+  },
+  {
+   "order": 260,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2265,
+   "batch": 1
+  },
+  {
+   "order": 261,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2264,
+   "batch": 1
+  },
+  {
+   "order": 262,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2262,
+   "batch": 1
+  },
+  {
+   "order": 263,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2261,
+   "batch": 1
+  },
+  {
+   "order": 264,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2260,
+   "batch": 1
+  },
+  {
+   "order": 265,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2259,
+   "batch": 1
+  },
+  {
+   "order": 266,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2256,
+   "batch": 1
+  },
+  {
+   "order": 267,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2255,
+   "batch": 1
+  },
+  {
+   "order": 268,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2254,
+   "batch": 1
+  },
+  {
+   "order": 269,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2253,
+   "batch": 1
+  },
+  {
+   "order": 270,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2252,
+   "batch": 1
+  },
+  {
+   "order": 271,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2251,
+   "batch": 1
+  },
+  {
+   "order": 272,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2250,
+   "batch": 1
+  },
+  {
+   "order": 273,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2249,
+   "batch": 1
+  },
+  {
+   "order": 274,
+   "project": "jinja",
+   "repo": "pallets/jinja",
+   "branch": "main",
+   "number": 2248,
+   "batch": 1
+  },
+  {
+   "order": 275,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 539,
+   "batch": 1
+  },
+  {
+   "order": 276,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 538,
+   "batch": 1
+  },
+  {
+   "order": 277,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 537,
+   "batch": 1
+  },
+  {
+   "order": 278,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 536,
+   "batch": 1
+  },
+  {
+   "order": 279,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 535,
+   "batch": 1
+  },
+  {
+   "order": 280,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 534,
+   "batch": 1
+  },
+  {
+   "order": 281,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 532,
+   "batch": 1
+  },
+  {
+   "order": 282,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 529,
+   "batch": 1
+  },
+  {
+   "order": 283,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 528,
+   "batch": 1
+  },
+  {
+   "order": 284,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 527,
+   "batch": 1
+  },
+  {
+   "order": 285,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 526,
+   "batch": 1
+  },
+  {
+   "order": 286,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 524,
+   "batch": 1
+  },
+  {
+   "order": 287,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 522,
+   "batch": 1
+  },
+  {
+   "order": 288,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 519,
+   "batch": 1
+  },
+  {
+   "order": 289,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 518,
+   "batch": 1
+  },
+  {
+   "order": 290,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 516,
+   "batch": 1
+  },
+  {
+   "order": 291,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 514,
+   "batch": 1
+  },
+  {
+   "order": 292,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 512,
+   "batch": 1
+  },
+  {
+   "order": 293,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 510,
+   "batch": 1
+  },
+  {
+   "order": 294,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 508,
+   "batch": 1
+  },
+  {
+   "order": 295,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 507,
+   "batch": 1
+  },
+  {
+   "order": 296,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 506,
+   "batch": 1
+  },
+  {
+   "order": 297,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 504,
+   "batch": 1
+  },
+  {
+   "order": 298,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 501,
+   "batch": 1
+  },
+  {
+   "order": 299,
+   "project": "markupsafe",
+   "repo": "pallets/markupsafe",
+   "branch": "main",
+   "number": 500,
+   "batch": 1
+  },
+  {
+   "order": 300,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1341,
+   "batch": 1
+  },
+  {
+   "order": 301,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1340,
+   "batch": 1
+  },
+  {
+   "order": 302,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1338,
+   "batch": 1
+  },
+  {
+   "order": 303,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1337,
+   "batch": 1
+  },
+  {
+   "order": 304,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1335,
+   "batch": 1
+  },
+  {
+   "order": 305,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1334,
+   "batch": 1
+  },
+  {
+   "order": 306,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1333,
+   "batch": 1
+  },
+  {
+   "order": 307,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1331,
+   "batch": 1
+  },
+  {
+   "order": 308,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1330,
+   "batch": 1
+  },
+  {
+   "order": 309,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1329,
+   "batch": 1
+  },
+  {
+   "order": 310,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1325,
+   "batch": 1
+  },
+  {
+   "order": 311,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1323,
+   "batch": 1
+  },
+  {
+   "order": 312,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1322,
+   "batch": 1
+  },
+  {
+   "order": 313,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1321,
+   "batch": 1
+  },
+  {
+   "order": 314,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1320,
+   "batch": 1
+  },
+  {
+   "order": 315,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1317,
+   "batch": 1
+  },
+  {
+   "order": 316,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1314,
+   "batch": 1
+  },
+  {
+   "order": 317,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1313,
+   "batch": 1
+  },
+  {
+   "order": 318,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1312,
+   "batch": 1
+  },
+  {
+   "order": 319,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1311,
+   "batch": 1
+  },
+  {
+   "order": 320,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1310,
+   "batch": 1
+  },
+  {
+   "order": 321,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1309,
+   "batch": 1
+  },
+  {
+   "order": 322,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1306,
+   "batch": 1
+  },
+  {
+   "order": 323,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1305,
+   "batch": 1
+  },
+  {
+   "order": 324,
+   "project": "more-itertools",
+   "repo": "more-itertools/more-itertools",
+   "branch": "master",
+   "number": 1303,
+   "batch": 1
+  },
+  {
+   "order": 325,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 810,
+   "batch": 1
+  },
+  {
+   "order": 326,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 809,
+   "batch": 1
+  },
+  {
+   "order": 327,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 806,
+   "batch": 1
+  },
+  {
+   "order": 328,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 805,
+   "batch": 1
+  },
+  {
+   "order": 329,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 804,
+   "batch": 1
+  },
+  {
+   "order": 330,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 803,
+   "batch": 1
+  },
+  {
+   "order": 331,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 802,
+   "batch": 1
+  },
+  {
+   "order": 332,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 801,
+   "batch": 1
+  },
+  {
+   "order": 333,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 800,
+   "batch": 1
+  },
+  {
+   "order": 334,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 799,
+   "batch": 1
+  },
+  {
+   "order": 335,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 798,
+   "batch": 1
+  },
+  {
+   "order": 336,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 797,
+   "batch": 1
+  },
+  {
+   "order": 337,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 796,
+   "batch": 1
+  },
+  {
+   "order": 338,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 795,
+   "batch": 1
+  },
+  {
+   "order": 339,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 793,
+   "batch": 1
+  },
+  {
+   "order": 340,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 791,
+   "batch": 1
+  },
+  {
+   "order": 341,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 789,
+   "batch": 1
+  },
+  {
+   "order": 342,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 788,
+   "batch": 1
+  },
+  {
+   "order": 343,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 787,
+   "batch": 1
+  },
+  {
+   "order": 344,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 786,
+   "batch": 1
+  },
+  {
+   "order": 345,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 785,
+   "batch": 1
+  },
+  {
+   "order": 346,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 784,
+   "batch": 1
+  },
+  {
+   "order": 347,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 783,
+   "batch": 1
+  },
+  {
+   "order": 348,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 782,
+   "batch": 1
+  },
+  {
+   "order": 349,
+   "project": "pluggy",
+   "repo": "pytest-dev/pluggy",
+   "branch": "main",
+   "number": 781,
+   "batch": 1
+  },
+  {
+   "order": 350,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 704,
+   "batch": 1
+  },
+  {
+   "order": 351,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 703,
+   "batch": 1
+  },
+  {
+   "order": 352,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 701,
+   "batch": 1
+  },
+  {
+   "order": 353,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 700,
+   "batch": 1
+  },
+  {
+   "order": 354,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 699,
+   "batch": 1
+  },
+  {
+   "order": 355,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 698,
+   "batch": 1
+  },
+  {
+   "order": 356,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 697,
+   "batch": 1
+  },
+  {
+   "order": 357,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 696,
+   "batch": 1
+  },
+  {
+   "order": 358,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 694,
+   "batch": 1
+  },
+  {
+   "order": 359,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 692,
+   "batch": 1
+  },
+  {
+   "order": 360,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 691,
+   "batch": 1
+  },
+  {
+   "order": 361,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 690,
+   "batch": 1
+  },
+  {
+   "order": 362,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 689,
+   "batch": 1
+  },
+  {
+   "order": 363,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 688,
+   "batch": 1
+  },
+  {
+   "order": 364,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 687,
+   "batch": 1
+  },
+  {
+   "order": 365,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 686,
+   "batch": 1
+  },
+  {
+   "order": 366,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 685,
+   "batch": 1
+  },
+  {
+   "order": 367,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 683,
+   "batch": 1
+  },
+  {
+   "order": 368,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 682,
+   "batch": 1
+  },
+  {
+   "order": 369,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 681,
+   "batch": 1
+  },
+  {
+   "order": 370,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 680,
+   "batch": 1
+  },
+  {
+   "order": 371,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 678,
+   "batch": 1
+  },
+  {
+   "order": 372,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 677,
+   "batch": 1
+  },
+  {
+   "order": 373,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 676,
+   "batch": 1
+  },
+  {
+   "order": 374,
+   "project": "pyparsing",
+   "repo": "pyparsing/pyparsing",
+   "branch": "master",
+   "number": 675,
+   "batch": 1
+  },
+  {
+   "order": 375,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 212,
+   "batch": 1
+  },
+  {
+   "order": 376,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 211,
+   "batch": 1
+  },
+  {
+   "order": 377,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 210,
+   "batch": 1
+  },
+  {
+   "order": 378,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 209,
+   "batch": 1
+  },
+  {
+   "order": 379,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 207,
+   "batch": 1
+  },
+  {
+   "order": 380,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 206,
+   "batch": 1
+  },
+  {
+   "order": 381,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 205,
+   "batch": 1
+  },
+  {
+   "order": 382,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 204,
+   "batch": 1
+  },
+  {
+   "order": 383,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 203,
+   "batch": 1
+  },
+  {
+   "order": 384,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 202,
+   "batch": 1
+  },
+  {
+   "order": 385,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 201,
+   "batch": 1
+  },
+  {
+   "order": 386,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 200,
+   "batch": 1
+  },
+  {
+   "order": 387,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 199,
+   "batch": 1
+  },
+  {
+   "order": 388,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 198,
+   "batch": 1
+  },
+  {
+   "order": 389,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 197,
+   "batch": 1
+  },
+  {
+   "order": 390,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 196,
+   "batch": 1
+  },
+  {
+   "order": 391,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 195,
+   "batch": 1
+  },
+  {
+   "order": 392,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 194,
+   "batch": 1
+  },
+  {
+   "order": 393,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 193,
+   "batch": 1
+  },
+  {
+   "order": 394,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 191,
+   "batch": 1
+  },
+  {
+   "order": 395,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 190,
+   "batch": 1
+  },
+  {
+   "order": 396,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 189,
+   "batch": 1
+  },
+  {
+   "order": 397,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 188,
+   "batch": 1
+  },
+  {
+   "order": 398,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 187,
+   "batch": 1
+  },
+  {
+   "order": 399,
+   "project": "slugify",
+   "repo": "un33k/python-slugify",
+   "branch": "master",
+   "number": 186,
+   "batch": 1
+  },
+  {
+   "order": 400,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 940,
+   "batch": 1
+  },
+  {
+   "order": 401,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 939,
+   "batch": 1
+  },
+  {
+   "order": 402,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 938,
+   "batch": 1
+  },
+  {
+   "order": 403,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 937,
+   "batch": 1
+  },
+  {
+   "order": 404,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 936,
+   "batch": 1
+  },
+  {
+   "order": 405,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 935,
+   "batch": 1
+  },
+  {
+   "order": 406,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 934,
+   "batch": 1
+  },
+  {
+   "order": 407,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 933,
+   "batch": 1
+  },
+  {
+   "order": 408,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 932,
+   "batch": 1
+  },
+  {
+   "order": 409,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 931,
+   "batch": 1
+  },
+  {
+   "order": 410,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 930,
+   "batch": 1
+  },
+  {
+   "order": 411,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 929,
+   "batch": 1
+  },
+  {
+   "order": 412,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 928,
+   "batch": 1
+  },
+  {
+   "order": 413,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 927,
+   "batch": 1
+  },
+  {
+   "order": 414,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 926,
+   "batch": 1
+  },
+  {
+   "order": 415,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 925,
+   "batch": 1
+  },
+  {
+   "order": 416,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 924,
+   "batch": 1
+  },
+  {
+   "order": 417,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 923,
+   "batch": 1
+  },
+  {
+   "order": 418,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 922,
+   "batch": 1
+  },
+  {
+   "order": 419,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 921,
+   "batch": 1
+  },
+  {
+   "order": 420,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 920,
+   "batch": 1
+  },
+  {
+   "order": 421,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 919,
+   "batch": 1
+  },
+  {
+   "order": 422,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 918,
+   "batch": 1
+  },
+  {
+   "order": 423,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 917,
+   "batch": 1
+  },
+  {
+   "order": 424,
+   "project": "sqlparse",
+   "repo": "andialbrecht/sqlparse",
+   "branch": "master",
+   "number": 916,
+   "batch": 1
+  },
+  {
+   "order": 425,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 325,
+   "batch": 1
+  },
+  {
+   "order": 426,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 324,
+   "batch": 1
+  },
+  {
+   "order": 427,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 323,
+   "batch": 1
+  },
+  {
+   "order": 428,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 322,
+   "batch": 1
+  },
+  {
+   "order": 429,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 321,
+   "batch": 1
+  },
+  {
+   "order": 430,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 320,
+   "batch": 1
+  },
+  {
+   "order": 431,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 319,
+   "batch": 1
+  },
+  {
+   "order": 432,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 318,
+   "batch": 1
+  },
+  {
+   "order": 433,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 317,
+   "batch": 1
+  },
+  {
+   "order": 434,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 316,
+   "batch": 1
+  },
+  {
+   "order": 435,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 315,
+   "batch": 1
+  },
+  {
+   "order": 436,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 314,
+   "batch": 1
+  },
+  {
+   "order": 437,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 311,
+   "batch": 1
+  },
+  {
+   "order": 438,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 310,
+   "batch": 1
+  },
+  {
+   "order": 439,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 308,
+   "batch": 1
+  },
+  {
+   "order": 440,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 307,
+   "batch": 1
+  },
+  {
+   "order": 441,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 306,
+   "batch": 1
+  },
+  {
+   "order": 442,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 305,
+   "batch": 1
+  },
+  {
+   "order": 443,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 302,
+   "batch": 1
+  },
+  {
+   "order": 444,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 301,
+   "batch": 1
+  },
+  {
+   "order": 445,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 300,
+   "batch": 1
+  },
+  {
+   "order": 446,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 299,
+   "batch": 1
+  },
+  {
+   "order": 447,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 297,
+   "batch": 1
+  },
+  {
+   "order": 448,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 296,
+   "batch": 1
+  },
+  {
+   "order": 449,
+   "project": "tomli",
+   "repo": "hukkin/tomli",
+   "branch": "master",
+   "number": 295,
+   "batch": 1
+  },
+  {
+   "order": 450,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 655,
+   "batch": 1
+  },
+  {
+   "order": 451,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 654,
+   "batch": 1
+  },
+  {
+   "order": 452,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 653,
+   "batch": 1
+  },
+  {
+   "order": 453,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 651,
+   "batch": 1
+  },
+  {
+   "order": 454,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 650,
+   "batch": 1
+  },
+  {
+   "order": 455,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 649,
+   "batch": 1
+  },
+  {
+   "order": 456,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 648,
+   "batch": 1
+  },
+  {
+   "order": 457,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 647,
+   "batch": 1
+  },
+  {
+   "order": 458,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 646,
+   "batch": 1
+  },
+  {
+   "order": 459,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 645,
+   "batch": 1
+  },
+  {
+   "order": 460,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 644,
+   "batch": 1
+  },
+  {
+   "order": 461,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 643,
+   "batch": 1
+  },
+  {
+   "order": 462,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 642,
+   "batch": 1
+  },
+  {
+   "order": 463,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 641,
+   "batch": 1
+  },
+  {
+   "order": 464,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 640,
+   "batch": 1
+  },
+  {
+   "order": 465,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 639,
+   "batch": 1
+  },
+  {
+   "order": 466,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 638,
+   "batch": 1
+  },
+  {
+   "order": 467,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 637,
+   "batch": 1
+  },
+  {
+   "order": 468,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 636,
+   "batch": 1
+  },
+  {
+   "order": 469,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 635,
+   "batch": 1
+  },
+  {
+   "order": 470,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 634,
+   "batch": 1
+  },
+  {
+   "order": 471,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 633,
+   "batch": 1
+  },
+  {
+   "order": 472,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 632,
+   "batch": 1
+  },
+  {
+   "order": 473,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 631,
+   "batch": 1
+  },
+  {
+   "order": 474,
+   "project": "toolz",
+   "repo": "pytoolz/toolz",
+   "branch": "master",
+   "number": 630,
+   "batch": 1
+  },
+  {
+   "order": 475,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 751,
+   "batch": 1
+  },
+  {
+   "order": 476,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 749,
+   "batch": 1
+  },
+  {
+   "order": 477,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 748,
+   "batch": 1
+  },
+  {
+   "order": 478,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 747,
+   "batch": 1
+  },
+  {
+   "order": 479,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 746,
+   "batch": 1
+  },
+  {
+   "order": 480,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 745,
+   "batch": 1
+  },
+  {
+   "order": 481,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 744,
+   "batch": 1
+  },
+  {
+   "order": 482,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 742,
+   "batch": 1
+  },
+  {
+   "order": 483,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 741,
+   "batch": 1
+  },
+  {
+   "order": 484,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 739,
+   "batch": 1
+  },
+  {
+   "order": 485,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 736,
+   "batch": 1
+  },
+  {
+   "order": 486,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 732,
+   "batch": 1
+  },
+  {
+   "order": 487,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 731,
+   "batch": 1
+  },
+  {
+   "order": 488,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 729,
+   "batch": 1
+  },
+  {
+   "order": 489,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 728,
+   "batch": 1
+  },
+  {
+   "order": 490,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 712,
+   "batch": 1
+  },
+  {
+   "order": 491,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 709,
+   "batch": 1
+  },
+  {
+   "order": 492,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 707,
+   "batch": 1
+  },
+  {
+   "order": 493,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 696,
+   "batch": 1
+  },
+  {
+   "order": 494,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 694,
+   "batch": 1
+  },
+  {
+   "order": 495,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 687,
+   "batch": 1
+  },
+  {
+   "order": 496,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 686,
+   "batch": 1
+  },
+  {
+   "order": 497,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 685,
+   "batch": 1
+  },
+  {
+   "order": 498,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 684,
+   "batch": 1
+  },
+  {
+   "order": 499,
+   "project": "transitions",
+   "repo": "pytransitions/transitions",
+   "branch": "master",
+   "number": 678,
+   "batch": 1
+  },
+  {
+   "order": 500,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 545,
+   "batch": 1
+  },
+  {
+   "order": 501,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 544,
+   "batch": 1
+  },
+  {
+   "order": 502,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 543,
+   "batch": 1
+  },
+  {
+   "order": 503,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 542,
+   "batch": 1
+  },
+  {
+   "order": 504,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 541,
+   "batch": 1
+  },
+  {
+   "order": 505,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 540,
+   "batch": 1
+  },
+  {
+   "order": 506,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 539,
+   "batch": 1
+  },
+  {
+   "order": 507,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 538,
+   "batch": 1
+  },
+  {
+   "order": 508,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 537,
+   "batch": 1
+  },
+  {
+   "order": 509,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 536,
+   "batch": 1
+  },
+  {
+   "order": 510,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 535,
+   "batch": 1
+  },
+  {
+   "order": 511,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 534,
+   "batch": 1
+  },
+  {
+   "order": 512,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 533,
+   "batch": 1
+  },
+  {
+   "order": 513,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 532,
+   "batch": 1
+  },
+  {
+   "order": 514,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 531,
+   "batch": 1
+  },
+  {
+   "order": 515,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 530,
+   "batch": 1
+  },
+  {
+   "order": 516,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 529,
+   "batch": 1
+  },
+  {
+   "order": 517,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 528,
+   "batch": 1
+  },
+  {
+   "order": 518,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 527,
+   "batch": 1
+  },
+  {
+   "order": 519,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 526,
+   "batch": 1
+  },
+  {
+   "order": 520,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 525,
+   "batch": 1
+  },
+  {
+   "order": 521,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 524,
+   "batch": 1
+  },
+  {
+   "order": 522,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 523,
+   "batch": 1
+  },
+  {
+   "order": 523,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 521,
+   "batch": 1
+  },
+  {
+   "order": 524,
+   "project": "validators",
+   "repo": "python-validators/validators",
+   "branch": "master",
+   "number": 520,
+   "batch": 1
+  },
+  {
+   "order": 525,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 397,
+   "batch": 1
+  },
+  {
+   "order": 526,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 396,
+   "batch": 1
+  },
+  {
+   "order": 527,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 395,
+   "batch": 1
+  },
+  {
+   "order": 528,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 394,
+   "batch": 1
+  },
+  {
+   "order": 529,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 393,
+   "batch": 1
+  },
+  {
+   "order": 530,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 392,
+   "batch": 1
+  },
+  {
+   "order": 531,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 391,
+   "batch": 1
+  },
+  {
+   "order": 532,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 389,
+   "batch": 1
+  },
+  {
+   "order": 533,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 388,
+   "batch": 1
+  },
+  {
+   "order": 534,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 387,
+   "batch": 1
+  },
+  {
+   "order": 535,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 386,
+   "batch": 1
+  },
+  {
+   "order": 536,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 385,
+   "batch": 1
+  },
+  {
+   "order": 537,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 384,
+   "batch": 1
+  },
+  {
+   "order": 538,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 383,
+   "batch": 1
+  },
+  {
+   "order": 539,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 382,
+   "batch": 1
+  },
+  {
+   "order": 540,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 381,
+   "batch": 1
+  },
+  {
+   "order": 541,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 380,
+   "batch": 1
+  },
+  {
+   "order": 542,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 379,
+   "batch": 1
+  },
+  {
+   "order": 543,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 378,
+   "batch": 1
+  },
+  {
+   "order": 544,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 377,
+   "batch": 1
+  },
+  {
+   "order": 545,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 376,
+   "batch": 1
+  },
+  {
+   "order": 546,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 375,
+   "batch": 1
+  },
+  {
+   "order": 547,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 374,
+   "batch": 1
+  },
+  {
+   "order": 548,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 373,
+   "batch": 1
+  },
+  {
+   "order": 549,
+   "project": "w3lib",
+   "repo": "scrapy/w3lib",
+   "branch": "master",
+   "number": 372,
+   "batch": 1
+  }
+ ],
+ "rule_batch2": "the next 25 pull requests of each project below the lowest number of batch 1, read with git ls-remote; fixed before batch 2 was run"
+}

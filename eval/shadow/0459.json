@@ -1,0 +1,37 @@
+{
+ "repo": "pytoolz/toolz",
+ "number": 645,
+ "status": "ran",
+ "head": "1686998788aa979cc88d737f3dd4b17b3c9b4934",
+ "base": "451af60dec590a6010e2babdbf391ea8f815122f",
+ "diff_bytes": 2576,
+ "n_tests": 194,
+ "base_failing": 1,
+ "head_failing": 2,
+ "introduced": [
+  "toolz/tests/test_serialization.py::test_curry_main_cloudpickle_roundtrip"
+ ],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "toolz/functoolz.py",
+  "toolz/tests/test_serialization.py"
+ ],
+ "n_changed": 2,
+ "selected": 194,
+ "file_selected": 194,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [
+  "toolz/tests/test_serialization.py::test_curry_main_cloudpickle_roundtrip"
+ ],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.22,
+ "seconds_selected": 0.22,
+ "wall_seconds": 29.7,
+ "project": "toolz",
+ "image_code_sha": "a874558"
+}

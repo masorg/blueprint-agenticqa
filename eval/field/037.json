@@ -1,0 +1,31 @@
+{
+ "order": 37,
+ "pr_id": 3438235089,
+ "agent": "Copilot",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 4,
+ "repo": "mlflow/mlflow",
+ "number": 17861,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "702a981ba9d850e9805f83850648059858a8a4db",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   ModuleNotFoundError: No module named 'tomli'\u001b[0m | E   M",
+  "layer_states": {},
+  "seconds": 334.1
+ },
+ "wall_seconds": 410.3,
+ "head_sha": "702a981ba9d850e9805f83850648059858a8a4db"
+}

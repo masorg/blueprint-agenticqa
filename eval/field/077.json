@@ -1,0 +1,31 @@
+{
+ "order": 77,
+ "pr_id": 3079663447,
+ "agent": "OpenAI_Codex",
+ "merged": false,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "PrunaAI/pruna",
+ "number": 141,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "9c4514c6510859e93d142b1d2f5b03aa4cc418bd",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 4): ImportError while loading conftest '/tmp/agenticqa-workspaces/ws-9sq_eys9/tests/conftest.py'. | E   ModuleNotFoundError: No module named 'torch'",
+  "layer_states": {},
+  "seconds": 2.2
+ },
+ "wall_seconds": 4.5,
+ "head_sha": "9c4514c6510859e93d142b1d2f5b03aa4cc418bd"
+}

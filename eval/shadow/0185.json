@@ -1,0 +1,33 @@
+{
+ "repo": "mahmoud/glom",
+ "number": 322,
+ "status": "ran",
+ "head": "3866d0adfadab7303618ecf8138a5235bd39a0bb",
+ "base": "fd70d3051a6a1bcb5152ec2d8e2cdc8e852f95e6",
+ "diff_bytes": 1286,
+ "n_tests": 206,
+ "base_failing": 1,
+ "head_failing": 1,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "glom/matching.py",
+  "glom/test/test_regex_subclasses.py"
+ ],
+ "n_changed": 2,
+ "selected": 206,
+ "file_selected": 206,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.21,
+ "seconds_selected": 0.21,
+ "wall_seconds": 25.7,
+ "project": "glom",
+ "image_code_sha": "a874558"
+}

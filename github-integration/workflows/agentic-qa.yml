@@ -1,0 +1,77 @@
+# Agentic QA — PR trigger
+#
+# Copy this file into your repository at `.github/workflows/agentic-qa.yml`.
+#
+# On every pull request it computes the diff and POSTs a trigger to your running
+# Agentic QA app. The app returns 202 immediately and owns the long-running
+# `agentic-qa/review` commit status itself — so this short-lived Action never
+# blocks on (or fails because of) a multi-minute test run.
+#
+# Required repository secrets (Settings → Secrets and variables → Actions):
+#   AGENTICQA_URL      Base URL of the deployed app, e.g. https://<app>.cml-...
+#   AGENTICQA_API_KEY  Matches the app's AGENTICQA_APP_API_KEY.
+
+name: Agentic QA
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out PR head
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Compute diff
+        id: diff
+        run: |
+          base="${{ github.event.pull_request.base.sha }}"
+          head="${{ github.event.pull_request.head.sha }}"
+          git diff "$base" "$head" > pr.diff || true
+          # Cap the diff so the routing prompt stays bounded.
+          head -c 200000 pr.diff > pr.diff.capped
+          echo "path=pr.diff.capped" >> "$GITHUB_OUTPUT"
+
+      - name: Trigger Agentic QA
+        env:
+          AGENTICQA_URL: ${{ secrets.AGENTICQA_URL }}
+          AGENTICQA_API_KEY: ${{ secrets.AGENTICQA_API_KEY }}
+        run: |
+          if [ -z "$AGENTICQA_URL" ]; then
+            echo "AGENTICQA_URL secret is not set — skipping." >&2
+            exit 0
+          fi
+          # Build the JSON body with jq so the diff is escaped safely.
+          jq -n \
+            --arg owner  "${{ github.event.repository.owner.login }}" \
+            --arg name   "${{ github.event.repository.name }}" \
+            --arg clone  "${{ github.event.repository.clone_url }}" \
+            --argjson num ${{ github.event.pull_request.number }} \
+            --arg title  "${{ github.event.pull_request.title }}" \
+            --arg head   "${{ github.event.pull_request.head.sha }}" \
+            --arg base   "${{ github.event.pull_request.base.sha }}" \
+            --rawfile diff ${{ steps.diff.outputs.path }} \
+            '{
+               source: "github",
+               repo: { owner: $owner, name: $name, clone_url: $clone },
+               pr:   { number: $num, title: $title, head_sha: $head, base_sha: $base },
+               diff: $diff
+             }' > body.json
+
+          code=$(curl -sS -o resp.json -w '%{http_code}' \
+            --max-time 30 \
+            -X POST "$AGENTICQA_URL/api/v1/runs" \
+            -H "Content-Type: application/json" \
+            -H "X-API-Key: $AGENTICQA_API_KEY" \
+            --data @body.json)
+          echo "HTTP $code"; cat resp.json
+          # 202 Accepted is the expected success; anything else fails the step.
+          [ "$code" = "202" ]

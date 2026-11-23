@@ -1,0 +1,17 @@
+# Optional per-repo hints for Agentic QA.
+#
+# This file is entirely optional. When present, it lets a repo give the QA
+# pipeline deterministic hints instead of relying purely on LLM inference.
+# The demo repo ships it so the on-stage demo is reproducible; a real repo
+# may omit it and let routing/classification run fully automatically.
+
+# Is the system under test itself an agentic/LLM system? Controls whether the
+# trajectory and llm_judge layers activate. This is a plain REST service.
+repo_kind: plain_service
+
+# Optional explicit layer hints, keyed by pytest node-id substring. The
+# classifier uses these as strong priors; anything unlisted is inferred.
+layer_hints:
+  "tests/test_orders.py": unit
+  "tests/test_properties.py": property
+  "tests/test_adversarial.py": adversarial

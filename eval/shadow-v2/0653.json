@@ -1,0 +1,10 @@
+{
+ "repo": "pallets/click",
+ "number": 3850,
+ "status": "empty_diff",
+ "head": "b8a4486d52083981babc1642449420db6b09662e",
+ "base": "b8a4486d52083981babc1642449420db6b09662e",
+ "diff_bytes": 0,
+ "project": "click",
+ "image_code_sha": "a116495"
+}

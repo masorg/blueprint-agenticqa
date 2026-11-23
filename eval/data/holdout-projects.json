@@ -1,0 +1,111 @@
+{
+ "note": "Held-out projects for the selection study. Named and pinned (last non-merge commit before 2026-09-30) BEFORE any of them was run, and run once with the frozen selector (git sha recorded in each report). None was used to develop the selector. Batch 2 was named and pinned the same way after only one of the eight projects of batch 1 could be set up (missing build metadata, old pinned requirements, an optional dependency, a baseline timeout); batch 1 projects are reported, not removed. Batch 3 was pinned after the first held-out run found a bug (a package under a src/ directory that is itself a package was not recognised); the fix was made, batches 1 and 2 were rerun, and batch 3 was named and run only once with the fixed selector.",
+ "projects": {
+  "tabulate": {
+   "repo": "astanin/python-tabulate",
+   "sha": "3681fa565d4001d2d23e168e15d207afe9e19c1a"
+  },
+  "cachetools": {
+   "repo": "tkem/cachetools",
+   "sha": "11153c947675edae9da06a5295bfa4a54b8a4f53"
+  },
+  "humanize": {
+   "repo": "python-humanize/humanize",
+   "sha": "392aef707c0e74341ab4a51420984e9ea6b566c5"
+  },
+  "sortedcontainers": {
+   "repo": "grantjenks/python-sortedcontainers",
+   "sha": "3ac358631f58c1347f1d6d2d92784117db0f38ed"
+  },
+  "pyparsing": {
+   "repo": "pyparsing/pyparsing",
+   "sha": "f803ae834288032a700331977639fc49c62fcd7f"
+  },
+  "marshmallow": {
+   "repo": "marshmallow-code/marshmallow",
+   "sha": "7f0792bd7a06f72e393ec866ac1e89e1502ccfe1"
+  },
+  "werkzeug": {
+   "repo": "pallets/werkzeug",
+   "sha": "2f60c2039d67868bbd98e32f9e006ea40806ddc3"
+  },
+  "jsonschema": {
+   "repo": "python-jsonschema/jsonschema",
+   "sha": "6361535507f894716dc75a09aae426233c61cd16"
+  },
+  "lark": {
+   "repo": "lark-parser/lark",
+   "sha": "9a4fb9c7458e8155636773a3cded0016d52516da"
+  },
+  "colorama": {
+   "repo": "tartley/colorama",
+   "sha": "3332a542e51c213d593a9e2bf7570f60d995489c"
+  },
+  "validators": {
+   "repo": "python-validators/validators",
+   "sha": "474496de3e47579b0301c7567eeba50d0db25159"
+  },
+  "glom": {
+   "repo": "mahmoud/glom",
+   "sha": "fd70d3051a6a1bcb5152ec2d8e2cdc8e852f95e6"
+  },
+  "tomli": {
+   "repo": "hukkin/tomli",
+   "sha": "5a77b12a7a9f052ce5a20c335d2825658f6aea52"
+  },
+  "tinydb": {
+   "repo": "msiemens/tinydb",
+   "sha": "18d73a15066a04c77f19ae9a8c03d582bd344c0d"
+  },
+  "transitions": {
+   "repo": "pytransitions/transitions",
+   "sha": "bd42b38f3627e6bca7274fb4d9af2e105f75da7c"
+  },
+  "furl": {
+   "repo": "gruns/furl",
+   "sha": "46d9ea79c98bb14b970a199fb924705d024f29ad"
+  },
+  "zipp": {
+   "repo": "jaraco/zipp",
+   "sha": "2c43cdf7c2faa369083118742a036303b85edf66"
+  },
+  "slugify": {
+   "repo": "un33k/python-slugify",
+   "sha": "866401ea6b346d7575cf941bc73ad32a362e34aa"
+  },
+  "w3lib": {
+   "repo": "scrapy/w3lib",
+   "sha": "6349b6044371e996c1de6af5d605f316b105617b"
+  },
+  "markdown": {
+   "repo": "Python-Markdown/markdown",
+   "sha": "0ffbf00cf667971d46f43aafba825e8d25098bc5"
+  },
+  "blinker": {
+   "repo": "pallets-eco/blinker",
+   "sha": "d5f2ec948e4e4d448ce41435aef6db13446ee99c"
+  },
+  "tomlkit": {
+   "repo": "sdispater/tomlkit",
+   "sha": "763bd661bfed068209c03510ae94493eb2db12b5"
+  }
+ },
+ "batch2": [
+  "lark",
+  "colorama",
+  "validators",
+  "glom",
+  "tomli",
+  "tinydb",
+  "transitions",
+  "furl"
+ ],
+ "batch3": [
+  "zipp",
+  "slugify",
+  "w3lib",
+  "markdown",
+  "blinker",
+  "tomlkit"
+ ]
+}

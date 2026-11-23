@@ -1,0 +1,44 @@
+{
+ "repo": "pallets/markupsafe",
+ "number": 524,
+ "status": "ran",
+ "head": "351530852a22340f7f73db9da54813084f193200",
+ "base": "b2e4d9c7687be25695fffbe93a37622302b24fb1",
+ "diff_bytes": 2946,
+ "coverage_seconds": 3.1,
+ "coverage_files": 9,
+ "n_tests": 80,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "bench.py"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [
+  "bench.py"
+ ],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [
+  "bench.py"
+ ],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "success",
+ "seconds_full": 0.08,
+ "seconds_selected": 0,
+ "wall_seconds": 48.9,
+ "project": "markupsafe",
+ "image_code_sha": "a116495"
+}

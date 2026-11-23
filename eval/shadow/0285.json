@@ -1,0 +1,34 @@
+{
+ "repo": "pallets/markupsafe",
+ "number": 526,
+ "status": "ran",
+ "head": "dcadee678cea1537ea1cb86b2c2d52d08ac39267",
+ "base": "b2e4d9c7687be25695fffbe93a37622302b24fb1",
+ "diff_bytes": 327,
+ "n_tests": 80,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "README.md"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "README.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.19,
+ "seconds_selected": 0,
+ "wall_seconds": 67.4,
+ "project": "markupsafe",
+ "image_code_sha": "a874558"
+}

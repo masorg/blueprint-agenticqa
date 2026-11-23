@@ -1,0 +1,31 @@
+{
+ "order": 1,
+ "pr_id": 3414255897,
+ "agent": "Copilot",
+ "merged": false,
+ "says_tests_pass": false,
+ "n_commits": 6,
+ "repo": "bpwhelan/GameSentenceMiner",
+ "number": 186,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "cdf2b768e70864371f85ccf2a5a3e63d9e4f4305",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "RuntimeError: command failed (2): /usr/local/bin/uv pip install --python /tmp/agenticqa-workspaces/venv-cache/c91351130bed8e22/.venv/bin/python -r /tmp/agenticqa-workspaces/ws-10mvt6fk/requirements.txt\nerror: Couldn't parse requirement in `/tmp/agenticqa-workspaces/ws-10mvt6fk/requirements.txt` at position 358\n  cause: The ~= operator requires at least two segments in the release version\n         ",
+  "layer_states": {},
+  "seconds": 0.1
+ },
+ "wall_seconds": 2.5,
+ "head_sha": "cdf2b768e70864371f85ccf2a5a3e63d9e4f4305"
+}

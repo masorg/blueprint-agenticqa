@@ -1,0 +1,42 @@
+{
+ "repo": "python-attrs/attrs",
+ "number": 1615,
+ "status": "ran",
+ "head": "b821df37e8b5c6a1f99753906fdc1cc94f1469c3",
+ "base": "dc1ca3892c0285f2a3980e1fd08d50728fd1eaec",
+ "diff_bytes": 748,
+ "coverage_seconds": 15.8,
+ "coverage_files": 48,
+ "n_tests": 1412,
+ "base_failing": 5,
+ "head_failing": 5,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "docs/api.rst"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  "docs/api.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 6.76,
+ "seconds_selected": 0,
+ "wall_seconds": 98.8,
+ "project": "attrs",
+ "image_code_sha": "a116495"
+}

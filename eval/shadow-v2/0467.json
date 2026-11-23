@@ -1,0 +1,45 @@
+{
+ "repo": "pytoolz/toolz",
+ "number": 637,
+ "status": "ran",
+ "head": "139b1b05a3455fc46bd04a4248d6bd3e3447823e",
+ "base": "d2eba0374a452c2b18fe188b04527e22bda3548c",
+ "diff_bytes": 1220,
+ "coverage_seconds": 7.5,
+ "coverage_files": 33,
+ "n_tests": 193,
+ "base_failing": 1,
+ "head_failing": 1,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".pre-commit-config.yaml",
+  "toolz/tests/test_itertoolz.py"
+ ],
+ "n_changed": 2,
+ "selected": 0,
+ "file_selected": 51,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [
+  ".pre-commit-config.yaml"
+ ],
+ "inert": [
+  "toolz/tests/test_itertoolz.py"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 0.22,
+ "seconds_selected": 0,
+ "wall_seconds": 27.7,
+ "project": "toolz",
+ "image_code_sha": "a116495"
+}

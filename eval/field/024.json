@@ -1,0 +1,60 @@
+{
+ "order": 24,
+ "pr_id": 3431634736,
+ "agent": "Claude_Code",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "microsoft/amplifier",
+ "number": 14,
+ "status": "ran",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "c09f73b0ed888e88affc4c904254ac2bba51790e",
+  "state": "done",
+  "verdict": "auto_approve",
+  "completed": true,
+  "totals": {
+   "passed": 4,
+   "failed": 0,
+   "skipped": 0,
+   "total": 4
+  },
+  "failing": [],
+  "error": "",
+  "layer_states": {
+   "unit": "passed",
+   "property": "skipped",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 78.1
+ },
+ "base": {
+  "sha": "45d28848aa7cee12b2ba6d00fefbc08bb73f52d7",
+  "state": "done",
+  "verdict": "auto_approve",
+  "completed": true,
+  "totals": {
+   "passed": 4,
+   "failed": 0,
+   "skipped": 0,
+   "total": 4
+  },
+  "failing": [],
+  "error": "",
+  "layer_states": {
+   "unit": "passed",
+   "property": "skipped",
+   "trajectory": "pending",
+   "llm_judge": "pending",
+   "adversarial": "skipped"
+  },
+  "seconds": 6.2
+ },
+ "wall_seconds": 86.1,
+ "head_sha": "c09f73b0ed888e88affc4c904254ac2bba51790e",
+ "base_sha": "45d28848aa7cee12b2ba6d00fefbc08bb73f52d7"
+}

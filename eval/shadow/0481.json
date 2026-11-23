@@ -1,0 +1,38 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 744,
+ "status": "ran",
+ "head": "08d80d3df2f0378a2a921e884bd833ad41fbdb35",
+ "base": "bd42b38f3627e6bca7274fb4d9af2e105f75da7c",
+ "diff_bytes": 5658,
+ "n_tests": 3216,
+ "base_failing": 6,
+ "head_failing": 6,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "Changelog.md",
+  "tests/test_async.py",
+  "transitions/extensions/asyncio.py",
+  "transitions/extensions/asyncio.pyi"
+ ],
+ "n_changed": 4,
+ "selected": 3142,
+ "file_selected": 3142,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "Changelog.md",
+  "transitions/extensions/asyncio.pyi"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 27.18,
+ "seconds_selected": 27.05,
+ "wall_seconds": 81.1,
+ "project": "transitions",
+ "image_code_sha": "a874558"
+}

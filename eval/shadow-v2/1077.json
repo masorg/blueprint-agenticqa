@@ -1,0 +1,42 @@
+{
+ "repo": "scrapy/w3lib",
+ "number": 369,
+ "status": "ran",
+ "head": "93e98bc16422b5a799d390395f6bbdcd1e74a1fe",
+ "base": "5e71f7ca8f7759be3d06ec82a164477c91af5b9f",
+ "diff_bytes": 762,
+ "coverage_seconds": 60.0,
+ "coverage_files": 18,
+ "n_tests": 1659,
+ "base_failing": 443,
+ "head_failing": 443,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  ".github/workflows/close-unattended-prs.yml"
+ ],
+ "n_changed": 1,
+ "selected": 0,
+ "file_selected": 0,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 0,
+ "dyn_uncovered": [],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0,
+ "out_of_scope": [],
+ "inert": [
+  ".github/workflows/close-unattended-prs.yml"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "failure",
+ "seconds_full": 35.16,
+ "seconds_selected": 0,
+ "wall_seconds": 168.4,
+ "project": "w3lib",
+ "image_code_sha": "a116495"
+}

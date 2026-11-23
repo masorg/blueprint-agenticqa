@@ -1,0 +1,52 @@
+{
+ "generated_at": "2026-10-24T21:33:32.272886+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T21:33:32.746012+00:00",
+  "git_sha": "3ad92ef6a749167a1272f4f716fe1d3001d5af31",
+  "code_dirty": true,
+  "code_diff_sha256": "8e685da015b436b9",
+  "corpus": "selection-advice:more-itertools",
+  "corpus_fingerprint": "0bf56d31efc59563",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-advice",
+   "--project",
+   "more-itertools",
+   "--report",
+   "eval/reports/selection-replay-more-itertools-2026-10-24T21-20-35.857493+00-00.json",
+   "--provider",
+   "openai",
+   "--model",
+   "gpt-4o-mini",
+   "--limit",
+   "12"
+  ]
+ },
+ "summary": {
+  "n_mutants": 0,
+  "models": [
+   "openai:gpt-4o-mini"
+  ],
+  "mean_core_share": null,
+  "mean_added": null,
+  "mutants_with_additions": 0,
+  "failing_tests_outside_core": 0,
+  "named_by_model": 0,
+  "mean_tokens": null,
+  "mean_seconds": null
+ },
+ "results": [
+  {
+   "project": "more-itertools",
+   "provider": "openai",
+   "model": "gpt-4o-mini",
+   "rows": [],
+   "status": "ran"
+  }
+ ]
+}

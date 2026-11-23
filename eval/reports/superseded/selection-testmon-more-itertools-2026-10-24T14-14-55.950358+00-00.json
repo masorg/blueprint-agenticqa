@@ -1,0 +1,442 @@
+{
+ "generated_at": "2026-10-24T14:14:55.950358+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T14:14:56.179897+00:00",
+  "git_sha": "00ec4a783095e173853b5798aa640d836d1e4742",
+  "code_dirty": true,
+  "code_diff_sha256": "bcf368538bda6cf7",
+  "corpus": "selection-testmon:more-itertools",
+  "corpus_fingerprint": "10d551ac97fa3efd",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-testmon",
+   "--project",
+   "more-itertools",
+   "--report",
+   "eval/reports/selection-replay-more-itertools-2026-10-24T03-28-14.646369+00-00.json"
+  ]
+ },
+ "summary": {
+  "projects": [
+   "more-itertools"
+  ],
+  "mutants": 30,
+  "killed": 22,
+  "testmon_missed": {
+   "k": 0,
+   "n": 22,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.149
+   ]
+  },
+  "gate_missed": {
+   "k": 0,
+   "n": 22,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.149
+   ]
+  },
+  "testmon_tests_share_mean": 0.2176,
+  "gate_tests_share_mean": 0.0705,
+  "testmon_missed_ids": [],
+  "baseline_seconds": {
+   "more-itertools": 36.5
+  },
+  "per_project": {
+   "more-itertools": {
+    "mutants": 30,
+    "killed": 22,
+    "testmon_missed": 0,
+    "gate_missed": 0,
+    "testmon_share": 0.218,
+    "gate_share": 0.071
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "more-itertools",
+   "seed": 20261023,
+   "status": "ran",
+   "rows": [
+    {
+     "id": "more-itertools-000",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 1,
+     "testmon_seconds": 2.95,
+     "timed_out": false,
+     "gate_selected": 39,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-001",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 243,
+     "testmon_failed": 0,
+     "testmon_seconds": 27.34,
+     "timed_out": false,
+     "gate_selected": 8,
+     "gate_caught": false,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-002",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 620,
+     "testmon_failed": 1,
+     "testmon_seconds": 32.79,
+     "timed_out": false,
+     "gate_selected": 40,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-003",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 2,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.62,
+     "timed_out": false,
+     "gate_selected": 2,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-004",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 3,
+     "testmon_failed": 3,
+     "testmon_seconds": 1.41,
+     "timed_out": false,
+     "gate_selected": 60,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-005",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 3599,
+     "testmon_failed": 3592,
+     "testmon_seconds": 129.93,
+     "timed_out": false,
+     "gate_selected": 767,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-006",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 4,
+     "testmon_seconds": 0.85,
+     "timed_out": false,
+     "gate_selected": 7,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-007",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.62,
+     "timed_out": false,
+     "gate_selected": 1,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-008",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 160,
+     "testmon_failed": 155,
+     "testmon_seconds": 23.87,
+     "timed_out": false,
+     "gate_selected": 43,
+     "gate_caught": false,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-009",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 4,
+     "testmon_seconds": 0.69,
+     "timed_out": false,
+     "gate_selected": 3,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-010",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 4,
+     "testmon_failed": 2,
+     "testmon_seconds": 1.17,
+     "timed_out": false,
+     "gate_selected": 41,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-011",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 8,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.58,
+     "timed_out": false,
+     "gate_selected": 53,
+     "gate_caught": false,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-012",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 4,
+     "testmon_failed": 0,
+     "testmon_seconds": 0.89,
+     "timed_out": false,
+     "gate_selected": 39,
+     "gate_caught": false,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-013",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 4,
+     "testmon_failed": 2,
+     "testmon_seconds": 0.66,
+     "timed_out": false,
+     "gate_selected": 4,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-014",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 8,
+     "testmon_failed": 2,
+     "testmon_seconds": 1.26,
+     "timed_out": false,
+     "gate_selected": 45,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-015",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 1,
+     "testmon_failed": 1,
+     "testmon_seconds": 0.62,
+     "timed_out": false,
+     "gate_selected": 1,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-016",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 5,
+     "testmon_failed": 4,
+     "testmon_seconds": 1.36,
+     "timed_out": false,
+     "gate_selected": 42,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-017",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 0,
+     "testmon_failed": 0,
+     "testmon_seconds": 241.16,
+     "timed_out": false,
+     "gate_selected": 3,
+     "gate_caught": false,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-018",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 8,
+     "testmon_failed": 2,
+     "testmon_seconds": 1.44,
+     "timed_out": false,
+     "gate_selected": 45,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-019",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 7,
+     "testmon_seconds": 1.71,
+     "timed_out": false,
+     "gate_selected": 46,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-020",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 3,
+     "testmon_failed": 1,
+     "testmon_seconds": 1.06,
+     "timed_out": false,
+     "gate_selected": 60,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-021",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 243,
+     "testmon_failed": 0,
+     "testmon_seconds": 27.89,
+     "timed_out": false,
+     "gate_selected": 8,
+     "gate_caught": false,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-022",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 28,
+     "testmon_failed": 25,
+     "testmon_seconds": 5.41,
+     "timed_out": false,
+     "gate_selected": 40,
+     "gate_caught": false,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-023",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 6,
+     "testmon_failed": 4,
+     "testmon_seconds": 0.76,
+     "timed_out": false,
+     "gate_selected": 3,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-024",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 5,
+     "testmon_failed": 4,
+     "testmon_seconds": 1.5,
+     "timed_out": false,
+     "gate_selected": 42,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-025",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 7,
+     "testmon_failed": 4,
+     "testmon_seconds": 1.15,
+     "timed_out": false,
+     "gate_selected": 46,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-026",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 3,
+     "testmon_failed": 1,
+     "testmon_seconds": 1.24,
+     "timed_out": false,
+     "gate_selected": 41,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-027",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 8,
+     "testmon_failed": 8,
+     "testmon_seconds": 1.43,
+     "timed_out": false,
+     "gate_selected": 46,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-028",
+     "total": 767,
+     "killed_full": true,
+     "testmon_run": 3,
+     "testmon_failed": 3,
+     "testmon_seconds": 1.27,
+     "timed_out": false,
+     "gate_selected": 40,
+     "gate_caught": true,
+     "seconds_full": 21.289
+    },
+    {
+     "id": "more-itertools-029",
+     "total": 767,
+     "killed_full": false,
+     "testmon_run": 5,
+     "testmon_failed": 0,
+     "testmon_seconds": 25.57,
+     "timed_out": false,
+     "gate_selected": 8,
+     "gate_caught": false,
+     "seconds_full": 21.289
+    }
+   ],
+   "baseline_seconds": 36.5,
+   "baseline_counts": {
+    "passed": 767,
+    "failed": 0,
+    "error": 0,
+    "skipped": 0,
+    "deselected": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "repo": "hukkin/tomli",
+ "number": 278,
+ "status": "error",
+ "detail": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xed in position 88068: invalid continuation byte",
+ "project": "tomli",
+ "image_code_sha": "a116495"
+}

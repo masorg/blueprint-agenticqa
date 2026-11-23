@@ -1,0 +1,15 @@
+{
+ "order": 46,
+ "pr_id": 3307181626,
+ "agent": "Google_Jules",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 11,
+ "repo": "lukas-clarke/eight_sleep",
+ "number": 90,
+ "status": "no_tests",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "wall_seconds": 1.6,
+ "head": "50c3c16ba18a31811fa429618d6d0c845be9c9ce"
+}

@@ -1,0 +1,31 @@
+{
+ "order": 43,
+ "pr_id": 3307848370,
+ "agent": "Copilot",
+ "merged": false,
+ "says_tests_pass": false,
+ "n_commits": 3,
+ "repo": "machinewrapped/llm-subtrans",
+ "number": 254,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "10558c56faed82e8b84d1aa98f15647e9c8391b1",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-mt4wcd9b/PySubtitle/UnitTests/test_BatchCommands.py'. | E   ImportError: libglib-2.0.so.0: cannot open shared object file: No such file or directory | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-mt4wcd9b/PySubtitle/UnitTests/test_ChineseDi",
+  "layer_states": {},
+  "seconds": 154.2
+ },
+ "wall_seconds": 156.1,
+ "head_sha": "10558c56faed82e8b84d1aa98f15647e9c8391b1"
+}

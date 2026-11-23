@@ -1,0 +1,31 @@
+{
+ "order": 58,
+ "pr_id": 3334183582,
+ "agent": "Google_Jules",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "kgcrom/cluefin",
+ "number": 7,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "7abbe8e120c9cf77aa08b888f867becf6a781d5f",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 2): ImportError while importing test module '/tmp/agenticqa-workspaces/ws-xj6ghph2/packages/cluefin-openapi/tests/integration/kiwoom/test_auth.py'. | E   ModuleNotFoundError: No module named 'pydantic' | ImportError while importing test module '/tmp/agenticqa-workspaces/ws-xj6ghph2/packages/cluefin-openapi/tests/integration/kiwoom/test_d",
+  "layer_states": {},
+  "seconds": 7.3
+ },
+ "wall_seconds": 9.1,
+ "head_sha": "7abbe8e120c9cf77aa08b888f867becf6a781d5f"
+}

@@ -1,0 +1,31 @@
+{
+ "order": 60,
+ "pr_id": 3262310380,
+ "agent": "Claude_Code",
+ "merged": false,
+ "says_tests_pass": false,
+ "n_commits": 3,
+ "repo": "graphistry/pygraphistry",
+ "number": 713,
+ "status": "build_or_run_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "db54cb68bf1712d218646964456025fff888e583",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "Error: [('/tmp/field-14b6x5a9/test_env/lib64', '/tmp/agenticqa-workspaces/ws-vfqp8a8o/test_env/lib64', \"[Errno 2] No such file or directory: '/tmp/field-14b6x5a9/test_env/lib64'\"), ('/tmp/field-14b6x5a9/test_env/bin/python3', '/tmp/agenticqa-workspaces/ws-vfqp8a8o/test_env/bin/python3', \"[Errno 2] No such file or directory: '/tmp/field-14b6x5a9/test_env/bin/python3'\"), ('/tmp/field-14b6x5a9/test_e",
+  "layer_states": {},
+  "seconds": 0.1
+ },
+ "wall_seconds": 3.4,
+ "head_sha": "db54cb68bf1712d218646964456025fff888e583"
+}

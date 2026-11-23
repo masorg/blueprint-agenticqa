@@ -1,0 +1,1165 @@
+{
+ "generated_at": "2026-10-24T20:17:29.704909+00:00",
+ "provenance": {
+  "started_at": "2026-10-24T20:17:29.907030+00:00",
+  "git_sha": "a883b871840381bef5b1be3bfc8475bb53ee0b39",
+  "code_dirty": true,
+  "code_diff_sha256": "8e685da015b436b9",
+  "corpus": "selection-attack:pluggy",
+  "corpus_fingerprint": "6c0075ee7c6cfa06",
+  "n_scenarios": 1,
+  "provider": "none (no LLM)",
+  "configured_model": null,
+  "response_models": [],
+  "python": "3.14.7",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+   "selection-attack",
+   "--project",
+   "pluggy",
+   "--n",
+   "5"
+  ]
+ },
+ "summary": {
+  "n_cases": 32,
+  "n_projects": 1,
+  "n_mutants": 4,
+  "honest_flagged_cases": 32,
+  "invalid_timeouts": 0,
+  "m1_violations": 0,
+  "m2_violations": 0,
+  "upper_bound_95": 0.1071827150573635,
+  "by_advisor": {
+   "empty": {
+    "cases": 4,
+    "m1": 0,
+    "m2": 0
+   },
+   "garbage": {
+    "cases": 4,
+    "m1": 0,
+    "m2": 0
+   },
+   "everything": {
+    "cases": 4,
+    "m1": 0,
+    "m2": 0
+   },
+   "non-core-only": {
+    "cases": 4,
+    "m1": 0,
+    "m2": 0
+   },
+   "duplicates": {
+    "cases": 4,
+    "m1": 0,
+    "m2": 0
+   },
+   "huge": {
+    "cases": 4,
+    "m1": 0,
+    "m2": 0
+   },
+   "raises": {
+    "cases": 4,
+    "m1": 0,
+    "m2": 0
+   },
+   "reversed-core": {
+    "cases": 4,
+    "m1": 0,
+    "m2": 0
+   }
+  }
+ },
+ "results": [
+  {
+   "project": "pluggy",
+   "sha": "2e3774328e26287780f0ae849e3cb5db2ba4e78b",
+   "seed": 20261023,
+   "cases": [
+    {
+     "mutant": "pluggy-0",
+     "advisor": "empty",
+     "core_tests": 0,
+     "ran": 0,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [],
+     "honest_seconds": 0.8,
+     "seconds": 0.8
+    },
+    {
+     "mutant": "pluggy-0",
+     "advisor": "garbage",
+     "core_tests": 0,
+     "ran": 0,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [],
+     "honest_seconds": 0.8,
+     "seconds": 0.8
+    },
+    {
+     "mutant": "pluggy-0",
+     "advisor": "everything",
+     "core_tests": 0,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 0.8,
+     "seconds": 2.5
+    },
+    {
+     "mutant": "pluggy-0",
+     "advisor": "non-core-only",
+     "core_tests": 0,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 0.8,
+     "seconds": 2.5
+    },
+    {
+     "mutant": "pluggy-0",
+     "advisor": "duplicates",
+     "core_tests": 0,
+     "ran": 3,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       3,
+       3
+      ]
+     ],
+     "honest_seconds": 0.8,
+     "seconds": 1.5
+    },
+    {
+     "mutant": "pluggy-0",
+     "advisor": "huge",
+     "core_tests": 0,
+     "ran": 1,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       1,
+       1
+      ]
+     ],
+     "honest_seconds": 0.8,
+     "seconds": 1.5
+    },
+    {
+     "mutant": "pluggy-0",
+     "advisor": "raises",
+     "core_tests": 0,
+     "ran": 0,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [],
+     "honest_seconds": 0.8,
+     "seconds": 0.9
+    },
+    {
+     "mutant": "pluggy-0",
+     "advisor": "reversed-core",
+     "core_tests": 0,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [],
+     "layers": [
+      [
+       "unit",
+       "",
+       "passed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 0.8,
+     "seconds": 2.5
+    },
+    {
+     "mutant": "pluggy-1",
+     "advisor": "empty",
+     "core_tests": 4,
+     "ran": 4,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       4,
+       4
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       4,
+       4
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 1.5
+    },
+    {
+     "mutant": "pluggy-1",
+     "advisor": "garbage",
+     "core_tests": 4,
+     "ran": 4,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       4,
+       4
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       4,
+       4
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 1.8
+    },
+    {
+     "mutant": "pluggy-1",
+     "advisor": "everything",
+     "core_tests": 4,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       4,
+       4
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 2.5
+    },
+    {
+     "mutant": "pluggy-1",
+     "advisor": "non-core-only",
+     "core_tests": 4,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       4,
+       4
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 2.5
+    },
+    {
+     "mutant": "pluggy-1",
+     "advisor": "duplicates",
+     "core_tests": 4,
+     "ran": 7,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       4,
+       4
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       7,
+       7
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 1.5
+    },
+    {
+     "mutant": "pluggy-1",
+     "advisor": "huge",
+     "core_tests": 4,
+     "ran": 5,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       4,
+       4
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 1.5
+    },
+    {
+     "mutant": "pluggy-1",
+     "advisor": "raises",
+     "core_tests": 4,
+     "ran": 4,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       4,
+       4
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       4,
+       4
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 1.5
+    },
+    {
+     "mutant": "pluggy-1",
+     "advisor": "reversed-core",
+     "core_tests": 4,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       4,
+       4
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 2.5
+    },
+    {
+     "mutant": "pluggy-3",
+     "advisor": "empty",
+     "core_tests": 202,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 2.7,
+     "seconds": 2.5
+    },
+    {
+     "mutant": "pluggy-3",
+     "advisor": "garbage",
+     "core_tests": 202,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 2.7,
+     "seconds": 2.6
+    },
+    {
+     "mutant": "pluggy-3",
+     "advisor": "everything",
+     "core_tests": 202,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 2.7,
+     "seconds": 2.5
+    },
+    {
+     "mutant": "pluggy-3",
+     "advisor": "non-core-only",
+     "core_tests": 202,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 2.7,
+     "seconds": 2.7
+    },
+    {
+     "mutant": "pluggy-3",
+     "advisor": "duplicates",
+     "core_tests": 202,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 2.7,
+     "seconds": 2.5
+    },
+    {
+     "mutant": "pluggy-3",
+     "advisor": "huge",
+     "core_tests": 202,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 2.7,
+     "seconds": 2.5
+    },
+    {
+     "mutant": "pluggy-3",
+     "advisor": "raises",
+     "core_tests": 202,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 2.7,
+     "seconds": 2.7
+    },
+    {
+     "mutant": "pluggy-3",
+     "advisor": "reversed-core",
+     "core_tests": 202,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 2.7,
+     "seconds": 2.5
+    },
+    {
+     "mutant": "pluggy-4",
+     "advisor": "empty",
+     "core_tests": 5,
+     "ran": 5,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 1.5
+    },
+    {
+     "mutant": "pluggy-4",
+     "advisor": "garbage",
+     "core_tests": 5,
+     "ran": 5,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 1.6
+    },
+    {
+     "mutant": "pluggy-4",
+     "advisor": "everything",
+     "core_tests": 5,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 2.8
+    },
+    {
+     "mutant": "pluggy-4",
+     "advisor": "non-core-only",
+     "core_tests": 5,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 2.7
+    },
+    {
+     "mutant": "pluggy-4",
+     "advisor": "duplicates",
+     "core_tests": 5,
+     "ran": 8,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       8,
+       8
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 1.5
+    },
+    {
+     "mutant": "pluggy-4",
+     "advisor": "huge",
+     "core_tests": 5,
+     "ran": 6,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       6,
+       6
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 1.5
+    },
+    {
+     "mutant": "pluggy-4",
+     "advisor": "raises",
+     "core_tests": 5,
+     "ran": 5,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 1.5
+    },
+    {
+     "mutant": "pluggy-4",
+     "advisor": "reversed-core",
+     "core_tests": 5,
+     "ran": 202,
+     "m1_violation": false,
+     "m2_violation": false,
+     "invalid_timeout": false,
+     "honest_verdict": "needs_human_review",
+     "verdict": "needs_human_review",
+     "honest_layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       5,
+       5
+      ]
+     ],
+     "layers": [
+      [
+       "unit",
+       "",
+       "failed",
+       197,
+       197
+      ],
+      [
+       "property",
+       "",
+       "passed",
+       5,
+       5
+      ]
+     ],
+     "honest_seconds": 1.4,
+     "seconds": 2.5
+    }
+   ],
+   "status": "ran"
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "order": 8,
+ "pr_id": 3242573593,
+ "agent": "Cursor",
+ "merged": true,
+ "says_tests_pass": false,
+ "n_commits": 1,
+ "repo": "browser-use/browser-use",
+ "number": 2478,
+ "status": "collection_failed",
+ "python": "3.12.15",
+ "image_code_sha": "221f456fa2bb",
+ "head": {
+  "sha": "9856306ba4c37da8b821df3b78fa9ad88ad8c850",
+  "state": "failed",
+  "verdict": null,
+  "completed": false,
+  "totals": {
+   "passed": 0,
+   "failed": 0,
+   "skipped": 0,
+   "total": 0
+  },
+  "failing": [],
+  "error": "CollectionError: tests could not be collected (pytest exited 4): ERROR: usage: python -m pytest [options] [file_or_dir] [file_or_dir] [...]",
+  "layer_states": {},
+  "seconds": 311.8
+ },
+ "wall_seconds": 313.6,
+ "head_sha": "9856306ba4c37da8b821df3b78fa9ad88ad8c850"
+}

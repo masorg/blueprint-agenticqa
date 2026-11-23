@@ -1,0 +1,43 @@
+{
+ "repo": "mahmoud/boltons",
+ "number": 574,
+ "status": "ran",
+ "head": "e9f6b63bc178e570eee06520b9d1c6eaf8e0b7b7",
+ "base": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+ "diff_bytes": 2281,
+ "coverage_seconds": 7.9,
+ "coverage_files": 57,
+ "n_tests": 527,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "boltons/urlutils.py",
+  "tests/test_urlutils.py"
+ ],
+ "n_changed": 2,
+ "selected": 129,
+ "file_selected": 129,
+ "uncovered": [],
+ "dyn_available": true,
+ "dyn_selected": 129,
+ "dyn_uncovered": [
+  "boltons/urlutils.py"
+ ],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0.03,
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 2.01,
+ "seconds_selected": 0.03,
+ "wall_seconds": 34.2,
+ "project": "boltons",
+ "image_code_sha": "a116495"
+}

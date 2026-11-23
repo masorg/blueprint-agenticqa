@@ -1,0 +1,45 @@
+{
+ "repo": "tartley/colorama",
+ "number": 437,
+ "status": "ran",
+ "head": "e1ec3426f99f605737c903c4f6c4925d5d33e1f4",
+ "base": "841634ed2a0da5d5ac2d867db533da8131266cb2",
+ "diff_bytes": 1263,
+ "map_base": "406153f134db6b5c5391f223be46f9e8a902e6b6",
+ "map_age_commits": 3,
+ "n_tests": 52,
+ "base_failing": 14,
+ "head_failing": 14,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "colorama/initialise.py",
+  "test_recursion.py"
+ ],
+ "n_changed": 2,
+ "selected": 52,
+ "file_selected": 52,
+ "uncovered": [
+  "test_recursion.py"
+ ],
+ "dyn_available": true,
+ "dyn_selected": 52,
+ "dyn_uncovered": [
+  "test_recursion.py"
+ ],
+ "dyn_mode": "change",
+ "introduced_selected_dyn": [],
+ "seconds_dyn": 0.05,
+ "out_of_scope": [],
+ "inert": [],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 0.05,
+ "seconds_selected": 0.05,
+ "wall_seconds": 13.6,
+ "project": "colorama",
+ "image_code_sha": "d9e3c20"
+}

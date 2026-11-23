@@ -1,0 +1,36 @@
+{
+ "repo": "pytest-dev/pluggy",
+ "number": 798,
+ "status": "ran",
+ "head": "e9dc3792f1b9726b83731daa0e4cd13fce7f702f",
+ "base": "78e3f45d6c18a6efe6c46a2a79b63073f45a44bd",
+ "diff_bytes": 2786,
+ "n_tests": 223,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "changelog/798.bugfix.rst",
+  "src/pluggy/_execution.py",
+  "testing/test_multicall.py"
+ ],
+ "n_changed": 3,
+ "selected": 223,
+ "file_selected": 223,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "changelog/798.bugfix.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.16,
+ "seconds_selected": 0.16,
+ "wall_seconds": 22.4,
+ "project": "pluggy",
+ "image_code_sha": "a874558"
+}

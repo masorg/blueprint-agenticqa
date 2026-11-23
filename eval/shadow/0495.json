@@ -1,0 +1,36 @@
+{
+ "repo": "pytransitions/transitions",
+ "number": 687,
+ "status": "ran",
+ "head": "fac563404940cdb302ebb13f3b5abccca59c3956",
+ "base": "4d8d103b52e3eaad6dc8e82c829fb98319782406",
+ "diff_bytes": 2107,
+ "n_tests": 3100,
+ "base_failing": 6,
+ "head_failing": 6,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "Changelog.md",
+  "tests/test_parallel.py",
+  "transitions/extensions/nesting.py"
+ ],
+ "n_changed": 3,
+ "selected": 3028,
+ "file_selected": 3028,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "Changelog.md"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "needs_human_review",
+ "ci_verdict": "failure",
+ "seconds_full": 23.07,
+ "seconds_selected": 22.89,
+ "wall_seconds": 74.7,
+ "project": "transitions",
+ "image_code_sha": "a874558"
+}

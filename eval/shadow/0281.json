@@ -1,0 +1,36 @@
+{
+ "repo": "pallets/markupsafe",
+ "number": 532,
+ "status": "ran",
+ "head": "3c401df94761660e77d3a554e329227f577e84d7",
+ "base": "b2e4d9c7687be25695fffbe93a37622302b24fb1",
+ "diff_bytes": 2502,
+ "n_tests": 82,
+ "base_failing": 0,
+ "head_failing": 0,
+ "introduced": [],
+ "flaky": [],
+ "mode": "change",
+ "reason": "name/function",
+ "changed": [
+  "CHANGES.rst",
+  "src/markupsafe/__init__.py",
+  "tests/test_markupsafe.py"
+ ],
+ "n_changed": 3,
+ "selected": 82,
+ "file_selected": 82,
+ "uncovered": [],
+ "out_of_scope": [],
+ "inert": [
+  "CHANGES.rst"
+ ],
+ "introduced_selected": [],
+ "gate_verdict": "auto_approve",
+ "ci_verdict": "success",
+ "seconds_full": 0.13,
+ "seconds_selected": 0.13,
+ "wall_seconds": 42.6,
+ "project": "markupsafe",
+ "image_code_sha": "a874558"
+}
